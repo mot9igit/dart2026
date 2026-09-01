@@ -4,20 +4,77 @@
       <a href="/" class="dart-header__logo">
         <img src="/assets/templates/dart/img/logo.svg" alt="DART AGENCY" class="dart-header__logo-img">
       </a>
-      <nav class="dart-header__nav" id="dartNav">
-        <a href="/templates/" class="dart-header__nav-link">Магазин</a>
-        <a href="/kompaniya/" class="dart-header__nav-link">Компания</a>
-        <a href="/uslugi/" class="dart-header__nav-link">Услуги</a>
+
+      <nav class="dart-header__nav" id="dartNav" aria-label="Основное меню">
+        <div class="dart-has-menu">
+          <a href="/templates/" class="dart-header__nav-link" aria-haspopup="true" aria-expanded="false">
+            Магазин
+            <span class="dart-header__caret" aria-hidden="true"></span>
+          </a>
+          <div class="dart-submenu">
+            <a class="dart-submenu__link" href="/templates/html/">HTML-шаблоны</a>
+            <a class="dart-submenu__link" href="/templates/modx-revolution/">Сборки MODX Revolution</a>
+            <a class="dart-submenu__link" href="/templates/komponentyi-modx/">Компоненты MODX</a>
+          </div>
+        </div>
+
+        <div class="dart-has-menu">
+          <a href="/kompaniya/" class="dart-header__nav-link" aria-haspopup="true" aria-expanded="false">
+            Компания
+            <span class="dart-header__caret" aria-hidden="true"></span>
+          </a>
+          <div class="dart-submenu">
+            <a class="dart-submenu__link" href="/kompaniya/o-nas.html">О нас</a>
+            <a class="dart-submenu__link" href="/kompaniya/vakansii.html">Вакансии</a>
+          </div>
+        </div>
+
+        <div class="dart-has-menu">
+          <a href="/uslugi/" class="dart-header__nav-link" aria-haspopup="true" aria-expanded="false">
+            Услуги
+            <span class="dart-header__caret" aria-hidden="true"></span>
+          </a>
+          <div class="dart-submenu">
+            <a class="dart-submenu__link" href="/uslugi/razrabotka-sajtov/">Разработка сайтов</a>
+            <a class="dart-submenu__link" href="/uslugi/prodvizhenie-sajtov/">Продвижение сайтов</a>
+            <a class="dart-submenu__link" href="/uslugi/texnicheskaya-podderzhka/">Техническая поддержка</a>
+            <a class="dart-submenu__link" href="/uslugi/razrabotka-sajtov/dizajn-sajtov.html">Дизайн</a>
+            <a class="dart-submenu__link" href="/uslugi/konsultacziya-v-skype.html">Консультация</a>
+          </div>
+        </div>
+
         <a href="/portfolio/" class="dart-header__nav-link">Портфолио</a>
         <a href="/kursyi/" class="dart-header__nav-link">Курсы</a>
-        <a href="/blog/" class="dart-header__nav-link">Блог</a>
+
+        <div class="dart-has-menu">
+          <a href="/blog/" class="dart-header__nav-link" aria-haspopup="true" aria-expanded="false">
+            Блог
+            <span class="dart-header__caret" aria-hidden="true"></span>
+          </a>
+          <div class="dart-submenu">
+            <a class="dart-submenu__link" href="/blog/obuchenie/">Обучение</a>
+            <a class="dart-submenu__link" href="/blog/modx/">MODx</a>
+            <a class="dart-submenu__link" href="/blog/komponentyi/">Компоненты</a>
+            <a class="dart-submenu__link" href="/blog/dizajn/">Дизайн</a>
+            <a class="dart-submenu__link" href="/blog/kejsyi/">Кейсы</a>
+            <a class="dart-submenu__link" href="/blog/prodvizhenie-sajtov/">Продвижение</a>
+          </div>
+        </div>
+
         <a href="/kontaktyi.html" class="dart-header__nav-link">Контакты</a>
+
+        <div class="dart-header__menu-cta">
+          <button class="dart-btn dart-btn-primary dart-btn--full" data-modal="dartModal">Заказать звонок</button>
+          <a href="tel:+79991158355" class="dart-header__menu-phone">+7 (999) 115-83-55</a>
+        </div>
       </nav>
+
       <div class="dart-header__actions">
         <a href="tel:+79991158355" class="dart-header__phone">+7 (999) 115-83-55</a>
         <button class="dart-btn dart-btn-primary" data-modal="dartModal">Заказать звонок</button>
       </div>
-      <button class="dart-header__burger" id="dartBurger" aria-label="Меню">
+
+      <button class="dart-header__burger" id="dartBurger" aria-label="Открыть меню" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>

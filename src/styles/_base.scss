@@ -26,8 +26,10 @@
 
 /* ----------- BUTTONS ------------ */
 .dart-btn{
-  display: inline-flex;
+  display: inline-block;
+  position: relative;
   align-items: center;
+  text-align: center;
   gap: 8px;
   padding: 11px 22px;
   border-radius: 12px;
@@ -116,6 +118,10 @@
   &.dart-btn-sm {
     padding: 10px 22px;
     font-size: 15px;
+  }
+  &.dart-btn--full {
+    width: 100%;
+    justify-content: center;
   }
   @media (max-width: $desktop){
   }

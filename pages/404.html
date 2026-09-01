@@ -5,13 +5,71 @@
   </head>
 
   <body>
+    <div class="dart_progress"><span id="dartProgressBar"></span></div>
+
     <div class="dart_wrapper">
       {{> header}}
-      <div class="dart_main">
 
-      </div>
+      <main class="dart_main">
+        <div class="n-404">
+          <div class="n-404__bubble n-404__bubble--1"></div>
+          <div class="n-404__bubble n-404__bubble--2"></div>
+          <div class="n-404__bubble n-404__bubble--3"></div>
+
+          <div class="dart-container">
+            <div class="n-404__inner" data-reveal>
+              <div class="n-404__graphic">
+                <span class="n-404__num">4</span>
+                <span class="n-404__orbit">
+                  <span class="n-404__orbit-core">
+                    <svg width="70" height="70" viewBox="0 0 32 32" fill="none">
+                      <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2"/>
+                      <path d="M10 16h12M16 10c2 2 2 10 0 12M16 10c-2 2-2 10 0 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                  <span class="n-404__orbit-sat">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                      <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="n-404__num">4</span>
+              </div>
+
+              <span class="n-404__kicker">Ошибка 404</span>
+              <h1 class="n-404__title">Страница не найдена</h1>
+              <p class="n-404__desc">
+                Похоже, эта страница улетела в космос или была удалена.
+                Но ваш проект мы точно не потеряем — вернитесь на главную или напишите нам.
+              </p>
+
+              <div class="n-404__actions">
+                <a href="/" class="dart-btn dart-btn-primary dart-btn-lg">
+                  На главную
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Связаться с нами</button>
+              </div>
+
+              <div class="n-404__links">
+                <a href="/">Главная</a>
+                <span>·</span>
+                <a href="/uslugi/">Услуги</a>
+                <span>·</span>
+                <a href="/portfolio/">Портфолио</a>
+                <span>·</span>
+                <a href="/kontaktyi.html">Контакты</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
       {{> footer}}
     </div>
+    {{> cookie}}
+    {{> modals}}
     {{> scripts}}
   </body>
 </html>

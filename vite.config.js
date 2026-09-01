@@ -77,6 +77,7 @@ export default defineConfig({
         style: resolve(__dirname, "src/styles/global.scss"),
         index: resolve(__dirname, "index.html"),        
         notFound: resolve(__dirname, "pages/404.html"),        
+        development: resolve(__dirname, "pages/services/development.html"),        
       },
       output: {
         entryFileNames: `js/[name].js`,

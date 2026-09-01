@@ -40,11 +40,14 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 26px;
     margin: 0 auto;
   }
 
   &__nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: rgba(19, 19, 19, 0.75);
     font-size: 15px;
     font-weight: 600;
@@ -54,6 +57,84 @@
 
     &:hover {
       color: var(--dart-red);
+    }
+  }
+
+  &__caret {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+    opacity: 0.6;
+  }
+
+  /* --- item with submenu --- */
+  & .dart-has-menu {
+    position: relative;
+  }
+
+  @media (min-width: $small-desktop) {
+    & .dart-has-menu:hover,
+    & .dart-has-menu:focus-within {
+      > .dart-header__nav-link {
+        color: var(--dart-red);
+      }
+
+      > .dart-header__nav-link .dart-header__caret {
+        transform: rotate(-135deg) translateY(-2px);
+      }
+
+      > .dart-submenu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        pointer-events: auto;
+      }
+    }
+  }
+
+  & .dart-submenu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    min-width: 260px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    pointer-events: none;
+    z-index: 200;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 0;
+      right: 0;
+      height: 14px;
+    }
+
+    &__link {
+      display: block;
+      padding: 11px 14px;
+      border-radius: 9px;
+      color: rgba(19, 19, 19, 0.8);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        background: #f7f7fa;
+        color: var(--dart-red);
+      }
     }
   }
 
@@ -100,15 +181,38 @@
     }
   }
 
+  &__menu-cta {
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 28px;
+    padding-top: 24px;
+  }
+
+  &__menu-phone {
+    text-align: center;
+    color: var(--dart-dark);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--dart-red);
+    }
+  }
+
   &__burger {
     display: none;
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
     padding: 8px;
     z-index: 120;
+    width: 42px;
+    height: 42px;
 
     span {
       display: block;
@@ -118,6 +222,20 @@
       transition: all 0.3s ease;
       border-radius: 2px;
     }
+
+    &--active {
+      span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
   }
 
   @media (max-width: $small-desktop) {
@@ -125,17 +243,19 @@
       position: fixed;
       top: 0;
       right: -100%;
-      width: 320px;
+      width: 100%;
+      max-width: 340px;
       height: 100vh;
       background: #fff;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
       gap: 0;
-      padding: 100px 32px 32px;
+      padding: 96px 28px 40px;
       transition: right 0.4s ease;
       z-index: 90;
       box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
       margin: 0;
+      overflow-y: auto;
 
       &.dart-header__nav--open {
         right: 0;
@@ -143,11 +263,53 @@
     }
 
     &__nav-link {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 100%;
       padding: 18px 0;
       font-size: 18px;
       border-bottom: 1px solid #f0f0f0;
+    }
+
+    & .dart-has-menu {
+      width: 100%;
+    }
+
+    & .dart-has-menu > .dart-header__nav-link {
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    & .dart-submenu {
+      position: static;
+      transform: none;
+      min-width: 0;
+      width: 100%;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      padding: 0 0 0 12px;
+      box-shadow: none;
+      overflow: hidden;
+      transition: height 0.3s ease, opacity 0.3s ease;
+
+      &__link {
+        padding: 12px 8px;
+        font-size: 15px;
+        border-bottom: 1px solid #f5f5f5;
+      }
+    }
+
+    & .dart-has-menu.is-open {
+      > .dart-header__nav-link .dart-header__caret {
+        transform: rotate(-135deg) translateY(-2px);
+      }
+
+      > .dart-submenu {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+      }
     }
 
     &__burger {
@@ -155,6 +317,14 @@
     }
 
     &__phone {
+      display: none;
+    }
+
+    &__menu-cta {
+      display: flex;
+    }
+
+    &__actions .dart-btn {
       display: none;
     }
   }
@@ -167,5 +337,20 @@
       padding: 11px 14px;
       font-size: 20px;
     }
+  }
+}
+
+body.dart-menu-open {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  @media (min-width: $small-desktop) {
+    position: static;
+    overflow: visible;
   }
 }

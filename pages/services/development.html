@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <a href="/uslugi/">Услуги</a><span>/</span>
+            <b>Разработка сайтов</b>
+          </div>
+
+          <div class="sv-hero__grid">
+            <div class="sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Разработка сайтов<br><span>под ключ</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                От брифа и прототипа до запуска и поддержки. Получаете готовый сайт, который
+                приводят клиентов: с индивидуальным дизайном, SEO-основой и аналитикой.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Смета и сроки фиксируем в договоре</li>
+                <li><span>✓</span> Поэтапная оплата и гарантия после запуска</li>
+                <li><span>✓</span> КП с точной стоимостью — за 24 часа</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Рассчитать стоимость</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="150" data-suffix="+">0</b></span>
+                  <span class="sv-hero__stat-label">проектов запущено</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="5">0</b></span>
+                  <span class="sv-hero__stat-label">лет опыта</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="24" data-suffix=" ч">0</b></span>
+                  <span class="sv-hero__stat-label">срок подготовки КП</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="98" data-suffix="%">0</b></span>
+                  <span class="sv-hero__stat-label">довольных клиентов</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Быстрый расчёт стоимости</h3>
+                <p class="sv-estimate__desc">Ответьте на 2 вопроса — пришлём смету и примеры работ</p>
+
+                <label class="sv-estimate__label">Тип сайта</label>
+                <select class="sv-estimate__select" name="type" required>
+                  <option value="" disabled selected>Выберите тип</option>
+                  <option>Сайт-визитка</option>
+                  <option>Лендинг</option>
+                  <option>Корпоративный сайт</option>
+                  <option>Интернет-магазин</option>
+                </select>
+
+                <label class="sv-estimate__label">Когда нужен сайт</label>
+                <select class="sv-estimate__select" name="terms">
+                  <option>В течение месяца</option>
+                  <option>Срочно, в течение 2 недель</option>
+                  <option>Планируем, без спешки</option>
+                </select>
+
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить расчёт →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут. Без спама.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что входит</a>
+            <a href="#process" class="sv-nav__link">Этапы</a>
+            <a href="#portfolio" class="sv-nav__link">Портфолио</a>
+            <a href="#benefits" class="sv-nav__link">Преимущества</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Заказать звонок</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker" data-reveal>Стоимость</span>
+              <h2 class="n-section__title" data-reveal>Сколько стоит сайт под ключ</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Точная смета — после бесплатного брифа. Цены фиксируются в договоре и не меняются в процессе.</p>
+          </div>
+
+          <div class="sv-pricing">
+            <article class="sv-price" data-reveal>
+              <span class="sv-price__tag">Быстрый старт</span>
+              <h3 class="sv-price__name">Лендинг</h3>
+              <div class="sv-price__amount"><b>19 999 ₽</b><span>от</span></div>
+              <p class="sv-price__time">Срок: от 7 дней</p>
+              <ul class="sv-price__list">
+                <li>Индивидуальный дизайн</li>
+                <li>Адаптивная вёрстка</li>
+                <li>Формы захвата заявок</li>
+                <li>Таймер и акции</li>
+                <li>SEO-основа и аналитика</li>
+                <li>1 страница, до 4 секций</li>
+              </ul>
+              <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+            </article>
+
+            <article class="sv-price sv-price--hit" data-reveal>
+              <span class="sv-price__tag sv-price__tag--hit">Чаще всего выбирают</span>
+              <h3 class="sv-price__name">Сайт-визитка</h3>
+              <div class="sv-price__amount"><b>20 999 ₽</b><span>от</span></div>
+              <p class="sv-price__time">Срок: от 10 дней</p>
+              <ul class="sv-price__list">
+                <li>Индивидуальный дизайн</li>
+                <li>Адаптивная вёрстка</li>
+                <li>Блог / новости</li>
+                <li>Контакты с картой</li>
+                <li>SEO-оптимизация</li>
+                <li>Настройка аналитики</li>
+                <li>До 10 страниц</li>
+              </ul>
+              <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+            </article>
+
+            <article class="sv-price" data-reveal>
+              <span class="sv-price__tag">Для компаний</span>
+              <h3 class="sv-price__name">Корпоративный сайт</h3>
+              <div class="sv-price__amount"><b>29 999 ₽</b><span>от</span></div>
+              <p class="sv-price__time">Срок: от 30 дней</p>
+              <ul class="sv-price__list">
+                <li>Индивидуальный дизайн</li>
+                <li>Адаптивная вёрстка</li>
+                <li>Каталог товаров и услуг</li>
+                <li>Платежные шлюзы</li>
+                <li>SEO-оптимизация</li>
+                <li>Настройка аналитики</li>
+                <li>До 50 страниц</li>
+              </ul>
+              <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+            </article>
+
+            <article class="sv-price" data-reveal>
+              <span class="sv-price__tag">Максимум продаж</span>
+              <h3 class="sv-price__name">Интернет-магазин</h3>
+              <div class="sv-price__amount"><b>59 999 ₽</b><span>от</span></div>
+              <p class="sv-price__time">Срок: от 45 дней</p>
+              <ul class="sv-price__list">
+                <li>Индивидуальный дизайн</li>
+                <li>Адаптивная вёрстка</li>
+                <li>Каталог и корзина</li>
+                <li>Платежные шлюзы</li>
+                <li>Поиск и фильтры</li>
+                <li>Настройка аналитики</li>
+                <li>До 100 страниц</li>
+              </ul>
+              <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+            </article>
+          </div>
+
+          <p class="sv-pricing__note" data-reveal>Цены ориентировочные. Итоговая стоимость зависит от задач — <a href="/onlajn-brif-na-razrabotku-sajta.html">заполните бриф</a>, и мы подготовим точное КП за 24 часа.</p>
+        </div>
+      </section>
+
+      <!-- ADD-ONS -->
+      <section class="n-section n-section--alt">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Дополнительно</span>
+              <h2 class="n-section__title">Полезные услуги</h2>
+            </div>
+          </div>
+          <div class="sv-addons">
+            <article class="sv-addon" data-reveal>
+              <h3 class="sv-addon__title">Вёрстка по вашему макету</h3>
+              <p class="sv-addon__text">Современная адаптивная вёрстка готового дизайн-макета с небольшими корректировками.</p>
+              <div class="sv-addon__meta"><b>от 20 999 ₽</b><span>от 20 дней</span></div>
+              <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+            </article>
+            <article class="sv-addon" data-reveal>
+              <h3 class="sv-addon__title">Индивидуальный дизайн</h3>
+              <p class="sv-addon__text">Анализ конкурентов, проектирование структуры под продвижение и адаптивный дизайн на основе прототипа.</p>
+              <div class="sv-addon__meta"><b>от 41 999 ₽</b><span>от 60 дней</span></div>
+              <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+            </article>
+            <article class="sv-addon" data-reveal>
+              <h3 class="sv-addon__title">Логотип</h3>
+              <p class="sv-addon__text">Разрабатываем с нуля без шаблонов. Файлы во всех форматах, плюс корректировки.</p>
+              <div class="sv-addon__meta"><b>от 15 000 ₽</b><span>от 5 дней</span></div>
+              <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+            </article>
+            <article class="sv-addon" data-reveal>
+              <h3 class="sv-addon__title">Фирменный стиль</h3>
+              <p class="sv-addon__text">Логотип + фирменный стиль, чтобы вас узнавали и запоминали в любых каналах.</p>
+              <div class="sv-addon__meta"><b>от 25 000 ₽</b><span>от 10 дней</span></div>
+              <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что входит в «под ключ»</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Ничего не «вдруг всплывает» в процессе — состав работ прозрачен и зафиксирован в смете.</p>
+          </div>
+
+          <div class="sv-scope">
+            <div class="sv-scope__col" data-reveal>
+              <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Входит в любой проект</h3>
+              <ul class="sv-scope__list">
+                <li>Анализ ниши и конкурентов</li>
+                <li>Прототипирование и структура</li>
+                <li>Индивидуальный адаптивный дизайн</li>
+                <li>Вёрстка и программирование</li>
+                <li>Базовая SEO-оптимизация</li>
+                <li>Настройка веб-аналитики</li>
+                <li>Обучение работе с сайтом</li>
+                <li>Гарантия и консультации</li>
+              </ul>
+            </div>
+            <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+              <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Опционально</h3>
+              <ul class="sv-scope__list">
+                <li>Наполнение контентом и тексты</li>
+                <li>Регистрация домена и хостинга</li>
+                <li>Продвижение в поисковых системах</li>
+                <li>Интеграции: CRM, 1С, платёжные системы</li>
+                <li>Уникальный фирменный стиль</li>
+                <li>Техническая поддержка после запуска</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section n-section--alt" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Этапы</span>
+              <h2 class="n-section__title">Как проходит работа</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Вы на каждом этапе знаете, что происходит, и утверждаете результат.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Бриф и анализ</h4>
+              <p>Разбираем задачи, нишу и конкурентов.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Прототип</h4>
+              <p>Структура и путь пользователя.</p>
+              <b class="sv-process__time">3–5 дней</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Дизайн</h4>
+              <p>Современный интерфейс под ваш бренд.</p>
+              <b class="sv-process__time">7–14 дней</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Вёрстка</h4>
+              <p>Адаптивная вёрстка и программирование.</p>
+              <b class="sv-process__time">7–14 дней</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Запуск и обучение</h4>
+              <p>Тест, запуск и передача под ключ.</p>
+              <b class="sv-process__time">2–4 дня</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="n-section" id="portfolio">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Портфолио</span>
+              <h2 class="n-section__title">Примеры наших работ</h2>
+            </div>
+            <a href="/portfolio/" class="dart-btn dart-btn-secondary dart-btn-sm" data-reveal>Все проекты →</a>
+          </div>
+          <div class="sv-portfolio">
+            <a class="n-work" href="/portfolio/amkar.html" data-reveal>
+              <div class="n-work__img n-work__img--1"><span>Амкар</span></div>
+              <div class="n-work__meta"><h4>Амкар</h4><p>Верстка сайта футбольного клуба</p></div>
+            </a>
+            <a class="n-work" href="/portfolio/sajt-parketgrand.html" data-reveal>
+              <div class="n-work__img n-work__img--2"><span>ПАРКЕТГРАНД</span></div>
+              <div class="n-work__meta"><h4>ПАРКЕТГРАНД</h4><p>Сайт-визитка</p></div>
+            </a>
+            <a class="n-work" href="/portfolio/medresurs-perm.html" data-reveal>
+              <div class="n-work__img n-work__img--3"><span>Медресурс</span></div>
+              <div class="n-work__meta"><h4>Медресурс Пермь</h4><p>Сайт-каталог</p></div>
+            </a>
+            <a class="n-work" href="/portfolio/gnss-oem7.html" data-reveal>
+              <div class="n-work__img n-work__img--4"><span>GNSS OEM7</span></div>
+              <div class="n-work__meta"><h4>GNSS OEM7</h4><p>Лендинг</p></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section class="n-section n-section--alt" id="benefits">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Преимущества</span>
+              <h2 class="n-section__title">Почему работают с нами</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Работаем с 2020 года и отвечаем за результат на каждом этапе.</p>
+          </div>
+          <div class="sv-benefits">
+            <article class="sv-benefit" data-reveal>
+              <span class="sv-benefit__icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M16 8v12l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <h3 class="sv-benefit__title">Прозрачные расчёты</h3>
+              <p class="sv-benefit__text">В смете прописаны этапы, стоимость и сроки. Оплата поэтапная — платите за результат.</p>
+            </article>
+            <article class="sv-benefit" data-reveal>
+              <span class="sv-benefit__icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M6 26l6-8 4 4 6-12 4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 class="sv-benefit__title">Готовим к продвижению</h3>
+              <p class="sv-benefit__text">Базовая SEO-оптимизация и аналитика с первого дня — быстрая индексация и рост.</p>
+            </article>
+            <article class="sv-benefit" data-reveal>
+              <span class="sv-benefit__icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M12 22v6M20 22v6M6 22h20v-4H6v4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 22V11h16v11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <h3 class="sv-benefit__title">Помогаем с доменом и хостингом</h3>
+              <p class="sv-benefit__text">Подберём и зарегистрируем всё на реквизиты компании заказчика — без лишней возни.</p>
+            </article>
+            <article class="sv-benefit" data-reveal>
+              <span class="sv-benefit__icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              <h3 class="sv-benefit__title">Гарантия и консультации</h3>
+              <p class="sv-benefit__text">Исправим недочёты и научим наполнять сайт самостоятельно. Помощь не заканчивается на запуске.</p>
+            </article>
+            <article class="sv-benefit" data-reveal>
+              <span class="sv-benefit__icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M26 20c0 3.3-3.6 6-8 6s-8-2.7-8-6 3.6-6 8-6 4 .9 4 .9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 class="sv-benefit__title">Работаем с любыми регионами</h3>
+              <p class="sv-benefit__text">Удалённое сотрудничество с комфортом: созвоны, онлайн-отчёты и понятные процессы.</p>
+            </article>
+            <article class="sv-benefit" data-reveal>
+              <span class="sv-benefit__icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 8a8 8 0 1 0 16 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <h3 class="sv-benefit__title">Поддержка и развитие</h3>
+              <p class="sv-benefit__text">Наполнение, доработки и техподдержка после запуска — сайт растёт вместе с бизнесом.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY SITE -->
+      <section class="n-section">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Для кого</span>
+              <h2 class="n-section__title">Для чего нужен сайт вашему бизнесу</h2>
+            </div>
+          </div>
+          <div class="sv-why">
+            <article class="sv-why__item" data-reveal>
+              <span class="sv-why__num">01</span>
+              <h3>Формирует имидж</h3>
+              <p>Сайт — лицо компании, которое повышает лояльность клиентов и партнёров.</p>
+            </article>
+            <article class="sv-why__item" data-reveal>
+              <span class="sv-why__num">02</span>
+              <h3>Привлекает клиентов</h3>
+              <p>Эффективный канал продаж, работающий для вашей аудитории круглосуточно.</p>
+            </article>
+            <article class="sv-why__item" data-reveal>
+              <span class="sv-why__num">03</span>
+              <h3>Даёт обратную связь</h3>
+              <p>Заявки и аналитика помогают понять, что нужно клиентам и куда развиваться.</p>
+            </article>
+            <article class="sv-why__item" data-reveal>
+              <span class="sv-why__num">04</span>
+              <h3>Поддерживает клиентов</h3>
+              <p>База вопросов и ответов, самопомощь и поддержка 24/7 без вашего участия.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Сколько времени занимает разработка сайта?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Лендинг — от 7 дней, сайт-визитка — от 10 дней, корпоративный сайт — от 30 дней, интернет-магазин — от 45 дней. Срок фиксируем в договоре.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что если мне не понравится дизайн?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>До утверждения макета корректировки бесплатны. Мы согласовываем дизайн по этапам, поэтому «финальный сюрприз» исключён.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как проходит оплата?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Поэтапно, по факту выполнения каждого этапа. Начинаем после предоплаты 30%, остальное — по мере готовности.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Кто будет наполнять сайт контентом?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Можем наполнить мы или вы самостоятельно — научим и передадим инструкцию. Контент-маркетинг заказывают отдельно.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что с сайтом после запуска?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Даём гарантию и консультации, а также предлагаем техподдержку и развитие: доработки, обновления, продвижение.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно заказать разработку по готовому макету?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, делаем адаптивную вёрстку по вашим макетам — от 20 999 ₽ и от 20 рабочих дней.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Готовы к запуску?</span>
+            <h2 class="n-cta__title">Давайте посчитаем<br>стоимость вашего сайта</h2>
+            <p class="n-cta__desc">Пришлём смету и примеры работ за 24 часа. Это бесплатно и ни к чему не обязывает.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить расчёт →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о задаче — предложим решение и посчитаем стоимость.</p>
+          </div>
+          <div class="n-contacts">
+            <div class="n-contacts__cards">
+              <a href="tel:+79991158355" class="n-contact">
+                <span class="n-contact__icon">📞</span>
+                <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+              </a>
+              <a href="mailto:info@dart.agency" class="n-contact">
+                <span class="n-contact__icon">✉️</span>
+                <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+              </a>
+              <div class="n-contact">
+                <span class="n-contact__icon">📍</span>
+                <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+              </div>
+            </div>
+            <form class="n-form" data-form>
+              <div class="n-form__row">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+              </div>
+              <input type="email" name="email" placeholder="Ваш e-mail">
+              <textarea name="message" placeholder="Коротко о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+              <div class="n-form__bottom">
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Рассчитать стоимость</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>
