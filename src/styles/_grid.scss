@@ -1,0 +1,165 @@
+@use 'sass:math';
+@use 'vars' as *;
+
+.dart-container{
+    width: 1710px;
+    margin: 0 auto;
+    padding-left: math.div($main-padding, 2);
+    padding-right: math.div($main-padding, 2);
+    @media (max-width: $desktop){
+        width: 1150px;
+				padding-left: math.div($main-padding-md, 2);
+    		padding-right: math.div($main-padding-md, 2);
+    }
+		@media (max-width: $small-desktop){
+        width: 900px;
+    }
+    @media (max-width: $tablets){
+        width: 100%;				
+    }
+    @media (max-width: $small-tablets){
+        width: 100%;
+    }
+    @media (max-width: $big-phones){
+        width: 100%;
+    }
+    @media (max-width: $phones){
+        width: 100%;
+    }
+}
+
+.dart-flex-right{
+	display: flex;
+	justify-content: flex-end;
+}
+.dart-space-between{
+	display: flex;
+	justify-content: space-between;
+}
+.dart-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: math.div($main-padding, -2);
+    margin-left: math.div($main-padding, -2);
+		@media (max-width: $desktop){
+			margin-right: math.div($main-padding-md, -2);
+    	margin-left: math.div($main-padding-md, -2);
+		}
+}
+
+.dart-align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.dart-align-items-end {
+    -ms-flex-align: end!important;
+    align-items: end!important;
+}
+
+.d-col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.d-col{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: math.div($main-padding, 2);
+	padding-left: math.div($main-padding, 2);
+	@media (max-width: $desktop){
+		padding-right: math.div($main-padding-md, 2);
+		padding-left: math.div($main-padding-md, 2);
+	}
+}
+
+@for $i from 1 to 13 {
+	$percent: math.div($i, 12) * 100;
+	.d-col-#{$i},
+	.d-col-sm-#{$i},
+	.d-col-md-#{$i},
+	.d-col-lg-#{$i},
+	.d-col-xl-#{$i},
+	.d-col-xxl-#{$i} {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: math.div($main-padding, 2);
+		padding-left: math.div($main-padding, 2);
+		@media (max-width: $desktop){
+			padding-right: math.div($main-padding-md, 2);
+			padding-left: math.div($main-padding-md, 2);
+		}
+	}
+}
+
+
+@for $i from 1 to 13 {
+	$percent: math.div($i, 12) * 100;
+	.d-col-#{$i} {
+		flex: 0 0 auto;
+		width: #{$percent}#{'%'};
+	}
+}
+
+@media (min-width: $big-phones){
+	@for $i from 1 to 13 {
+		$percent: math.div($i, 12) * 100;
+		.d-col-sm-#{$i} {
+			flex: 0 0 auto;
+			width: #{$percent}#{'%'};
+		}
+	}
+}
+@media (min-width: $small-tablets){
+	@for $i from 1 to 13 {
+		$percent: math.div($i, 12) * 100;
+		.d-col-md-#{$i} {
+			flex: 0 0 auto;
+			width: #{$percent}#{'%'};
+		}
+	}
+}
+@media (min-width: $tablets){
+	@for $i from 1 to 13 {
+		$percent: math.div($i, 12) * 100;
+		.d-col-lg-#{$i} {
+			flex: 0 0 auto;
+			width: #{$percent}#{'%'};
+		}
+	}
+}
+@media (min-width: $small-desktop){
+	@for $i from 1 to 13 {
+		$percent: math.div($i, 12) * 100;
+		.d-col-xl-#{$i} {
+			flex: 0 0 auto;
+			width: #{$percent}#{'%'};
+		}
+	}
+}
+@media (min-width: $desktop){
+	@for $i from 1 to 13 {
+		$percent: math.div($i, 12) * 100;
+		.d-col-xxl-#{$i} {
+			flex: 0 0 auto;
+			width: #{$percent}#{'%'};
+		}
+	}
+}
+
+@media (max-width: $tablets){
+	.hidden-lg{
+		display: none;
+	}
+}
+
+@media (max-width: $small-tablets){
+	.hidden-md{
+		display: none;
+	}
+}

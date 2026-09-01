@@ -1,0 +1,40 @@
+$desktop:               "1800px";   // xxl  	d-col-xxl-{1-12}
+$small-desktop:         "1200px";   // xl		d-col-xl-{1-12}
+$tablets:               "991px";    // lg		d-col-lg-{1-12}
+$small-tablets:         "768px";    // md		d-col-md-{1-12}
+$big-phones:            "611px";    // sm		d-col-sm-{1-12}
+$phones:                "430px";	  // from 0	d-col-{1-12}
+
+$main-padding:          32px;
+$main-padding-md:       24px;
+
+:root {
+  --primary-bg: #131313;
+  --primary-color: #ff000f;
+  --green-color: #30D672;
+
+  --dart-dark: #131313;
+  --dart-red: #ff000f;
+  --dart-red-hover: #d4000c;
+  --dart-gray: #9D9FA0;
+  --dart-light: #F5F5F5;
+  --dart-white: #FFFFFF;
+
+  --main-padding: 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+}

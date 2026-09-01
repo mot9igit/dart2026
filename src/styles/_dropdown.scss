@@ -1,0 +1,11 @@
+.dart-dropdown-container{
+    position: relative;
+    &[data-dropdown="dropdown"] .dart-dropdown{
+        display: block;
+    }
+    .dart-dropdown{
+        position: absolute;
+        display: none;
+        top: 100%;
+    }
+}

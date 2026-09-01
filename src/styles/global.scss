@@ -1,0 +1,19 @@
+@use "sass:math";
+@use "vars" as *;
+@use "reset";
+@use "fonts";
+@use "form-check";
+@use "grid";
+@use "base";
+@use "dropdown";
+@use "header";
+@use "footer";
+@use "home";
+@use "modal";
+
+body{
+  font-family: "Open Sans", sans-serif;
+  h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Condensed", sans-serif;
+  }  
+}

@@ -1,0 +1,94 @@
+@use 'vars' as *;
+
+.dart-modal{
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  &.is-active{
+    opacity: 1;
+    visibility: visible;
+  }
+  &__overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(21,18,17,0.6);
+    backdrop-filter: blur(4px);
+  }
+  &__content{
+    position: relative;
+    background: var(--dart-white);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: translateY(24px);
+    transition: transform .3s ease;
+    @media (max-width: $big-phones){
+      padding: 28px 20px;
+    }
+  }
+  &.is-active &__content{
+    transform: translateY(0);
+  }
+  &__close{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--dart-gray);
+    cursor: pointer;
+    transition: color .2s ease;
+    &:hover{ color: var(--dart-dark); }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.3;
+    color: var(--dart-dark);
+    margin-bottom: 8px;
+  }
+  &__desc{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dart-gray);
+    margin-bottom: 24px;
+  }
+  &__form{
+    input, textarea{
+      width: 100%;
+      padding: 16px 18px;
+      border: 1px solid #ECECEC;
+      border-radius: 14px;
+      font-size: 16px;
+      color: var(--dart-dark);
+      outline: none;
+      margin-bottom: 14px;
+      transition: border-color .2s ease;
+      &::placeholder{ color: var(--dart-gray); }
+      &:focus{ border-color: var(--dart-red); }
+    }
+    textarea{ resize: vertical; min-height: 90px; }
+    .dart-btn{ width: 100%; }
+  }
+  &__hint{
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--dart-gray);
+    text-align: center;
+    margin-top: 14px;
+  }
+}
