@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta }}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="po-hero">
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <a href="/blog/">Блог</a><span>/</span>
+            <a href="/blog/proektyi/">Проекты</a><span>/</span>
+            <b>Подходы при разработке стартапа</b>
+          </div>
+
+          <div class="dart-row po-hero__meta" data-reveal>
+            <a href="/blog/proektyi/" class="d-col-auto po-hero__cat">Проекты</a>
+            <span class="d-col-auto po-hero__date">06.09.2025</span>
+            <span class="d-col-auto po-hero__views">516</span>
+            <span class="d-col-auto po-hero__time">12 мин</span>
+          </div>
+
+          <h1 class="po-hero__title" data-reveal>Подходы при разработке стартапа</h1>
+
+          <div class="po-hero__tags" data-reveal>
+            <a href="/blog/proektyi/?tag=%D0%9A%D0%B5%D0%B9%D1%81">Кейс</a>
+            <a href="/blog/proektyi/?tag=%D0%A1%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF">Стартап</a>
+            <a href="/blog/proektyi/?tag=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B8">Ошибки</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- POST LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <div class="dart-row po-main__row">
+            <article class="d-col d-col-xxl-18 po-article">
+
+              <!-- HERO IMAGE -->
+              <figure class="po-article__hero">
+                <img src="/assets/img/startup/1cbd72b94851cb5e7274f31947eaced0.png" alt="Подходы при разработке стартапа" loading="lazy">
+              </figure>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                Данная статья не должна служить руководством к определённым действиям. Я старался расписать всё со стороны
+                разработчика и на собственном опыте, с учётом своих ошибок в том числе. Распишу тезисно, с примерами из реальной жизни.
+              </p>
+
+              <h2 id="documentation">1. Документация — основной документ разработки</h2>
+              <p>
+                Любая задача, будь она сложная или нет, должна начинаться с формализации. В ходе описания функционала решаются
+                вопросы, которые могут встать и после релиза. Кроме того, это позволяет трезво осмыслить спектр задач и расставить приоритеты.
+              </p>
+              <p>В отсутствие документации нанимаемый персонал сталкивается с серьёзными последствиями:</p>
+              <ul>
+                <li>персонал начинает дёргать других людей, чтобы уточнить детали, что портит атмосферу в команде;</li>
+                <li>КПД нового ресурса на первых парах сводится к нулю;</li>
+                <li>без понимания взаимосвязей разработчик может просто сломать систему.</li>
+              </ul>
+
+              <figure class="po-figure">
+                <img src="/assets/files/img/startup/1.jpg" alt="Документация стартапа" loading="lazy">
+                <figcaption>Формализация задач — база, вокруг которой строится всё</figcaption>
+              </figure>
+
+              <h2 id="control">2. Контроль выполнения задач и отчёты</h2>
+              <p>
+                Для контроля не обязательно проводить ежедневные дейли — всё должно быть видно по закрытым задачам. Когда мы только
+                начинали проект, наши дейли доходили до 2 часов. От постоянных созвонов сильно устаёшь, а они не дают сконцентрироваться.
+                Все основные участники проекта должны быть вовлечены в том числе в планирование.
+              </p>
+
+              <div class="po-note">
+                <b>На практике</b>
+                <p>Меня, как основного разработчика, ни разу не брали на совещание по планированию развития проекта — такого быть не должно.</p>
+              </div>
+
+              <h2 id="tasks">3. Чёткость постановки задач — путь к успеху</h2>
+              <p>
+                «Без чёткого ТЗ и результат ХЗ». Никогда не нужно пренебрегать подробным описанием задачи, даже если что-то кажется очевидным.
+                В моей практике задачи сводились примерно к таким фразам:
+              </p>
+              <blockquote>
+                «Необходимо реализовать авторизацию пользователей!»<br>
+                — какую авторизацию? С подтверждением или нет? OAUTH? JWT? А может, сначала регистрацию?
+              </blockquote>
+              <p>
+                Чем подробнее раскроешь задачу, тем ближе к эталону будет её реализация. Крупные задачи необходимо декомпозировать.
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Пример декомпозиции</b>
+                <p>Разбиваем задачу «авторизация» на атомарные шаги:</p>
+              </div>
+
+              <!-- CODE BLOCK -->
+              <div class="po-code">
+                <div class="po-code__head">
+                  <span class="po-code__title">auth.js</span>
+                  <button class="po-code__copy" data-copy="authCode">Копировать</button>
+                </div>
+                <pre class="language-javascript"><code id="authCode">// 1. Валидация входящих данных
+function validateCredentials({ email, password }) {
+  if (!email || !password) {
+    throw new Error('Укажите e-mail и пароль');
+  }
+  return { email: email.toLowerCase(), password };
+}
+
+// 2. Поиск пользователя в базе
+const user = await db.findUser({ email });
+
+// 3. Проверка пароля
+const isMatch = await bcrypt.compare(password, user.hash);
+if (!isMatch) throw new Error('Неверный пароль');
+
+// 4. Выпуск токена (JWT или сессия)
+const token = signToken({ id: user.id });
+
+return { user, token };</code></pre>
+              </div>
+
+              <h2 id="quality">4. Фокус на качестве, а не на скорости запуска</h2>
+              <p>
+                Этот тезис изначально ошибочный — всегда нужно ставить на качество продукта и тщательно тестировать функционал перед показом
+                конечному пользователю. Что страдает первым от спешки? Конечно, качество реализации, а затем и доверие пользователей.
+              </p>
+
+              <h2 id="testing">5. Тестирование функционала</h2>
+              <p>
+                Пренебрежение тестированием — второй по негативному влиянию «грех». Всегда нужно проводить несколько циклов тестирования,
+                давать разработчикам время на покрытие кода юнит-тестами. Да, скорость упадёт, но результат будет таким, каким планировали.
+              </p>
+
+              <h2 id="team">6. Универсальность команды</h2>
+              <p>
+                У стартапов ограниченные ресурсы, но и на одном энтузиазме долго не уедешь. Чем больше разрастается проект, тем больше ресурсов
+                он требует. Один человек недолго совмещает и backend, и frontend, и devops, и тимлид — помимо дополнительных обязанностей
+                есть и свои, которые тоже требуют выполнения.
+              </p>
+
+              <figure class="po-figure">
+                <img src="/assets/files/img/startup/6.png" alt="Универсальность команды" loading="lazy">
+                <figcaption>Ресурсы стартапа нужно восполнять по мере роста проекта</figcaption>
+              </figure>
+
+              <!-- INLINE CTA (subtle) -->
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужна команда под свой проект?</h3>
+                  <p>Разберём задачи, предложим архитектуру и соберём разработку под ключ.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="worktime">7. Рабочее время — это работа</h2>
+              <p>
+                Изначально нужно договориться с командой, кто в какое время доступен, и беспокоить только в это время. Я категорично против
+                сверхурочной работы — она даёт лишь одномоментный эффект. При грамотно выстроенном процессе переработок быть не должно.
+              </p>
+              <blockquote>
+                «Слушай, давай поработаешь в выходные и в будни побольше?» — это красный флаг.
+              </blockquote>
+
+              <h2 id="focus">8. Не менять вектор, если план утверждён</h2>
+              <p>
+                Процесс разработки не такой гибкий, как кажется. Если функционал запланирован — не нужно резко менять приоритеты.
+                В моей практике изначальная идея разделилась на три проекта, и по итогу ни один из них так и не был закончен —
+                команда скакала между задачами, а результат размывался.
+              </p>
+
+              <h2 id="conclusion">Заключение</h2>
+              <p>
+                Надеюсь, описанные тезисы помогут избежать тех ошибок, что совершили мы. Главное — документация, тестирование,
+                реалистичные сроки и уважение к команде. Статья будет дополняться.
+              </p>
+
+              <!-- TAGS -->
+              <div class="po-article__tags">
+                <a href="/blog/proektyi/?tag=%D0%9A%D0%B5%D0%B9%D1%81">Кейс</a>
+                <a href="/blog/proektyi/?tag=%D0%A1%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF">Стартап</a>
+                <a href="/blog/proektyi/?tag=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B8">Ошибки</a>
+              </div>
+
+              <!-- SHARE + RATING -->
+              <div class="po-share">
+                <div class="po-share__rating">
+                  <span class="po-share__label">Оцените статью</span>
+                  <div class="po-share__stars">
+                    <button aria-label="1 из 5">★</button>
+                    <button aria-label="2 из 5">★</button>
+                    <button aria-label="3 из 5">★</button>
+                    <button aria-label="4 из 5">★</button>
+                    <button aria-label="5 из 5">★</button>
+                  </div>
+                  <span class="po-share__count">4.7 из 5 · 5 голосов</span>
+                </div>
+                <div class="po-share__actions">
+                  <a href="https://vk.com/share.php?url=/blog/proektyi/240-podxodyi-pri-razrabotke-startapa.html" target="_blank" rel="noopener" class="po-share__btn">VK</a>
+                  <a href="https://t.me/share/url?url=/blog/proektyi/240-podxodyi-pri-razrabotke-startapa.html" target="_blank" rel="noopener" class="po-share__btn">Telegram</a>
+                </div>
+              </div>
+
+              <!-- AUTHOR -->
+              <div class="po-author">
+                <span class="po-author__img">
+                  <img src="/assets/cache_image/assets/useravatar/images/ee9ef9dbb1863c130da78c2b2a735bc3be30ae37_80x80_33b.jpg" alt="Петропавловский Артём" loading="lazy">
+                </span>
+                <div class="po-author__body">
+                  <span class="po-author__role">Автор</span>
+                  <b class="po-author__name">Петропавловский Артём</b>
+                  <p class="po-author__desc">Основатель и ведущий разработчик DART Agency. Пишу о разработке, продажах и процессах в IT.</p>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по статье">
+                <a class="po-pager__btn po-pager__btn--prev" href="/blog/proektyi/">
+                  <span>← Предыдущая</span>
+                  <b>Назад в категорию «Проекты»</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/blog/komponentyi/239-darttelegram-otpravka-zakazov,-form-i-soobshhenij-v-telegram.html">
+                  <span>Следующая →</span>
+                  <b>dartTelegram — отправка заказов в Telegram</b>
+                </a>
+              </nav>
+
+              <!-- COMMENTS -->
+              <section class="po-comments" id="comments">
+                <div class="po-comments__head">
+                  <h2>Комментарии</h2>
+                  <span>3</span>
+                </div>
+
+                <div class="po-comments__list">
+                  <article class="po-cmt">
+                    <span class="po-cmt__avatar">М</span>
+                    <div class="po-cmt__body">
+                      <div class="po-cmt__top">
+                        <b class="po-cmt__name">Максим</b>
+                        <time class="po-cmt__date">07.09.2025</time>
+                      </div>
+                      <p class="po-cmt__text">
+                        Согласен на 100% по поводу документации. Пока не опишешь задачу словами —
+                        не поймёшь, что вообще хочешь получить на выходе. А вот момент про решение без
+                        разработчика очень больной, сам через это проходил.
+                      </p>
+                      <div class="po-cmt__actions">
+                        <button class="po-cmt__reply" data-reply="Максим">Ответить</button>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="po-cmt po-cmt--reply">
+                    <span class="po-cmt__avatar">А</span>
+                    <div class="po-cmt__body">
+                      <div class="po-cmt__top">
+                        <b class="po-cmt__name">Анна</b>
+                        <time class="po-cmt__date">07.09.2025</time>
+                      </div>
+                      <p class="po-cmt__text">
+                        Спасибо за разбор! Взяла себе за правило декомпозировать каждую крупную задачу.
+                        Работать стало проще, и команда перестала «тонуть» в общем описании.
+                      </p>
+                      <div class="po-cmt__actions">
+                        <button class="po-cmt__reply" data-reply="Анна">Ответить</button>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="po-cmt">
+                    <span class="po-cmt__avatar">И</span>
+                    <div class="po-cmt__body">
+                      <div class="po-cmt__top">
+                        <b class="po-cmt__name">Игорь</b>
+                        <time class="po-cmt__date">10.09.2025</time>
+                      </div>
+                      <p class="po-cmt__text">
+                        Отличная статья. Пункт про сверхурочную работу — в точку. Лучше сразу
+                        закладывать реалистичные сроки, чем потом неделями «догонять» проект.
+                      </p>
+                      <div class="po-cmt__actions">
+                        <button class="po-cmt__reply" data-reply="Игорь">Ответить</button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <form class="po-comments__form" data-form>
+                  <div class="dart-row po-comments__row">
+                    <div class="d-col-24 d-col-lg-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                    <div class="d-col-24 d-col-lg-12"><input type="email" name="email" placeholder="Ваш e-mail" required></div>
+                  </div>
+                  <textarea name="message" placeholder="Поделитесь мнением..." rows="4" required></textarea>
+                  <button type="submit" class="dart-btn dart-btn-primary-alt">Отправить комментарий →</button>
+                </form>
+              </section>
+
+            </article>
+
+            <!-- SIDEBAR -->
+            <aside class="d-col-24 d-col-xxl-6 po-side">
+
+              <div class="po-side__cats" data-reveal>
+                <span class="n-kicker">Рубрики</span>
+                <h3 class="po-side__title">Категории блога</h3>
+                <ul class="po-side__list">
+                  <li><a href="/blog/obuchenie/">Обучение</a><span>55</span></li>
+                  <li><a href="/blog/modx/">MODx</a><span>11</span></li>
+                  <li><a href="/blog/marketing/">Маркетинг</a><span>11</span></li>
+                  <li><a href="/blog/komponentyi/">Компоненты</a><span>2</span></li>
+                  <li><a href="/blog/kejsyi/">Кейсы</a><span>2</span></li>
+                  <li><a href="/blog/proektyi/" class="is-active">Проекты</a><span>1</span></li>
+                  <li><a href="/blog/prodvizhenie-sajtov/">Продвижение</a><span>16</span></li>
+                  <li><a href="/blog/optimizacziya/">Оптимизация</a><span>2</span></li>
+                  <li><a href="/blog/kopirajting/">Копирайтинг</a><span>1</span></li>
+                  <li><a href="/blog/dizajn/">Дизайн</a><span>2</span></li>
+                  <li><a href="/blog/integraczii/">Интеграции</a><span>2</span></li>
+                  <li><a href="/blog/servera/">Сервера</a><span>1</span></li>
+                </ul>
+              </div>
+
+              <div class="po-side__block po-side__toc" data-reveal>
+                <span class="n-kicker">Содержание</span>
+                <h3 class="po-side__title">В этой статье</h3>
+                <ol class="po-side__toc-list">
+                  <li><a href="#documentation">Документация</a></li>
+                  <li><a href="#control">Контроль задач</a></li>
+                  <li><a href="#tasks">Постановка задач</a></li>
+                  <li><a href="#quality">Качество продукта</a></li>
+                  <li><a href="#testing">Тестирование</a></li>
+                  <li><a href="#team">Команда</a></li>
+                  <li><a href="#worktime">Рабочее время</a></li>
+                  <li><a href="#focus">Вектор развития</a></li>
+                </ol>
+              </div>
+
+              <div class="po-side__block po-side__recent" data-reveal>
+                <span class="n-kicker">Читают</span>
+                <h3 class="po-side__title">Похожие статьи</h3>
+                <a class="po-side__recent-item" href="/blog/proektyi/240-podxodyi-pri-razrabotke-startapa.html">
+                  <span class="po-side__recent-img"></span>
+                  <div>
+                    <b>Подходы при разработке стартапа</b>
+                    <small>06.09.2025</small>
+                  </div>
+                </a>
+                <a class="po-side__recent-item" href="/blog/komponentyi/239-darttelegram-otpravka-zakazov,-form-i-soobshhenij-v-telegram.html">
+                  <span class="po-side__recent-img"></span>
+                  <div>
+                    <b>dartTelegram — отправка заказов</b>
+                    <small>18.12.2023</small>
+                  </div>
+                </a>
+                <a class="po-side__recent-item" href="/blog/komponentyi/dartlocation.html">
+                  <span class="po-side__recent-img"></span>
+                  <div>
+                    <b>dartLocation</b>
+                    <small>12.09.2022</small>
+                  </div>
+                </a>
+              </div>
+
+              <div class="po-side__block po-side__tags" data-reveal>
+                <span class="n-kicker">Теги</span>
+                <h3 class="po-side__title">Популярные теги</h3>
+                <div class="po-side__tagcloud">
+                  <a href="/blog/proektyi/?tag=%D0%9A%D0%B5%D0%B9%D1%81">Кейс</a>
+                  <a href="/blog/proektyi/?tag=%D0%A1%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF">Стартап</a>
+                  <a href="/blog/proektyi/?tag=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B8">Ошибки</a>
+                  <a href="/blog/proektyi/?tag=MODx+Revo">MODx Revo</a>
+                  <a href="/blog/proektyi/?tag=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82">Компонент</a>
+                  <a href="/blog/proektyi/?tag=%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Обучение</a>
+                </div>
+              </div>
+
+              <!-- NEWSLETTER -->
+              <form class="po-side__news" data-form data-reveal>
+                <span class="n-kicker po-side__news-kicker">Рассылка</span>
+                <h3 class="po-side__news-title">Новые статьи — раз в неделю</h3>
+                <p class="po-side__news-desc">Полезные материалы по разработке и продвижению. Без спама.</p>
+                <input class="po-side__news-input" type="email" name="email" placeholder="Ваш e-mail" required>
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">Подписаться →</button>
+              </form>
+
+              <!-- CTA -->
+              <div class="po-side__cta" data-reveal>
+                <span class="n-kicker">Нужен проект?</span>
+                <h3 class="po-side__cta-title">Разработаем сайт под ключ</h3>
+                <p class="po-side__cta-text">От идеи до запуска. Фиксируем сроки и стоимость в договоре.</p>
+                <button class="dart-btn dart-btn-light dart-btn--full" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- TOC MOBILE -->
+              <div class="po-side__toc-mobile" data-reveal>
+                <button class="po-side__toc-toggle" data-toc-toggle>Содержание статьи <span>▾</span></button>
+                <ol class="po-side__toc-list">
+                  <li><a href="#documentation">Документация</a></li>
+                  <li><a href="#control">Контроль задач</a></li>
+                  <li><a href="#tasks">Постановка задач</a></li>
+                  <li><a href="#quality">Качество продукта</a></li>
+                  <li><a href="#testing">Тестирование</a></li>
+                  <li><a href="#team">Команда</a></li>
+                  <li><a href="#worktime">Рабочее время</a></li>
+                  <li><a href="#focus">Вектор развития</a></li>
+                </ol>
+              </div>
+
+            </aside>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Обсудить проект</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

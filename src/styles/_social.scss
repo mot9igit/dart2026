@@ -1,0 +1,60 @@
+@use 'sass:math';
+@use 'vars' as *;
+
+/* =========================================================
+   SOCIAL LINKS — reusable component
+   Usage: <div class="dart-social [dart-social--light]"> ...
+========================================================= */
+.dart-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    color: rgba(19, 19, 19, 0.7);
+    background: #f1f1f5;
+    border: 1px solid transparent;
+    transition: color 0.25s ease, background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    &:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -12px rgba(19, 19, 19, 0.3);
+    }
+  }
+
+  &__link--max:hover {
+    background: #9500ff;
+  }
+
+  &__link--tg:hover {
+    background: #229ed9;
+  }
+
+  &__link--vk:hover {
+    background: #0077ff;
+  }
+
+  &--light &__link {
+    color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  &--light &__link:hover {
+    color: #fff;
+    box-shadow: 0 10px 24px -12px rgba(0, 0, 0, 0.5);
+  }
+}

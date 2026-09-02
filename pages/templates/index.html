@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- SHOP CATEGORY HERO -->
+      <section class="sh-hero">
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <a href="/pages/templates/index.html">Магазин</a><span>/</span>
+            <b>Сборки MODX Revolution</b>
+          </div>
+
+          <div class="sh-hero__head">
+            <div class="sh-hero__info">
+              <span class="n-kicker">Готовые решения</span>
+              <h1 class="sh-hero__title">Интернет-магазин<br>сборок MODX</h1>
+              <p class="sh-hero__sub">
+                Готовые сайты на «коробке» MODX Revolution. Ставим на ваш сервер, настраиваем
+                и передаём исходники. Запуск — уже через 48 часов.
+              </p>
+            </div>
+            <div class="sh-hero__stats">
+              <div class="sh-hero__stat">
+                <div class="sh-hero__stat-value"><span data-count="400">0</span>+</div>
+                <b class="sh-hero__stat-label">проданных сборок</b>
+              </div>
+              <div class="sh-hero__stat">
+                <div class="sh-hero__stat-value">9</div>
+                <b class="sh-hero__stat-label">лет на рынке</b>
+              </div>
+              <div class="sh-hero__stat">
+                <div class="sh-hero__stat-value"><span data-count="48">0</span> ч</div>
+                <b class="sh-hero__stat-label">до запуска</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOP LAYOUT -->
+      <section class="sh-layout" id="catalog">
+        <div class="dart-container">
+          <div class="sh-layout__inner">
+
+            <!-- SIDEBAR -->
+            <aside class="sh-side" id="shSide">
+              <button class="sh-side__close" data-side-close>&times;</button>
+
+              <div class="sh-side__block">
+                <h3 class="sh-side__title">Тип решения</h3>
+                <div class="sh-side__checks" data-facets="category">
+                  <label class="sh-check"><input type="checkbox" data-ftype="shop"><span>Интернет-магазин</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="blog"><span>Блог</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="corp"><span>Корпоративный</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="service"><span>Онлайн-сервис</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="landing"><span>Лендинг</span></label>
+                </div>
+              </div>
+
+              <div class="sh-side__block">
+                <h3 class="sh-side__title">Цена, ₽</h3>
+                <div class="sh-price">
+                  <label class="sh-price__field">от <input type="number" data-price-min value="0" min="0"><span>₽</span></label>
+                  <label class="sh-price__field">до <input type="number" data-price-max placeholder="∞"><span>₽</span></label>
+                </div>
+              </div>
+
+              <div class="sh-side__block">
+                <h3 class="sh-side__title">Возможности</h3>
+                <div class="sh-side__checks" data-facets="feature">
+                  <label class="sh-check"><input type="checkbox" data-ftype="cart"><span>Корзина и оплата</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="crm"><span>Интеграция 1С / CRM</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="adaptive"><span>Адаптив и SEO</span></label>
+                </div>
+              </div>
+
+              <div class="sh-side__block">
+                <h3 class="sh-side__title">Комплектация</h3>
+                <div class="sh-side__checks" data-facets="pack">
+                  <label class="sh-check"><input type="checkbox" data-ftype="install"><span>Установка под ключ</span></label>
+                  <label class="sh-check"><input type="checkbox" data-ftype="support"><span>Поддержка 3 мес.</span></label>
+                </div>
+              </div>
+
+              <button class="sh-side__reset" id="shReset">Сбросить фильтры ✕</button>
+            </aside>
+            <div class="sh-side__overlay" data-side-close></div>
+
+            <!-- CATALOG MAIN -->
+            <div class="sh-catalog">
+              <!-- Top bar -->
+              <div class="sh-bar">
+                <div class="sh-bar__left">
+                  <button class="sh-bar__filter-btn" data-side-open>Фильтры
+                    <span class="sh-bar__counter" id="shFilterCount" hidden>0</span>
+                  </button>
+                  <span class="sh-bar__count"><b id="shCount">9</b> товаров</span>
+                </div>
+                <div class="sh-bar__right">
+                  <label class="sh-sort">
+                    Сортировка:
+                    <select id="shSort">
+                      <option value="recent">По новизне</option>
+                      <option value="popular">По популярности</option>
+                      <option value="price-asc">Сначала дешевле</option>
+                      <option value="price-desc">Сначала дороже</option>
+                      <option value="name">По алфавиту</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Grid -->
+              <div class="sh-grid" id="shGrid">
+
+                <div class="sh-item" data-category="blog" data-name="VELOTEMKA — блог" data-price="3200" data-sales="48" data-features="adaptive" data-pack="install,support" data-reveal>
+                  <div class="sh-item__media">
+                    <span class="sh-badge sh-badge--new">NEW</span>
+                    <div class="sh-item__img sh-item__img--1"><span>VELOTEMKA</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.9</b> · 48 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">VELOTEMKA — блог на MODX Revo</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">3 200 ₽</b>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="shop" data-name="Vodnik — магазин" data-price="10000" data-sales="9" data-features="cart,adaptive" data-pack="install,support" data-reveal>
+                  <div class="sh-item__media">
+                    <span class="sh-badge sh-badge--new">NEW</span>
+                    <div class="sh-item__img sh-item__img--2"><span>Vodnik</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.8</b> · 9 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">Vodnik — интернет-магазин</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="cart">Корзина</li>
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">10 000 ₽</b>
+                        <s class="sh-item__price-old">13 500 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="shop" data-name="Magazine.ru — магазин" data-price="9000" data-sales="13" data-features="cart,crm,adaptive" data-pack="install,support" data-reveal>
+                  <div class="sh-item__media">
+                    <span class="sh-badge sh-badge--hit">Хит</span>
+                    <div class="sh-item__img sh-item__img--3"><span>Magazine.ru</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.9</b> · 13 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">Интернет-магазин Magazine.ru</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="cart">Корзина</li>
+                      <li data-feature="crm">1С</li>
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">9 000 ₽</b>
+                        <s class="sh-item__price-old">12 000 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="shop" data-name="DARTECOMM — магазин" data-price="6200" data-sales="6" data-features="cart,adaptive" data-pack="install" data-reveal>
+                  <div class="sh-item__media">
+                    <div class="sh-item__img sh-item__img--4"><span>DARTECOMM</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.7</b> · 6 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">DARTECOMM — магазин miniShop2</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="cart">Корзина</li>
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">6 200 ₽</b>
+                        <s class="sh-item__price-old">8 500 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="corp" data-name="DART — корпоративный" data-price="6200" data-sales="5" data-features="adaptive" data-pack="install,support" data-reveal>
+                  <div class="sh-item__media">
+                    <span class="sh-badge sh-badge--hit">Хит</span>
+                    <div class="sh-item__img sh-item__img--5"><span>DART</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.8</b> · 5 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">DART — корпоративный сайт</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">6 200 ₽</b>
+                        <s class="sh-item__price-old">9 900 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="blog" data-name="Bloggify — блог" data-price="3200" data-sales="1" data-features="adaptive" data-pack="install" data-reveal>
+                  <div class="sh-item__media">
+                    <div class="sh-item__img sh-item__img--6"><span>Bloggify</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.6</b> · 1 отзыв</div>
+                    <h3 class="sh-item__title"><a href="#">Bloggify — персональный блог</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">3 200 ₽</b>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="shop" data-name="SHOES — магазин" data-price="6200" data-sales="10" data-features="cart,adaptive" data-pack="install,support" data-reveal>
+                  <div class="sh-item__media">
+                    <div class="sh-item__img sh-item__img--7"><span>SHOES</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.7</b> · 10 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">SHOES — магазин обуви</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="cart">Корзина</li>
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">6 200 ₽</b>
+                        <s class="sh-item__price-old">8 000 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="service" data-name="Автошкола — сервис" data-price="3200" data-sales="2" data-features="adaptive" data-pack="install" data-reveal>
+                  <div class="sh-item__media">
+                    <div class="sh-item__img sh-item__img--8"><span>Автошкола</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.8</b> · 2 отзыва</div>
+                    <h3 class="sh-item__title"><a href="#">Готовый сайт автошколы</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">3 200 ₽</b>
+                        <s class="sh-item__price-old">4 900 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sh-item" data-category="shop" data-name="Logoshopping — магазин" data-price="4200" data-sales="6" data-features="cart,adaptive" data-pack="install" data-reveal>
+                  <div class="sh-item__media">
+                    <div class="sh-item__img sh-item__img--9"><span>Logoshopping</span></div>
+                    <button class="sh-item__fav" data-fav aria-label="В избранное">♥</button>
+                  </div>
+                  <div class="sh-item__body">
+                    <div class="sh-item__rating">★ <b>4.6</b> · 6 отзывов</div>
+                    <h3 class="sh-item__title"><a href="#">Logoshopping — интернет-магазин</a></h3>
+                    <ul class="sh-item__tags">
+                      <li data-feature="cart">Корзина</li>
+                      <li data-feature="adaptive">Адаптив</li>
+                    </ul>
+                    <div class="sh-item__foot">
+                      <div class="sh-item__price">
+                        <b class="sh-item__price-now">4 200 ₽</b>
+                        <s class="sh-item__price-old">6 200 ₽</s>
+                      </div>
+                      <div class="sh-item__cta">
+                        <a class="sh-item__more" href="#" data-more>Подробнее</a>
+                        <a class="sh-item__demo" href="#">Демо</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <p class="sh-empty" id="shEmpty" hidden>По выбранным фильтрам товаров нет — измените параметры.</p>
+
+              <!-- Bottom upsell -->
+              <div class="sh-upsell" data-reveal>
+                <div class="sh-upsell__info">
+                  <h3>Не нашли подходящее решение?</h3>
+                  <p>Соберём сайт под ваши задачи с нуля, посчитаем смету за 24 часа.</p>
+                </div>
+                <button class="dart-btn dart-btn-primary-alt" data-target="question" data-modal-title="Получить смету" data-modal-message="Хочу смету на готовое решение">Получить смету →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY BUY -->
+      <section class="n-section n-section--alt" id="why">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Почему у нас</span>
+              <h2 class="n-section__title">Что вы получаете при покупке</h2>
+            </div>
+          </div>
+          <div class="dart-row st-benefits">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M12 16l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <h3>Установка бесплатно</h3>
+                <p>Ставим решение на ваш хостинг, настраиваем и передаём готовый сайт.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M6 26l6-8 4 4 6-10 4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <h3>Исходники в комплекте</h3>
+                <p>Лицензия на исходный код — сайт полностью ваш, без ограничений.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                <h3>Демо перед покупкой</h3>
+                <p>Посмотрите готовый сайт в действии до оплаты. Демо-доступ по запросу.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg></span>
+                <h3>Гарантия и поддержка</h3>
+                <p>14 дней гарантии и техподдержка по настройке готовой сборки.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLIENTS -->
+      <section class="n-section">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Наши клиенты</span>
+              <h2 class="n-section__title">Нам доверяют</h2>
+            </div>
+          </div>
+          <div class="st-clients">
+            <span>Амкар</span><span>ПАРКЕТГРАНД</span><span>Медресурс</span><span>GNSS</span>
+            <span>bighappy</span><span>Снегоход.Ру</span><span>ПСТМ</span><span>Banditz</span><span>Cruisegid</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner">
+            <span class="n-cta__kicker">Остались вопросы по выбору?</span>
+            <h2 class="n-cta__title">Поможем подобрать готовую сборку<br>или сделаем сайт под ключ</h2>
+            <p class="n-cta__desc">Позвоните или напишите — расскажете о задаче, мы предложим решение за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-target="question">Задать вопрос →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-target="callback">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section n-section--alt" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Остались вопросы?</h2>
+            </div>
+          </div>
+          <div class="n-contacts">
+            <div class="n-contacts__cards">
+              <a href="tel:+79991158355" class="n-contact"><span class="n-contact__icon">📞</span><div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div></a>
+              <a href="mailto:info@dart.agency" class="n-contact"><span class="n-contact__icon">✉️</span><div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div></a>
+              <div class="n-contact"><span class="n-contact__icon">📍</span><div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY BAR -->
+    <div class="sh-sticky" id="shSticky" hidden>
+      <button class="sh-sticky__open" data-side-open>Фильтры</button>
+      <button class="sh-sticky__cta" data-target="question">Подобрать решение</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

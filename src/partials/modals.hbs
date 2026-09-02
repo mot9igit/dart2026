@@ -1,15 +1,102 @@
 <div class="dart-modals">
-  <div class="dart-modal" id="dartModal">
+
+  <!-- Общее / по умолчанию -->
+  <div class="dart-modal" id="dartModal" data-modal-box>
     <div class="dart-modal__overlay" data-modal-close></div>
     <div class="dart-modal__content">
       <button class="dart-modal__close" data-modal-close>&times;</button>
-      <h3 class="dart-modal__title">Заказать звонок</h3>
+      <h3 class="dart-modal__title" data-modal-title>Заказать звонок</h3>
       <p class="dart-modal__desc">Оставьте контакты — мы перезвоним в течение 30 минут</p>
       <form class="dart-modal__form" data-form>
         <input type="text" name="name" placeholder="Как к вам обращаться?" required>
         <input type="tel" name="phone" placeholder="Ваш телефон" required>
         <textarea name="message" placeholder="Когда с вами связаться и по какому поводу?" rows="3"></textarea>
         <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Отправить</button>
+        <p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Заказать звонок -->
+  <div class="dart-modal" id="dartModalCallback" data-modal-box>
+    <div class="dart-modal__overlay" data-modal-close></div>
+    <div class="dart-modal__content">
+      <button class="dart-modal__close" data-modal-close>&times;</button>
+      <h3 class="dart-modal__title" data-modal-title>Заказать звонок</h3>
+      <p class="dart-modal__desc">Оставьте номер — оператор перезвонит в течение 30 минут</p>
+      <form class="dart-modal__form" data-form>
+        <input type="text" name="name" placeholder="Как к вам обращаться?" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Когда с вами удобно связаться?" rows="3"></textarea>
+        <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Перезвоните мне</button>
+        <p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Задать вопрос -->
+  <div class="dart-modal" id="dartModalQuestion" data-modal-box>
+    <div class="dart-modal__overlay" data-modal-close></div>
+    <div class="dart-modal__content">
+      <button class="dart-modal__close" data-modal-close>&times;</button>
+      <h3 class="dart-modal__title" data-modal-title>Задать вопрос</h3>
+      <p class="dart-modal__desc">Напишите вопрос — ответим в течение рабочего дня</p>
+      <form class="dart-modal__form" data-form>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш e-mail" required>
+        <textarea name="message" placeholder="Ваш вопрос" rows="4" required></textarea>
+        <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Отправить вопрос</button>
+        <p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Получить демо -->
+  <div class="dart-modal" id="dartModalDemo" data-modal-box>
+    <div class="dart-modal__overlay" data-modal-close></div>
+    <div class="dart-modal__content">
+      <button class="dart-modal__close" data-modal-close>&times;</button>
+      <h3 class="dart-modal__title" data-modal-title>Получить демо-доступ</h3>
+      <p class="dart-modal__desc">Пришлём ссылку на демо и доступ в админку</p>
+      <form class="dart-modal__form" data-form>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш e-mail" required>
+        <textarea name="message" placeholder="Какое решение хотите посмотреть?" rows="3"></textarea>
+        <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Получить демо</button>
+        <p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Купить / Оформить заказ -->
+  <div class="dart-modal" id="dartModalOrder" data-modal-box>
+    <div class="dart-modal__overlay" data-modal-close></div>
+    <div class="dart-modal__content">
+      <button class="dart-modal__close" data-modal-close>&times;</button>
+      <h3 class="dart-modal__title" data-modal-title>Оформить заказ</h3>
+      <p class="dart-modal__desc">Оставьте контакты — менеджер подтвердит заказ и выставит счёт</p>
+      <form class="dart-modal__form" data-form>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Что хотите заказать?" rows="3"></textarea>
+        <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Оформить заказ</button>
+        <p class="dart-modal__hint">Оплата любым способом: картой, наличными или по реквизитам для юр. лиц</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Оставить отзыв -->
+  <div class="dart-modal" id="dartModalReview" data-modal-box>
+    <div class="dart-modal__overlay" data-modal-close></div>
+    <div class="dart-modal__content">
+      <button class="dart-modal__close" data-modal-close>&times;</button>
+      <h3 class="dart-modal__title" data-modal-title>Оставить отзыв</h3>
+      <p class="dart-modal__desc">Поделитесь впечатлениями о решении</p>
+      <form class="dart-modal__form" data-form>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш e-mail" required>
+        <textarea name="message" placeholder="Ваш отзыв" rows="4" required></textarea>
+        <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Отправить отзыв</button>
         <p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
       </form>
     </div>

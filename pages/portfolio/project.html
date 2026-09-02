@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <a href="/pages/portfolio/index.html">Портфолио</a><span>/</span>
+            <b>ПСТМ — корпоративный портал</b>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Корпоративный портал</span>
+              <h1 class="pj-hero__title" data-reveal>ПСТМ — портал производителя<br><span>под ключ</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                От постановки задачи до запуска: как мы спроектировали и разработали корпоративный портал
+                для компании по производству металлоконструкций, интегрировали с 1С и вывели в топ поиска.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Корпоративный портал</a>
+                <a href="/pages/portfolio/index.html">Разработка</a>
+                <a href="/pages/portfolio/index.html">Интеграция 1С</a>
+                <a href="/pages/portfolio/index.html">SEO</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>45</b><span>дней на запуск</span></div>
+                <div class="pj-fact__item"><b>3.2×</b><span>рост заявок с сайта</span></div>
+                <div class="pj-fact__item"><b>-50%</b><span>нагрузки на менеджеров</span></div>
+                <div class="pj-fact__item"><b>ТОП-5</b><span>в поиске по отрасли</span></div>
+                <div class="pj-fact__item"><b>1С</b><span>интеграция каталога</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>ПСТМ</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Производство металлоконструкций</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Корпоративный портал + каталог</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, на поддержке</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <div class="dart-row po-main__row">
+            <article class="d-col d-col-xxl-18 po-article">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>pstm.example.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница портала после запуска</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                ПСТМ — завод по производству металлоконструкций и профнастила. К нам пришли с типовой,
+                но непростой задачей: старый сайт не продавал, каталог обновлялся вручную раз в полгода,
+                а заявки терялись. Рассказываю, как мы подошли к проекту — от брифа до поддержки.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                На старте у клиента был сайт-витрина на устаревшей CMS: без адаптива, с неработающим калькулятором
+                и каталогом, который обновлял один инженер «по вечерам». Конкуренты уже обгоняли его в поиске,
+                а менеджеры обрабатывали заявки вручную из почты и мессенджеров.
+              </p>
+              <p>Сформулировали три ключевые цели:</p>
+              <ul>
+                <li><b>Продающий каталог</b> — автоматическая выгрузка товаров и цен из 1С, удобные фильтры и карточки.</li>
+                <li><b>Заявки без потерь</b> — формы обратной связи с отправкой в CRM и Telegram, уведомления менеджерам.</li>
+                <li><b>Рост в поиске</b> — SEO-оптимизация структуры и текстов с первого дня разработки.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Каталог насчитывал более 2 000 позиций с разными ценовыми политиками для опта и розницы — вручную это не вести. Интеграция с 1С стала обязательным условием.</p>
+              </div>
+
+              <!-- SCREENSHOT: structure w/ sidebar -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>pstm.example.ru/catalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог с фильтрами и сеткой карточек</span>
+              </div>
+
+              <h2 id="structure">2. Структура и прототип</h2>
+              <p>
+                Начали с прототипирования: собрали структуру сайта, разложили по важности сценарии пользователей
+                («застройщик», «оптовый покупатель», «частный клиент») и согласовали путь заявки. Всё зафиксировали
+                в документе, чтобы команда и клиент говорили на одном языке.
+              </p>
+              <ul>
+                <li>Главная — о компании, преимуществах и ключевых продуктах.</li>
+                <li>Каталог — до 3 уровней вложенности, фильтры, сравнение, избранное.</li>
+                <li>Калькулятор — примерный расчёт стоимости конструкции по параметрам.</li>
+                <li>Проекты и отзывы — кейсы для убеждения на этапе выбора.</li>
+                <li>Блог и новости — база для SEO-продвижения.</li>
+              </ul>
+
+              <h2 id="tech">3. Стек и реализация</h2>
+              <p>
+                В качестве платформы выбрали <b>MODX Revolution</b>: гибкая архитектура под сложный каталог, удобная
+                админ-панель для заказчика и возможность точечной оптимизации под производительность.
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>MODX Revolution · PHP · MySQL · JQuery + собственные компоненты · REST API для 1С · адаптивная вёрстка</p>
+              </div>
+
+              <p>Пример логики интеграции каталога из 1С — компонент выгрузки по REST:</p>
+
+              <!-- CODE BLOCK -->
+              <div class="po-code">
+                <div class="po-code__head">
+                  <span class="po-code__title">catalogSync.php</span>
+                  <button class="po-code__copy" data-copy="syncCode">Копировать</button>
+                </div>
+                <pre class="language-php"><code id="syncCode">&lt;?php
+// Получаем обновлённые позиции из 1С по REST
+$response = file_get_contents('https://1c.pstm.ru/hs/export/catalog', [
+    'http' => [
+        'header' =&gt;
+            "Authorization: Basic " . base64_encode($login . ':' . $pass) . "
+            Content-Type: application/json",
+        'timeout' =&gt; 30,
+    ],
+]);
+
+$items = json_decode($response, true);
+
+foreach ($items as $item) {
+    // Обновляем товар или создаём новый в MODX
+    $res = $modx-&gt;runProcessor('resource/update', [
+        'id'       =&gt; $map[$item['sku']] ?? 0,
+        'pagetitle' =&gt; $item['name'],
+        'price'    =&gt; (int)$item['price_opt'] ?? (int)$item['price'],
+    ]);
+}
+
+$modx-&gt;log(xPDO::LOG_LEVEL_INFO, "Catalog synced: " . count($items));</code></pre>
+              </div>
+
+              <p>
+                Такой подход позволил держать цены актуальными во всём каталоге: инженер в 1С меняет цену один раз,
+                и она автоматически появляется на сайте. Синхронизация запускается по расписанию, а при ошибке
+                менеджер получает уведомление в Telegram.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>pstm.example.ru/product/profnastil-c8</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка товара с блоком «Заказать расчёт»</span>
+              </div>
+
+              <h2 id="cta">4. Формы и работа с заявками</h2>
+              <p>
+                Любая форма на сайте — от «Заказать звонок» до «Рассчитать стоимость» — уходит сразу в три места:
+                в CRM, на почту и в Telegram-бот менеджера. Порядок задач из чата автоматически закрывается
+                после звонка клиенту, поэтому ни одна заявка не теряется.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Хотите такой же результат?</h3>
+                  <p>Разберём задачу, предложим архитектуру и соберём проект под ключ.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="design">5. Дизайн и фирменный стиль</h2>
+              <p>
+                Отталкивались от индустрии: строгие цвета, крупные модули, честные фотографии продукции.
+                Отрисовали адаптивный дизайн, уделив особое внимание мобильной версии — больше половины заявок
+                приходят именно со смартфонов.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Мобильная версия — 60% заявок с телефона</span>
+              </div>
+
+              <h2 id="seo">6. SEO и запуск</h2>
+              <p>
+                SEO закладывали на этапе структуры: семантическое ядро, ЧПУ-адреса, микроразметка Schema.org,
+                мета-теги и адаптив. После запуска — выгрузка в поисковые системы и точечные доработки
+                по результатам аудита. Через 6 месяцев портал вышел в топ-5 по коммерческим запросам отрасли.
+              </p>
+
+              <h2 id="results">7. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="3.2">0</b><span>× рост заявок</span></div>
+                <div class="pj-result"><b data-count="45">0</b><span>дней от брифа до запуска</span></div>
+                <div class="pj-result"><b data-count="2000" data-suffix="+">0</b><span>позиций в каталоге</span></div>
+                <div class="pj-result"><b data-count="100" data-suffix="%">0</b><span>заявок без потерь</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>менеджеры перестали тратить время на обновление каталога вручную;</li>
+                <li>заявки больше не теряются — всё в CRM и в Telegram;</li>
+                <li>портал стабильно приводит органический трафик из поиска;</li>
+                <li>мобильная версия дала резкий рост заявок со смартфонов.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект сдан «под ключ» и переведён на ежемесячную техподдержку: обновления, доработки, развитие каталога и бесперебойная работа под нагрузкой.</p>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/index.html">
+                  <span>← Назад</span>
+                  <b>Вернуться в портфолио</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+
+            <!-- SIDEBAR -->
+            <aside class="d-col-24 d-col-xxl-6 po-side">
+
+              <div class="po-side__block po-side__toc" data-reveal>
+                <span class="n-kicker">Кейс</span>
+                <h3 class="po-side__title">Содержание</h3>
+                <ol class="po-side__toc-list">
+                  <li><a href="#task">Задача</a></li>
+                  <li><a href="#structure">Структура</a></li>
+                  <li><a href="#tech">Стек и реализация</a></li>
+                  <li><a href="#cta">Формы и заявки</a></li>
+                  <li><a href="#design">Дизайн</a></li>
+                  <li><a href="#seo">SEO и запуск</a></li>
+                  <li><a href="#results">Результаты</a></li>
+                </ol>
+              </div>
+
+              <div class="po-side__block po-side__tech" data-reveal>
+                <span class="n-kicker">Стек проекта</span>
+                <h3 class="po-side__title">Использовали</h3>
+                <div class="po-side__tagcloud">
+                  <a>MODX Revolution</a>
+                  <a>PHP</a>
+                  <a>MySQL</a>
+                  <a>jQuery</a>
+                  <a>REST API</a>
+                  <a>1С</a>
+                  <a>Адаптивная вёрстка</a>
+                  <a>Schema.org</a>
+                </div>
+              </div>
+
+              <div class="po-side__block po-side__similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h3 class="po-side__title">Похожие кейсы</h3>
+                <a class="po-side__recent-item" href="/pages/portfolio/project.html">
+                  <span class="po-side__recent-img"></span>
+                  <div><b>Медресурс Пермь</b><small>Сайт-каталог</small></div>
+                </a>
+                <a class="po-side__recent-item" href="/pages/portfolio/project.html">
+                  <span class="po-side__recent-img"></span>
+                  <div><b>Снегоход.Ру</b><small>Интернет-магазин</small></div>
+                </a>
+                <a class="po-side__recent-item" href="/pages/portfolio/project.html">
+                  <span class="po-side__recent-img"></span>
+                  <div><b>ПАРКЕТГРАНД</b><small>Сайт-визитка</small></div>
+                </a>
+              </div>
+
+              <div class="po-side__cta" data-reveal>
+                <span class="n-kicker">Нужен проект?</span>
+                <h3 class="po-side__cta-title">Разработаем сайт под ключ</h3>
+                <p class="po-side__cta-text">От идеи до запуска. Фиксируем сроки и стоимость в договоре.</p>
+                <button class="dart-btn dart-btn-light dart-btn--full" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- TOC MOBILE -->
+              <div class="po-side__toc-mobile" data-reveal>
+                <button class="po-side__toc-toggle" data-toc-toggle>Содержание кейса <span>▾</span></button>
+                <ol class="po-side__toc-list">
+                  <li><a href="#task">Задача</a></li>
+                  <li><a href="#structure">Структура</a></li>
+                  <li><a href="#tech">Стек и реализация</a></li>
+                  <li><a href="#cta">Формы и заявки</a></li>
+                  <li><a href="#design">Дизайн</a></li>
+                  <li><a href="#seo">SEO и запуск</a></li>
+                  <li><a href="#results">Результаты</a></li>
+                </ol>
+              </div>
+
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

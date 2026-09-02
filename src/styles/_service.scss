@@ -22,10 +22,7 @@
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 56px;
-    align-items: start;
+    align-items: center;
   }
 
   &__title {
@@ -120,15 +117,10 @@
     padding: 140px 0 60px;
 
     &__title { font-size: 50px; }
-    &__grid { gap: 40px; }
   }
 
   @media (max-width: $tablets) {
     padding: 130px 0 50px;
-
-    &__grid {
-      grid-template-columns: 1fr;
-    }
 
     &__title { font-size: 40px; }
   }
@@ -259,6 +251,164 @@
 }
 
 /* =========================================================
+   SERVICES LIST (summary page)
+========================================================= */
+.sv-service {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 34px 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(255, 0, 15, 0.08);
+    color: var(--dart-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(19, 19, 19, 0.45);
+    background: #f0f0f2;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dart-dark);
+    margin-bottom: 10px;
+    padding-right: 90px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--dart-gray);
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      position: relative;
+      padding-left: 26px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: rgba(19, 19, 19, 0.8);
+
+      &::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: rgba(48, 214, 114, 0.14);
+        color: #20b15c;
+        font-size: 11px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__foot {
+    margin-top: auto;
+    padding-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-top: 1px solid #f0f0f2;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+
+    b {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--dart-dark);
+      white-space: nowrap;
+    }
+
+    span {
+      font-size: 13px;
+      color: var(--dart-gray);
+    }
+  }
+
+  &--dark {
+    background: var(--dart-dark);
+    border-color: transparent;
+
+    .sv-service__tag {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .sv-service__title {
+      color: #fff;
+    }
+
+    .sv-service__text {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .sv-service__list li {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .sv-service__foot {
+      border-top-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .sv-service__price b {
+      color: #fff;
+    }
+
+    .sv-service__price span {
+      color: rgba(255, 255, 255, 0.55);
+    }
+  }
+}
+
+/* =========================================================
    STICKY SUB NAV
 ========================================================= */
 .sv-nav {
@@ -334,15 +484,13 @@
    PRICING
 ========================================================= */
 .sv-pricing {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
 }
 
 .sv-price {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
   background: #fff;
   border: 1px solid #eee;
   border-radius: 20px;
@@ -483,14 +631,12 @@
    ADD-ONS
 ========================================================= */
 .sv-addons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
 }
 
 .sv-addon {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background: #fff;
   border-radius: 18px;
   padding: 28px 24px;
@@ -560,13 +706,11 @@
    SCOPE
 ========================================================= */
 .sv-scope {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
   max-width: 1050px;
 }
 
 .sv-scope__col {
+  height: 100%;
   background: #fff;
   border: 1px solid #eee;
   border-radius: 20px;
@@ -631,6 +775,17 @@
       border-radius: 50%;
       background: var(--dart-red);
     }
+
+    a {
+      color: var(--dart-red);
+      font-weight: 600;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.75;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -650,24 +805,10 @@
 }
 
 /* =========================================================
-   PORTFOLIO
-========================================================= */
-.sv-portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-/* =========================================================
    BENEFITS
 ========================================================= */
-.sv-benefits {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
 .sv-benefit {
+  height: 100%;
   background: #fff;
   border: 1px solid #eee;
   border-radius: 20px;
@@ -708,13 +849,8 @@
 /* =========================================================
    WHY
 ========================================================= */
-.sv-why {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
 .sv-why__item {
+  height: 100%;
   border-radius: 20px;
   background: #f7f7fa;
   padding: 30px 26px;
@@ -830,6 +966,17 @@
       font-size: 15px;
       line-height: 1.65;
       color: var(--dart-gray);
+
+      a {
+        color: var(--dart-red);
+        font-weight: 600;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.75;
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -907,27 +1054,7 @@ body.dart-menu-open .sv-sticky-cta {
 /* =========================================================
    RESPONSIVE
 ========================================================= */
-@media (max-width: $desktop) {
-  .sv-pricing,
-  .sv-addons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sv-why {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: $tablets) {
-  .sv-benefits {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sv-scope,
-  .sv-portfolio {
-    grid-template-columns: 1fr;
-  }
-
   .sv-scope {
     max-width: 640px;
     margin: 0 auto;
@@ -939,13 +1066,6 @@ body.dart-menu-open .sv-sticky-cta {
 }
 
 @media (max-width: $big-phones) {
-  .sv-pricing,
-  .sv-addons,
-  .sv-benefits,
-  .sv-why {
-    grid-template-columns: 1fr;
-  }
-
   .sv-scope__list {
     grid-template-columns: 1fr;
   }

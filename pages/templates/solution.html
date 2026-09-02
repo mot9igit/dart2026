@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- BREADCRUMBS -->
+      <div class="sl-crumbs">
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <a href="/pages/templates/index.html">Магазин</a><span>/</span>
+            <a href="/pages/templates/index.html">Сборки MODX Revolution</a><span>/</span>
+            <b>Магазин Magazine.ru</b>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT -->
+      <section class="sl-product">
+        <div class="dart-container">
+          <div class="sl-product__inner">
+
+            <!-- GALLERY -->
+            <div class="sl-gallery">
+              <div class="sl-gallery__main">
+                <div class="sl-badge sl-badge--hit">Хит продаж</div>
+                <div class="sl-badge sl-badge--new">NEW</div>
+                <div class="sl-gallery__stage sl-gallery__stage--1">
+                  <span>Magazine.ru</span>
+                  <div class="sl-gallery__fade"></div>
+                </div>
+              </div>
+              <div class="sl-gallery__thumbs">
+                <div class="sl-thumb is-active"><div class="sl-gallery__stage--thumb1"></div><span>Главная</span></div>
+                <div class="sl-thumb"><div class="sl-gallery__stage--thumb2"></div><span>Каталог</span></div>
+                <div class="sl-thumb"><div class="sl-gallery__stage--thumb3"></div><span>Товар</span></div>
+                <div class="sl-thumb"><div class="sl-gallery__stage--thumb4"></div><span>Корзина</span></div>
+              </div>
+            </div>
+
+            <!-- INFO -->
+            <div class="sl-info">
+              <h1 class="sl-info__title">Готовый интернет-магазин<br>"Magazine.ru"</h1>
+              <p class="sl-info__slogan">Универсальный магазин на MODX Revolution + miniShop2</p>
+
+              <div class="sl-info__meta">
+                <span class="sl-info__rate">★ <b>4.9</b> · 13 отзывов</span>
+                <span class="sl-info__sales">13 продаж</span>
+                <span class="sl-info__stock">В наличии</span>
+              </div>
+
+              <div class="sl-price">
+                <b class="sl-price__now">9 000 ₽</b>
+                <s class="sl-price__old">12 000 ₽</s>
+                <span class="sl-price__save">−25%</span>
+              </div>
+
+              <ul class="sl-info__bullets">
+                <li><span>✓</span>Сборка под ключ с установкой на хостинг — бесплатно</li>
+                <li><span>✓</span>Лицензия и исходники — сайт полностью ваш</li>
+                <li><span>✓</span>Бесплатная гарантия 14 дней и правки багов</li>
+                <li><span>✓</span>Демо-доступ в админку перед покупкой</li>
+              </ul>
+
+              <div class="sl-info__actions">
+                <button class="sl-btn sl-btn--buy" data-target="order" data-modal-title="Оформить заказ" data-modal-message="Хочу купить: Magazine.ru (9 000 ₽)">Купить со скидкой</button>
+                <a class="sl-btn sl-btn--ghost" href="/demo.html?id=198">Смотреть демо</a>
+                <button class="sl-btn sl-btn--question" data-target="question" data-modal-title="Вопрос по товару" data-modal-message="Вопрос по: Magazine.ru">Задать вопрос</button>
+              </div>
+              <p class="sl-info__hint">Оплата любым удобным способом. Счёт для юр. лиц. Нал. / картой / по реквизитам.</p>
+            </div>
+
+            <!-- BUY BOX (sticky sidebar) -->
+            <aside class="sl-buy" id="slBuy">
+              <div class="sl-buy__img sl-gallery__stage--1"></div>
+              <div class="sl-buy__head">
+                <h3 class="sl-buy__title">Магазин Magazine.ru</h3>
+                <span class="sl-info__stock">В наличии</span>
+              </div>
+              <div class="sl-buy__price">
+                <b class="sl-price__now">9 000 ₽</b>
+                <s class="sl-price__old">12 000 ₽</s>
+              </div>
+              <div class="sl-buy__actions">
+                <button class="dart-btn dart-btn-primary dart-btn-rounded" data-target="order" data-modal-title="Оформить заказ" data-modal-message="Хочу купить: Magazine.ru (9 000 ₽)">Купить</button>
+                <button class="sl-btn sl-btn--ghost" data-target="demo">Получить демо</button>
+              </div>
+              <div class="sl-buy__garant">
+                <ul>
+                  <li><span>✓</span>Установка бесплатно</li>
+                  <li><span>✓</span>Исходники в комплекте</li>
+                  <li><span>✓</span>Гарантия 14 дней</li>
+                </ul>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- BODY + SIDEBAR -->
+      <section class="sl-body">
+        <div class="dart-container">
+          <div class="sl-body__inner">
+
+            <!-- MAIN COLUMN -->
+            <div class="sl-content">
+
+              <!-- TABS -->
+              <div class="sl-tabs" id="slTabs">
+                <button class="sl-tab is-active" data-tab="overview">Обзор</button>
+                <button class="sl-tab" data-tab="features">Особенности</button>
+                <button class="sl-tab" data-tab="specs">Характеристики</button>
+                <button class="sl-tab" data-tab="reviews">Отзывы <i>13</i></button>
+                <button class="sl-tab" data-tab="faq">Вопросы <i>2</i></button>
+              </div>
+
+              <!-- OVERVIEW -->
+              <div class="sl-pane is-active" data-pane="overview">
+                <h2 class="sl-h2">Сборка универсального интернет-магазина</h2>
+                <p class="sl-p">
+                  Готовый интернет-магазин "Magazine.ru" реализован на платформе <b>MODX Revolution</b>,
+                  торговый функционал работает на компоненте <b>miniShop2</b> с шаблонизатором <b>Fenom</b>.
+                  Сборка полностью готова к наполнению и SEO-продвижению — принцип «наполни и продавай».
+                </p>
+
+                <div class="sl-featuregrid">
+                  <div class="sl-feature">
+                    <span class="sl-feature__num">01</span>
+                    <h3>Каталог товаров</h3>
+                    <p>Гибкая структура категорий и товаров, карточки с ценами и остатками.</p>
+                  </div>
+                  <div class="sl-feature">
+                    <span class="sl-feature__num">02</span>
+                    <h3>AJAX-фильтры</h3>
+                    <p>Мгновенная фильтрация каталога без перезагрузки страницы.</p>
+                  </div>
+                  <div class="sl-feature">
+                    <span class="sl-feature__num">03</span>
+                    <h3>SEO-фильтры</h3>
+                    <p>Автогенерация страниц под коммерческие запросы для продвижения.</p>
+                  </div>
+                  <div class="sl-feature">
+                    <span class="sl-feature__num">04</span>
+                    <h3>Сравнение товаров</h3>
+                    <p>Удобное сравнение характеристик выбранных позиций.</p>
+                  </div>
+                  <div class="sl-feature">
+                    <span class="sl-feature__num">05</span>
+                    <h3>Покупка в 1 клик</h3>
+                    <p>Быстрый заказ без оформления — по телефону или e-mail.</p>
+                  </div>
+                  <div class="sl-feature">
+                    <span class="sl-feature__num">06</span>
+                    <h3>Личный кабинет</h3>
+                    <p>История заказов и статусы для покупателей вашего магазина.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FEATURES -->
+              <div class="sl-pane" data-pane="features">
+                <div class="sl-block">
+                  <span class="sl-block__ico">🎯</span>
+                  <h3>Полностью готов для наполнения</h3>
+                  <p>Чтобы запустить магазин, останется наполнить его товарами и разместить информацию на нужных страницах. Всё остальное уже настроено и проверено.</p>
+                </div>
+                <div class="sl-block">
+                  <span class="sl-block__ico">🚀</span>
+                  <h3>Подготовленная основа для продвижения</h3>
+                  <ul class="sl-list">
+                    <li>Мета-теги для каждой страницы</li>
+                    <li>Микроразметка schema.org</li>
+                    <li>Автогенерация страниц на основе фильтров</li>
+                    <li>Базовая SEO-оптимизация для быстрой индексации</li>
+                  </ul>
+                </div>
+                <div class="sl-block">
+                  <span class="sl-block__ico">📥</span>
+                  <h3>Импорт/экспорт товаров Excel</h3>
+                  <p>Быстрое наполнение каталога через Excel (платный компонент modstore.pro). Платформа также поддерживает интеграцию с 1С.</p>
+                </div>
+                <div class="sl-block">
+                  <span class="sl-block__ico">🛒</span>
+                  <h3>Удобное управление заказами</h3>
+                  <p>Никогда не пропустите заявку: интеграция с CRM (Bitrix24, AmoCRM, RetailCRM), СМС-информирование о заказе.</p>
+                </div>
+                <div class="sl-block">
+                  <span class="sl-block__ico">🌍</span>
+                  <h3>Универсальность</h3>
+                  <p>Шаблон подходит для любых типов товаров и работает с любыми регионами. Берём на себя регистрацию хостинга и домена на реквизиты заказчика.</p>
+                </div>
+              </div>
+
+              <!-- SPECS -->
+              <div class="sl-pane" data-pane="specs">
+                <table class="sl-specs">
+                  <tbody>
+                    <tr><td>Платформа</td><td>MODX Revolution</td></tr>
+                    <tr><td>Торговый компонент</td><td>miniShop2</td></tr>
+                    <tr><td>Шаблонизатор</td><td>Fenom</td></tr>
+                    <tr><td>Тип шаблона</td><td>Интернет-магазин</td></tr>
+                    <tr><td>Тематика</td><td>Бизнес, универсальный</td></tr>
+                    <tr><td>Адаптивность</td><td>Да (Bootstrap 4)</td></tr>
+                    <tr><td>Лицензия</td><td>Бессрочная, без ограничений по доменам</td></tr>
+                    <tr><td>Установка на хостинг</td><td>Бесплатно</td></tr>
+                    <tr><td>Гарантия</td><td>14 дней (устранение багов бесплатно)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- REVIEWS -->
+              <div class="sl-pane" data-pane="reviews">
+                <div class="sl-ratingbox">
+                  <div class="sl-ratingbox__score"><b>4.9</b><span class="sl-info__rate">★★★★★</span><small>основано на 13 отзывах</small></div>
+                  <button class="sl-btn sl-btn--buy-small" data-target="review">Оставить отзыв</button>
+                </div>
+                <div class="sl-review">
+                  <div class="sl-review__head">
+                    <span class="sl-avatar">ПА</span>
+                    <div><b>Петропавловский Артем</b><small>09 июля 2019, 12:49</small></div>
+                    <span class="sl-review__stars">★★★★★</span>
+                  </div>
+                  <p>Отличный шаблон для быстрого старта! За пару дней настроили и наполнили магазин.</p>
+                </div>
+                <div class="sl-review">
+                  <div class="sl-review__head">
+                    <span class="sl-avatar">ИВ</span>
+                    <div><b>Ирина В.</b><small>21 ноября 2020, 18:22</small></div>
+                    <span class="sl-review__stars">★★★★★</span>
+                  </div>
+                  <p>Понравилась интеграция с 1С и удобный импорт из Excel. Всё работает стабильно.</p>
+                </div>
+              </div>
+
+              <!-- FAQ -->
+              <div class="sl-pane" data-pane="faq">
+                <div class="sl-qa">
+                  <div class="sl-qa__q">
+                    <span class="sl-avatar sl-avatar--alt">AR</span>
+                    <div>
+                      <b>Artem</b> · 18 мая 2020
+                      <p>Здравствуйте, как можно ускорить данный шаблон? На телефоне медленная загрузка…</p>
+                    </div>
+                  </div>
+                  <div class="sl-qa__a">
+                    <span class="sl-avatar sl-avatar--brand">DA</span>
+                    <div>
+                      <b>Dart Agency</b>
+                      <p>Ускорение — отдельная услуга. В основном зависит от настроек сервера, на котором работает сайт. Установка и оптимизация сервера подобрана под вашу нагрузку.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sl-qa">
+                  <div class="sl-qa__q">
+                    <span class="sl-avatar">ПА</span>
+                    <div>
+                      <b>Петропавловский Артем</b> · 09 июля 2019
+                      <p>Как его установить?</p>
+                    </div>
+                  </div>
+                  <div class="sl-qa__a">
+                    <span class="sl-avatar sl-avatar--brand">DA</span>
+                    <div>
+                      <b>Dart Agency</b>
+                      <p>Вы можете установить самостоятельно по инструкции или поручить это нашим специалистам — установка на ваш хостинг бесплатна.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="sl-btn sl-btn--question sl-qa__ask" data-target="question" data-modal-title="Вопрос по товару" data-modal-message="Вопрос по: Magazine.ru">Задать свой вопрос</button>
+              </div>
+            </div>
+
+            <!-- SIDEBAR (sticky support) -->
+            <aside class="sl-side">
+              <div class="sl-side__support">
+                <span class="n-kicker">Нужна помощь с выбором?</span>
+                <h3>Позвоните или напишите</h3>
+                <p>Подберём решение, бесплатно установим и настроим под ваши задачи.</p>
+                <a href="tel:+79991158355" class="sl-side__phone">+7 (999) 115-83-55</a>
+                <a href="mailto:info@dart.agency" class="sl-side__mail">info@dart.agency</a>
+                <button class="dart-btn dart-btn-primary dart-btn-rounded" data-target="question">Задать вопрос</button>
+              </div>
+
+              <div class="sl-side__features">
+                <h3>Почему покупают у нас</h3>
+                <ul>
+                  <li><span>✓</span>Установка и исходники</li>
+                  <li><span>✓</span>Демо перед оплатой</li>
+                  <li><span>✓</span>Гарантия 14 дней</li>
+                  <li><span>✓</span>Правки багов бесплатно</li>
+                  <li><span>✓</span>Помощь с хостингом и доменом</li>
+                </ul>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- GUARANTEES -->
+      <section class="n-section n-section--alt" id="why">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Гарантии</span>
+              <h2 class="n-section__title">Прозрачная покупка без скрытых плат</h2>
+            </div>
+          </div>
+          <div class="dart-row st-benefits">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg></span>
+                <h3>14 дней гарантии</h3>
+                <p>Выявленные баги и недочёты устраним бесплатно в рамках гарантийного срока.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                <h3>Без скрытых комиссий</h3>
+                <p>Вы платите только за сборку и, при желании, доп. услуги установки и настройки.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M12 16l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <h3>Помощь с хостингом</h3>
+                <p>Подберём хостинг под технюансы и зарегистрируем домен на ваши реквизиты.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="st-benefit">
+                <span class="st-benefit__icon"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M4 6h24v16H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 26h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                <h3>Поддержка после покупки</h3>
+                <p>Платные консультации по развитию и тариф техподдержки, наполнения и доработок.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED -->
+      <section class="n-section">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Похожие</span>
+              <h2 class="n-section__title">Вам может подойти</h2>
+            </div>
+            <a href="/pages/templates/index.html" class="dart-btn dart-btn-secondary dart-btn-rounded">Весь каталог →</a>
+          </div>
+          <div class="sh-grid sl-related">
+            <div class="sh-item" data-category="shop" data-name="Vodnik" data-price="10000" data-sales="9">
+              <div class="sh-item__media"><span class="sh-badge sh-badge--new">NEW</span><div class="sh-item__img sh-item__img--2"><span>Vodnik</span></div></div>
+              <div class="sh-item__body">
+                <div class="sh-item__rating">★ <b>4.8</b> · 9 отзывов</div>
+                <h3 class="sh-item__title"><a href="#">Vodnik — интернет-магазин</a></h3>
+                <div class="sh-item__foot">
+                  <div class="sh-item__price"><b class="sh-item__price-now">10 000 ₽</b></div>
+                  <div class="sh-item__cta">
+                    <a class="sh-item__more" href="/pages/templates/solution.html">Подробнее</a>
+                    <a class="sh-item__demo" href="#">Демо</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sh-item" data-category="shop" data-name="DARTECOMM" data-price="6200" data-sales="6">
+              <div class="sh-item__media"><div class="sh-item__img sh-item__img--4"><span>DARTECOMM</span></div></div>
+              <div class="sh-item__body">
+                <div class="sh-item__rating">★ <b>4.7</b> · 6 отзывов</div>
+                <h3 class="sh-item__title"><a href="#">DARTECOMM — магазин miniShop2</a></h3>
+                <div class="sh-item__foot">
+                  <div class="sh-item__price"><b class="sh-item__price-now">6 200 ₽</b></div>
+                  <div class="sh-item__cta">
+                    <a class="sh-item__more" href="/pages/templates/solution.html">Подробнее</a>
+                    <a class="sh-item__demo" href="#">Демо</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sh-item" data-category="corp" data-name="DART" data-price="6200" data-sales="5">
+              <div class="sh-item__media"><span class="sh-badge sh-badge--hit">Хит</span><div class="sh-item__img sh-item__img--5"><span>DART</span></div></div>
+              <div class="sh-item__body">
+                <div class="sh-item__rating">★ <b>4.8</b> · 5 отзывов</div>
+                <h3 class="sh-item__title"><a href="#">DART — корпоративный сайт</a></h3>
+                <div class="sh-item__foot">
+                  <div class="sh-item__price"><b class="sh-item__price-now">6 200 ₽</b></div>
+                  <div class="sh-item__cta">
+                    <a class="sh-item__more" href="/pages/templates/solution.html">Подробнее</a>
+                    <a class="sh-item__demo" href="#">Демо</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner">
+            <span class="n-cta__kicker">Нужна помощь с выбором или установкой?</span>
+            <h2 class="n-cta__title">Запустим ваш магазин<br>уже через 48 часов</h2>
+            <p class="n-cta__desc">Напишите — бесплатно установим сборку, поможем с хостингом и наполнением.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-target="order" data-modal-title="Оформить заказ" data-modal-message="Хочу купить: Magazine.ru (9 000 ₽)">Купить со скидкой →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-target="callback">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section n-section--alt" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Остались вопросы?</h2>
+            </div>
+          </div>
+          <div class="n-contacts">
+            <div class="n-contacts__cards">
+              <a href="tel:+79991158355" class="n-contact"><span class="n-contact__icon">📞</span><div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div></a>
+              <a href="mailto:info@dart.agency" class="n-contact"><span class="n-contact__icon">✉️</span><div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div></a>
+              <div class="n-contact"><span class="n-contact__icon">📍</span><div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- STICKY BUY BAR -->
+    <div class="sl-sticky" id="slSticky" hidden>
+      <div class="sl-sticky__info">
+        <div class="sl-gallery__stage sl-gallery__stage--small1"></div>
+        <div>
+          <b>Магазин Magazine.ru</b>
+          <span class="sl-price__now">9 000 ₽</span>
+        </div>
+      </div>
+      <button class="sl-btn sl-btn--buy" data-target="order" data-modal-title="Оформить заказ" data-modal-message="Хочу купить: Magazine.ru (9 000 ₽)">Купить</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

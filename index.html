@@ -16,8 +16,8 @@
       <section class="n-hero">
         <div class="n-hero__gradient"></div>
         <div class="dart-container">
-          <div class="n-hero__grid">
-            <div class="n-hero__content">
+          <div class="dart-row n-hero__grid">
+            <div class="d-col d-col-lg-14 n-hero__content">
               <div class="n-hero__badge" data-reveal>
                 <span class="n-hero__badge-dot"></span>
                 WEB-студия в Перми · с 2020 года
@@ -30,7 +30,7 @@
                 Более 150 проектов, которые приносят нашим клиентам заявки.
               </p>
               <div class="n-hero__actions" data-reveal>
-                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-target="question" data-modal-title="Обсудить проект">
                   <span>Обсудить проект</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
@@ -52,7 +52,7 @@
               </div>
             </div>
 
-            <div class="n-hero__visual" data-reveal data-tilt>
+            <div class="d-col-24 d-col-lg-10 n-hero__visual" data-reveal data-tilt>
               <div class="n-hero__card">
                 <div class="n-hero__card-top">
                   <div class="n-hero__card-dots"><i></i><i></i><i></i></div>
@@ -106,62 +106,72 @@
             </div>
             <p class="n-section__desc">Комплексные решения под ключ — от первой идеи до стабильного роста продаж.</p>
           </div>
-          <div class="n-services">
-            <button class="n-service" data-tilt data-label="Разработка">
-              <span class="n-service__icon">
-                <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </span>
-              <h3 class="n-service__title">Разработка сайтов</h3>
-              <p class="n-service__text">Сайты любой сложности для любого бизнеса — от визитки до интернет-магазина.</p>
-              <div class="n-service__foot">
-                <span class="n-service__price">от 21 999 ₽</span>
-                <span class="n-service__arrow">→</span>
-              </div>
-            </button>
-            <button class="n-service" data-tilt data-label="Продвижение">
-              <span class="n-service__icon">
-                <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M6 26l6-8 4 4 6-10 4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <h3 class="n-service__title">Продвижение сайтов</h3>
-              <p class="n-service__text">Делаем так, чтобы заявок с вашего сайта становилось как можно больше.</p>
-              <div class="n-service__foot">
-                <span class="n-service__price">от 15 999 ₽/мес</span>
-                <span class="n-service__arrow">→</span>
-              </div>
-            </button>
-            <button class="n-service" data-tilt data-label="Поддержка">
-              <span class="n-service__icon">
-                <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg>
-              </span>
-              <h3 class="n-service__title">Техническая поддержка</h3>
-              <p class="n-service__text">Ваш бизнес работает без сбоев, простоев и лишних нервов.</p>
-              <div class="n-service__foot">
-                <span class="n-service__price">от 5 000 ₽/мес</span>
-                <span class="n-service__arrow">→</span>
-              </div>
-            </button>
-            <button class="n-service" data-tilt data-label="Дизайн">
-              <span class="n-service__icon">
-                <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M4 22l6-6 4 4 4-4 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <h3 class="n-service__title">Дизайн</h3>
-              <p class="n-service__text">Сделаем бизнес красивым, современным и запоминающимся.</p>
-              <div class="n-service__foot">
-                <span class="n-service__price">от 15 999 ₽</span>
-                <span class="n-service__arrow">→</span>
-              </div>
-            </button>
-            <button class="n-service" data-tilt data-label="Консультация">
-              <span class="n-service__icon">
-                <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M26 20c0 3.3-3.6 6-8 6s-8-2.7-8-6 3.6-6 8-6 1.5 0 2.9.3 4 .9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </span>
-              <h3 class="n-service__title">Консультация</h3>
-              <p class="n-service__text">Ответим на любые вопросы о разработке и продвижении сайта.</p>
-              <div class="n-service__foot">
-                <span class="n-service__price">от 1 200 ₽/ч</span>
-                <span class="n-service__arrow">→</span>
-              </div>
-            </button>
+          <div class="dart-row n-services">
+            <div class="d-col-24 d-col-md-12 d-col-xxl-8">
+              <button class="n-service" data-tilt data-label="Разработка">
+                <span class="n-service__icon">
+                  <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="n-service__title">Разработка сайтов</h3>
+                <p class="n-service__text">Сайты любой сложности для любого бизнеса — от визитки до интернет-магазина.</p>
+                <div class="n-service__foot">
+                  <span class="n-service__price">от 21 999 ₽</span>
+                  <span class="n-service__arrow">→</span>
+                </div>
+              </button>
+            </div>
+            <div class="d-col-24 d-col-md-12 d-col-xxl-8">
+              <button class="n-service" data-tilt data-label="Продвижение">
+                <span class="n-service__icon">
+                  <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M6 26l6-8 4 4 6-10 4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <h3 class="n-service__title">Продвижение сайтов</h3>
+                <p class="n-service__text">Делаем так, чтобы заявок с вашего сайта становилось как можно больше.</p>
+                <div class="n-service__foot">
+                  <span class="n-service__price">от 15 999 ₽/мес</span>
+                  <span class="n-service__arrow">→</span>
+                </div>
+              </button>
+            </div>
+            <div class="d-col-24 d-col-md-12 d-col-xxl-8">
+              <button class="n-service" data-tilt data-label="Поддержка">
+                <span class="n-service__icon">
+                  <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h3 class="n-service__title">Техническая поддержка</h3>
+                <p class="n-service__text">Ваш бизнес работает без сбоев, простоев и лишних нервов.</p>
+                <div class="n-service__foot">
+                  <span class="n-service__price">от 5 000 ₽/мес</span>
+                  <span class="n-service__arrow">→</span>
+                </div>
+              </button>
+            </div>
+            <div class="d-col-24 d-col-md-12 d-col-xxl-8">
+              <button class="n-service" data-tilt data-label="Дизайн">
+                <span class="n-service__icon">
+                  <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M4 22l6-6 4 4 4-4 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <h3 class="n-service__title">Дизайн</h3>
+                <p class="n-service__text">Сделаем бизнес красивым, современным и запоминающимся.</p>
+                <div class="n-service__foot">
+                  <span class="n-service__price">от 15 999 ₽</span>
+                  <span class="n-service__arrow">→</span>
+                </div>
+              </button>
+            </div>
+            <div class="d-col-24 d-col-md-12 d-col-xxl-8">
+              <button class="n-service" data-tilt data-label="Консультация">
+                <span class="n-service__icon">
+                  <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><path d="M26 20c0 3.3-3.6 6-8 6s-8-2.7-8-6 3.6-6 8-6 1.5 0 2.9.3 4 .9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="n-service__title">Консультация</h3>
+                <p class="n-service__text">Ответим на любые вопросы о разработке и продвижении сайта.</p>
+                <div class="n-service__foot">
+                  <span class="n-service__price">от 1 200 ₽/ч</span>
+                  <span class="n-service__arrow">→</span>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -258,8 +268,8 @@
             <h2 class="n-cta__title">Давайте сделаем<br>ваш проект вместе</h2>
             <p class="n-cta__desc">Оставьте заявку — обсудим идею и предложим решение.</p>
             <div class="n-cta__actions">
-              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить консультацию →</button>
-              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-target="question" data-modal-title="Получить консультацию">Получить консультацию →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-target="callback">Заказать звонок</button>
             </div>
           </div>
         </div>
@@ -275,33 +285,37 @@
             </div>
             <p class="n-section__desc">Мы всегда на связи и отвечаем быстро.</p>
           </div>
-          <div class="n-contacts">
-            <div class="n-contacts__cards">
-              <a href="tel:+79991158355" class="n-contact">
-                <span class="n-contact__icon">📞</span>
-                <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
-              </a>
-              <a href="mailto:info@dart.agency" class="n-contact">
-                <span class="n-contact__icon">✉️</span>
-                <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
-              </a>
-              <div class="n-contact">
-                <span class="n-contact__icon">📍</span>
-                <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
               </div>
             </div>
-            <form class="n-form" data-form>
-              <div class="n-form__row">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="tel" name="phone" placeholder="Ваш телефон" required>
-              </div>
-              <input type="email" name="email" placeholder="Ваш e-mail">
-              <textarea name="message" placeholder="Расскажите о вашем проекте..." rows="4"></textarea>
-              <div class="n-form__bottom">
-                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
-                <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
-              </div>
-            </form>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о вашем проекте..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta }}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="ct-hero">
+        <div class="ct-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <b>Контакты</b>
+          </div>
+
+          <div class="dart-row dart-align-items-center ct-hero__grid">
+            <div class="d-col d-col-lg-14 ct-hero__content">
+              <span class="n-kicker" data-reveal>Контакты DART AGENCY</span>
+              <h1 class="ct-hero__title" data-reveal>Мы всегда на связи</h1>
+              <p class="ct-hero__sub" data-reveal>
+                Ответим на вопросы, рассчитаем стоимость проекта и поможем подобрать решение под ваши задачи.
+                Пишите или звоните — обычно отвечаем в течение 30 минут в рабочее время.
+              </p>
+
+              <div class="ct-hero__actions" data-reveal>
+                <a href="tel:+79991158355" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>+7 (999) 115-83-55</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="mailto:info@dart.agency" class="dart-btn dart-btn-secondary dart-btn-lg">info@dart.agency</a>
+              </div>
+
+              <div class="ct-hero__stats" data-reveal>
+                <div class="ct-hero__stat">
+                  <span class="ct-hero__stat-num"><b data-count="30" data-suffix=" мин">0</b></span>
+                  <span class="ct-hero__stat-label">среднее время ответа</span>
+                </div>
+                <div class="ct-hero__stat">
+                  <span class="ct-hero__stat-num"><b data-count="1200" data-suffix="+">0</b></span>
+                  <span class="ct-hero__stat-label">клиентов на связи</span>
+                </div>
+                <div class="ct-hero__stat">
+                  <span class="ct-hero__stat-num"><b data-count="5">0</b></span>
+                  <span class="ct-hero__stat-label">дней в неделю</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 ct-hero__aside" data-reveal>
+              <form class="ct-quick" data-form>
+                <span class="ct-quick__badge">Ответим за 30 минут</span>
+                <h3 class="ct-quick__title">Быстрая заявка</h3>
+                <p class="ct-quick__desc">Оставьте контакты — перезвоним, уточним детали и посчитаем стоимость.</p>
+
+                <input class="ct-quick__input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="ct-quick__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+                <select class="ct-quick__select" name="topic">
+                  <option value="" disabled selected>Что вас интересует?</option>
+                  <option>Разработка сайта</option>
+                  <option>Продвижение сайта</option>
+                  <option>Техническая поддержка</option>
+                  <option>Дизайн</option>
+                  <option>Другое</option>
+                </select>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Отправить →</span>
+                </button>
+                <p class="ct-quick__hint">Без спама. Отправляя, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT CARDS -->
+      <section class="n-section">
+        <div class="dart-container">
+          <div class="dart-row ct-cards">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <a href="tel:+79991158355" class="ct-card" data-reveal>
+                <span class="ct-card__icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="ct-card__label">Телефон</span>
+                <b class="ct-card__value">+7 (999) 115-83-55</b>
+                <span class="ct-card__foot">Звонок бесплатный</span>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <a href="mailto:info@dart.agency" class="ct-card" data-reveal>
+                <span class="ct-card__icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="ct-card__label">Почта</span>
+                <b class="ct-card__value">info@dart.agency</b>
+                <span class="ct-card__foot">Отвечаем в течение дня</span>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <div class="ct-card" data-reveal>
+                <span class="ct-card__icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+                </span>
+                <span class="ct-card__label">Офис</span>
+                <b class="ct-card__value">Пермь, ш. Космонавтов 252, оф. 218</b>
+                <span class="ct-card__foot">Работаем по записи</span>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <div class="ct-card" data-reveal>
+                <span class="ct-card__icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="ct-card__label">Часы работы</span>
+                <b class="ct-card__value">Пн–Пт, 9:00–19:00</b>
+                <span class="ct-card__foot">Сообщения читаем круглосуточно</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOURS + CHANNELS -->
+      <section class="n-section n-section--alt">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker" data-reveal>Удобный способ</span>
+              <h2 class="n-section__title" data-reveal>Выберите удобный канал</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Свяжитесь так, как удобно вам — все каналы ведут к нам, и на каждом отвечают быстро.</p>
+          </div>
+
+          <div class="dart-row ct-channels">
+            <div class="d-col-24 d-col-sm-12">
+              <a href="tel:+79991158355" class="ct-channel" data-reveal>
+                <span class="ct-channel__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="ct-channel__title">По телефону</h3>
+                  <p class="ct-channel__text">Быстрее всего обсудить задачу голосом.</p>
+                  <span class="ct-channel__value">+7 (999) 115-83-55</span>
+                </div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-sm-12">
+              <a href="mailto:info@dart.agency" class="ct-channel" data-reveal>
+                <span class="ct-channel__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="ct-channel__title">По почте</h3>
+                  <p class="ct-channel__text">Для брифов, вложений и официальных запросов.</p>
+                  <span class="ct-channel__value">info@dart.agency</span>
+                </div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-sm-12">
+              <a href="/onlajn-brif-na-razrabotku-sajta.html" class="ct-channel" data-reveal>
+                <span class="ct-channel__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 3h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8l-4 4V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="ct-channel__title">Заполнить бриф</h3>
+                  <p class="ct-channel__text">Расскажите о проекте подробно — получите КП за 24 часа.</p>
+                  <span class="ct-channel__value">Онлайн-бриф →</span>
+                </div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-sm-12">
+              <button class="ct-channel" data-modal="dartModal" data-reveal>
+                <span class="ct-channel__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="ct-channel__title">Заказать звонок</h3>
+                  <p class="ct-channel__text">Оставьте номер — перезвоним в удобное время.</p>
+                  <span class="ct-channel__value">Оставить заявку →</span>
+                </div>
+              </button>
+            </div>
+            <div class="d-col-24 d-col-sm-12">
+              <a href="https://t.me/dartagency" class="ct-channel" target="_blank" rel="noopener" data-reveal>
+                <span class="ct-channel__icon ct-channel__icon--tg">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </span>
+                <div>
+                  <h3 class="ct-channel__title">Telegram</h3>
+                  <p class="ct-channel__text">Быстро ответим на вопросы и кинем примеры работ.</p>
+                  <span class="ct-channel__value">@dartagency →</span>
+                </div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-sm-12">
+              <a href="https://vk.com/dartagency" class="ct-channel" target="_blank" rel="noopener" data-reveal>
+                <span class="ct-channel__icon ct-channel__icon--vk">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.57 4 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.847 2.45 2.27 4.597 2.86 4.597.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.405 2.15-3.574 2.15-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
+                </span>
+                <div>
+                  <h3 class="ct-channel__title">ВКонтакте</h3>
+                  <p class="ct-channel__text">Следите за новостями студии и свежими работами.</p>
+                  <span class="ct-channel__value">vk.com/dartagency →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFICE + MAP -->
+      <section class="n-section" id="office">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker" data-reveal>Офис</span>
+              <h2 class="n-section__title" data-reveal>Приезжайте в гости</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Обсудим проект за чашкой чая — встречаемся по записи в рабочее время.</p>
+          </div>
+
+          <div class="dart-row ct-office">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="ct-office__info" data-reveal>
+                <h3 class="ct-office__title">WEB-студия DART AGENCY</h3>
+                <ul class="ct-office__list">
+                  <li><span>Адрес</span><b>Пермь, шоссе Космонавтов 252, офис 218</b></li>
+                  <li><span>Режим</span><b>Пн–Пт, 9:00–19:00</b></li>
+                  <li><span>Въезд</span><b>Со стороны улицы, 2 этаж</b></li>
+                </ul>
+                <div class="ct-office__actions">
+                  <a href="https://yandex.ru/maps/?text=Пермь, шоссе Космонавтов 252" target="_blank" rel="noopener" class="dart-btn dart-btn-primary-alt">Построить маршрут →</a>
+                  <button class="dart-btn dart-btn-secondary" data-modal="dartModal">Записаться на встречу</button>
+                </div>
+                <div class="ct-office__social">
+                  <span class="ct-office__social-label">Мы в соцсетях</span>
+                  {{> social}}
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <div class="ct-office__map" data-reveal>
+                <div class="ct-office__map-placeholder">
+                  <svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <b>Мы на карте</b>
+                  <p>Пермь, шоссе Космонавтов 252</p>
+                  <a href="https://yandex.ru/maps/?text=Пермь, шоссе Космонавтов 252" target="_blank" rel="noopener">Открыть в Яндекс.Картах →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker" data-reveal>Помощь</span>
+              <h2 class="n-section__title" data-reveal>Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как быстро вы отвечаете?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>В рабочее время (пн–пт, 9:00–19:00) отвечаем в среднем за 30 минут. Сообщения, присланные в нерабочее время, читаем на следующий рабочий день с утра.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Работаете ли вы с другими городами?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, большинство проектов ведём удалённо по всей России. Все процессы на связи: созвоны, онлайн-отчёты и понятные этапы.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Консультация платная?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Первичная консультация и расчёт стоимости — бесплатны. Платная почасовая консультация (от 1 200 ₽/ч) нужна, если вам нужен разбор проекта целиком.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Чем вы занимаетесь?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Разрабатываем сайты под ключ (от визитки до интернет-магазина), продвигаем их в поиске и поддерживаем технически. Полный цикл — от идеи до роста продаж.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Сколько стоит разработка сайта?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>От 19 999 ₽ за лендинг. Точную стоимость посчитаем после короткого брифа — пришлём смету за 24 часа. Подробные цены — в разделе <a href="/uslugi/razrabotka-sajtov/">разработки сайтов</a>.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Готовы обсудить проект?</span>
+            <h2 class="n-cta__title">Расскажите о задаче —<br>мы предложим решение</h2>
+            <p class="n-cta__desc">Бесплатная консультация и расчёт стоимости за 24 часа. Это ни к чему не обязывает.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить консультацию →</button>
+              <a href="tel:+79991158355" class="dart-btn dart-btn-secondary-light dart-btn-lg">Позвонить сейчас</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Написать нам</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

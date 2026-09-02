@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <a href="/">Главная</a><span>/</span>
+            <a href="/pages/services/">Услуги</a><span>/</span>
+            <b>Консалтинг</b>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Консультация эксперта<br><span>в Яндекс.Телемост</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Онлайн-консультация с практикующим разработчиком: разберём ваш сайт, поможем реализовать функционал,
+                ответим на вопросы по MODx, трафику и продвижению. Встреча — 60 минут, час — 1 200 ₽.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Прямая ссылка на Яндекс.Телемост — ничего устанавливать не нужно</li>
+                <li><span>✓</span> Час — 1 200 ₽, условия фиксируем в заявке</li>
+                <li><span>✓</span> Запись встречи и резюме — после консультации</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Записаться на консультацию</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Задать вопрос</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="1200" data-suffix=" ₽">0</b></span>
+                  <span class="sv-hero__stat-label">час консультации с экспертом</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="150" data-suffix="+">0</b></span>
+                  <span class="sv-hero__stat-label">проектов в портфолио студии</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="60" data-suffix=" мин">0</b></span>
+                  <span class="sv-hero__stat-label">длительность одной встречи</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="98" data-suffix="%">0</b></span>
+                  <span class="sv-hero__stat-label">довольных клиентов</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Онлайн</span>
+                <h3 class="sv-estimate__title">Запись на консультацию</h3>
+                <p class="sv-estimate__desc">Выберите тему и удобное время — пришлём ссылку на оплату и приглашение в Телемост</p>
+
+                <label class="sv-estimate__label">Тема консультации</label>
+                <select class="sv-estimate__select" name="topic" required>
+                  <option value="" disabled selected>Выберите тему</option>
+                  <option>Разработка сайта</option>
+                  <option>MODx и компоненты</option>
+                  <option>Трафик и первые клиенты</option>
+                  <option>Обучение и уроки</option>
+                  <option>Продвижение и SEO</option>
+                </select>
+
+                <label class="sv-estimate__label">Удобное время</label>
+                <select class="sv-estimate__select" name="time">
+                  <option>В рабочий день, утро</option>
+                  <option>В рабочий день, вечер</option>
+                  <option>Выходные</option>
+                </select>
+
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Записаться →</span>
+                </button>
+                <p class="sv-estimate__hint">Час — 1 200 ₽, полная предоплата. Ответим в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#how" class="sv-nav__link is-active">Как проходит</a>
+            <a href="#topics" class="sv-nav__link">Темы</a>
+            <a href="#pricing" class="sv-nav__link">Стоимость</a>
+            <a href="#who" class="sv-nav__link">Кому подойдёт</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Заказать звонок</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HOW -->
+      <section class="n-section" id="how">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Этапы</span>
+              <h2 class="n-section__title">Как проходит консультация</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>От заявки до разбора вашей задачи — 5 понятных шагов. Всё онлайн, без визитов в офис.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Заявка и тема</h4>
+              <p>Опишите задачу или выберите тему консультации.</p>
+              <b class="sv-process__time">5 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Оплата</h4>
+              <p>Полная предоплата. Час — 1 200 ₽, минимальная стоимость — 1 200 ₽.</p>
+              <b class="sv-process__time">10 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Приглашение</h4>
+              <p>Пришлём ссылку на встречу в Яндекс.Телемост на почту и в SMS.</p>
+              <b class="sv-process__time">сразу</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Встреча</h4>
+              <p>60 минут с экспертом. Эфир можно записать — доступ будет у вас.</p>
+              <b class="sv-process__time">60 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Резюме</h4>
+              <p>Пришлём итоги, ссылки и план действий по вашей задаче.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOPICS -->
+      <section class="n-section n-section--alt" id="topics">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Темы</span>
+              <h2 class="n-section__title">Какие вопросы разбираем</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Консультируем по тому, что делаем сами каждый день: сайты, MODx, трафик и рост.</p>
+          </div>
+          <div class="dart-row sv-benefits">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Разработка на MODx</h3>
+                <p class="sv-benefit__text">Структура, компоненты, доработки и «боль» типовых ошибок. Посоветуем, как сделать правильно.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M6 26l6-8 4 4 6-12 4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Реализация функционала</h3>
+                <p class="sv-benefit__text">Как лучше реализовать ту или иную задачу: обсудим варианты, сроки и подводные камни.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Трафик и первые клиенты</h3>
+                <p class="sv-benefit__text">Откуда взять первых посетителей, какие каналы запустить и что делать в первую очередь.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="currentColor" stroke-width="2"/><path d="M3 16h9m8 0h9M16 3v9m0 8v9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Обучение и уроки</h3>
+                <p class="sv-benefit__text">Разбор курсов и видео на YouTube, помощь с практикой и домашними заданиями.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M4 22l6-6 4 4 4-4 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Дизайн и UX</h3>
+                <p class="sv-benefit__text">Удобство, конверсия, интерфейсы. Разберём слабые места вашего сайта глазами пользователя.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 4v24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Продвижение и SEO</h3>
+                <p class="sv-benefit__text">Гипотезы, инструменты и метрики: как оценивать результат и куда двигаться дальше.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Форматы консультаций</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Все встречи проводятся в Яндекс.Телемост по прямой ссылке. Условия — полная предоплата.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Разово</span>
+                <h3 class="sv-price__name">Консультация</h3>
+                <div class="sv-price__amount"><b>1 200 ₽</b><span>час</span></div>
+                <p class="sv-price__time">Минимальная стоимость — 1 200 ₽</p>
+                <ul class="sv-price__list">
+                  <li>Одна встреча — 60 минут</li>
+                  <li>Разбор вашей задачи или вопроса</li>
+                  <li>Ответы в прямом эфире</li>
+                  <li>Запись встречи</li>
+                  <li>Резюме и материалы после</li>
+                  <li>Ссылка на Яндекс.Телемост</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Записаться</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Выгодно</span>
+                <h3 class="sv-price__name">Пакет «3 часа»</h3>
+                <div class="sv-price__amount"><b>3 300 ₽</b><span>3 часа</span></div>
+                <p class="sv-price__time">Экономия 10% — по 1 100 ₽/час</p>
+                <ul class="sv-price__list">
+                  <li>Три встречи по 60 минут</li>
+                  <li>Ведём заметки по вашему проекту</li>
+                  <li>Резюме после каждой встречи</li>
+                  <li>Приоритетная запись</li>
+                  <li>Запись всех встреч</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Выбрать пакет</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Для больших задач</span>
+                <h3 class="sv-price__name">Пакет «5 часов»</h3>
+                <div class="sv-price__amount"><b>5 400 ₽</b><span>5 часов</span></div>
+                <p class="sv-price__time">Экономия 10% — по 1 080 ₽/час</p>
+                <ul class="sv-price__list">
+                  <li>Пять встреч по 60 минут</li>
+                  <li>Сопровождение проекта</li>
+                  <li>Приоритетная запись</li>
+                  <li>Запись всех встреч</li>
+                  <li>Персональный план развития</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Выбрать пакет</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Сначала — аудит</span>
+                <h3 class="sv-price__name">Аудит перед встречей</h3>
+                <div class="sv-price__amount"><b>4 999 ₽</b><span>проект</span></div>
+                <p class="sv-price__time">Разбор сайта до консультации</p>
+                <ul class="sv-price__list">
+                  <li>Проверка сайта и структуры</li>
+                  <li>Письменный отчёт с проблемами</li>
+                  <li>План действий и приоритеты</li>
+                  <li>Ответы на вопросы по отчёту</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать аудит</button>
+              </article>
+            </div>
+          </div>
+
+          <p class="sv-pricing__note" data-reveal>Не знаете, какой формат нужен? <a href="/onlajn-brif-na-razrabotku-sajta.html">Напишите нам</a> — поможем выбрать и подберём время встречи.</p>
+        </div>
+      </section>
+
+      <!-- WHO -->
+      <section class="n-section n-section--alt" id="who">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Для кого</span>
+              <h2 class="n-section__title">Кому подойдёт консультация</h2>
+            </div>
+          </div>
+          <div class="dart-row sv-why">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-why__item" data-reveal>
+                <span class="sv-why__num">01</span>
+                <h3>Тем, кто делает сайт сам</h3>
+                <p>MODx, вёрстка, компоненты и типовые ошибки — разберём код и подскажем решение.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-why__item" data-reveal>
+                <span class="sv-why__num">02</span>
+                <h3>Владельцам бизнеса</h3>
+                <p>Что улучшить в сайте, откуда взять клиентов и как оценивать результат рекламы.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-why__item" data-reveal>
+                <span class="sv-why__num">03</span>
+                <h3>Начинающим разработчикам</h3>
+                <p>Разбор задач, советы по практике и ответы на вопросы, которые не найти в документации.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-why__item" data-reveal>
+                <span class="sv-why__num">04</span>
+                <h3>Ученикам наших курсов</h3>
+                <p>Вопросы по урокам, видео на YouTube и домашним заданиям — с обратной связью от практика.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">В каком формате проходит консультация?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Встречаемся в Яндекс.Телемост по прямой ссылке — регистрироваться и устанавливать приложение не нужно, достаточно браузера.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Раньше вы консультировали в Skype. Почему теперь Телемост?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Яндекс.Телемост удобнее: встреча открывается по ссылке из любого браузера, работает запись и не нужно добавлять друг друга в контакты.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Сколько стоит консультация?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Час — 1 200 ₽, минимальная стоимость консультации — 1 200 ₽. Оплата полная и предварительная, по ссылке после подтверждения заявки.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как записаться?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Оставьте заявку на этой странице или позвоните. Пришлём ссылку на оплату, а после — приглашение в Яндекс.Телемост на почту и в SMS.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно ли записать встречу?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да. Телемост позволяет записывать эфир, а мы дополнительно пришлём резюме и материалы по итогам разговора.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что если за 60 минут не успею задать все вопросы?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Можно купить пакет часов — встречи будут проходить по мере необходимости, а мы будем помнить контекст вашей задачи.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Не ищите ответы сами</span>
+            <h2 class="n-cta__title">Задайте вопрос<br>живому эксперту</h2>
+            <p class="n-cta__desc">Онлайн-встреча в Яндекс.Телемост, час — 1 200 ₽. Разберём вашу задачу и пришлём план действий.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Записаться →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Остались вопросы?</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Напишите, что хотите обсудить на консультации, — подберём формат и удобное время.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Что хотите обсудить на консультации..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Записаться</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

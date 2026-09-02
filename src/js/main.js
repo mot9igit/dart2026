@@ -6,6 +6,12 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 import 'swiper/css';
 
+import Prism from 'prismjs';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/themes/prism-tomorrow.css';
+
+Prism.manual = true;
+
 Swiper.use([Navigation, Pagination, Autoplay]);
 
 Fancybox.bind("[data-fancybox]", {
@@ -312,6 +318,211 @@ if (swiperEl) {
   });
 }
 
+/* ------- Portfolio grid filtering ------- */
+const pfGrid = $("#pfGrid");
+const pfEmpty = $("#pfEmpty");
+if (pfGrid) {
+  const cells = $$(".pf-cell", pfGrid);
+  const filters = $$("#pfFilters .pf-filter");
+
+  const applyFilter = (value) => {
+    let visible = 0;
+    cells.forEach((cell) => {
+      const match = value === "all" || cell.dataset.category === value;
+      cell.classList.toggle("is-hidden", !match);
+      if (match) visible++;
+    });
+    if (pfEmpty) pfEmpty.hidden = visible !== 0;
+  };
+
+  filters.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filters.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      applyFilter(btn.dataset.filter);
+    });
+  });
+}
+
+/* ------- Shop category: filters, sort, cart ------- */
+const shGrid = $("#shGrid");
+if (shGrid) {
+  const shItems = $$(".sh-item", shGrid);
+  const shCount = $("#shCount");
+  const shEmpty = $("#shEmpty");
+  const sortSel = $("#shSort");
+  const priceMin = $("[data-price-min]");
+  const priceMax = $("[data-price-max]");
+  const resetBtn = $("#shReset");
+  const filterCount = $("#shFilterCount");
+
+  /* --- state --- */
+  const state = {
+    categories: new Set(),
+    features: new Set(),
+    packs: new Set(),
+    sort: "recent",
+    priceMin: 0,
+    priceMax: Infinity,
+  };
+
+  const itemMatches = (item) => {
+    const cat = item.dataset.category;
+    const feats = (item.dataset.features || "").split(",").filter(Boolean);
+    const packs = (item.dataset.pack || "").split(",").filter(Boolean);
+    const price = parseInt(item.dataset.price, 10);
+
+    if (state.categories.size && !state.categories.has(cat)) return false;
+    if ([...state.features].some((f) => !feats.includes(f))) return false;
+    if ([...state.packs].some((p) => !packs.includes(p))) return false;
+    if (price < state.priceMin || price > state.priceMax) return false;
+    return true;
+  };
+
+  const applyFilters = () => {
+    shItems.forEach((item) => {
+      item.classList.toggle("is-hidden", !itemMatches(item));
+    });
+
+    const visible = shItems.filter((i) => !i.classList.contains("is-hidden")).length;
+    if (shCount) shCount.textContent = visible;
+    if (shEmpty) shEmpty.hidden = visible !== 0;
+
+    const activeCount =
+      state.categories.size + state.features.size + state.packs.size +
+      (priceMin ? (state.priceMin > 0 ? 1 : 0) : 0) +
+      (priceMax && isFinite(state.priceMax) ? 1 : 0);
+    if (filterCount) {
+      filterCount.hidden = activeCount === 0;
+      filterCount.textContent = activeCount;
+    }
+  };
+
+  /* --- sort --- */
+  const applySort = () => {
+    const key = state.sort;
+    const sorted = [...shItems].sort((a, b) => {
+      if (key === "price-asc") return a.dataset.price - b.dataset.price;
+      if (key === "price-desc") return b.dataset.price - a.dataset.price;
+      if (key === "name") return a.dataset.name.localeCompare(b.dataset.name, "ru");
+      if (key === "popular") return b.dataset.sales - a.dataset.sales;
+      return 0;
+    });
+    sorted.forEach((el) => shGrid.appendChild(el));
+    applyFilters();
+  };
+
+  if (sortSel) sortSel.addEventListener("change", () => { state.sort = sortSel.value; applySort(); });
+
+  /* --- facet checkboxes --- */
+  $$(".sh-side [data-facets]").forEach((group) => {
+    const facetKey = group.dataset.facets;
+    group.addEventListener("change", (e) => {
+      const box = e.target;
+      if (!box.dataset.ftype) return;
+      const val = box.dataset.ftype;
+      (box.checked ? state[facetKey].add(val) : state[facetKey].delete(val));
+      applyFilters();
+    });
+  });
+
+  /* --- price --- */
+  if (priceMin) priceMin.addEventListener("input", () => {
+    state.priceMin = parseInt(priceMin.value, 10) || 0;
+    applyFilters();
+  });
+  if (priceMax) priceMax.addEventListener("input", () => {
+    const v = parseInt(priceMax.value, 10);
+    state.priceMax = v ? v : Infinity;
+    applyFilters();
+  });
+
+  /* --- reset --- */
+  if (resetBtn) resetBtn.addEventListener("click", () => {
+    state.categories.clear();
+    state.features.clear();
+    state.packs.clear();
+    state.priceMin = 0;
+    state.priceMax = Infinity;
+    $$(".sh-side [data-ftype]").forEach((i) => (i.checked = false));
+    if (priceMin) priceMin.value = "";
+    if (priceMax) priceMax.value = "";
+    applyFilters();
+  });
+
+  /* --- mobile sidebar --- */
+  const side = $("#shSide");
+  $$("[data-side-open]").forEach((b) => b.addEventListener("click", () => {
+    side.classList.add("is-active");
+    document.body.classList.add("sh-side-open");
+  }));
+  $$("[data-side-close]").forEach((b) => b.addEventListener("click", () => {
+    side.classList.remove("is-active");
+    document.body.classList.remove("sh-side-open");
+  }));
+
+  /* --- favorites --- */
+  $$("[data-fav]").forEach((btn) => btn.addEventListener("click", () => btn.classList.toggle("is-active")));
+
+  /* show sticky bar after scrolling past hero */
+  const sticky = $("#shSticky");
+  const shHero = document.querySelector(".sh-hero");
+  const onScroll = () => {
+    if (!sticky) return;
+    const show = shHero ? window.scrollY > shHero.offsetHeight * 0.6 : window.scrollY > 600;
+    sticky.hidden = !show;
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  applyFilters();
+
+  /* --- "Подробнее" opens contact/order modal with product name --- */
+  shGrid.addEventListener("click", (e) => {
+    const more = e.target.closest("[data-more]");
+    if (!more) return;
+    const item = more.closest(".sh-item");
+    const title = item ? (item.querySelector(".sh-item__title a") || {}).textContent : "";
+    const qModal = resolveModalEl("question");
+    if (qModal) {
+      const msg = qModal.querySelector('textarea[name="message"]');
+      if (msg && title) msg.value = "Интересует: " + title;
+      openModal(qModal);
+    }
+  });
+}
+
+/* ------- Solution page: tabs + sticky buy bar ------- */
+const slTabs = $("#slTabs");
+if (slTabs) {
+  const tabs = $$(".sl-tab", slTabs);
+  const panes = $$(".sl-pane");
+
+  const showTab = (name) => {
+    tabs.forEach((t) => t.classList.toggle("is-active", t.dataset.tab === name));
+    panes.forEach((p) => p.classList.toggle("is-active", p.dataset.pane === name));
+  };
+
+  tabs.forEach((tab) => tab.addEventListener("click", () => showTab(tab.dataset.tab)));
+
+  /* gallery thumbs */
+  $$(".sl-thumb").forEach((th) => th.addEventListener("click", () => {
+    $$(".sl-thumb").forEach((t) => t.classList.remove("is-active"));
+    th.classList.add("is-active");
+  }));
+}
+
+const slSticky = $("#slSticky");
+if (slSticky) {
+  const slProduct = document.querySelector(".sl-product");
+  const slStickyScroll = () => {
+    const show = slProduct ? window.scrollY > slProduct.offsetHeight * 0.5 : window.scrollY > 600;
+    slSticky.hidden = !show;
+  };
+  window.addEventListener("scroll", slStickyScroll, { passive: true });
+  slStickyScroll();
+}
+
 /* ------- Cookie notification ------- */
 const cookieNotice = $("#dartCookie");
 const COOKIE_NAME = "dart_cookie_accept";
@@ -341,21 +552,57 @@ if (cookieNotice && !getCookie(COOKIE_NAME)) {
   $$(".cookie_accept", cookieNotice).forEach((btn) => btn.addEventListener("click", acceptCookie));
 }
 
-/* ------- Modal open / close ------- */
+/* ------- Modal open / close (multi-modal) ------- */
 const modal = $("#dartModal");
-const openModal = (el) => {
+
+/* map of convenient modal names -> element id */
+const MODAL_NAMES = {
+  callback: "dartModalCallback",
+  question: "dartModalQuestion",
+  demo: "dartModalDemo",
+  order: "dartModalOrder",
+  review: "dartModalReview",
+  default: "dartModal",
+  dartModal: "dartModal",
+};
+
+const resolveModalEl = (target) => {
+  if (!target) return null;
+  let id = String(target).trim().replace(/^#/, "");
+  if (MODAL_NAMES[id]) id = MODAL_NAMES[id];
+  return $(`#${id}`);
+};
+
+const openModal = (el, btn) => {
   if (!el) return;
+  /* only one modal at a time */
+  $$(".dart-modal.is-active").forEach((m) => m.classList.remove("is-active"));
+  /* optional prefill from the triggering button */
+  if (btn) {
+    const t = el.querySelector("[data-modal-title]");
+    const msg = el.querySelector("textarea[name='message']");
+    if (t && !t.dataset.originalTitle) t.dataset.originalTitle = t.textContent;
+    if (msg && !msg.dataset.originalValue) msg.dataset.originalValue = "";
+    if (t) t.textContent = btn.getAttribute("data-modal-title") || t.dataset.originalTitle;
+    if (msg) msg.value = btn.getAttribute("data-modal-message") || btn.dataset.product || msg.dataset.originalValue;
+  }
   el.classList.add("is-active");
   document.body.classList.add("dart-modal-open");
 };
+
 const closeModal = (el) => {
   if (!el) return;
   el.classList.remove("is-active");
-  document.body.classList.remove("dart-modal-open");
+  if (!$(".dart-modal.is-active")) document.body.classList.remove("dart-modal-open");
 };
 
+/* open via data-target (id or name) */
+$$("[data-target]").forEach((btn) => {
+  btn.addEventListener("click", () => openModal(resolveModalEl(btn.dataset.target), btn));
+});
+/* backwards-compatible open via data-modal */
 $$("[data-modal]").forEach((btn) => {
-  btn.addEventListener("click", () => openModal($(`#${btn.dataset.modal}`)));
+  btn.addEventListener("click", () => openModal(resolveModalEl(btn.dataset.modal), btn));
 });
 
 document.addEventListener("click", (e) => {
@@ -364,7 +611,10 @@ document.addEventListener("click", (e) => {
   }
 });
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeModal(modal);
+  if (e.key === "Escape") {
+    const active = $(".dart-modal.is-active") || modal;
+    closeModal(active);
+  }
 });
 
 /* ------- Form success state ------- */
@@ -422,4 +672,93 @@ if (navLinks.length && "IntersectionObserver" in window) {
     { rootMargin: "-100px 0px -70% 0px", threshold: 0 }
   );
   targets.forEach((s) => spy.observe(s));
+}
+
+/* ------- Blog post: code copy ------- */
+$$("[data-copy]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const id = btn.getAttribute("data-copy");
+    const code = $(`#${id}`);
+    if (!code) return;
+    const text = code.textContent;
+    const done = () => {
+      btn.classList.add("is-copied");
+      const orig = btn.textContent;
+      btn.textContent = "Скопировано ✓";
+      setTimeout(() => {
+        btn.classList.remove("is-copied");
+        btn.textContent = orig;
+      }, 1800);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+    } else {
+      fallbackCopy(text, done);
+    }
+  });
+});
+
+function fallbackCopy(text, done) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand("copy");
+    done();
+  } catch (e) {
+    // ignore
+  }
+  document.body.removeChild(ta);
+}
+
+/* ------- Blog post: syntax highlight code blocks ------- */
+document.querySelectorAll("pre code[class*='language-']").forEach((el) => {
+  Prism.highlightElement(el);
+});
+
+/* ------- Blog post: mobile TOC toggle ------- */
+$$("[data-toc-toggle]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const wrap = btn.closest(".po-side__toc-mobile");
+    wrap?.classList.toggle("is-open");
+    const arrow = btn.querySelector("span");
+    if (arrow) arrow.textContent = wrap?.classList.contains("is-open") ? "▴" : "▾";
+  });
+});
+
+/* ------- Blog post: comment reply ------- */
+$$("[data-reply]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const name = btn.getAttribute("data-reply");
+    const form = $(".po-comments__form");
+    if (!form) return;
+    const textarea = form.querySelector("textarea");
+    if (textarea) {
+      textarea.value = `@${name}, `;
+      textarea.focus();
+    }
+    form.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+});
+
+/* ------- Blog post: reading-state TOC / scrollspy ------- */
+const tocLinks = $$(".po-side__toc-list a");
+if (tocLinks.length && "IntersectionObserver" in window) {
+  const targets = tocLinks.map((l) => $(l.getAttribute("href"))).filter(Boolean);
+  const tocSpy = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach((l) =>
+            l.classList.toggle("is-active", l.getAttribute("href") === `#${entry.target.id}`)
+          );
+        }
+      });
+    },
+    { rootMargin: "-120px 0px -70% 0px", threshold: 0 }
+  );
+  targets.forEach((s) => tocSpy.observe(s));
 }
