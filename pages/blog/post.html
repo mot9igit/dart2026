@@ -239,75 +239,146 @@ return { user, token };</code></pre>
               </nav>
 
               <!-- COMMENTS -->
-              <section class="po-comments" id="comments">
-                <div class="po-comments__head">
-                  <h2>Комментарии</h2>
-                  <span>3</span>
-                </div>
+              <div class="comments-thread" id="resource-0">
+                <div class="comments">
+                  <h3 class="title">Комментарии (<span id="comment-total">3</span>)</h3>
 
-                <div class="po-comments__list">
-                  <article class="po-cmt">
-                    <span class="po-cmt__avatar">М</span>
-                    <div class="po-cmt__body">
-                      <div class="po-cmt__top">
-                        <b class="po-cmt__name">Максим</b>
-                        <time class="po-cmt__date">07.09.2025</time>
-                      </div>
-                      <p class="po-cmt__text">
-                        Согласен на 100% по поводу документации. Пока не опишешь задачу словами —
-                        не поймёшь, что вообще хочешь получить на выходе. А вот момент про решение без
-                        разработчика очень больной, сам через это проходил.
-                      </p>
-                      <div class="po-cmt__actions">
-                        <button class="po-cmt__reply" data-reply="Максим">Ответить</button>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article class="po-cmt po-cmt--reply">
-                    <span class="po-cmt__avatar">А</span>
-                    <div class="po-cmt__body">
-                      <div class="po-cmt__top">
-                        <b class="po-cmt__name">Анна</b>
-                        <time class="po-cmt__date">07.09.2025</time>
-                      </div>
-                      <p class="po-cmt__text">
-                        Спасибо за разбор! Взяла себе за правило декомпозировать каждую крупную задачу.
-                        Работать стало проще, и команда перестала «тонуть» в общем описании.
-                      </p>
-                      <div class="po-cmt__actions">
-                        <button class="po-cmt__reply" data-reply="Анна">Ответить</button>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article class="po-cmt">
-                    <span class="po-cmt__avatar">И</span>
-                    <div class="po-cmt__body">
-                      <div class="po-cmt__top">
-                        <b class="po-cmt__name">Игорь</b>
-                        <time class="po-cmt__date">10.09.2025</time>
-                      </div>
-                      <p class="po-cmt__text">
-                        Отличная статья. Пункт про сверхурочную работу — в точку. Лучше сразу
-                        закладывать реалистичные сроки, чем потом неделями «догонять» проект.
-                      </p>
-                      <div class="po-cmt__actions">
-                        <button class="po-cmt__reply" data-reply="Игорь">Ответить</button>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <form class="po-comments__form" data-form>
-                  <div class="dart-row po-comments__row">
-                    <div class="d-col-24 d-col-lg-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
-                    <div class="d-col-24 d-col-lg-12"><input type="email" name="email" placeholder="Ваш e-mail" required></div>
+                  <div id="comments-wrapper">
+                    <ol class="comment-list" id="comments">
+                      <li class="ticket-comment" id="comment-1" data-parent="0" data-newparent="0" data-id="1">
+                        <div class="ticket-comment-body ticket-comment-guest">
+                          <div class="ticket-comment-header">
+                            <div class="ticket-comment-dot-wrapper">
+                              <div class="ticket-comment-dot"></div>
+                            </div>
+                            <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=24&d=mm" class="ticket-avatar" alt="">
+                            <span class="ticket-comment-author">Максим</span>
+                            <span class="ticket-comment-createdon">07.09.2025</span>
+                            <span class="ticket-comment-link"><a href="#comment-1">#</a></span>
+                            <span class="ticket-comment-star"></span>
+                            <span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span>
+                            <span class="ticket-comment-rating inactive">
+                              <span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+                              <span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+                              <span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+                            </span>
+                          </div>
+                          <div class="ticket-comment-text">
+                            Согласен на 100% по поводу документации. Пока не опишешь задачу словами —
+                            не поймёшь, что вообще хочешь получить на выходе. А вот момент про решение без
+                            разработчика очень больной, сам через это проходил.
+                          </div>
+                        </div>
+                        <div class="comment-reply">
+                          <a href="#" class="reply">ответить</a>
+                        </div>
+                        <ol class="comments-list">
+                          <li class="ticket-comment" id="comment-2" data-parent="1" data-newparent="1" data-id="2">
+                            <div class="ticket-comment-body ticket-comment-guest">
+                              <div class="ticket-comment-header">
+                                <div class="ticket-comment-dot-wrapper">
+                                  <div class="ticket-comment-dot"></div>
+                                </div>
+                                <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=24&d=mm" class="ticket-avatar" alt="">
+                                <span class="ticket-comment-author">Анна</span>
+                                <span class="ticket-comment-createdon">07.09.2025</span>
+                                <span class="ticket-comment-link"><a href="#comment-2">#</a></span>
+                                <span class="ticket-comment-star"></span>
+                                <span class="ticket-comment-up"><a href="#comment-1" data-id="2" data-parent="1">&uarr;</a></span>
+                                <span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span>
+                                <span class="ticket-comment-rating inactive">
+                                  <span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+                                  <span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+                                  <span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+                                </span>
+                              </div>
+                              <div class="ticket-comment-text">
+                                Спасибо за разбор! Взяла себе за правило декомпозировать каждую крупную задачу.
+                                Работать стало проще, и команда перестала «тонуть» в общем описании.
+                              </div>
+                            </div>
+                            <div class="comment-reply">
+                              <a href="#" class="reply">ответить</a>
+                            </div>
+                            <ol class="comments-list"></ol>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="ticket-comment" id="comment-3" data-parent="0" data-newparent="0" data-id="3">
+                        <div class="ticket-comment-body ticket-comment-guest">
+                          <div class="ticket-comment-header">
+                            <div class="ticket-comment-dot-wrapper">
+                              <div class="ticket-comment-dot"></div>
+                            </div>
+                            <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=24&d=mm" class="ticket-avatar" alt="">
+                            <span class="ticket-comment-author">Игорь</span>
+                            <span class="ticket-comment-createdon">10.09.2025</span>
+                            <span class="ticket-comment-link"><a href="#comment-3">#</a></span>
+                            <span class="ticket-comment-star"></span>
+                            <span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span>
+                            <span class="ticket-comment-rating inactive">
+                              <span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+                              <span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+                              <span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+                            </span>
+                          </div>
+                          <div class="ticket-comment-text">
+                            Отличная статья. Пункт про сверхурочную работу — в точку. Лучше сразу
+                            закладывать реалистичные сроки, чем потом неделями «догонять» проект.
+                          </div>
+                        </div>
+                        <div class="comment-reply">
+                          <a href="#" class="reply">ответить</a>
+                        </div>
+                        <ol class="comments-list"></ol>
+                      </li>
+                    </ol>
                   </div>
-                  <textarea name="message" placeholder="Поделитесь мнением..." rows="4" required></textarea>
-                  <button type="submit" class="dart-btn dart-btn-primary-alt">Отправить комментарий →</button>
-                </form>
-              </section>
+
+                  <div class="comments-tpanel">
+                    <div class="tpanel-refresh"></div>
+                    <div class="tpanel-new"></div>
+                  </div>
+                </div>
+
+                <h4 id="comment-new-link">
+                  <a href="#" class="btn btn-default">Написать комментарий</a>
+                </h4>
+
+                <div id="comment-form-placeholder">
+                  <form id="comment-form" action="" method="post" class="well">
+                    <div id="comment-preview-placeholder"></div>
+                    <input type="hidden" name="thread" value="resource-0">
+                    <input type="hidden" name="parent" value="0">
+                    <input type="hidden" name="id" value="0">
+                    <input type="hidden" name="form_key" value="">
+
+                    <div class="form-group">
+                      <label for="comment-name">Автор</label>
+                      <input type="text" name="name" value="" id="comment-name" class="form-control">
+                      <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="comment-email">Email</label>
+                      <input type="text" name="email" value="" id="comment-email" class="form-control">
+                      <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="comment-editor"></label>
+                      <textarea name="text" id="comment-editor" cols="30" rows="10" class="form-control"></textarea>
+                      <span class="error" id="text-error"></span>
+                    </div>
+
+                    <div class="form-actions">
+                      <input type="button" class="btn btn-default preview" value="Предпросмотр" title="Ctrl + Enter">
+                      <input type="submit" class="btn btn-primary submit" value="Написать" title="Ctrl + Shift + Enter">
+                      <span class="time"></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
 
             </article>
 
