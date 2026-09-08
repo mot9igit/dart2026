@@ -89,6 +89,7 @@ export default defineConfig({
         templateSolution: resolve(__dirname, "pages/templates/solution.html"),        
         blogCategory: resolve(__dirname, "pages/blog/category.html"),        
         blogPost: resolve(__dirname, "pages/blog/post.html"),        
+        brief: resolve(__dirname, "pages/brief.html"),        
       },
       output: {
         entryFileNames: `js/[name].js`,

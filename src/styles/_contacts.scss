@@ -188,6 +188,12 @@
   .dart-btn {
     margin-top: 4px;
   }
+
+  .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 /* =========================================================

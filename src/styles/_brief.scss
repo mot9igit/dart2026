@@ -1,0 +1,405 @@
+@use 'sass:math';
+@use 'vars' as *;
+
+/* =========================================================
+   BRIEF — HERO
+========================================================= */
+.br-hero {
+  position: relative;
+  background: #f7f7fa;
+  padding: 170px 0 90px;
+  overflow: hidden;
+
+  &__gradient {
+    position: absolute;
+    top: -220px;
+    right: -200px;
+    width: 760px;
+    height: 760px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 15, 0.08), transparent 65%);
+    pointer-events: none;
+  }
+
+  &__content {
+    max-width: 720px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.03;
+    letter-spacing: -0.03em;
+    color: var(--dart-dark);
+    margin-bottom: 22px;
+
+    span {
+      color: var(--dart-red);
+    }
+  }
+
+  &__sub {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--dart-gray);
+    max-width: 620px;
+    margin-bottom: 30px;
+  }
+
+  &__trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--dart-dark);
+
+      &::before {
+        content: "\2713";
+        color: var(--dart-red);
+        font-weight: 800;
+      }
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding: 140px 0 60px;
+    &__title { font-size: 50px; }
+  }
+
+  @media (max-width: $tablets) {
+    padding: 130px 0 50px;
+    &__title { font-size: 40px; }
+  }
+
+  @media (max-width: $big-phones) {
+    &__sub { font-size: 16px; }
+    &__trust { gap: 12px; }
+  }
+}
+
+/* =========================================================
+   BRIEF — WRAP
+========================================================= */
+.br-section {
+  padding-top: 0;
+}
+
+.br-wrap {
+  max-width: 860px;
+  margin: -60px auto 0;
+}
+
+/* =========================================================
+   BRIEF — STEPPER
+========================================================= */
+.br-stepper {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(19, 19, 19, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(19, 19, 19, 0.08);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 28px;
+}
+
+.br-step {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dart-gray);
+  transition: background-color 0.25s ease, color 0.25s ease;
+
+  &__num {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.5px solid rgba(19, 19, 19, 0.15);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dart-gray);
+    transition: all 0.25s ease;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &.is-active {
+    background: var(--dart-dark);
+    color: #fff;
+
+    .br-step__num {
+      background: var(--dart-red);
+      border-color: var(--dart-red);
+      color: #fff;
+    }
+  }
+
+  &.is-done {
+    color: var(--dart-dark);
+
+    .br-step__num {
+      background: var(--dart-red);
+      border-color: var(--dart-red);
+      color: #fff;
+    }
+  }
+
+  @media (max-width: $tablets) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px 8px;
+
+    .br-step__label {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: $big-phones) {
+    .br-step__label {
+      display: none;
+    }
+  }
+}
+
+/* =========================================================
+   BRIEF — FORM
+========================================================= */
+.br-form {
+  background: #fff;
+  border: 1px solid rgba(19, 19, 19, 0.06);
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 30px 80px rgba(19, 19, 19, 0.08);
+  margin-top: 24px;
+
+  @media (max-width: $tablets) {
+    padding: 32px 24px;
+  }
+}
+
+.br-panel {
+  display: none;
+
+  &.is-active {
+    display: block;
+    animation: br-fade 0.3s ease;
+  }
+
+  @keyframes br-fade {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  &__head {
+    margin-bottom: 34px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  &__tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--dart-red);
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--dart-dark);
+    margin-bottom: 10px;
+
+    @media (max-width: $tablets) {
+      font-size: 26px;
+    }
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--dart-gray);
+    max-width: 560px;
+  }
+}
+
+/* =========================================================
+   BRIEF — FIELDS
+========================================================= */
+.br-fieldset,
+.br-field {
+  margin-bottom: 26px;
+}
+
+.br-fieldset {
+  &:last-child,
+  & + .br-field:last-child { margin-bottom: 0; }
+}
+
+.br-field:last-child {
+  margin-bottom: 0;
+}
+
+.br-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dart-dark);
+  margin-bottom: 12px;
+
+  &__opt {
+    font-weight: 400;
+    color: var(--dart-gray);
+    font-size: 13px;
+  }
+}
+
+.br-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+
+  @media (max-width: $big-phones) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.br-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #f7f7fa;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: var(--dart-dark);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-sizing: border-box;
+
+  &::placeholder { color: #b9bbbc; }
+
+  &:focus {
+    border-color: var(--dart-red);
+    box-shadow: 0 0 0 3px rgba(255, 0, 15, 0.1);
+    background: #fff;
+  }
+
+  &--area {
+    resize: vertical;
+    min-height: 90px;
+    line-height: 1.5;
+  }
+
+  &--select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239D9FA0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    cursor: pointer;
+  }
+}
+
+/* =========================================================
+   BRIEF — OPTIONS (radio cards)
+========================================================= */
+.br-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.br-option {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 16px;
+    border: 1.5px solid #e5e5e5;
+    border-radius: 12px;
+    background: #f7f7fa;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dart-dark);
+    transition: all 0.2s ease;
+  }
+
+  input:checked + span {
+    border-color: var(--dart-red);
+    background: rgba(255, 0, 15, 0.06);
+    color: var(--dart-red);
+    box-shadow: 0 0 0 3px rgba(255, 0, 15, 0.08);
+  }
+
+  &:hover span {
+    border-color: var(--dart-dark);
+  }
+
+  &--other {
+    max-width: 240px;
+  }
+}
+
+/* =========================================================
+   BRIEF — NAV
+========================================================= */
+.br-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid #f0f0f0;
+
+  .dart-btn {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: $big-phones) {
+  .br-nav {
+    flex-direction: column-reverse;
+    .dart-btn { min-width: 100%; }
+  }
+}

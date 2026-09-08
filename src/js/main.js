@@ -762,3 +762,65 @@ if (tocLinks.length && "IntersectionObserver" in window) {
   );
   targets.forEach((s) => tocSpy.observe(s));
 }
+
+/* ------- Brief: multi-step form ------- */
+const brForm = $(".br-form");
+if (brForm) {
+  const steps = $$(".br-step", brForm);
+  const panels = $$(".br-panel", brForm);
+  const prevBtn = $("#brPrev");
+  const nextBtn = $("#brNext");
+  const submitBtn = $("#brSubmit");
+  let current = 1;
+  let maxVisited = 1;
+
+  const goTo = (n) => {
+    current = Math.min(Math.max(n, 1), panels.length);
+    if (current > maxVisited) maxVisited = current;
+    panels.forEach((p) => p.classList.toggle("is-active", +p.dataset.panel === current));
+    steps.forEach((s) => {
+      const sn = +s.dataset.step;
+      s.classList.toggle("is-active", sn === current);
+      s.classList.toggle("is-done", sn < current);
+    });
+    prevBtn.style.display = current === 1 ? "none" : "";
+    const last = current === panels.length;
+    nextBtn.style.display = last ? "none" : "";
+    submitBtn.style.display = last ? "" : "none";
+    brForm.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const panelValid = (panel) =>
+    $$("select[required], input[type='radio'][required]", panel).every((el) => {
+      if (el.type === "radio") {
+        return !!panel.querySelector(`input[name="${el.name}"]:checked`);
+      }
+      return !!el.value;
+    }) &&
+    panel.checkValidity();
+
+  steps.forEach((s) => {
+    s.addEventListener("click", () => {
+      const target = +s.dataset.step;
+      if (target > maxVisited) return;
+      goTo(target);
+    });
+  });
+  prevBtn.addEventListener("click", () => goTo(current - 1));
+  nextBtn.addEventListener("click", () => {
+    const panel = panels.find((p) => +p.dataset.panel === current);
+    if (!panelValid(panel)) {
+      const first = panel.querySelector(":invalid");
+      if (first) first.focus();
+      return;
+    }
+    goTo(current + 1);
+  });
+
+  brForm.addEventListener("submit", (e) => {
+    if (!panelValid(panels.find((p) => +p.dataset.panel === current)) || !brForm.checkValidity()) {
+      e.preventDefault();
+      return;
+    }
+  });
+}

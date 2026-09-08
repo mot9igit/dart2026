@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="br-hero">
+        <div class="br-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="brief.html" itemprop="item"><span itemprop="name">Бриф на разработку сайта</span></a><meta itemprop="position" content="2"></li>
+            </ol>
+          </div>
+
+          <div class="br-hero__content">
+            <span class="n-kicker" data-reveal>Онлайн-бриф DART AGENCY</span>
+            <h1 class="br-hero__title" data-reveal>Бриф на разработку сайта</h1>
+            <p class="br-hero__sub" data-reveal>
+              Заполните 4 коротких шага — расскажите о задаче, целях, предпочтениях и бюджете.
+              Получите точное коммерческое предложение за 24 часа.
+            </p>
+            <div class="br-hero__trust" data-reveal>
+              <span>Займёт 5–7 минут</span>
+              <span>Это ни к чему не обязывает</span>
+              <span>Ответим в течение дня</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRIEF FORM -->
+      <section class="n-section br-section">
+        <div class="dart-container">
+          <div class="br-wrap" data-reveal>
+            <form class="br-form" data-form novalidate>
+
+              <!-- STEPPER -->
+              <div class="br-stepper" id="brStepper">
+                <button type="button" class="br-step is-active" data-step="1">
+                  <span class="br-step__num">1</span>
+                  <span class="br-step__label">О проекте</span>
+                </button>
+                <button type="button" class="br-step" data-step="2">
+                  <span class="br-step__num">2</span>
+                  <span class="br-step__label">Цели</span>
+                </button>
+                <button type="button" class="br-step" data-step="3">
+                  <span class="br-step__num">3</span>
+                  <span class="br-step__label">Дизайн</span>
+                </button>
+                <button type="button" class="br-step" data-step="4">
+                  <span class="br-step__num">4</span>
+                  <span class="br-step__label">Бюджет и контакты</span>
+                </button>
+              </div>
+
+              <div class="br-panels">
+
+                <!-- STEP 1 -->
+                <div class="br-panel is-active" data-panel="1">
+                  <div class="br-panel__head">
+                    <span class="br-panel__tag">Шаг 1 из 4</span>
+                    <h2 class="br-panel__title">Расскажите о проекте</h2>
+                    <p class="br-panel__desc">С чего начнём: какой сайт нужен и в каком он сейчас состоянии.</p>
+                  </div>
+
+                  <div class="br-fieldset">
+                    <span class="br-label">Какой тип сайта вам нужен?</span>
+                    <div class="br-options">
+                      <label class="br-option"><input type="radio" name="site-type" value="Лендинг" required><span>Лендинг</span></label>
+                      <label class="br-option"><input type="radio" name="site-type" value="Корпоративный сайт" required><span>Корпоративный сайт</span></label>
+                      <label class="br-option"><input type="radio" name="site-type" value="Интернет-магазин" required><span>Интернет-магазин</span></label>
+                      <label class="br-option"><input type="radio" name="site-type" value="Портфолио" required><span>Портфолио</span></label>
+                      <label class="br-option br-option--other"><input type="radio" name="site-type" value="Другое" required><span>Другое</span></label>
+                    </div>
+                  </div>
+
+                  <div class="br-fieldset">
+                    <span class="br-label">Сайт уже есть?</span>
+                    <div class="br-options br-options--compact">
+                      <label class="br-option"><input type="radio" name="has-site" value="Нет, делаем с нуля" required><span>Нет, делаем с нуля</span></label>
+                      <label class="br-option"><input type="radio" name="has-site" value="Есть, хочу новый" required><span>Есть, хочу новый</span></label>
+                      <label class="br-option"><input type="radio" name="has-site" value="Есть, обновим существующий" required><span>Есть, обновим существующий</span></label>
+                    </div>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-url">Ссылка на текущий сайт <span class="br-label__opt">(если есть)</span></label>
+                    <input class="br-input" id="br-url" type="text" name="current-url" placeholder="https://example.ru">
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-deadline">Когда нужно запустить?</label>
+                    <select class="br-input br-input--select" id="br-deadline" name="deadline" required>
+                      <option value="" selected>Выберите срок</option>
+                      <option value="Как можно скорее">Как можно скорее</option>
+                      <option value="В течение месяца">В течение месяца</option>
+                      <option value="1–3 месяца">1–3 месяца</option>
+                      <option value="3+ месяца">3+ месяца</option>
+                      <option value="Пока не определились">Пока не определились</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="br-panel" data-panel="2">
+                  <div class="br-panel__head">
+                    <span class="br-panel__tag">Шаг 2 из 4</span>
+                    <h2 class="br-panel__title">Цели и задачи</h2>
+                    <p class="br-panel__desc">Что должен делать сайт для вашего бизнеса.</p>
+                  </div>
+
+                  <div class="br-fieldset">
+                    <span class="br-label">Главная цель сайта?</span>
+                    <div class="br-options br-options--compact">
+                      <label class="br-option"><input type="radio" name="goal" value="Продажи" required><span>Продажи</span></label>
+                      <label class="br-option"><input type="radio" name="goal" value="Заявки и лиды" required><span>Заявки и лиды</span></label>
+                      <label class="br-option"><input type="radio" name="goal" value="Имидж и доверие" required><span>Имидж и доверие</span></label>
+                      <label class="br-option"><input type="radio" name="goal" value="Информирование" required><span>Информирование</span></label>
+                    </div>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-features">Какие ключевые функции должны быть? <span class="br-label__opt">(обязательно)</span></label>
+                    <textarea class="br-input br-input--area" id="br-features" name="features" rows="4" required placeholder="Например: каталог с фильтрами, корзина и онлайн-оплата, форма заявки, личный кабинет"></textarea>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-target">Кто ваша целевая аудитория?</label>
+                    <textarea class="br-input br-input--area" id="br-target" name="target" rows="3" placeholder="Для кого делаем сайт: B2B, B2C, возраст, регион"></textarea>
+                  </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="br-panel" data-panel="3">
+                  <div class="br-panel__head">
+                    <span class="br-panel__tag">Шаг 3 из 4</span>
+                    <h2 class="br-panel__title">Дизайн и стиль</h2>
+                    <p class="br-panel__desc">Ваши предпочтения по внешнему виду и фирменному стилю.</p>
+                  </div>
+
+                  <div class="br-fieldset">
+                    <span class="br-label">Какой стиль вам ближе?</span>
+                    <div class="br-options">
+                      <label class="br-option"><input type="radio" name="style" value="Минимализм" required><span>Минимализм</span></label>
+                      <label class="br-option"><input type="radio" name="style" value="Классика" required><span>Классика</span></label>
+                      <label class="br-option"><input type="radio" name="style" value="Креативный" required><span>Креативный</span></label>
+                      <label class="br-option"><input type="radio" name="style" value="Строгий корпоративный" required><span>Строгий корпоративный</span></label>
+                      <label class="br-option"><input type="radio" name="style" value="Современный технологичный" required><span>Современный технологичный</span></label>
+                    </div>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-brand">Есть ли логотип и фирменный стиль?</label>
+                    <select class="br-input br-input--select" id="br-brand" name="brand" required>
+                      <option value="" selected>Выберите вариант</option>
+                      <option value="Логотип и стиль есть">Логотип и стиль есть</option>
+                      <option value="Только логотип">Только логотип</option>
+                      <option value="Нет, нужно разработать">Нет, нужно разработать</option>
+                      <option value="Есть, но хотим обновить">Есть, но хотим обновить</option>
+                    </select>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-refs">Ссылки на сайты, которые нравятся</label>
+                    <textarea class="br-input br-input--area" id="br-refs" name="refs" rows="3" placeholder="Оставьте ссылки или опишите, что цепляет визуально. Необязательно."></textarea>
+                  </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="br-panel" data-panel="4">
+                  <div class="br-panel__head">
+                    <span class="br-panel__tag">Шаг 4 из 4</span>
+                    <h2 class="br-panel__title">Бюджет и контакты</h2>
+                    <p class="br-panel__desc">Осталось уточнить бюджет и оставить контакты для связи.</p>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-budget">Бюджет на проект</label>
+                    <select class="br-input br-input--select" id="br-budget" name="budget" required>
+                      <option value="" selected>Выберите диапазон</option>
+                      <option value="до 50 000 ₽">до 50 000 ₽</option>
+                      <option value="50 000–150 000 ₽">50 000–150 000 ₽</option>
+                      <option value="150 000–300 000 ₽">150 000–300 000 ₽</option>
+                      <option value="от 300 000 ₽">от 300 000 ₽</option>
+                      <option value="Пока не знаю">Пока не знаю</option>
+                    </select>
+                  </div>
+
+                  <div class="br-grid">
+                    <div class="br-field">
+                      <label class="br-label" for="br-name">Ваше имя</label>
+                      <input class="br-input" id="br-name" type="text" name="name" placeholder="Иван" required>
+                    </div>
+                    <div class="br-field">
+                      <label class="br-label" for="br-company">Компания <span class="br-label__opt">(если есть)</span></label>
+                      <input class="br-input" id="br-company" type="text" name="company" placeholder="ООО «Пример»">
+                    </div>
+                    <div class="br-field">
+                      <label class="br-label" for="br-phone">Телефон</label>
+                      <input class="br-input" id="br-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="br-field">
+                      <label class="br-label" for="br-email">Email</label>
+                      <input class="br-input" id="br-email" type="email" name="email" placeholder="you@example.ru" required>
+                    </div>
+                  </div>
+
+                  <div class="br-field">
+                    <label class="br-label" for="br-comment">Комментарий</label>
+                    <textarea class="br-input br-input--area" id="br-comment" name="comment" rows="3" placeholder="Что ещё важно учесть? Необязательно."></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- NAVIGATION -->
+              <div class="br-nav">
+                <button type="button" class="dart-btn dart-btn-secondary br-nav__prev" id="brPrev" style="display:none;">
+                  <span>← Назад</span>
+                </button>
+                <button type="button" class="dart-btn dart-btn-primary-alt br-nav__next" id="brNext">
+                  <span>Далее →</span>
+                </button>
+                <button type="submit" class="dart-btn dart-btn-primary-alt br-nav__submit" id="brSubmit" style="display:none;">
+                  <span>Отправить бриф →</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Хотите обсудить устно?</span>
+            <h2 class="n-cta__title">Обсудим проект<br>по телефону</h2>
+            <p class="n-cta__desc">Если заполнять бриф неудобно — позвоните, зададим те же вопросы сами.</p>
+            <div class="n-cta__actions">
+              <a href="tel:+79991158355" class="dart-btn dart-btn-light dart-btn-lg">Позвонить сейчас →</a>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Написать нам</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>
