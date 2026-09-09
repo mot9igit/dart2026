@@ -715,7 +715,15 @@ function fallbackCopy(text, done) {
 }
 
 /* ------- Blog post: syntax highlight code blocks ------- */
-document.querySelectorAll("pre code[class*='language-']").forEach((el) => {
+// Обрабатываем и <code class="language-*">, и <pre class="language-*"> (когда Jevix
+// вырезает вложенный <code>). Избегаем двойной обработки pre, внутри которого
+// уже есть подсвеченный code.
+document.querySelectorAll("pre[class*='language-']").forEach((pre) => {
+  const innerCode = pre.querySelector("code");
+  if (innerCode && innerCode.className.includes("language-")) return;
+  Prism.highlightElement(pre);
+});
+document.querySelectorAll("code[class*='language-']").forEach((el) => {
   Prism.highlightElement(el);
 });
 

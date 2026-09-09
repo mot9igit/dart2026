@@ -1,0 +1,73 @@
+<?php
+/**
+ * JevixWrapper
+ *
+ * Обёртка над сниппетом Jevix, защищающая блоки <pre>...</pre> от порчи
+ * парсером MODx (фигурные скобки {}, спецсимволы !, \, <, > и т.д.).
+ *
+ * Принцип работы:
+ *   1. Из текста вырезаются все <pre>...</pre> блоки и заменяются на
+ *      маркеры-плейсхолдеры вида [[+code_N]].
+ *   2. Оставшийся текст прогоняется через сниппет Jevix (HTML-фильтрация).
+ *   3. Маркеры заменяются содержимым одноимённых чанков (код хранится в
+ *      чанках, а не в тексте ресурса => парсер MODx/Jevix код не трогает).
+ *
+ * Параметры:
+ *   - text        (string) входящий текст статьи (обычно [[+content]])
+ *   - jevixParams (string) необязательные параметры для Jevix в виде
+ *                  строки "key=`val`&key2=`val2`"
+ *   - codeTpl     (string) имя чанка-обёртки для кода (по умолчанию 'codeBlock')
+ *
+ * Использование (шаблон/чанк статьи):
+ *   [[JevixWrapper? &text=`[[+content]]`]]
+ *
+ * В поле content ресурса размещаются маркеры-плейсхолдеры для каждого
+ * блока кода:
+ *   ...текст статьи... [[+code_1]] ...продолжение...
+ *
+ * Сами блоки кода хранятся в чанках MODx с именами codeBlock_1, codeBlock_2
+ * и т.д. (префикс codeBlock + номер). Содержимое чанка вставляется как есть.
+ */
+
+// --- Читаем параметры -----------------------------------------------
+$text = trim((string) $modx->getOption('text', $scriptProperties, ''));
+$codeTpl = $modx->getOption('codeTpl', $scriptProperties, 'codeBlock');
+$jevixParams = $modx->getOption('jevixParams', $scriptProperties, '');
+
+if ($text === '') {
+    return '';
+}
+
+// --- 1. Вырезаем <pre>...</pre> ----------------------------------------
+$codeBlocks = array();
+$matched = preg_match_all('/<pre\b[^>]*>.*?<\/pre>/is', $text, $m);
+if ($matched !== false && $matched > 0) {
+    foreach ($m[0] as $i => $block) {
+        $key = 'code_' . ($i + 1);
+        $codeBlocks[$key] = $block;
+        $text = str_replace($block, '[[' . $key . ']]', $text);
+    }
+}
+
+// --- 2. Прогоняем текст БЕЗ кода через Jevix ----------------------------
+$jevixInput = array('input' => $text, 'text' => $text);
+if ($jevixParams !== '') {
+    parse_str($jevixParams, $extras);
+    $jevixInput = array_merge($jevixInput, $extras);
+}
+$filtered = (string) $modx->runSnippet('Jevix', $jevixInput);
+
+// --- 3. Вставляем код-блоки обратно из чанков ----------------------------
+$output = $filtered;
+foreach ($codeBlocks as $key => $block) {
+    $chunkName = $codeTpl . '_' . (int) substr($key, 5);
+    $chunkContent = (string) $modx->getChunk($chunkName, array('code' => $block));
+    if ($chunkContent !== '') {
+        $output = str_replace('[[' . $key . ']]', $chunkContent, $output);
+    } else {
+        // Если одноимённого чанка нет — вставляем исходный <pre> как есть.
+        $output = str_replace('[[' . $key . ']]', $block, $output);
+    }
+}
+
+return $output;
