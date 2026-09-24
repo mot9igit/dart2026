@@ -229,7 +229,7 @@
   padding: 20px 24px;
   margin: 24px 0;
 
-  b {
+  b, strong {
     display: block;
     color: var(--dart-red);
     font-size: 14px;
@@ -1165,7 +1165,7 @@
   }
 }
 
-@media (max-width: $desktop) {
+@media (max-width: $small-desktop) {
   .po-side {
     position: static;
     display: grid;

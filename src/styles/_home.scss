@@ -982,6 +982,12 @@
   flex-direction: column;
   gap: 20px;
 
+  .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   input,
   textarea {
     width: 100%;

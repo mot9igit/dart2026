@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="snegotehnika.html" itemprop="item"><span itemprop="name">СнегоТехника — интернет-магазин снегоходов</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Интернет-магазин техники</span>
+              <h1 class="pj-hero__title" data-reveal>СнегоТехника — интернет-магазин<br><span>снегоходной техники</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Магазин из Рыбинска: снегоходы, квадроциклы и мотобуксировщики с сотнями моделей,
+                многоуровневым каталогом, карточками с характеристиками и онлайн-заказом без звонка.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Интернет-магазин</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">E-commerce</a>
+                <a href="/pages/portfolio/index.html">B2C</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>10+</b><span>разделов каталога</span></div>
+                <div class="pj-fact__item"><b>1000+</b><span>товарных позиций</span></div>
+                <div class="pj-fact__item"><b>30+</b><span>брендов техники</span></div>
+                <div class="pj-fact__item"><b>5</b><span>каналов для заявок</span></div>
+                <div class="pj-fact__item"><b>CRM</b><span>все заказы в одной воронке</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#structure" class="sv-nav__link">Структура</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#compare" class="sv-nav__link">Сравнение</a>
+            <a href="#cart" class="sv-nav__link">Корзина</a>
+            <a href="#blog" class="sv-nav__link">Блог</a>
+            <a href="#cta" class="sv-nav__link">Формы</a>
+            <a href="#design" class="sv-nav__link">Дизайн</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>СнегоТехника | Рыбинск</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Снегоходная и мототехника</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Продающий каталог и онлайн-заказ</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, развивается</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — акции, популярные модели и подборка для рыбалки</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                «СнегоТехника» торгует техникой, на которой ездят по снегу: снегоходы (Буран, Тайга, Арктик,
+                Ирбис), квадроциклы, мотобуксировщики, запчасти и аксессуары. Ассортимент вырос до тысячи позиций,
+                и старому сайту стало тесно: продажи держались на звонках, а каталог не помогал покупателю выбрать.
+                Нужен был сайт, который сам ведёт от «интересно» до заказа. Рассказываю, как мы его собрали.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Старый сайт был «полкой с товарами»: карточки без внятных характеристик и цен, плоский список
+                каталога без фильтров, а заказы принимали только по телефону — заявки оседали в почте и терялись.
+                При этом техника дорогая, выбор между моделями сложный, а покупатели приходят с конкретным
+                вопросом: «что взять для рыбалки», «чем Арктик отличается от Бурана».
+              </p>
+              <p>Сформулировали четыре ключевые цели:</p>
+              <ul>
+                <li><b>Продающий каталог</b> — понятная структура на тысячу позиций и карточки с характеристиками вместо «просто списка».</li>
+                <li><b>Онлайн-заказ</b> — корзина и оформление без обязательного звонка, с расчётом доставки.</li>
+                <li><b>Контент и трафик</b> — блог с полезными статьями о выборе, ТО и ремонте техники.</li>
+                <li><b>Заявки без потерь</b> — формы «Рассчитать цену» и «Получить каталог» с отправкой в CRM и мессенджеры.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Разнородная номенклатура: снегоход, мотобуксировщик, запчасть и аксессуар описываются разными наборами характеристик. Каталог должен держать гибкие атрибуты и показывать одинаково чистую карточку для любой категории — от «Бурана» до гусеницы.</p>
+              </div>
+
+              <!-- SCREENSHOT: catalog with sidebar -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru/catalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — боковое меню разделов и сетка товаров с фильтрами</span>
+              </div>
+
+              <h2 id="structure">2. Структура каталога</h2>
+              <p>
+                Начали с дерева каталога: десять разделов, каждый со своими подкатегориями. Снегоходы — по брендам
+                (Буран, Арктик, Тайга, Ирбис), мотобуксировщики — по моделям, запчасти — по узлам (двигатель,
+                гусеница, подвеска, электрика). Хлебные крошки, боковое меню и подборки «Снегоходы для рыбалки»
+                помогают не потеряться даже в тысяче позиций.
+              </p>
+              <ul>
+                <li><b>Снегоходы и квадроциклы</b> — по брендам и сценариям: для рыбалки, охоты, хозяйства.</li>
+                <li><b>Мотобуксировщики и БТС</b> — 30+ моделей с фильтрами по мощности и типу.</li>
+                <li><b>Запчасти и аксессуары</b> — по узлам техники: гусеницы, стёкла, подогревы, сани.</li>
+                <li><b>Садовая техника и двигатели</b> — Lifan, Habert, Loncin: генераторы, мойки, мотопомпы.</li>
+              </ul>
+
+              <h2 id="catalog">3. Каталог и карточки товаров</h2>
+              <p>
+                Карточка отвечает на вопросы покупателя до того, как он их задаст: двигатель, мощность, гусеница,
+                трансмиссия, тормоза, комплектация. Вместо кнопки «Купить» — «Рассчитать цену»: для дорогой техники
+                клиент сначала уточняет комплектацию и доставку, и заявка приходит менеджеру уже с контекстом —
+                модель, страница, город.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru/catalog/snegohodi/buran/vostok.html</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка товара — фото, характеристики и кнопка «Рассчитать цену»</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии в каталоге</b>
+                <p>PHP · MySQL · многоуровневый каталог · гибкие атрибуты товаров · поиск · сравнение · ChPU · Schema.org (Product, Offer)</p>
+              </div>
+
+              <h2 id="compare">4. Сравнение моделей</h2>
+              <p>
+                Для техники выбор «между моделями» решает всё: чем Арктик отличается от Бурана, а Тайга — от Ирбиса.
+                Собрали таблицы сравнения по ключевым характеристикам — двигатель, скорость, гусеница, трансмиссия.
+                Покупатель видит разницу за одну минуту, а вопросы в поддержку сокращаются.
+              </p>
+
+              <!-- SCREENSHOT: compare table -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru/catalog/snegohodi/compare</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--compare">
+                      <div class="pj-mock--compare__head"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Сравнение моделей — таблица характеристик Буран / Арктик / Тайга</span>
+              </div>
+
+              <h2 id="cart">5. Корзина и оформление заказа</h2>
+              <p>
+                Заказ можно оформить полностью онлайн: корзина, расчёт доставки, данные получателя и подтверждение
+                менеджером. Покупатель из другого региона не обязан звонить — заявка с составом корзины уходит
+                менеджеру, который подтверждает наличие и сроки. Так магазин перестал терять заказы «после работы».
+              </p>
+
+              <!-- SCREENSHOT: cart -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru/cart.html</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="sum"></span><span class="checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина: состав заказа, итоговая сумма и кнопка оформления</span>
+              </div>
+
+              <h2 id="blog">6. Блог и контент</h2>
+              <p>
+                Техника требует знаний, а знаний в открытом доступе мало. Наполнили блог практическими статьями:
+                «Как проводить ТО двигателя на Буране», «Обслуживание трансмиссии», «Меры безопасности при
+                эксплуатации». Контент отвечает на вопросы, по которым люди ищут, — и приводит на сайт тех,
+                кто уже настроен покупать.
+              </p>
+
+              <!-- SCREENSHOT: blog grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru/blog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span>
+                      <span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Блог — сетка статей о выборе, ТО и ремонте техники</span>
+              </div>
+
+              <h2 id="cta">7. Формы и заявки</h2>
+              <p>
+                У сайта несколько точек сбора заявок: «Рассчитать цену» на карточках, «Получить каталог» на главной
+                (лид-магнит — подборка из 5 снегоходов для рыбалки) и форма заказа. Каждая заявка уходит в CRM
+                и дублируется менеджеру в Telegram, с согласием на обработку персональных данных. Заявки перестали
+                теряться в почте.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужен такой же магазин?</h3>
+                  <p>Сделаем каталог с онлайн-заказом и CRM-интеграцией под ваш ассортимент.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- SCREENSHOT: lead form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>snegotehnika.ru — Получить каталог</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма «Получить каталог» — Telegram, VK, WhatsApp или e-mail, с согласием на обработку данных</span>
+              </div>
+
+              <h2 id="design">8. Дизайн</h2>
+              <p>
+                Строгий «технический» стиль: зимняя цветовая гамма, крупные фотографии техники на снегу, аккуратные
+                карточки с характеристиками. Адаптиву уделили особое внимание — большая часть заказов приходит
+                с телефона: каталог, корзина и формы работают на мобильных не хуже десктопа.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Адаптив — каталог и корзина работают без усилий на телефоне</span>
+              </div>
+
+              <h2 id="seo">9. SEO и запуск</h2>
+              <p>
+                SEO закладывали до запуска: семантическое ядро под коммерческие запросы («снегоход буран цена»,
+                «мотобуксировщик купить», «гусеницы для бурана»), ЧПУ-адреса и микроразметка Schema.org
+                (Product, Offer) для карточек товаров. Перенос с новой структуры прошёл без потери позиций,
+                после запуска — ежемесячные доработки по результатам аналитики.
+              </p>
+
+              <h2 id="results">10. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="10" data-suffix="+">0</b><span>разделов каталога</span></div>
+                <div class="pj-result"><b data-count="1000" data-suffix="+">0</b><span>товарных позиций</span></div>
+                <div class="pj-result"><b data-count="30" data-suffix="+">0</b><span>брендов в каталоге</span></div>
+                <div class="pj-result"><b data-count="4">0</b><span>канала сбора заявок: сайт, CRM, Telegram, мессенджеры</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>каталог на тысячу позиций стал навигацией, а не «полкой» — покупатель сам выбирает модель;</li>
+                <li>онлайн-заказ работает без звонка, заявки не теряются в почте;</li>
+                <li>«Рассчитать цену» приносит заявки с контекстом — менеджер сразу видит модель и город клиента;</li>
+                <li>блог привлекает органический трафик по вопросам выбора и обслуживания техники;</li>
+                <li>сравнение моделей сократило вопросы в поддержку и ускорило решение о покупке.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект запущен и развивается: каталог пополняется новыми моделями и брендами, блог ведётся регулярно, заявки из всех форм собираются в CRM без потерь.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/galileosky.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>Galileosky</b><small>Мультиязычный портал производителя</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/project.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>ПСТМ</b><small>Корпоративный портал производителя</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/mst.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>MST.Tools</b><small>Маркетплейс электроинструмента</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/galileosky.html">
+                  <span>← Назад</span>
+                  <b>Galileosky — сайт телематики</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

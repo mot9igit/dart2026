@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="mst.html" itemprop="item"><span itemprop="name">MST.Tools — маркетплейс электроинструмента</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Маркетплейс электроинструмента</span>
+              <h1 class="pj-hero__title" data-reveal>MST.Tools — маркетплейс<br><span>электроинструмента</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Единая витрина инструмента десятков магазинов по всей России: выбор города и магазина,
+                честные остатки и цены региона, сравнение моделей и онлайн-заказ круглосуточно.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Маркетплейс</a>
+                <a href="/pages/portfolio/index.html">E-commerce</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">B2C</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>14</b><span>разделов каталога</span></div>
+                <div class="pj-fact__item"><b>30+</b><span>магазинов-партнёров</span></div>
+                <div class="pj-fact__item"><b>20+</b><span>городов присутствия</span></div>
+                <div class="pj-fact__item"><b>24/7</b><span>приём заказов</span></div>
+                <div class="pj-fact__item"><b>CRM</b><span>заказы всех магазинов в одной воронке</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#structure" class="sv-nav__link">Структура</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#city" class="sv-nav__link">Город и магазины</a>
+            <a href="#compare" class="sv-nav__link">Сравнение</a>
+            <a href="#cart" class="sv-nav__link">Корзина</a>
+            <a href="#cta" class="sv-nav__link">Формы</a>
+            <a href="#design" class="sv-nav__link">Дизайн</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>MST.Tools | ООО «МС»</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Маркетплейс электроинструмента</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Единая витрина магазинов инструмента</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, развивается</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — выбор города и витрина инструмента</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                MST.Tools — маркетплейс электроинструмента: единая витрина, на которой десятки магазинов
+                из разных городов России показывают свой ассортимент. Покупатель выбирает город, видит честные
+                остатки и цены в ближайших магазинах, сравнивает модели и оформляет заказ онлайн — без звонков
+                в каждый магазин по отдельности. Рассказываю, как мы его собрали.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Старый формат — каталог одного магазина без привязки к городу: покупатель из другого региона
+                не понимал, есть ли товар рядом с ним, цены в разных магазинах не сходились, сравнение моделей
+                отсутствовало, а заказы оформлялись по телефону. Когда сеть партнёров выросла до тридцати
+                магазинов в двадцати городах, продажи упёрлись в ручную координацию.
+              </p>
+              <p>Сформулировали четыре ключевые цели:</p>
+              <ul>
+                <li><b>Единая витрина</b> — весь ассортимент всех магазинов-партнёров в одном каталоге с фильтрами.</li>
+                <li><b>Контекст города</b> — остатки, цены и способы получения именно в выбранном городе и магазине.</li>
+                <li><b>Выбор без звонка</b> — сравнение моделей, корзина и онлайн-заказ круглосуточно.</li>
+                <li><b>Один контур заказов</b> — заказы из всех магазинов собираются в единой CRM.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Мульти-магазинность: один и тот же товар лежит в нескольких магазинах с разными ценами и остатками. Карточка должна оставаться единой, но показывать честную цену и наличие по выбранному городу — и мгновенно пересчитываться при смене города.</p>
+              </div>
+
+              <!-- SCREENSHOT: marketplace structure -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools/category</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span>
+                      <span></span><span></span><span></span>
+                      <span></span><span></span><span></span>
+                      <span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Структура каталога — 14 разделов от электроинструмента до крепежа</span>
+              </div>
+
+              <h2 id="structure">2. Структура маркетплейса</h2>
+              <p>
+                Собрали каталог из 14 разделов и разложили по ним ассортимент всех магазинов: электроинструмент
+                (шуруповёрты, дрели, перфораторы, пилы, шлифмашинки), садовая и бензотехника, ручной
+                и пневмоинструмент, измерительные приборы, станки, строительное оборудование, климатическая
+                и клининговая техника, расходные материалы, крепёж и прочее.
+              </p>
+              <ul>
+                <li><b>Электроинструмент</b> — 20+ подкатегорий: от шуруповёртов и дрелей до сварочного оборудования и мотобуров.</li>
+                <li><b>Садовая и бензотехника</b> — триммеры, газонокосилки, мотоблоки, генераторы, мойки высокого давления.</li>
+                <li><b>Ручной и измерительный инструмент</b> — ключи, отвёртки, рулетки, уровни, детекторы проводки.</li>
+                <li><b>Станки, пневмо и строительное оборудование</b> — плюс климат, клининг, расходники и крепёж.</li>
+              </ul>
+
+              <h2 id="catalog">3. Каталог и фильтры</h2>
+              <p>
+                Витрина с фильтрами по цене (от/до) и по производителю — в одном только разделе шуруповёртов
+                больше 25 брендов: Интерскол, ЗУБР, Вихрь, PATRIOT, MAKITA, MILWAUKEE, WORX, РЕСАНТА и другие.
+                Сортировка по цене и наименованию, пометки «Новинка» и бейдж «В наличии в магазинах». Каждая
+                карточка показывает цену по выбранному городу и кнопку «Купить» без промежуточных звонков.
+              </p>
+
+              <!-- SCREENSHOT: catalog with filters -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools/category/6_shurupovertyi</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — фильтры по цене и производителю, сетка карточек с «Купить»</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии в каталоге</b>
+                <p>PHP · MySQL · мульти-магазинная витрина · агрегация остатков и цен по магазинам · фильтры и сортировка · ChPU · Schema.org (Product, Offer, AggregateOffer)</p>
+              </div>
+
+              <h2 id="city">4. Выбор города и магазинов</h2>
+              <p>
+                Ядро маркетплейса — контекст города. Определяем город по геолокации или даём выбрать вручную:
+                «Сейчас вы видите магазины из Чайковского». Дальше — список магазинов-партнёров с расстоянием
+                до покупателя, адресом и статусом работы («Сегодня с 9:00 до 19:00», «Закрыто»): Русгеоком,
+                220 Вольт, Вятская усадьба, МСТ, Умелец и другие. Покупатель выбирает магазин — и остатки,
+                цены и самовывоз пересчитываются под него.
+              </p>
+
+              <!-- SCREENSHOT: city & stores -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools — выбор города и магазина</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--city">
+                      <div class="pj-mock--city__bar"><span class="loc"></span><span class="name"></span><span class="chev"></span></div>
+                      <div class="pj-mock--city__list">
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Выбор города и магазина-партнёра — расстояние, адрес, часы работы</span>
+              </div>
+
+              <p>
+                Смена города пересматривает витрину: один и тот же товар может быть в наличии в одном городе
+                и отсутствовать в другом. Покупатель всегда видит правду по своему региону, а маркетплейс
+                — не рождает невыполнимых обещаний.
+              </p>
+
+              <h2 id="compare">5. Сравнение товаров</h2>
+              <p>
+                Для тех, кто выбирает между моделями, — раздел сравнения: добавление товаров из каталога
+                в общий список и таблица характеристик бок о бок. Цена в сравнении тоже пересчитывается
+                по выбранному городу, поэтому итог всегда актуален для конкретного покупателя.
+              </p>
+
+              <!-- SCREENSHOT: compare table -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools/sravnenie-tovarov.html</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--compare">
+                      <div class="pj-mock--compare__head"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Сравнение товаров — таблица характеристик с ценами по выбранному городу</span>
+              </div>
+
+              <h2 id="cart">6. Корзина и оформление заказа</h2>
+              <p>
+                Корзина собирает товары с указанием магазина наличия, заказ принимается круглосуточно: покупатель
+                выбирает город, способ получения (самовывоз из магазина или доставка) и оставляет контакты.
+                Заказ по составу корзины уходит менеджеру выбранного магазина и дублируется в CRM — ни один
+                ночной заказ не теряется до утра.
+              </p>
+
+              <!-- SCREENSHOT: cart -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools — корзина</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="sum"></span><span class="checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина с магазинами наличия — итог и оформление без звонка</span>
+              </div>
+
+              <h2 id="cta">7. Формы и заявки</h2>
+              <p>
+                Точки сбора заявок: оформление корзины, обратный звонок, запрос наличия в магазине и личный
+                кабинет («Войти»). Каждая форма работает с явным согласием на обработку персональных данных,
+                а заявки уходят в CRM и дублируются менеджеру в мессенджер — обращения из всех магазинов
+                собираются в одной воронке.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужен такой же маркетплейс?</h3>
+                  <p>Соберём мульти-витрину с каталогом, городами, корзиной и CRM-интеграцией под ваш ассортимент.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- SCREENSHOT: order form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>mst.tools — оформление заказа</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма заказа — город, способ получения, контакты и согласие на обработку данных</span>
+              </div>
+
+              <h2 id="design">8. Дизайн</h2>
+              <p>
+                Строгий стиль торговой площадки: белая витрина, красные акценты, крупные фотографии инструмента
+                и жирные цены. Мобильная версия — приоритет: большая часть заказов оформляется с телефона,
+                поэтому выбор города, корзина и каталог на мобильных работают не хуже десктопа.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Адаптив — заказ с телефона без потери функциональности</span>
+              </div>
+
+              <h2 id="seo">9. SEO и запуск</h2>
+              <p>
+                SEO закладывали до запуска: каталог с ЧПУ-адресами (category/6_shurupovertyi), семантическое ядро
+                под коммерческие запросы («шуруповёрт купить», «перфоратор цена», «болгарка в наличии»)
+                и микроразметка Schema.org (Product, Offer, AggregateOffer). Благодаря разметке поисковики
+                получают корректные цены и наличие по регионам, а покупатели — расширенные сниппеты с ценой.
+                После запуска — точечные доработки по результатам аналитики.
+              </p>
+
+              <h2 id="results">10. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="14">0</b><span>разделов каталога</span></div>
+                <div class="pj-result"><b data-count="30" data-suffix="+">0</b><span>магазинов-партнёров</span></div>
+                <div class="pj-result"><b data-count="20" data-suffix="+">0</b><span>городов присутствия</span></div>
+                <div class="pj-result"><b data-count="50000" data-suffix="+">0</b><span>товарных позиций в единой витрине</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>весь ассортимент сети виден из одного каталога — без ручной координации и дублей;</li>
+                <li>покупатель видит честные остатки и цены своего города и быстрее решается на заказ;</li>
+                <li>сравнение моделей сокращает вопросы в поддержку и звонки;</li>
+                <li>онлайн-заказ круглосуточно собирает ночные заказы;</li>
+                <li>все заказы магазинов — в одной CRM, ни одна заявка не теряется.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект запущен и развивается: подключаются новые магазины-партнёры, каталог растёт, витрина пересчитывается по городам и остаткам без участия разработчиков.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/galileosky.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>Galileosky</b><small>Мультиязычный портал производителя</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/snegotehnika.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>СнегоТехника</b><small>Интернет-магазин снегоходов</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/project.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>ПСТМ</b><small>Корпоративный портал производителя</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/snegotehnika.html">
+                  <span>← Назад</span>
+                  <b>СнегоТехника — магазин снегоходной техники</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="galileosky.html" itemprop="item"><span itemprop="name">Galileosky — международный сайт телематики</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Мультиязычный корпоративный сайт</span>
+              <h1 class="pj-hero__title" data-reveal>Galileosky — международный<br><span>сайт телематики</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Англо-испанский корпоративный портал производителя GPS-трекеров: продающий каталог устройств
+                со сравнением, 12 отраслевых решений и сервисный центр с конфигуратором и прошивками.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Корпоративный портал</a>
+                <a href="/pages/portfolio/index.html">Мультиязычность</a>
+                <a href="/pages/portfolio/index.html">Каталог устройств</a>
+                <a href="/pages/portfolio/index.html">B2B</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>2</b><span>языка — EN и ES</span></div>
+                <div class="pj-fact__item"><b>100+</b><span>страниц контента</span></div>
+                <div class="pj-fact__item"><b>12</b><span>отраслевых решений</span></div>
+                <div class="pj-fact__item"><b>3</b><span>модели трекеров в каталоге</span></div>
+                <div class="pj-fact__item"><b>CRM</b><span>все заявки в одной воронке</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#structure" class="sv-nav__link">Структура</a>
+            <a href="#i18n" class="sv-nav__link">Мультиязычность</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#solutions" class="sv-nav__link">Решения</a>
+            <a href="#support" class="sv-nav__link">Поддержка</a>
+            <a href="#cta" class="sv-nav__link">Формы</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>Galileosky | TLT</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>GPS-трекинг и телематика</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Мультиязычный корпоративный сайт</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, развивается</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — отраслевые решения и линейка устройств</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                Galileosky | TLT — производитель GPS/GNSS-трекеров и телематических решений для управления
+                автопарками. Компания активно выходит на международные рынки, поэтому нужен был сайт, который
+                одинаково убедительно работает на английском и испанском: продаёт устройства, объясняет
+                технологии и ведёт клиента от «интересно» до заявки. Рассказываю, как мы это собрали.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                На старте сайт напоминал «каталог на полке»: контент только на английском, карточки устройств
+                не показывали разницу между моделями, а заявки из форм утекали в общую почту и терялись.
+                Плюс компания параллельно развивала экосистему — конфигуратор, прошивки, базу знаний, —
+                и всему этому нужен был понятный дом на сайте.
+              </p>
+              <p>Сформулировали четыре ключевые цели:</p>
+              <ul>
+                <li><b>Мультиязычность</b> — полноценные версии EN и ES с независимым управлением контентом и hreflang для поисковиков.</li>
+                <li><b>Продающий каталог</b> — карточки устройств, сравнение моделей, технологии и интеграции.</li>
+                <li><b>Отраслевые решения</b> — отдельные страницы под 12 индустрий для убеждения B2B-аудитории.</li>
+                <li><b>Заявки без потерь</b> — формы «Request a sample», запрос цены и подписки с отправкой в CRM.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Техническая специфика: фирменная терминология (Easy Logic, CAN Scanner, Eco Driving, конфигуратор) требует точного перевода и единой структуры на двух языках, иначе контент «разъезжается» и теряет смысл для инженерной аудитории.</p>
+              </div>
+
+              <!-- SCREENSHOT: structure w/ sidebar -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com/solutions</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Раздел решений с навигацией и сеткой отраслей</span>
+              </div>
+
+              <h2 id="structure">2. Структура и прототип</h2>
+              <p>
+                Начали с прототипирования: собрали четыре макрораздела и разложили по ним всю экосистему компании.
+                Каждый раздел получил свою логику — от витрины устройств до сервисного центра, — чтобы инженер
+                и закупщик одинаково быстро находили нужное.
+              </p>
+              <ul>
+                <li><b>Products</b> — каталог устройств, сравнение моделей, технологии (AI Configurator, Easy Logic, Eco Driving, CAN Scanner), интеграции и маркетплейс алгоритмов.</li>
+                <li><b>Solutions</b> — 12 отраслевых решений с отдельными страницами и сценариями использования.</li>
+                <li><b>Support</b> — база знаний, мануалы, шаблоны Easy Logic, конфигуратор и прошивки.</li>
+                <li><b>Company</b> — контакты, события, блог с новостями и обновлениями прошивок.</li>
+              </ul>
+
+              <h2 id="i18n">3. Мультиязычность EN / ES</h2>
+              <p>
+                Сайт работает на двух языках как два отдельных проекта: у каждой версии свой URL (испанская — на /es/),
+                своя структура и независимое управление контентом. Переключатель языка всегда на виду, а для
+                поисковиков прописаны hreflang-указатели, чтобы Google показывал пользователю именно его версию.
+              </p>
+
+              <!-- SCREENSHOT: language switcher -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com / galileosky.com/es</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--lang">
+                      <div class="pj-mock--lang__bar"><span class="is-active">En</span><span>Es</span></div>
+                      <div class="pj-mock--lang__nav"></div>
+                      <div class="pj-mock--lang__hero"></div>
+                      <div class="pj-mock--lang__line"></div>
+                      <div class="pj-mock--lang__line l2"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Переключатель языков — EN / ES, у каждой версии свой URL</span>
+              </div>
+
+              <p>Пример вывода hreflang-указателей для пары страниц одной сущности:</p>
+
+              <!-- CODE BLOCK -->
+              <div class="po-code">
+                <div class="po-code__head">
+                  <span class="po-code__title">hreflang.php</span>
+                  <button class="po-code__copy" data-copy="hreflangCode">Копировать</button>
+                </div>
+                <pre class="language-php"><code id="hreflangCode">&lt;?php
+// Текущая страница существует в двух версиях: EN — /path, ES — /es/path
+$langs = [
+    'en' =&gt; 'https://galileosky.com'  . $path,
+    'es' =&gt; 'https://galileosky.com/es' . $path,
+];
+
+foreach ($langs as $code =&gt; $url) {
+    echo '&lt;link rel="alternate" hreflang="' . $code . '" href="' . $url . '"&gt;' . "\n";
+}
+// Указываем язык страницы и резервную версию для поисковых систем
+echo '&lt;link rel="alternate" hreflang="x-default" href="' . $langs['en'] . '"&gt;';</code></pre>
+              </div>
+
+              <h2 id="catalog">4. Каталог и сравнение устройств</h2>
+              <p>
+                Сердце сайта — каталог из трёх моделей трекеров (Galileosky 10, 7x и Base Block). Каждая карточка
+                отвечает на главный вопрос покупателя: «чем эта модель отличается от остальных?». Для этого
+                сделали страницу сравнения с таблицей характеристик и отдельные страницы технологий.
+              </p>
+
+              <!-- SCREENSHOT: compare table -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com/products/compare</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--compare">
+                      <div class="pj-mock--compare__head"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Сравнение трёх моделей трекеров — таблица характеристик</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии в каталоге</b>
+                <p>AI Configurator · Easy Logic · Eco Driving · CAN Scanner · маркетплейс алгоритмов · интеграции с ПО и периферией</p>
+              </div>
+
+              <h2 id="solutions">5. Отраслевые решения</h2>
+              <p>
+                Продукт компании универсален, но покупают его под конкретную задачу. Поэтому для каждой отрасли
+                собрали отдельную страницу: пассажирские и грузовые перевозки, каршеринг и такси, ЖКХ, сельское
+                хозяйство, нефтегаз, лесозаготовка, горная добыча, строительство, холодовая цепь и экстренные службы.
+                Каждая рассказывает о своём сценарии и заканчивается призывом к заявке.
+              </p>
+
+              <!-- SCREENSHOT: industries grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com/solutions</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Сетка из 12 отраслевых решений</span>
+              </div>
+
+              <h2 id="support">6. Поддержка и сервис</h2>
+              <p>
+                Клиенты компании — интеграторы и инженеры, которым нужны не только трекеры, но и инструменты работы
+                с ними. Собрали полноценный сервисный раздел: центр загрузок с конфигуратором под Windows, macOS
+                и Linux, актуальные прошивки с журналом изменений, драйверы и утилиты, базу знаний, мануалы
+                и шаблоны Easy Logic. Отдельно — тарифы профессиональной поддержки с фиксированными часами инженера.
+              </p>
+
+              <!-- SCREENSHOT: downloads -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com/configurator</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Центр загрузок: конфигуратор, прошивки, драйверы</span>
+              </div>
+
+              <h2 id="cta">7. Формы и заявки</h2>
+              <p>
+                Каждая форма на сайте — «Request a sample», запрос коммерческого предложения или подписка
+                на новости — отправляет данные сразу в CRM, на почту и в Telegram менеджерам. Ни одна заявка
+                не теряется: в формах явно указано согласие на обработку персональных данных — это требование
+                GDPR для работы на европейских рынках.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужен такой же сайт?</h3>
+                  <p>Сделаем мультиязычный корпоративный портал с каталогом и CRM-интеграцией под ключ.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- SCREENSHOT: request a sample -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>galileosky.com — Request a sample</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма «Request a sample» с согласием на обработку данных</span>
+              </div>
+
+              <h2 id="design">8. Дизайн</h2>
+              <p>
+                Строгий B2B-стиль: тёмный шапка-навигация, крупная типографика, аккуратные карточки и фотографии
+                устройств. Уделили особое внимание адаптиву — сайт читают и с ноутбука инженера, и с телефона
+                менеджера на выставке: мобильная версия проработана не хуже десктопной.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Адаптив — мобильная версия проработана под ключ</span>
+              </div>
+
+              <h2 id="seo">9. SEO и запуск</h2>
+              <p>
+                Мультиязычность заложена в SEO с первого дня: hreflang-указатели, уникальные мета-теги для каждой
+                языковой версии, семантическое ядро, ЧПУ-адреса и микроразметка Schema.org для карточек устройств
+                и статей. После запуска — выгрузка обеих версий в поисковые системы и ежемесячные точечные доработки
+                по результатам аудита.
+              </p>
+
+              <h2 id="results">10. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="2">0</b><span>полноценные языковые версии</span></div>
+                <div class="pj-result"><b data-count="100" data-suffix="+">0</b><span>страниц контента</span></div>
+                <div class="pj-result"><b data-count="12">0</b><span>отраслевых решений</span></div>
+                <div class="pj-result"><b data-count="3">0</b><span>модели в каталоге со сравнением</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>сайт работает как единая система продаж для англо- и испаноязычных рынков;</li>
+                <li>клиенты видят разницу между моделями и быстрее принимают решение о закупке;</li>
+                <li>отраслевые страницы убеждают на этапе выбора — посетитель получает готовый сценарий;</li>
+                <li>все заявки и подписки собираются в CRM без потерь;</li>
+                <li>сервисный центр снижает нагрузку на поддержку: клиенты сами скачивают прошивки и обновления.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект запущен и развивается: контент ведётся на двух языках, добавляются отраслевые страницы и новые материалы в блог, сайт стабильно работает под международной нагрузкой.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/project.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>ПСТМ</b><small>Корпоративный портал производителя</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/project.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>Медресурс Пермь</b><small>Сайт-каталог медоборудования</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/snegotehnika.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>СнегоТехника</b><small>Интернет-магазин снегоходов</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/index.html">
+                  <span>← Назад</span>
+                  <b>Вернуться в портфолио</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>
