@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="shaurmania.html" itemprop="item"><span itemprop="name">Шаурмания — доставка шаурмы из Рыбинска</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Доставка еды</span>
+              <h1 class="pj-hero__title" data-reveal>Шаурмания — доставка<br><span>шаурмы из Рыбинска</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Небольшая шаурма из Рыбинска с собственным сайтом: меню на пять разделов, корзина
+                с модификаторами и размерами, онлайн-оформление заказа и бонусная программа
+                за каждую покупку.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Доставка еды</a>
+                <a href="/pages/portfolio/index.html">Интернет-магазин</a>
+                <a href="/pages/portfolio/index.html">E-commerce</a>
+                <a href="/pages/portfolio/index.html">Локальный бизнес</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>5</b><span>разделов меню</span></div>
+                <div class="pj-fact__item"><b>60+</b><span>позиций в меню</span></div>
+                <div class="pj-fact__item"><b>2</b><span>размера и 6 добавок на каждую позицию</span></div>
+                <div class="pj-fact__item"><b>От 30 ₽</b><span>дополнительные опции</span></div>
+                <div class="pj-fact__item"><b>Бонусы</b><span>начисление с каждой покупки</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#structure" class="sv-nav__link">Структура</a>
+            <a href="#menu" class="sv-nav__link">Меню</a>
+            <a href="#filter" class="sv-nav__link">Фильтры</a>
+            <a href="#product" class="sv-nav__link">Карточка</a>
+            <a href="#addons" class="sv-nav__link">Добавки</a>
+            <a href="#cart" class="sv-nav__link">Корзина</a>
+            <a href="#loyalty" class="sv-nav__link">Бонусы</a>
+            <a href="#cta" class="sv-nav__link">Формы</a>
+            <a href="#design" class="sv-nav__link">Дизайн</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>Шаурмания | Рыбинск</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Шаурма, фастфуд, доставка</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Свой сайт вместо агрегаторов</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — слайдер, преимущества доставки и разделы меню</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                «Шаурмания» — небольшая шаурма в Рыбинске на Чкалова, 74, с собственной кухней:
+                шаурма с плиты, «не шаурма» в виде наггетсов и ланч-боксов, соусы и напитки.
+                Заказ принимали по телефону, а меню лежало картинкой в Instagram. Мы собрали
+                полноценный сайт с меню, корзиной и онлайн-оформлением — рассказываем, как именно.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                У заведения не было сайта вообще: ассортимент жил в паблике, цены обновлялись
+                вручную, а заказы собирались в мессенджерах. Это значило две проблемы. Первая —
+                заказать можно было только в рабочие часы, и в пиковое время сообщения терялись.
+                Вторая — агрегаторы доставки забирали до 30% выручки и прятали клиента:
+                человек возвращался в приложение, а не в «Шаурманию».
+              </p>
+              <p>Сформулировали пять ключевых целей:</p>
+              <ul>
+                <li><b>Своё меню на сайте</b> — вместо картинок в соцсетях, с составом, весом и ценой у каждой позиции.</li>
+                <li><b>Корзина с модификаторами</b> — размер, добавки и соусы собираются прямо в карточке блюда.</li>
+                <li><b>Оформление без звонка</b> — заказ уходит на кухню сразу, а не через «а когда заберете?».</li>
+                <li><b>Возврат клиента</b> — блок с отзывами, контакты и бонусная программа за каждую покупку.</li>
+                <li><b>Мобильный сценарий</b> — заказ оформляется с телефона за минуту, по дороге.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Меню фастфуда — это не список блюд, а конструктор: одно и то же блюдо бывает в двух размерах, плюс шесть добавок с разной ценой, плюс выбор соуса. Без правильной модели модификаторов в корзину попадают несравнимые комбинации, а заказы «Мини без всего» и «Классика вдвое» считаются по одной цене.</p>
+              </div>
+
+              <h2 id="structure">2. Структура меню</h2>
+              <p>
+                Меню разложили на пять разделов, чтобы человек собирал заказ по привычной логике,
+                а не по внутренней кухонной структуре.
+              </p>
+              <ul>
+                <li><b>Шаурма</b> — классика, мини, много мяса, вегетарианская, хот-дог в лаваше, острый мексиканец, сырный итальянец, сытный русский, курочка терияки, сладкая с клюквой и клубникой.</li>
+                <li><b>Не шаурма</b> — наггетсы, картошка фри и ланч-боксы с наггетсами и морсом.</li>
+                <li><b>Дополнительно</b> — халапеньо, моцарелла, жареный и маринованный лук, жареные грибочки, дополнительная порция мяса.</li>
+                <li><b>Соусы</b> — фирменный, сырный, горчичный, чесночный, терияки, клюквенный.</li>
+                <li><b>Напитки</b> — чай, ягодный чай, глинтвейн, сбитень, кофе 3в1, эспрессо, американо, латте, капучино, морс, газировка, вода.</li>
+              </ul>
+              <p>
+                Каждый раздел линкуется из шапки, из подвала и с главной страницы плитками-коллажами.
+                Длинные списки разбиты на страницы, но основные категории всегда открыты в один клик.
+              </p>
+
+              <!-- SCREENSHOT: menu grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru/menu/shaurma</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Меню — карточки с составом, весом и ценой, кнопка «Выбрать»</span>
+              </div>
+
+              <h2 id="filter">3. Подбор по фильтрам</h2>
+              <p>
+                В меню есть четыре подборки, которые решают типовые вопросы гостя: что взять
+                подешевле, что без мяса, где побольше начинки и что нового. Фильтры работают
+                поверх любого раздела и не прячут состав блюда — видно и позицию, и её цену.
+              </p>
+              <ul>
+                <li><b>Выгодно</b> — позиции с минимальной ценой, для обеда и большой компании.</li>
+                <li><b>Для вегетарианцев</b> — вегетарианская шаурма, картошка фри, чай и морс без мяса.</li>
+                <li><b>Много мяса</b> — двойная порция курочки и блюда от 400 грамм.</li>
+                <li><b>Новинки</b> — свежие позиции, которые меняют в меню.</li>
+              </ul>
+
+              <!-- SCREENSHOT: filters -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru/menu</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--city">
+                      <div class="pj-mock--city__bar">
+                        <span class="loc"></span>
+                        <span class="name"></span>
+                        <span class="chev"></span>
+                      </div>
+                      <div class="pj-mock--city__list">
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Фильтры — выгодно, для вегетарианцев, много мяса и новинки</span>
+              </div>
+
+              <h2 id="product">4. Карточка блюда</h2>
+              <p>
+                Карточка отвечает на вопрос «что внутри» ещё до заказа. У «Классики» сразу видно
+                состав: лаваш, курочка гриль, картофельная соломка, капуста, морковь, томаты,
+                маринованные огурчики, фирменный соус и вес 350 грамм. Гость видит, за что платит,
+                и не удивляется размеру рулона на выдаче.
+              </p>
+              <p>
+                Цена на карточке пересчитывается на лету: базовая стоимость блюда плюс выбранные
+                добавки. Стоимость указана «от» — потому что она зависит от размера и дополнений,
+                и это честнее, чем одно число, которое перестаёт совпадать с чеком.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru/menu/shaurma/shaurma-standart.html</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка «Шаурма Классика» — состав, вес, размер и кнопка добавления в корзину</span>
+              </div>
+
+              <h2 id="addons">5. Размеры и дополнительные опции</h2>
+              <p>
+                Сделали карточку конструктором. У каждой шаурмы два размера — маленькая и средняя,
+                и шесть добавок: острый перчик халапеньо (30 ₽), сыр моцарелла (30 ₽), жареный
+                лук (30 ₽), маринованный лук (25 ₽), жареные грибочки (50 ₽) и дополнительная
+                порция мяса (70 ₽). Один и тот же продукт в каталоге и в корзине, поэтому
+                добавки не расходятся с меню и не требуют ручной правки прайса.
+              </p>
+              <p>
+                Бонус — блок «Также заказывают» на странице блюда. Он собирает похожие позиции
+                (классика, мини, много мяса, вегетарианская) и поднимает средний чек: гость
+                докупает вторую шаурму, а не уходит.
+              </p>
+
+              <!-- SCREENSHOT: modifiers -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru — Дополнительно</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Дополнительные опции — добавки с ценой от 25 до 70 ₽ к любой шаурме</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>PHP · MySQL · каталог блюд с модификаторами и размерами · корзина на сессиях · онлайн-оформление заказа · пагинация разделов · ЧПУ · Schema.org (Restaurant, Menu, Offer)</p>
+              </div>
+
+              <h2 id="cart">6. Корзина и оформление заказа</h2>
+              <p>
+                Корзина живёт в шапке и показывает счётчик позиций — гость всегда видит, что уже выбрал,
+                не теряя раздел каталога. Счётчик обновляется мгновенно, без перезагрузки страницы,
+                а оформление ведёт на отдельную страницу, где видно состав заказа, итоговую сумму
+                и форму с именем, телефоном и адресом доставки.
+              </p>
+              <p>
+                Пустая корзина — это не тупик: на странице оформления есть ссылка обратно в меню,
+                чтобы человек не остался на белом экране. Дальше заказ уходит на кухню,
+                а менеджеру приходит уведомление с составом — собирать его вручную по переписке больше не нужно.
+              </p>
+
+              <!-- SCREENSHOT: cart -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru/oformlenie-zakaza.html</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="sum"></span><span class="checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина: выбранные блюда с добавками, итог и оформление заказа</span>
+              </div>
+
+              <h2 id="loyalty">7. Бонусы, отзывы и контакты</h2>
+              <p>
+                Локальный бизнес живёт на повторных заказах, поэтому на главной вынесли три
+                аргумента доверия: свежая шаурма только с плиты, сотни довольных клиентов
+                с отзывами и бонусная программа с начислением баллов от каждой покупки.
+                Счётчик в корзине показывает накопленное, и гость видит, что возвращаться выгодно.
+              </p>
+              <p>
+                Контакты — телефон 8 (908) 029-10-00 и адрес на Чкалова, 74 в Рыбинске — стоят
+                в шапке, в подвале и в подвале каждой страницы каталога. Рядом ссылки на ВК
+                и Instagram заведения, чтобы привычный канал остался доступным, но заказывать
+                можно было не выходя из сайта.
+              </p>
+
+              <h2 id="cta">8. Формы и заявки</h2>
+              <p>
+                Кроме корзины на сайте есть форма обратного звонка: имя, телефон, сообщение
+                и согласие на обработку персональных данных. Она доступна с любой страницы
+                и закрывает запросы, которые не конвертируются в заказ, — например, вопрос
+                про самовывоз или большой корпоративный заказ.
+              </p>
+              <p>
+                Плюс юридический слой: cookie-баннер со ссылками на политику конфиденциальности
+                и публичную оферту в PDF. Для общепита это не формальность, а часть доверия
+                к онлайн-заказу.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужен такой же формат заказа?</h3>
+                  <p>Соберём меню с модификаторами, корзиной и приёмом заказов прямо на кухню.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- SCREENSHOT: callback form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>shaurmalife.ru — Заказать звонок</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма обратного звонка — имя, телефон, сообщение и согласие на обработку данных</span>
+              </div>
+
+              <h2 id="design">9. Дизайн и адаптив</h2>
+              <p>
+                Дизайн сделали под формат заказа, а не под красоту: крупные аппетитные фотографии
+                блюд одинакового размера, короткие названия, цена и кнопка «Выбрать» на одном
+                уровне — три элемента, которые сравнивают между собой. На главной — слайдер
+                с фотографиями свежей выдачи и плитки разделов меню коллажами, чтобы переход
+                в каталог был в один клик.
+              </p>
+              <p>
+                Мобильная версия приоритетна: заказывают с телефона, часто на ходу. Меню открывается
+                боковой панелью, карточки идут в одну колонку, корзина закреплена так, чтобы её
+                видно было при прокрутке каталога. Меню в один тап — с телефона или с планшета.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Адаптив — заказ шаурмы с телефона за минуту</span>
+              </div>
+
+              <h2 id="seo">10. SEO и запуск</h2>
+              <p>
+                Для локального заведения SEO решает задачу географии: человек ищет «шаурма
+                Рыбинск» или «доставка шаурмы на Чкалова» и должен попасть на сайт, а не в карточку
+                агрегатора. Сделали ЧПУ-адреса для разделов и блюд
+                (<b>/menu/shaurma/shaurma-standart.html</b>), микроразметку Schema.org
+                (Restaurant, Menu, Offer) с телефоном и адресом, и полноценные тексты
+                на страницах, а не только фото.
+              </p>
+              <p>
+                Подключены Яндекс.Метрика и вебвизор, карта и точки навигации в контактах,
+                ссылки на соцсети. Меню обновляется из панели: новая позиция появляется в каталоге
+                сразу, без правки кода, и индексируется поисковиками автоматически.
+              </p>
+
+              <h2 id="results">11. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="5">0</b><span>разделов меню</span></div>
+                <div class="pj-result"><b data-count="60" data-suffix="+">0</b><span>позиций в каталоге</span></div>
+                <div class="pj-result"><b data-count="2">0</b><span>размера у каждой шаурмы</span></div>
+                <div class="pj-result"><b data-count="6">0</b><span>дополнительных опций с ценой</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>заказ оформляется онлайн — звонок перестал быть единственным каналом продаж;</li>
+                <li>заказы приходят на кухню с составом, добавками и размерами, а не с перепиской по телефону;</li>
+                <li>комиссия агрегаторов перестала быть единственным способом продавать в городе;</li>
+                <li>бонусная программа и блок отзывов работают на повторные заказы, а не на разовые визиты;</li>
+                <li>меню редактируется из панели: новинки и цены обновляются без разработчика.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект запущен и работает: меню обновляется, заказы принимаются онлайн, заявки приходят в CRM и в мессенджеры. Сайт стал витриной заведения и источником повторных заказов.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/lemmax.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>LEMMAX</b><small>Сайт производителя верхней одежды</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/akpp26.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>АКПП26RUS</b><small>Магазин запчастей для АКПП</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/prokatkmv.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>Прокат КМВ</b><small>Сайт автопроката с онлайн-бронированием</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/prokatkmv.html">
+                  <span>← Назад</span>
+                  <b>Прокат КМВ — сервис аренды авто</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

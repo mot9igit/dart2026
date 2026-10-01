@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="akpp26.html" itemprop="item"><span itemprop="name">АКПП26RUS — магазин запчастей для АКПП</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Интернет-магазин запчастей АКПП</span>
+              <h1 class="pj-hero__title" data-reveal>АКПП26RUS — магазин<br><span>запчастей для АКПП</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                59 000 запчастей для автоматических коробок, вариаторов и роботов: каталог по маркам,
+                моделям и трансмиссиям, подбор по артикулу, личный кабинет с оптовыми ценами для сервисов
+                и запись на ремонт прямо на сайте.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Интернет-магазин</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">B2B / B2C</a>
+                <a href="/pages/portfolio/index.html">Автосервис</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>59 000</b><span>запчастей в каталоге</span></div>
+                <div class="pj-fact__item"><b>70+</b><span>марок автомобилей</span></div>
+                <div class="pj-fact__item"><b>8</b><span>разделов каталога</span></div>
+                <div class="pj-fact__item"><b>8</b><span>услуг автосервиса</span></div>
+                <div class="pj-fact__item"><b>B2B</b><span>личный кабинет для сервисов</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#structure" class="sv-nav__link">Структура</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#search" class="sv-nav__link">Поиск</a>
+            <a href="#product" class="sv-nav__link">Карточка</a>
+            <a href="#compare" class="sv-nav__link">Сравнение</a>
+            <a href="#cart" class="sv-nav__link">Корзина</a>
+            <a href="#b2b" class="sv-nav__link">B2B</a>
+            <a href="#service" class="sv-nav__link">Сервис</a>
+            <a href="#cta" class="sv-nav__link">Формы</a>
+            <a href="#design" class="sv-nav__link">Дизайн</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>АКПП26RUS | Пятигорск, СКФО</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Запчасти АКПП и ремонт трансмиссий</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Каталог на 59 000 позиций с B2B-прайсом</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, развивается</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — разделы каталога, новинки и услуги автосервиса</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                «АКПП26RUS» продаёт запчасти для автоматических коробок передач и ремонтирует их в собственном
+                автосервисе: 59 000 позиций для АКПП, вариаторов и роботов, поставки по всей России и работа
+                с автосервисами на оптовых условиях. Покупают здесь и автовладельцы, и мастера — а значит,
+                каталог должен одинаково хорошо работать для одного человека и для гаража на десять машин.
+                Рассказываем, как мы собрали такой магазин.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Старый сайт был списком позиций: детали с названиями, но без применимости, артикулов и связей.
+                Покупатель не мог ответить на главный вопрос — «подойдёт ли это к моей коробке», — и уходил
+                звонить менеджеру. Сервисы, которые закупали оптом, тем более не могли работать с таким каталогом:
+                ни поиска по артикулу, ни персональных цен, ни истории заказов.
+              </p>
+              <p>Сформулировали пять ключевых целей:</p>
+              <ul>
+                <li><b>Каталог на 59 000 позиций</b> — структура по маркам, моделям и трансмиссиям с фильтрами по параметрам.</li>
+                <li><b>Поиск по артикулу</b> — мастер вбивает номер детали и сразу видит, что есть в наличии и по какой цене.</li>
+                <li><b>Онлайн-заказ</b> — корзина с подтверждением наличия менеджером и ссылкой на оплату.</li>
+                <li><b>Работа с автосервисами</b> — личный кабинет с персональными скидками и оптовым прайсом.</li>
+                <li><b>Услуги сервиса онлайн</b> — запись на диагностику и ремонт АКПП, гидротрансформатора, плиты управления.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Деталь АКПП определяется не только маркой автомобиля: один артикул подходит сразу к десяткам трансмиссий (DQ381, 0BT, 6T40, JF414E, VT3), а одна трансмиссия встречается у десятков машин. Связи «деталь ↔ трансмиссия ↔ марка» двусторонние и многие-ко-многим — поэтому каталог и фильтры строятся на связях, а не на вложенности папок.</p>
+              </div>
+
+              <!-- SCREENSHOT: catalog with sidebar -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/katalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — разделы запчастей, фильтры и сетка позиций</span>
+              </div>
+
+              <h2 id="structure">2. Структура каталога</h2>
+              <p>
+                Каталог разложили на восемь разделов, чтобы покупатель попадал в нужный за один клик, а не
+                перебирал 59 000 позиций. Разделы повторяются в главном меню, боковой навигации и на главной
+                странице — человеку не нужно запоминать, где он находится.
+              </p>
+              <ul>
+                <li><b>Каталог запчастей по маркам</b> — от Audi до Zotye, каждая марка раскрывается до моделей и трансмиссий.</li>
+                <li><b>Запчасти АКПП</b> — «железо»: гидроблоки, насосы, планетарные ряды, барабаны, валы, плиты управления.</li>
+                <li><b>Фильтры, прокладки и ремнаборы</b> — комплекты уплотнений для гидроблоков и мехатроников.</li>
+                <li><b>Охлаждение</b> — радиаторы, масляные и картриджные фильтры.</li>
+                <li><b>Детали для раздаток</b> — фрикционные диски, цепи, шестерни раздаточных коробок.</li>
+                <li><b>АКПП в продаже</b> — новые и контрактные коробки в наличии и под заказ.</li>
+                <li><b>Трансмиссионные масла</b> — масла и присадки под конкретные типы коробок.</li>
+                <li><b>Поиск по параметрам</b> — подбор детали не по названию, а по характеристикам.</li>
+              </ul>
+
+              <h2 id="catalog">3. Каталог по маркам и трансмиссиям</h2>
+              <p>
+                Главная точка входа — марка автомобиля. В каталоге 70+ марок, разложенных по алфавиту
+                с логотипами: от Audi, BMW, Chevrolet, Ford, Hyundai, Kia, Mitsubishi, Nissan, Opel, Renault,
+                Skoda, Toyota, Volkswagen и Volvo до китайских BYD, Chery, Geely, Haval, Omoda, Exeed.
+                Дальше путь сужается до модели, потом до трансмиссии — и только там показываются сами детали.
+              </p>
+              <p>
+                Отдельный раздел «трансмиссии» решает задачу, с которой марка не справляется: мастера интересует
+                не «для Toyota», а «для 6T40». В каталоге собраны сотни позиций коробок — 6T40, A4CF1, JF414E,
+                DQ381, DQ500, DL501, 0BT, 0AM, DQ200, 0B5, 8-ступенчатые, вариаторы JF011E, QR018CHA, RE0F10A,
+                VT2 и VT3, роботы MPS6 и DCT450, мехатроники CD4E и FNR5.
+              </p>
+
+              <!-- SCREENSHOT: brand grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/marki</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог по маркам — 70+ брендов с логотипами, разбитых по буквам</span>
+              </div>
+
+              <h2 id="search">4. Поиск по параметрам и артикулу</h2>
+              <p>
+                Второй сценарий — покупатель, который не помнит ни марку, ни название детали, а знает только
+                артикул: например, <b>BYGE-OEM-26-23347</b> или <b>OPDACH-GENE-26-24676</b>. Поиск работает
+                и по артикулу, и по названию, и по вендорному коду, и находит позицию сразу, без захода
+                в раздел каталога.
+              </p>
+              <p>
+                «Поиск по параметрам» закрывает вторую боль — подбор аналога. Пользователь последовательно
+                сужает выборку: тип коробки → марка и модель → производитель (LINESOON, JatCo, OEM, NAK,
+                TRANSTAR, SONNAX, ZF, BORG WARNER) → группа детали → наличие. Счётчики рядом с каждым
+                параметром показывают, сколько позиций останется, поэтому лишние шаги не делаются вслепую.
+              </p>
+
+              <!-- SCREENSHOT: parameter search -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/poisk-po-parametram</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--city">
+                      <div class="pj-mock--city__bar">
+                        <span class="loc"></span>
+                        <span class="name"></span>
+                        <span class="chev"></span>
+                      </div>
+                      <div class="pj-mock--city__list">
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Поиск по параметрам — фильтры с количеством позиций и статусом наличия</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии в каталоге</b>
+                <p>PHP · MySQL · 59 000 SKU · связи «деталь ↔ трансмиссия ↔ марка» · полнотекстовый поиск · фильтры по параметрам · ЧПУ · Schema.org (Product, Offer)</p>
+              </div>
+
+              <h2 id="product">5. Карточка товара</h2>
+              <p>
+                Карточка отвечает на вопрос мастера до того, как он его задаст: артикул, группа детали,
+                производитель, страна производства и — главное — список совместимых трансмиссий. Одна деталь
+                может стоять в пяти трансмиссиях, и это указано прямо на карточке, а не прячется в описании.
+              </p>
+              <p>
+                Вторая особенность — статус позиции. Деталь может быть в наличии, может продаваться только
+                в комплекте, а может требовать заказа у поставщика. В последнем случае карточка честно
+                сообщает об этом и тут же предлагает аналогичные детали или комплекты, чтобы покупатель не
+                уходил с пустой карточкой.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/detali/23347</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка детали — фото, артикул, группа, производитель и совместимые трансмиссии</span>
+              </div>
+
+              <h2 id="compare">6. Сравнение товаров</h2>
+              <p>
+                В запчастях для АКПП выбор почти всегда «один против другого»: оригинал или восстановленный,
+                NAK или LINESOON, комплект под гидроблок или отдельные уплотнения. Счётчик сравнения в шапке
+                сайта позволяет отложить позиции и сравнить их по артикулу, производителю, группе, стране
+                и списку применимых трансмиссий — разница видна сразу, без лишних звонков.
+              </p>
+
+              <!-- SCREENSHOT: compare table -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/sravnenie-tovarov</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--compare">
+                      <div class="pj-mock--compare__head"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Сравнение товаров — оригинал, восстановленный деталь и аналоги по применимости</span>
+              </div>
+
+              <h2 id="cart">7. Корзина и оформление заказа</h2>
+              <p>
+                Склад запчастей для АКПП живёт своей жизнью: позиции заканчиваются быстро, часть деталей
+                приходит под заказ. Поэтому заказ оформляется в два шага — покупатель собирает корзину,
+                менеджер подтверждает наличие и присылает ссылку на оплату. Так клиент не платит за то,
+                чего уже нет, а менеджер не тратит время на переписку по каждой позиции.
+              </p>
+              <p>
+                Доставка работает по всей России, а вопросы по заказу можно закрыть в мессенджерах —
+                WhatsApp, Telegram и MAX подключены прямо в шапке сайта, вместе с телефоном продаж
+                и отдельным номером автосервиса.
+              </p>
+
+              <!-- SCREENSHOT: cart -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/korzina</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="sum"></span><span class="checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина: состав заказа, подтверждение наличия менеджером и переход к оплате</span>
+              </div>
+
+              <h2 id="b2b">8. Личный кабинет и работа с автосервисами</h2>
+              <p>
+                Половина оборота магазина — это автосервисы, которые закупают ремкомплекты пачками. Для них
+                сделали отдельный сценарий: вход и регистрация в шапке сайта, авторизованный статус
+                с персональными скидками, история заказов и запрос прайса. Сотрудничающим сервисам
+                не нужно каждый раз звонить за ценой — условия действуют автоматически после авторизации.
+              </p>
+
+              <!-- SCREENSHOT: personal account -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru — Личный кабинет</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Личный кабинет — история заказов, статусы отгрузки и персональные цены</span>
+              </div>
+
+              <h2 id="service">9. Услуги автосервиса</h2>
+              <p>
+                «АКПП26RUS» — это не только магазин, но и сервис в ст. Незлобной. На сайте восемь услуг
+                с описанием, сроками и формой записи: диагностика неисправности, ремонт АКПП, вариаторов
+                и роботов, восстановление плит управления, ремонт гидротрансформаторов с гарантией,
+                тестирование электромагнитных клапанов, полная замена масла АКПП, лазерная очистка металла
+                и проточка тормозных дисков без снятия.
+              </p>
+
+              <!-- SCREENSHOT: services list -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru/remont-i-uslugi</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Услуги автосервиса — восемь направлений с записью и отдельным телефоном</span>
+              </div>
+
+              <h2 id="cta">10. Формы и заявки</h2>
+              <p>
+                Точек сбора заявок несколько: запрос цены и наличия с карточки детали, оформление заказа,
+                запись на ремонт и форма запроса оптового прайса для сервисов. Заявки уходят в CRM
+                и дублируются менеджеру в мессенджеры, а на форме есть согласие на обработку персональных
+                данных. Обращения с сайта и звонки попадают в одну воронку, а не в разные чаты.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужен такой же каталог?</h3>
+                  <p>Соберём каталог запчастей со связями по применимости, B2B-кабинетом и записью на сервис.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <!-- SCREENSHOT: lead form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>akpp26rus.ru — Запись на сервис</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма записи на сервис — марка, модель, телефон и согласие на обработку данных</span>
+              </div>
+
+              <h2 id="design">11. Дизайн и адаптив</h2>
+              <p>
+                Стиль магазина технический и честный: крупные фотографии реальных деталей, плотные
+                характеристики, заметные артикулы и статус наличия. Главный акцент — блок «Всегда в наличии»
+                с обещанием отгрузки и условиями для автосервисов, он сразу отвечает на вопрос покупателя.
+                Адаптив сделан в первую очередь под телефон: каталог, фильтры и корзина работают на мобильных
+                так же удобно, как на десктопе, — мастера заказывают с гаражного телефона.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Адаптив — заказ детали и запись на сервис с телефона</span>
+              </div>
+
+              <h2 id="seo">12. SEO и запуск</h2>
+              <p>
+                SEO закладывали до запуска: ЧПУ-адреса для деталей, марок и трансмиссий
+                (<b>/detali/23347</b>, <b>/marki/m-marks/toyota/</b>, <b>/transmissii/dq381-18628/</b>),
+                семантическое ядро под спрос в ремкомплекты АКПП и микроразметка Schema.org
+                (Product, Offer, LocalBusiness) для карточек и контактов. Раздел «Марки» и «Трансмиссии»
+                закрывают длинный хвост запросов по конкретным коробкам, поэтому 59 000 позиций
+                индексируются как полноценные посадочные страницы, а не как один плоский список.
+              </p>
+
+              <h2 id="results">13. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="59000" data-suffix="+">0</b><span>запчастей в каталоге</span></div>
+                <div class="pj-result"><b data-count="70" data-suffix="+">0</b><span>марок автомобилей</span></div>
+                <div class="pj-result"><b data-count="20" data-suffix="+">0</b><span>брендов-производителей</span></div>
+                <div class="pj-result"><b data-count="8">0</b><span>услуг автосервиса доступно онлайн</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>покупатель сам находит нужную деталь по марке, трансмиссии или артикулу — звонки «подходит ли?» ушли в мессенджеры;</li>
+                <li>поиск по параметрам и счётчики позиций сократили вязкое «листание» каталога до одного результата;</li>
+                <li>заказ с подтверждением наличия избавил клиентов от предоплаты за позиции, которых уже нет на складе;</li>
+                <li>личный кабинет с персональными скидками закрепил за магазином автосервисы-партнёры и оптовый оборот;</li>
+                <li>услуги автосервиса продаются онлайн, а не только по телефону — запись приходит сразу с сайта.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект запущен и развивается: каталог пополняется новыми артикулами и марками, отдел автосервиса расширяет перечень услуг, заявки из всех форм собираются в CRM и мессенджеры без потерь.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/snegotehnika.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>СнегоТехника</b><small>Интернет-магазин снегоходов</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/mst.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>MST.Tools</b><small>Маркетплейс электроинструмента</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/prokatkmv.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>Прокат КМВ</b><small>Сайт автопроката с онлайн-бронированием</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/mst.html">
+                  <span>← Назад</span>
+                  <b>MST.Tools — маркетплейс электроинструмента</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

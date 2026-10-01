@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="lemmax.html" itemprop="item"><span itemprop="name">LEMMAX — сайт производителя верхней одежды</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Производитель · E-commerce</span>
+              <h1 class="pj-hero__title" data-reveal>LEMMAX — сайт<br><span>производителя верхней одежды</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Российский производитель верхней одежды с собственным производством и двумя брендами —
+                LEMMAX и Baureli. Каталог с фильтрами и предзаказом, регистрация оптовых покупателей
+                и полный цикл заказа от витрины до отгрузки.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Производитель</a>
+                <a href="/pages/portfolio/index.html">Интернет-магазин</a>
+                <a href="/pages/portfolio/index.html">E-commerce</a>
+                <a href="/pages/portfolio/index.html">B2B / B2C</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>2</b><span>бренда: LEMMAX и Baureli</span></div>
+                <div class="pj-fact__item"><b>130+</b><span>моделей в каталоге</span></div>
+                <div class="pj-fact__item"><b>8</b><span>категорий и 2 сезона покупок</span></div>
+                <div class="pj-fact__item"><b>2 вида</b><span>заказов: предзаказ и в наличии</span></div>
+                <div class="pj-fact__item"><b>48–64</b><span>размеры с таблицей размеров</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#filters" class="sv-nav__link">Фильтры</a>
+            <a href="#product" class="sv-nav__link">Карточка</a>
+            <a href="#sizes" class="sv-nav__link">Размеры</a>
+            <a href="#cart" class="sv-nav__link">Корзина</a>
+            <a href="#b2b" class="sv-nav__link">Опт и B2B</a>
+            <a href="#delivery" class="sv-nav__link">Доставка</a>
+            <a href="#forms" class="sv-nav__link">Формы</a>
+            <a href="#brand" class="sv-nav__link">Бренды</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>LEMMAX / Baureli</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Производство верхней одежды</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Каталог + предзаказ + опт</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — слайдер с новыми коллекциями, блок «О компании» и разделы каталога</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                LEMMAX шьёт пуховики и демисезонную одежду с 2000 года, а с 2010-го специализируется
+                именно на верхней одежде. Производство полностью своё: от эскиза до выпущенной партии.
+                На сайте два бренда, мужская и женская коллекции, предзаказ новых сезонов и работа
+                с оптовыми клиентами. Собрали каталог, который продаёт и в розницу, и оптом.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Компания выросла из производственного цеха, и сайт должен был решить две задачи.
+                Первая — витрина: показать все модели с составом, наполнителем и размером, как
+                делают интернет-магазины. Вторая — специфика производителя: коллекции появляются
+                задолго до отгрузки, поэтому часть моделей можно только «предзаказать», а часть —
+                купить из наличия. На цену влияют размер, цвет и наполнитель.
+              </p>
+              <p>Сформулировали пять ключевых целей:</p>
+              <ul>
+                <li><b>Структурный каталог</b> — мужская и женская одежда, сезон, наличие, бренд и категория у каждой модели.</li>
+                <li><b>Предзаказ</b> — разделять «под заказ» и «в наличии», чтобы не путать клиента и не создавать очередь.</li>
+                <li><b>Карточка с характеристиками</b> — пух/перо, экопух, синтепон, температурный режим и таблица размеров.</li>
+                <li><b>Оптовый канал</b> — регистрация юридических лиц и отдельный сценарий для оптовых покупателей.</li>
+                <li><b>Полный цикл заказа</b> — корзина, оформление, доставка по РФ и ближнему зарубежью.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Бизнес производителя живёт двумя циклами: резерв под новую коллекцию и продажа с остатков. Если смешать их в одну витрину — клиент не понимает, когда получит заказ. Разделили каталог на «в наличии» и «предзаказ», с отдельными кнопками и условиями отгрузки у каждого варианта.</p>
+              </div>
+
+              <h2 id="catalog">2. Структура каталога</h2>
+              <p>
+                Каталог построили вокруг логики производства, а не названий коллекций:
+                покупатель часто приходит за «пуховиком на зиму», а не за именем модели.
+              </p>
+              <ul>
+                <li><b>Для мужчин / Для женщин</b> — две витрины: коллекция зима (натуральный пух и экопух) и весна-осень (с утеплителем и без).</li>
+                <li><b>Акции и скидки</b> — демисезонные и зимние позиции со специальными ценами, отдельный блок Sale.</li>
+                <li><b>Фильтр «в наличии»</b> — подборка с остатками, чтобы клиент мог сразу оформить отгрузку.</li>
+                <li><b>Модели в каталоге</b> — Baureli куртки и пуховики, LEMMAX линейка, ветровки, жилеты, стёганые куртки.</li>
+              </ul>
+              <p>
+                Внутри раздела позиции идут через карточки с фото, названием, цветом и пометкой
+                «Предзаказ» или «В наличии». У модели несколько вариантов цвета — выбирается
+                ещё до открытия карточки, поэтому клиент сразу видит свою размерную линейку.
+              </p>
+
+              <!-- SCREENSHOT: catalog grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru/katalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — карточки с фото, цветом, статусом «Предзаказ» и «В наличии»</span>
+              </div>
+
+              <h2 id="filters">3. Фильтры каталога</h2>
+              <p>
+                Витрина наращивалась годами, и без фильтров в ней просто потеряться: только женских
+                курток Baureli больше полусотни. Собрали параметры, по которым реально выбирают верхнюю
+                одежду.
+              </p>
+              <ul>
+                <li><b>Наличие</b> — в наличии (порядка 33 моделей) и предзаказ (порядка 100+).</li>
+                <li><b>Категория</b> — ветровки, куртки, куртки Baureli, пуховики, жилеты, стёганые модели.</li>
+                <li><b>Сезон</b> — зима, осень, весна.</li>
+                <li><b>Утеплитель</b> — пух 80%/перо 20%, синтепон от 100 до 300 г/м², экопух, биопух, termofinn.</li>
+                <li><b>Бренд</b> — LEMMAX и Baureli.</li>
+                <li><b>Цвет</b> — вся палитра коллекций, от графита до лаванды.</li>
+              </ul>
+
+              <!-- SCREENSHOT: filters -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru/katalog — фильтры</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--city">
+                      <div class="pj-mock--city__bar">
+                        <span class="loc"></span>
+                        <span class="name"></span>
+                        <span class="chev"></span>
+                      </div>
+                      <div class="pj-mock--city__list">
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Фильтры по наличию, категории, сезону, утеплителю, бренду и цвету</span>
+              </div>
+
+              <h2 id="product">4. Карточка товара</h2>
+              <p>
+                Карточка решает вопрос «подойдёт ли мне эта модель». Сразу видно фото в нескольких
+                ракурсах, статус предзаказа, доступные цвета и полную розетку размеров — от 48 до 60.
+                Выбор размера ведёт к «Определить размер», а внизу открывается таблица размеров
+                с обхватом груди, талии и бёдер для каждого размера.
+              </p>
+              <p>
+                Характеристики вынесены отдельным блоком: сезон, категория, утеплитель,
+                материал верха и подкладки, бренд, температурный режим и длина изделия.
+                Для стёганого жилета из примера — «до −10 °С», для пуховиков — свои значения.
+                Покупатель сравнивает модели по данным, а не по фотографиям.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru/katalog/for-men/zhilet-muzhskoj-810-6</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка товара — фото, цвет, размеры, характеристики и условия отгрузки</span>
+              </div>
+
+              <h2 id="sizes">5. Размерная сетка</h2>
+              <p>
+                Для одежды размер — решающий фактор, поэтому к выбору подошли как к сервисной
+                задаче. Размеры 48–64 у каждой модели; рядом кнопка «Определить размер», которая
+                открывает таблицу с замерами для мужской коллекции: ОГ (обхват груди), ОТ и ОБ
+                в сантиметрах для каждого размера от 44 до 64.
+              </p>
+              <p>
+                Таблицы разбиты по коллекциям (мужская / женская), чтобы не сбивать замеры.
+                В корзину модель уходит вместе с цветом и размером — на производстве сразу видят,
+                что именно отшивать под клиента.
+              </p>
+
+              <!-- SCREENSHOT: size table -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru — Таблица размеров для мужчин</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--compare">
+                      <div class="pj-mock--compare__head"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Таблица размеров — обхват груди, талии и бёдер для подбора по меркам</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>PHP · MySQL · каталог с фильтрами и предзаказом · корзина и оформление заказа · регистрация опт/розница · карточки с размерами и характеристиками · ЧПУ · Schema.org (Product, Offer, AggregateOffer)</p>
+              </div>
+
+              <h2 id="cart">6. Корзина и оформление заказа</h2>
+              <p>
+                Корзина ведёт покупателя по двум сценариям: розница и опт. В рознице заказ
+                оформляется с выбором цвета и размера, дальше — страница оплаты и доставки
+                с данными получателя и адресом. Отгрузка происходит после 100% предоплаты —
+                это условие прозрачно показано в карточке и на этапе оформления, чтобы не было
+                неожиданности на складе.
+              </p>
+              <p>
+                Для оптового покупателя сценарий отдельный: при регистрации выбирается тип клиента —
+                «Опт» или «Розница». Оптовик видит свои условия сотрудничества и цены, а менеджер
+                получает заявку уже с пометкой юридического лица. Корзина общая, но логика
+                заказа разная.
+              </p>
+
+              <!-- SCREENSHOT: cart -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru/cart</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="sum"></span><span class="checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина — товар с цветом и размером, итог и оформление заказа с типом клиента</span>
+              </div>
+
+              <h2 id="b2b">7. Оптовый канал и сотрудничество</h2>
+              <p>
+                Основные деньги производителя — не розничные чеки, а оптовые партии и партнёрства.
+                Для этого на сайте два отдельных раздела: «Сотрудничество» для оптовых покупателей
+                и «Аутсорсинг» — для брендов, которым нужна швейная площадка.
+              </p>
+              <ul>
+                <li><b>Сотрудничество</b> — условия для магазинов и меркетплейсов, работа с юрлицами, регистрация оптового клиента.</li>
+                <li><b>Аутсорсинг</b> — производство одежды под чужим брендом, от разработки до выпуска партии.</li>
+                <li><b>Регистрация Опт/Розница</b> — разделение клиентской базы на входе.</li>
+                <li><b>Прайс-лист по запросу</b> — форма «Заказ прайс-листа» с выбором: мужская/женская одежда, юр/физ лицо.</li>
+              </ul>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Продаёте и в розницу, и оптом?</h3>
+                  <p>Соберём каталог с предзаказом, разделим B2B и B2C и оформим заказ до отгрузки.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="delivery">8. Оплата и доставка</h2>
+              <p>
+                Доставка — один из барьеров покупки верхней одежды через сайт: вещь нельзя
+                примерить. Прозрачные условия снимают страх: доставка в любой город РФ и ближнего
+                зарубежья через транспортные компании, Почту России или самовывоз. Оплата —
+                банковскими картами и через Сбербанк.
+              </p>
+              <p>
+                Показали все способы сразу в подвале каждой страницы и продублировали условия
+                в карточке товара. Клиент видит «как мне это привезти» ещё до корзины —
+                и не уходит за ответом в мессенджер.
+              </p>
+
+              <!-- SCREENSHOT: delivery/payment -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru — Оплата и доставка</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Оплата картами и Сбербанк, доставка транспортными компаниями, Почтой России и самовывозом</span>
+              </div>
+
+              <h2 id="forms">9. Формы и заявки</h2>
+              <p>
+                На сайте заработало несколько точек сбора заявок, привязанных к этапу покупки.
+                «Заказ звонка» — с выбором мужской или женской одежды; «Заказ прайс-листа» —
+                для оптовых клиентов с типом клиента. Заявки уходят менеджерам в рабочее время
+                с 9:00 до 18:00 по московскому времени.
+              </p>
+              <p>
+                Плюс авторизация с двумя сценариями: вход и регистрация. Регистрация позволяет
+                выбрать роль «Опт» или «Розница» и хранит историю заказов клиента — база
+                покупателей больше не живёт в переписке.
+              </p>
+
+              <!-- SCREENSHOT: callback/pricelist form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>lemmax.ru — Заказ прайс-листа</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма «Заказ прайс-листа» — интересуемые коллекции и тип клиента: юрлицо или физлицо</span>
+              </div>
+
+              <h2 id="brand">10. Бренды и контент о производстве</h2>
+              <p>
+                Для производителя доверие строится на истории фабрики, а не только на фото товара.
+                На главной есть блок «Компания LEMMAX» с фактами о производстве с 2000 года
+                и полноформатном контроле качества — от дизайна до выпуска партии. В разделе
+                «О компании» — история и награды, фото основателя, мужская и женская коллекции.
+              </p>
+              <p>
+                Бренд Baureli — «визитная карточка» комапнии: лёгкие приталенные, длинные,
+                короткие и оверсайз пуховики. Два бренда раскрыты на сайте по-разному:
+                у Baureli шире линейка и отдельная страница каталога, у LEMMAX — свои модели
+                и акценты в фильтрах по брендам.
+              </p>
+
+              <h2 id="seo">11. SEO и запуск</h2>
+              <p>
+                Каталог верхней одежды — поле, где поиск решает: «купить пуховик», «пуховик
+                оверсайз», «куртка Baureli». ЧПУ-адреса вида <b>/katalog/for-men/kurtka-muzhskaya-1263-61</b>
+                учли в структуре, микроразметка Schema.org описала товары и предложения с ценами,
+                статусами наличия и размерами.
+              </p>
+              <p>
+                Подключены Яндекс.Метрика и соцсети (ВК, YouTube, Instagram, Facebook),
+                новости компании — про презентации на CPM Collection Premiere и в ГК «Измайлово» —
+                публикуются в отдельном разделе и индексируются. Сайт работает как витрина
+                и как основа для продвижения коллекций каждый сезон.
+              </p>
+
+              <h2 id="results">12. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="2">0</b><span>бренда в одном каталоге</span></div>
+                <div class="pj-result"><b data-count="130" data-suffix="+">0</b><span>моделей с фото и характеристиками</span></div>
+                <div class="pj-result"><b data-count="5">0</b><span>фильтров подбора</span></div>
+                <div class="pj-result"><b data-count="2">0</b><span>сценария продаж: розница и опт</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>каталог разделяет предзаказ и наличие — склад не получает дублей и путаницы;</li>
+                <li>карточки показывают состав и наполнитель — меньше вопросов «а что внутри»;</li>
+                <li>таблицы размеров снижают возвраты, вызванные неверным размером;</li>
+                <li>оптовый канал работает через регистрацию и прайс-лист, а не через переписку;</li>
+                <li>новости и коллекции индексируются — сайт приводит сезонный трафик.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект запущен и работает: сайт — витрина двух брендов, инструмент предзаказов новых коллекций и точка входа для оптовых партнёров. Каталог обновляется вместе с производством, без правки кода на каждую новинку.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/mst.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>MST.Tools</b><small>Маркетплейс электроинструмента</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/specsnab39.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>СПЕЦСНАБ</b><small>Сайт материалов и техники с заявками B2B</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/shaurmania.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>Шаурмания</b><small>Сайт доставки с онлайн-заказом</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/shaurmania.html">
+                  <span>← Назад</span>
+                  <b>Шаурмания — доставка шаурмы с онлайн-заказом</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

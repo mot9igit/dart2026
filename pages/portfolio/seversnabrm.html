@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="seversnabrm.html" itemprop="item"><span itemprop="name">СеверСнаб-РМ — магазин оригинальных запчастей для снегоходов</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Интернет-магазин · Запчасти</span>
+              <h1 class="pj-hero__title" data-reveal>СеверСнаб-РМ — магазин<br><span>оригинальных запчастей Русская Механика</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Магазин запчастей, масел и экипировки для снегоходов, квадроциклов и мототехники
+                РМ из Рыбинска. Каталог на 8 разделов, схема подбора по моделям, оплата по счёту
+                и доставка по всей России.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Интернет-магазин</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">Корзина</a>
+                <a href="/pages/portfolio/index.html">Локальный бизнес</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>8</b><span>разделов каталога</span></div>
+                <div class="pj-fact__item"><b>10%</b><span>скидки в каталоге</span></div>
+                <div class="pj-fact__item"><b>1 час</b><span>ответ на вопрос в рабочее время</span></div>
+                <div class="pj-fact__item"><b>В день</b><span>обработка заявки</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#scheme" class="sv-nav__link">Подбор по схеме</a>
+            <a href="#card" class="sv-nav__link">Карточка товара</a>
+            <a href="#cart" class="sv-nav__link">Корзина</a>
+            <a href="#payment" class="sv-nav__link">Оплата</a>
+            <a href="#delivery" class="sv-nav__link">Доставка</a>
+            <a href="#leads" class="sv-nav__link">Формы</a>
+            <a href="#opt" class="sv-nav__link">Опт</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>СеверСнаб-РМ | Рыбинск</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Запчасти Русская Механика</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Магазин + подбор запчастей</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — каталог на 8 разделов, преимущества доставки и оплаты, форма вопроса</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                ООО «СеверСнаб-РМ» из Рыбинска торгует оригинальными запчастями, маслами
+                и экипировкой для техники «Русская Механика»: снегоходов, квадроциклов
+                и мотовездеходов. Компания работает в связке с официальным дистрибьютором
+                rmdetal.ru поэтому в ассортименте — заводские оригинальные детали, а не аналоги.
+                Покупатель тут непростой: он ищет конкретную деталь под конкретную модель
+                техники, поэтому сайт должен был дать ему точный каталог с понятной схемой
+                подбора.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Спрос на запчасти приходит двумя путями: розничный владелец снегохода ищет
+                деталь по модели, а сервис или перекупщик — закупает оптом на партию.
+                У каждого свой сценарий, и сайт должен обслужить оба.
+              </p>
+              <ul>
+                <li><b>Точный каталог</b> — детали структурированы по типам техники (для снегохода, для квадроцикла) и назначению (масла, доп. оборудование, экипировка, запчасти для ТО, велосипеды).</li>
+                <li><b>Подбор по модели</b> — внутри разделов есть подбор по модельным рядам РМ («Рысь», «Буран» и др.) и снятым с производства моделям.</li>
+                <li><b>Продажа сервису</b> — отдельный оптовый раздел и оплата по счёту для юридических лиц.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Запчасти нельзя «просто положить в каталог»: покупатель должен найти деталь под свою модель. Поэтому структура разложена не по алфавиту, а по логике владельца техники — сначала тип машины, потом модельный ряд, потом деталь.</p>
+              </div>
+
+              <h2 id="catalog">2. Структура каталога</h2>
+              <p>
+                Каталог разбит на восемь разделов, где первые два — это типы техники,
+                а остальные — горизонтальные категории товаров.
+              </p>
+              <ul>
+                <li><b>Для снегохода</b> — оригинальные детали по всем моделям «Русской Механики».</li>
+                <li><b>Для квадроцикла</b> — детали квадроциклов и мотовездеходов, включая модельный ряд «Рысь».</li>
+                <li><b>Масла и смазки</b> — технические жидкости для обслуживания.</li>
+                <li><b>Доп. оборудование</b> — аксессуары, прицепы, оснащение.</li>
+                <li><b>Экипировка</b> — одежда и защита для езды.</li>
+                <li><b>Велосипеды</b> — модельный ряд велотехники РМ.</li>
+                <li><b>Запчасти для ТО</b> — расходники по регламенту обслуживания.</li>
+                <li><b>Масла</b> — расширенный перечень жидкостей.</li>
+              </ul>
+
+              <!-- SCREENSHOT: catalog grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru/katalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--industries"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — 8 разделов: для снегохода, для квадроцикла, масла, доп. оборудование, экипировка</span>
+              </div>
+
+              <h2 id="scheme">3. Подбор по схеме и модельному ряду</h2>
+              <p>
+                Главная боль покупателя запчастей — «не понимаю, какая деталь подойдёт».
+                Решение — подбор по модельным рядам: раздел «Для квадроцикла» делится
+                на «Модельный ряд РМ», «Модельный ряд Рысь», «Прочие» и «Снятые с производства».
+                Та же логика работает для снегоходов.
+              </p>
+              <p>
+                Так владелец «Рыси» сразу попадает в списки деталей своей модели, а владелец
+                техники, которую уже сняли с производства, — в отдельный раздел: эти запчасти
+                ищутся иначе и требуют консультации менеджера.
+              </p>
+
+              <!-- SCREENSHOT: schematics browse -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru/katalog/dlya-kvadroczikla</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--industries"><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Выбор по моделям — «Рысь», «Буран», снятые с производства и прочие</span>
+              </div>
+
+              <h2 id="card">4. Карточка товара</h2>
+              <p>
+                Карточка запчасти даёт покупателю главное: фото, артикул, наименование,
+                цену и кнопку в корзину. Вокруг карточки — продающие элементы:
+                скидка до 10%, статус оригинальной детали и контекст подбора (к каким моделям
+                подходит деталь).
+              </p>
+              <p>
+                Для деталей, где цена напрямую зависит от комплектации, работает стратегия
+                «рекомендуемая цена» — в подвале сайта это зафиксировано юридически: цены
+                носят информационный характер и не являются публичной офертой, что защищает
+                магазин при колебаниях закупочных цен.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru — карточка запчасти</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка товара — артикул, цена со скидкой и кнопка добавления в корзину</span>
+              </div>
+
+              <h2 id="cart">5. Корзина и оформление</h2>
+              <p>
+                В шапке — классическая корзина со счётчиком товаров и суммой. Оформление
+                заказа построено под реальность мототехники: часть розничных покупателей
+                привыкла оплачивать наложенным платежом на почте, часть — картой онлайн,
+                а сервисные организации — по счёту.
+              </p>
+              <p>
+                Именно поэтому в блоке преимуществ на главной вынесены три способа оплаты
+                разом: по счёту, картой и наложенным платежом. Это снимает главный вопрос
+                до оформления заказа и расширяет воронку на покупателей без онлайн-оплаты.
+              </p>
+
+              <!-- SCREENSHOT: cart empty -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru/korzina</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="pj-mock--cart__sum"></span><span class="pj-mock--cart__checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина и счётчик в шапке — сумма и количество товаров всегда перед глазами</span>
+              </div>
+
+              <h2 id="payment">6. Способы оплаты</h2>
+              <p>
+                Раздел «Оплата» отдельно объясняет, как проходит каждый из трёх способов:
+              </p>
+              <ul>
+                <li><b>По счёту</b> — для юридических лиц и ИП: реквизиты, счёт на оплату, оплата с НДС.</li>
+                <li><b>Картой</b> — банковские карты онлайн на сайте.</li>
+                <li><b>Наложенным платежом</b> — оплата при получении на почте или в пункте выдачи.</li>
+              </ul>
+              <p>
+                Для каждого способа описан порядок действий и сроки. Это важный раздел для
+                сервисных мастерских, которые закупают детали по безналу — их маршрут
+                не отличается от розничного, чего не хватает многим магазинам запчастей.
+              </p>
+
+              <h2 id="delivery">7. Доставка в регионы</h2>
+              <p>
+                Магазин расположен в Рыбинске, но покупатели ездят на снегоходах и квадроциклах
+                по всей стране — от Ямала до Камчатки. Поэтому ключевой блок на главной —
+                «Доставка в регионы. По всей России»: деталь доходит через транспортную
+                компанию и почту, а заявка обрабатывается в день обращения.
+              </p>
+              <p>
+                В разделе «Доставка» — сроки, стоимость и порядок отправки в разные регионы.
+                Такая подача убирает сомнение «а доедет ли до моего города» ещё до звонка
+                в магазин.
+              </p>
+
+              <!-- SCREENSHOT: delivery -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru/dostavka</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Доставка по всей России — транспортная компания и почта, обработка заявки в день обращения</span>
+              </div>
+
+              <h2 id="leads">8. Формы и скорость отклика</h2>
+              <p>
+                Для магазина запчастей скорость ответа — конкурентное преимущество, ведь
+                владелец техники часто стоит «с открытым капотом». На сайте поставлены
+                две ключевые формы.
+              </p>
+              <ul>
+                <li><b>«Задайте вопрос, ответим в течение 1 часа»</b> — поле имени и кнопка отправки на главной; обещание срока ответа в рабочее время.</li>
+                <li><b>«Заказать звонок»</b> — имя, телефон и примечание во всплывающем окне.</li>
+                <li><b>Форма обратной связи в каталоге</b> — «Перезваниваем и отвечаем в течение часа», прямо в разделе с запчастями, когда покупатель уже выбрал деталь.</li>
+              </ul>
+              <p>
+                Все формы привязаны к согласию на обработку персональных данных и политике
+                конфиденциальности, а сайт работает с cookie-уведомлением — полный комплект
+                для легального сбора заявок по 152-ФЗ.
+              </p>
+
+              <!-- SCREENSHOT: callback/lead form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>seversnabrm.ru — Заказать звонок</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма «Заказать звонок» — имя, телефон и примечание, ответ в течение часа</span>
+              </div>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Продаёте запчасти в розницу и оптом?</h3>
+                  <p>Соберём каталог с подбором по моделям, корзину с оплатой по счёту и формы быстрого отклика.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="opt">9. Оптовый раздел</h2>
+              <p>
+                Отдельная страница «Оптом» закрывает B2B-направление: сервисные центры,
+                магазины и мастерские закупают запчасти партиями. Оптовый раздел — это
+                заявка с контактами и обсуждение условий: цены на партию, персональные
+                скидки, приоритетная отгрузка.
+              </p>
+              <p>
+                Такая связка «розница + опт» на одном сайте работает на обе аудитории:
+                розница видит реальный ассортимент и цены, а оптовик — отдельный вход
+                с отдельными условиями, не перегружающий витрину.
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>MODX · PHP · MySQL · каталог товаров с разделами и подбором по моделям · корзина · способы оплаты (счёт, карта, наложенный платёж) · формы с согласием на обработку данных · импорт ассортимента из rmdetal.ru · cookie-уведомление · ЧПУ · Schema.org (AutoPartsStore, Product, Offer, AggregateOffer)</p>
+              </div>
+
+              <h2 id="results">10. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="8">0</b><span>разделов каталога</span></div>
+                <div class="pj-result"><b data-count="3">0</b><span>способа оплаты — счёт, карта, наложенный</span></div>
+                <div class="pj-result"><b data-count="10" data-suffix="%">0</b><span>скидка в каталоге</span></div>
+                <div class="pj-result"><b data-count="1">0</b><span>час на ответ покупателю в рабочее время</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>покупатель находит деталь по модели, а не «перебирает каталог» — подбор по модельным рядам сокращает путь до нужной карточки;</li>
+                <li>три способа оплаты и доставка по России расширяют аудиторию до покупателей за пределами Рыбинска;</li>
+                <li>обещание ответа «в течение часа» отделяет магазин от конкурентов, которые молчат по несколько дней;</li>
+                <li>оптовый раздел снимает барьер для сервисов и перекупщиков, закупающих партиями по счёту;</li>
+                <li>юридическая аккуратность (цен как не оферта, согласия на данные, cookie) защищает магазин при сборе заявок.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Магазин запущен и работает: каталог оригинальных запчастей с подбором по моделям, корзина с тремя способами оплаты, доставка по всей России и формы с гарантированным временем ответа — единый инструмент для розницы и опта.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/resh76.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>РЫБИНСКЭЛЕКТРОЩИТ</b><small>Сайт производителя электрооборудования</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/akpp26.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>АКПП26RUS</b><small>Магазин запчастей для АКПП</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/buransnab.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>БуранСнаб</b><small>Запчасти и производство для снегоходов Буран</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/resh76.html">
+                  <span>← Назад</span>
+                  <b>РЫБИНСКЭЛЕКТРОЩИТ — сайт производителя электрооборудования</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

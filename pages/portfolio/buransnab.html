@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="buransnab.html" itemprop="item"><span itemprop="name">БуранСнаб — запчасти для снегоходов Буран и Тайга</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Интернет-магазин · Производство</span>
+              <h1 class="pj-hero__title" data-reveal>БуранСнаб — запчасти,<br><span>стекла и мотобуксировщики для снегоходов</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Магазин из Рыбинска с собственным производством: запчасти для Бурана и Тайги,
+                сертифицированные ветровые стекла, склизы и серийные мотобуксировщики БТС.
+                Каталог на 17 тысяч позиций с доставкой по всей России.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Интернет-магазин</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">Корзина</a>
+                <a href="/pages/portfolio/index.html">Производство</a>
+                <a href="/pages/portfolio/index.html">Локальный бизнес</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>17 429</b><span>наименований в каталоге</span></div>
+                <div class="pj-fact__item"><b>8 500</b><span>мотобуксировщиков собрано с 2016 года</span></div>
+                <div class="pj-fact__item"><b>30%</b><span>максимальная скидка постоянным клиентам</span></div>
+                <div class="pj-fact__item"><b>Вся РФ</b><span>льготная доставка спецтарифом</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#models" class="sv-nav__link">Подбор по моделям</a>
+            <a href="#production" class="sv-nav__link">Производство</a>
+            <a href="#card" class="sv-nav__link">Карточка товара</a>
+            <a href="#cart" class="sv-nav__link">Корзина и ЛК</a>
+            <a href="#payment" class="sv-nav__link">Оплата</a>
+            <a href="#delivery" class="sv-nav__link">Доставка</a>
+            <a href="#forms" class="sv-nav__link">Формы</a>
+            <a href="#opt" class="sv-nav__link">Скидки и опт</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>БуранСнаб | Рыбинск</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Запчасти и производство для снегоходов</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Каталог + витрина собственной продукции</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — слайдер с новинками, топ-категории и блоки преимуществ магазина</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                «БуранСнаб» из Рыбинска — магазин запчастей для снегоходов Буран, Тайга
+                и другой техники «Русской Механики» с собственным производством: серийные
+                мотобуксировщики БТС, сертифицированные ветровые стекла, склизы и вариаторы.
+                Компания — официальный дилер РМ Деталь, поэтому в каталоге больше 17 тысяч
+                позиций: от оригинальных деталей до продукции собственных цехов.
+              </p>
+
+              <h2 id="task">1. Задача и факты</h2>
+              <p>
+                Покупательская аудитория магазина — владельцы снегоходов по всей России
+                и оптовики. Первые ищут конкретную деталь под конкретную модель, вторые
+                закупают партии и хотят видеть цены со скидками. Вдобавок у компании есть
+                собственная продукция, которую нужно продавать не хуже магазинной витрины.
+              </p>
+              <ul>
+                <li><b>Глубокий каталог</b> — 17 429 наименований запчастей с разбивкой по типу техники, модельному ряду и назначению.</li>
+                <li><b>Витрина производства</b> — мотобуксировщики БТС, стекла, склизы и аксессуары собственного выпуска.</li>
+                <li><b>Сервис оптовиков</b> — гибкая система скидок от 5% до 30% и отдельный раздел для сотрудничества.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Соединить розницу, опт и собственное производство на одной витрине: покупатель должен находить и деталь Бурана, и новый мотобуксировщик, и партию стекол оптом — с одинаковой скоростью.</p>
+              </div>
+
+              <h2 id="catalog">2. Каталог — 17 429 наименований</h2>
+              <p>
+                Каталог запчастей — ядро сайта. Он разбит на одиннадцать подкатегорий,
+                каждая со своим набором товаров и страницей «По характеристикам» для
+                фильтрации.
+              </p>
+              <ul>
+                <li><b>Для снегохода</b> и <b>для квадроцикла</b> — оригинальные детали РМ.</li>
+                <li><b>Для буксировщика</b> — запчасти к мотобуксировщикам: трансмиссии, подвески, тормоза, двигатели Lifan.</li>
+                <li><b>Ремни</b> и <b>ремни вариатора</b> — включая аналоги под известные бренды.</li>
+                <li><b>Расходные материалы</b>, <b>спец. инструмент</b>, <b>доп. оборудование</b>, <b>запчасти для ТО</b>.</li>
+                <li><b>Масла и смазки</b>, <b>велосипеды</b>.</li>
+              </ul>
+              <p>
+                Помимо запчастей — отдельные товарные направления, у каждого со своей
+                навигацией: ветровые стекла (337 наименований), склизы, аксессуары,
+                снегоходы и ATV РМ, сани и прицепы. Над каталогом работают промо-разделы
+                «Распродажа», «Спецпредложение» и «Товар недели».
+              </p>
+
+              <!-- SCREENSHOT: catalog grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru/каталог-запчастей</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--industries"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог запчастей — 11 подкатегорий и блок «По характеристикам» в каждой</span>
+              </div>
+
+              <h2 id="models">3. Подбор по модельным рядам</h2>
+              <p>
+                Деталь в снегоходе ищут не по алфавиту, а по модели. Поэтому в каталоге
+                работает двухуровневая структура: сначала тип техники, потом модельный ряд.
+              </p>
+              <ul>
+                <li><b>Буран</b> — А, Лидер, 4Т, включая двигатели: Лифан 29 л.с., РМЗ 640, двухтактные и четырёхтактные.</li>
+                <li><b>Тайга</b> — Россия, Люкс, Варяг 500, Атака, 551, Патруль 551 Swt, СТ500Д.</li>
+                <li><b>Спартан</b> и <b>TIKSY</b> — снегоходы РМ, квадроциклы Русская Механика.</li>
+                <li><b>По узлам</b> — капот, подвеска, сиденья, тяги рулевые, жгуты, коммутаторы, муфты, фаркопы внутри каждой модели.</li>
+              </ul>
+              <p>
+                Такая логика решает главную задачу посетителя: он сразу оказывается
+                в разделе своей машины и выбирает узел, а не просматривает тысячи позиций.
+              </p>
+
+              <!-- SCREENSHOT: product listing grouped by model -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru/…/modelnyij-ryad-buran</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Сетка товаров модельного ряда — фото детали, название и артикул</span>
+              </div>
+
+              <h2 id="production">4. Собственное производство</h2>
+              <p>
+                У компании четыре производственных направления, и каждому на сайте отдан
+                отдельный блок с цифрами и доказательствами качества.
+              </p>
+              <ul>
+                <li><b>Мотобуксировщики БТС</b> — серийное производство с 2016 года: более 8 500 машин, продажи по всей России.</li>
+                <li><b>Ветровые стекла</b> — собственное производство; все стекла сертифицированы и сохраняют характеристики годами, независимо от погоды.</li>
+                <li><b>Склизы</b> — для Тайги, Рыси, BRP и Yamaha, своего производства с уникальным составом.</li>
+                <li><b>Тюнинг и запчасти</b> — вариаторы «Сафари», кронштейны, тележки подвески и другие изделия собственных цехов.</li>
+              </ul>
+              <p>
+                Для производства работает мотивация «Заказать бесплатный образец»:
+                покупатель может проверить изделие в деле до покупки — сильный инструмент
+                именно для склизов и стекол, где решает практика.
+              </p>
+
+              <!-- SCREENSHOT: about / production -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru — о компании</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:640px;margin:0 auto;padding:48px 0;">
+                      <div class="pj-mock--industries"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Четыре производства: мотобуксировщики, стекла, склизы и тюнинг-детали своей разработки</span>
+              </div>
+
+              <h2 id="card">5. Карточка товара</h2>
+              <p>
+                Карточка снегохода несёт главное — цену и возможность заказа. Например,
+                «Спартан Шаттл с ПСМ» показан с двумя ценами: полный снегоход с ПСМ и
+                кит-комплект для самостоятельной сборки. Продавец раскладывает продукт
+                под разные карманы и сценарии.
+              </p>
+              <p>
+                В карточках запчастей — фото с завода, наименование, артикул и кнопки
+                «В корзину»; у товаров доступен переключатель «Предложить свою цену» —
+                форма для опта, где покупатель называет свою сумму и менеджер отвечает,
+                «возможно, получится».
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru — карточка снегохода</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка с двумя ценовыми сценариями — снегоход целиком или кит-комплект</span>
+              </div>
+
+              <h2 id="cart">6. Корзина, сравнение, избранное и личный кабинет</h2>
+              <p>
+                Вокруг каталога собраны инструменты полноценного интернет-магазина:
+                корзина с суммой и количеством в шапке, сравнение товаров, избранное
+                и личный кабинет. Сравнение особенно важно для запчастей — покупатель
+                порой выбирает между аналогом и оригиналом, сопоставляя характеристики
+                и цены бок о бок.
+              </p>
+              <p>
+                В шапке телефоны разложены по задачам (общие вопросы, юр. лица, оптовый
+                отдел, статус заказа) — посетитель сразу звонит нужному консультанту,
+                не перепрыгивая через операторов.
+              </p>
+
+              <!-- SCREENSHOT: cart -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru — корзина</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--cart">
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__row"><span class="thumb"></span><span class="name"></span><span class="price"></span><span class="del"></span></div>
+                      <div class="pj-mock--cart__total"><span class="pj-mock--cart__sum"></span><span class="pj-mock--cart__checkout"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Корзина, сравнение и избранное — покупатель сравнивает оригинал и аналог</span>
+              </div>
+
+              <h2 id="payment">7. Способы оплаты</h2>
+              <p>
+                На сайте отдельно описан порядок оплаты: картой на сайте, по счёту
+                для юридических лиц и наложенным платежом при получении. Для оптовиков
+                работает система скидок — от 5% до 30% в зависимости от объёма закупки,
+                и эти цифры вынесены в блок преимуществ на главной как прямой ответ
+                на вопрос «а что мне с вами работать».
+              </p>
+
+              <h2 id="delivery">8. Доставка по всей России</h2>
+              <p>
+                Продажи компании идут по всей РФ, поэтому логистика — отдельный сильный
+                раздел: льготная доставка по спецтарифу для транспортной компании
+                «Автотрейдинг», Почта России, железная дорога и самовывоз со склада
+                в Рыбинске. На странице — сроки и условия каждого способа, а на главной
+                — гарантия доставки «в любой город Российской Федерации».
+              </p>
+
+              <!-- SCREENSHOT: delivery -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru — оплата и доставка</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Спецтариф транспортной компании, Почта России, ж/д и самовывоз со склада</span>
+              </div>
+
+              <h2 id="forms">9. Четыре формы отклика</h2>
+              <p>
+                Компания relies на горячее общение — в воронке работают четыре разные формы,
+                каждая под свою ситуацию:
+              </p>
+              <ul>
+                <li><b>Заказать звонок</b> — классический обратный звонок из шапки и подвала.</li>
+                <li><b>Предложить свою цену</b> — торг для оптовиков: покупатель называет цену, менеджер проверяет «возможно, получится».</li>
+                <li><b>Заказать бесплатный образец</b> — мост для склизов, стекол и тюнинга: проверь изделие в деле до покупки.</li>
+                <li><b>Задать вопрос по товару</b> — консультация по конкретной карточке: имя, e-mail, телефон.</li>
+              </ul>
+
+              <!-- SCREENSHOT: forms modal -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>buransnab.ru — Предложить свою цену</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма «Предложить свою цену» — покупатель называет сумму, менеджер проверяет возможность</span>
+              </div>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Продаёте запчасти и технику в розницу?</h3>
+                  <p>Соберём каталог с подбором по моделям, витрину собственной продукции и формы под разные сценарии клиентов.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="opt">10. Скидки, бонусы и сотрудничество</h2>
+              <p>
+                Для постоянных клиентов и оптовиков на сайте есть система мотивации:
+                гибкая скидка от 5% до 30%, специальные условия для постоянных клиентов,
+                гарантия и замена товара «без проволочек в установленном порядке» и
+                наличие полного ассортимента на складе. Отдельный раздел «Сотрудничество»
+                описывает условия работы с юридическими лицами с персональным менеджером
+                оптового отдела.
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>каталог товаров с подбором по моделям · корзина · сравнение · избранное · личный кабинет · формы (звонок, своя цена, образец, вопрос) · бонусно-скидочная система · интеграция с РМ Деталь · ЧПУ · Schema.org (Product, Offer, AutoPartsStore, Organization) · счётчики и аналитика</p>
+              </div>
+
+              <h2 id="results">11. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="17429">0</b><span>позиций в каталоге запчастей</span></div>
+                <div class="pj-result"><b data-count="8500">0</b><span>мотобуксировщиков произведено и продано</span></div>
+                <div class="pj-result"><b data-count="30" data-suffix="%">0</b><span>скидка постоянным и оптовым клиентам</span></div>
+                <div class="pj-result"><b data-count="4">0</b><span>направления собственного производства</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>покупатель за минуты находит запчасть под свою модель — каталог с подбором по Бурану и Тайге сокращает путь до нужной карточки;</li>
+                <li>собственная продукция продаётся рядом с запчастями — витрина стекол, склизов и мотобуксировщиков работает как отдельный магазин;</li>
+                <li>форма «Предложить свою цену» и скидки до 30% мотивируют оптовиков начинать диалог прямо на карточке товара;</li>
+                <li>«Заказать бесплатный образец» снижает барьер первой покупки для склизов и стекол — проверь, потом купи;</li>
+                <li>телефоны, разложенные по задачам, и четыре формы отклика распределяют заявки между менеджерами без потерь.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Магазин работает как единая площадка для розницы, опта и собственного производства: глубокий каталог, понятный подбор по моделям, честные скидки и формы под каждый сценарий покупки.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/seversnabrm.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>СеверСнаб-РМ</b><small>Магазин запчастей Русской Механики</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/akpp26.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>АКПП26RUS</b><small>Магазин запчастей для АКПП</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/epmrus.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>ЭнергоПроектМонтаж</b><small>Сайт проектно-строительной компании</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/seversnabrm.html">
+                  <span>← Назад</span>
+                  <b>СеверСнаб-РМ — магазин запчастей Русской Механики</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

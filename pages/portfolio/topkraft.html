@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="topkraft.html" itemprop="item"><span itemprop="name">TOPCraft — материалы для промышленных полов</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Сайт производителя · B2B</span>
+              <h1 class="pj-hero__title" data-reveal>TOPCraft — материалы<br><span>для промышленных полов</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Сайт производителя сухих строительных смесей для устройства полов:
+                топпинги, упрочнители и защитные лаки собственного производства
+                от компании «СтройСнабПоставка» из Перми.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Сайт производителя</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">B2B</a>
+                <a href="/pages/portfolio/index.html">Производство</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>6</b><span>видов продукции в каталоге</span></div>
+                <div class="pj-fact__item"><b>×2,5</b><span>рост нагрузки на пол после упрочнения</span></div>
+                <div class="pj-fact__item"><b>Своё</b><span>производство в Перми, без посредников</span></div>
+                <div class="pj-fact__item"><b>5</b><span>типов объектов под продукцию</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#products" class="sv-nav__link">Продукция</a>
+            <a href="#usage" class="sv-nav__link">Где применяется</a>
+            <a href="#factory" class="sv-nav__link">Производство</a>
+            <a href="#docs" class="sv-nav__link">Документация</a>
+            <a href="#leads" class="sv-nav__link">Формы</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>СтройСнабПоставка | Пермь</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Сухие смеси, топпинги для полов</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Сайт-витрина производителя</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>top-kraft.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — блоки о компании, областях применения и форма заявки на материалы</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                Группа компаний «Альянс» (ООО «СтройСнабПоставка») из Перми — производитель
+                сухих строительных смесей для устройства полов различного назначения.
+                Флагман бренда — линейка топпингов TOPKraft для упрочнения и защиты
+                бетонных полов: материалы обеспыливают и упрочняют свежий бетон,
+                увеличивают его ресурс и в 2,5 раза повышают допустимую нагрузку.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Продукция компании продаётся B2B-сегменту: строительным, логистическим
+                и торговым предприятиям, которые устраивают полы на складах, в паркингах
+                и производственных цехах. Сайт должен не каталогизировать смеси,
+                а объяснять инженеру и снабжению, что фирма — производитель с собственным
+                производством, лабораторией и сертификатами, и почему её материалы
+                выгодно применять.
+              </p>
+              <ul>
+                <li><b>Витрина продукции</b> — шесть материалов на собственном производстве, у каждого своя страница.</li>
+                <li><b>Доказательства</b> — сертификаты, документация, отзывная база и факт «собственный завод».</li>
+                <li><b>Экономический аргумент</b> — увеличение нагрузки до 2,5 раза и снижение себестоимости за счёт производства без посредников.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Материал покупают не «с витрины», а по смете и ТЗ проекта. Поэтому сайт продаёт не килограммы, а характеристики и области применения: сначала инженер проверяет, что продукт решает его задачу, потом запрашивает материалы.</p>
+              </div>
+
+              <h2 id="products">2. Продукция</h2>
+              <p>
+                Каталог состоит из шести позиций — три бренда TOPKraft и три под брендом
+                Bau Schild. Каждая позиция — отдельная страница с описанием, областью
+                применения и характеристиками.
+              </p>
+              <ul>
+                <li><b>Топпинг TOPKraft Quarz</b> — кварцевый упрочнитель для свежего бетона.</li>
+                <li><b>TOPKraft PRO Corund</b> и <b>Топпинг TOPKraft Corund</b> — корундовые топпинги повышенной износостойкости.</li>
+                <li><b>Защитный лак TOPKraft Cure</b> — обеспыливание и защита бетонного пола.</li>
+                <li><b>Bau Schild Top Corund</b> и <b>Bau Schild Cure</b> — вторая линейка для разных бюджетов проектов.</li>
+              </ul>
+              <p>
+                Отдельным разделом идут <b>нерудные материалы</b> — вторая группа продукции
+                компании, расширяющая ассортимент смежных поставок.
+              </p>
+
+              <!-- SCREENSHOT: products -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>top-kraft.ru/produkcziya</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — топпинги Quarz и Corund, защитные лаки Cure, линейка Bau Schild</span>
+              </div>
+
+              <h2 id="usage">3. Где применяется продукция</h2>
+              <p>
+                Раздел применений отвечает на вопрос «а подходит ли мне это» — по типам
+                объектов, где реально устраиваются промышленные полы.
+              </p>
+              <ul>
+                <li><b>Складские и логистические комплексы</b> — высокие нагрузки от складской техники.</li>
+                <li><b>Паркинги и гаражные кооперативы</b> — износ от колёс, масла и шин.</li>
+                <li><b>Офисные и бизнес-центры</b> — плотность трафика и требования к внешнему виду.</li>
+                <li><b>Студии красоты</b> и <b>фитнес-залы</b> — высокая проходимость и регулярная уборка.</li>
+              </ul>
+              <p>
+                Такая подача помогает снабженцу быстро найти «свой» тип объекта и понять,
+                какой материал ему нужен — до обращения к техническим характеристикам.
+              </p>
+
+              <!-- SCREENSHOT: industries -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>top-kraft.ru — области применения</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries" style="max-width:560px;margin:0 auto;padding:48px 0;">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Пять типов объектов — от складов и паркингов до студий красоты и фитнес-залов</span>
+              </div>
+
+              <h2 id="factory">4. Производство и преимущества</h2>
+              <p>
+                Главный аргумент компании — собственный производственный комплекс,
+                отвечающий мировым требованиям безопасности и контроля качества.
+                На сайте это раскрыто через историю о производстве.
+              </p>
+              <ul>
+                <li><b>Собственный завод</b> — сухие смеси TOPKraft выпускаются на собственной линии, что снижает себестоимость и сокращает сроки производства.</li>
+                <li><b>Научная база</b> — рецептуры разработаны на базе научной лаборатории с применением европейских технологий.</li>
+                <li><b>Контроль качества</b> — каждая партия проходит отдел технического контроля и снабжена сертификатами и свидетельствами.</li>
+                <li><b>Индивидуальные планы</b> — клиентам предлагаются персональные решения задач по модернизации, строительству и ремонту помещений.</li>
+              </ul>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>каталог продукции с карточками материалов · страницы областей применения · информационный раздел о производстве и принципах компании · формы «Заказать звонок», «Задать вопрос» и «Запрос материалов» · ЧПУ · Schema.org (Organization, Product, LocalBusiness)</p>
+              </div>
+
+              <h2 id="docs">5. Документация и цены</h2>
+              <p>
+                B2B-покупателю нужны не только «красивые картинки», но и рабочие документы.
+                Отдельные разделы сайта отведены под документацию (сертификаты,
+                свидетельства, техданные материалов) и актуальный прайс-лист.
+              </p>
+              <p>
+                Это снижает нагрузку на менеджеров: снабженец заранее видит цены
+                и доступные документы, а в отдел продаж обращается уже на этапе
+                формирования заявки и коммерческого предложения.
+              </p>
+
+              <!-- SCREENSHOT: docs -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>top-kraft.ru/dokumentacziya</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Документация — сертификаты, свидетельства и техданные по каждому материалу</span>
+              </div>
+
+              <h2 id="leads">6. Формы обратной связи</h2>
+              <p>
+                Воронка B2B закрыта тремя формами обратной связи.
+              </p>
+              <ul>
+                <li><b>«Заказать обратный звонок»</b> — кнопка в шапке, контакт с отделом продаж в один клик.</li>
+                <li><b>«Задать вопрос»</b> — форма с телефоном и полем вопроса для технической консультации.</li>
+                <li><b>«Запрос материалов»</b> — заявка на коммерческое предложение по материалам, размещённая в блоке о производстве.</li>
+              </ul>
+              <p>
+                Формы закрывают оба сценария покупателя — «позвоните мне» и «пришлите
+                материалы» — и передают заявки прямо в отдел снабжения компании.
+              </p>
+
+              <h2 id="results">7. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="6">0</b><span>материалов собственного производства</span></div>
+                <div class="pj-result"><b data-count="250" data-suffix="%">0</b><span>рост допустимой нагрузки — ×2,5 к свежему бетону</span></div>
+                <div class="pj-result"><b data-count="5">0</b><span>областей применения продукции</span></div>
+                <div class="pj-result"><b data-count="3">0</b><span>формы заявок в отделе продаж</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>покупатель сразу видит тип «своего» объекта и нужный материал — раздел применений сокращает путь до заявки;</li>
+                <li>аргумент «собственное производство» + сертификаты закрывают главное возражение B2B — качество и надёжность поставщика;</li>
+                <li>документация и цены на сайте разгружают менеджеров от типовых запросов снабженцев;</li>
+                <li>формы звонка, вопроса и запроса материалов распределяют обращения по сценариям покупателя.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Сайт работает как витрина и инструмент квалификации: производитель показывает линейку материалов, области применения и документы, а покупатель приходит в отдел продаж уже с понятной задачей.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/tonkiematerii.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>Тонкие материи</b><small>Онлайн-школа целительства и литотерапии</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/resh76.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>РЫБИНСКЭЛЕКТРОЩИТ</b><small>Сайт производителя электрооборудования</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/lemmax.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>LEMMAX</b><small>Сайт производителя верхней одежды</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/tonkiematerii.html">
+                  <span>← Назад</span>
+                  <b>Тонкие материи — онлайн-школа целительства и литотерапии</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

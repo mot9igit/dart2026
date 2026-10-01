@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="tonkiematerii.html" itemprop="item"><span itemprop="name">Тонкие материи — онлайн-школа и образовательный проект</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Онлайн-школа · Образование</span>
+              <h1 class="pj-hero__title" data-reveal>Тонкие материи — онлайн-школа<br><span>целительства, литотерапии и психологии</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Международный русскоязычный образовательный проект: курсы и вебинары
+                по литотерапии, травничеству, энерготерапии и астротерапии от пяти мастеров.
+                Регистрация с подарком, личный кабинет, отзывы и библиотека статей с видео.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Онлайн-школа</a>
+                <a href="/pages/portfolio/index.html">Курсы</a>
+                <a href="/pages/portfolio/index.html">Личный кабинет</a>
+                <a href="/pages/portfolio/index.html">Контент и сообщество</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>7</b><span>практических методов и терапий</span></div>
+                <div class="pj-fact__item"><b>5</b><span>мастеров — ведущих курсов</span></div>
+                <div class="pj-fact__item"><b>3 валюты</b><span>цены — тенге, евро и рубли</span></div>
+                <div class="pj-fact__item"><b>20+ часов</b><span>на каждом обучающем курсе</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#bonus" class="sv-nav__link">Подарок</a>
+            <a href="#methods" class="sv-nav__link">Методы</a>
+            <a href="#courses" class="sv-nav__link">Курсы</a>
+            <a href="#card" class="sv-nav__link">Карточка курса</a>
+            <a href="#masters" class="sv-nav__link">Мастера</a>
+            <a href="#reviews" class="sv-nav__link">Отзывы</a>
+            <a href="#media" class="sv-nav__link">Статьи и видео</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>Тонкие материи | онлайн-проект</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Онлайн-образование, целительство</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Продажа курсов + сообщество</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>tonkiematerii.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — кнопка «Получить подарок», выбор метода и блоки курсов, мастеров и отзывов</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                «Тонкие материи» — интернациональная русскоязычная онлайн-школа, которая
+                изучает психические процессы и глубокие аспекты телесно-ориентированной
+                психологии, литотерапии, травничества и энергетических практик. Проект
+                продаёт не товар, а обучение: курсы и вебинары ведущих мастеров,
+                в офлайн-сегменте таких школ продажи строятся иначе, чем у магазинов, —
+                через доверие, авторские страницы и развёрнутые отзывы.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Покупатель курса проходит длинную воронку: сначала знакомится с методом,
+                читает статьи и смотрит видео, потом выбирает мастера, читает отзывы
+                и только затем решается на платное обучение. Сайт должен поддерживать
+                каждый шаг этой цепочки.
+              </p>
+              <ul>
+                <li><b>Лид-магнит в точке входа</b> — «Получить подарок»: регистрация даёт доступ к бесплатным материалам и собирает базу.</li>
+                <li><b>Семь практических методов</b> — от астротерапии до самопознания, у каждого своя страница терапии.</li>
+                <li><b>Социальные доказательства</b> — авторы-мастера, подробные отзывы учеников, счётчики слушателей по каждому курсу.</li>
+                <li><b>Контент-экосистема</b> — статьи, видео, соцсети и личный кабинет.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Курс — нематериальный продукт в «тонкой» нише, где решают доверие и репутация. Поэтому сайт строит воронку вокруг личного бренда мастеров и развёрнутых историй учеников, а не вокруг «кнопки купить».</p>
+              </div>
+
+              <h2 id="bonus">2. Регистрация с подарком</h2>
+              <p>
+                Точка входа на сайт — оффер «Зарегистрируйтесь прямо сейчас и получите
+                доступ к бесплатным материалам». Он дублирован в шапке кнопкой
+                «Получить подарок» и большим блоком на главной.
+              </p>
+              <p>
+                Такая механика работает на два счёта: посетитель, ещё не готовый платить,
+                получает ценность и становится зарегистрированным пользователем,
+                а школа — базу контактов и доступ к личному кабинету, который удерживает
+                учеников между потоками.
+              </p>
+
+              <!-- SCREENSHOT: registration / gift -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>tonkiematerii.ru — регистрация</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">«Получите доступ к бесплатным материалам» — регистрация собирает базу для следующего потока</span>
+              </div>
+
+              <h2 id="methods">3. Выбор практического метода</h2>
+              <p>
+                Главная предлагает семь направлений с пиктограммами — посетитель выбирает
+                «свой» путь:
+              </p>
+              <ul>
+                <li><b>Астротерапия</b> — влияние планет и стихий на состояние и решения человека.</li>
+                <li><b>Литотерапия</b> — работа с камнями и минералами, диагностика и коррекция состояния.</li>
+                <li><b>Травничество</b> — травы, благовония, ритуалы и городское травничество.</li>
+                <li><b>Энерготерапия</b> — практики ясночувствования, «путешествия души», работа с энергиями.</li>
+                <li><b>Хоумтерапия</b>, <b>Пять элементов</b> и <b>Самопознание</b> — дополнительные направления проекта.</li>
+              </ul>
+              <p>
+                Каждое направление ведёт на свою страницу терапии, где собраны куpсы
+                и вебинары этой области. Такая навигация помогает не запутаться в большом
+                каталоге и выбирать по интересу, а не по «ленте курсов».
+              </p>
+
+              <!-- SCREENSHOT: methods grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>tonkiematerii.ru — методы</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries" style="grid-template-columns:repeat(4,1fr);max-width:640px;margin:0 auto;padding:48px 0;">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Семь методов с пиктограммами — астротерапия, литотерапия, травничество, энерготерапия и другие</span>
+              </div>
+
+              <h2 id="courses">4. Курсы и вебинары</h2>
+              <p>
+                Блок курсов на главной показывает ключевые сигналы принятия решения.
+                На карточке — обложка, название, автор, занятий и часов, общее число
+                слушателей и отзывов по курсу.
+              </p>
+              <p>
+                Особенность проекта — <b>цены в трёх валютах</b>: тенге, евро и рубли
+                показаны вместе, со скидкой в процентах и отдельной перечёркнутой ценой.
+                Аудитория школы живёт в разных странах, поэтому мультивалютность —
+                не роскошь, а требование конверсии.
+              </p>
+
+              <!-- SCREENSHOT: courses grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>tonkiematerii.ru — курсы</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточки курсов — часы, занятия, число слушателей и отзывов, цены в трёх валютах</span>
+              </div>
+
+              <h2 id="card">5. Карточка курса</h2>
+              <p>
+                На странице курса — полный маркетинговый пакет: обложка, автор-мастер,
+                дата старта («c 19 сентября»), программа, длительность, цена со скидкой
+                и кнопка записи. Отдельное место отведено отзывам именно этого потока —
+                они загружены на страницу курса, а не на общий раздел.
+              </p>
+              <p>
+                Количество слушателей и отзывов ведётся по каждому курсу вручную:
+                «Слушателей: 237, Отзывов: 57» на «Лечебных камнях 1» — такие цифры
+                работают сильнее любых обещаний, потому что они конкретны и правдивы.
+              </p>
+
+              <h2 id="masters">6. Наши мастера</h2>
+              <p>
+                Люди в этой нише покупают у людей: на сайте собраны персональные
+                страницы пяти мастеров с фото, профилем направления и списком их курсов.
+              </p>
+              <ul>
+                <li><b>Татьяна Хегай</b> — травничество: ритуалы, благовония, городское травничество.</li>
+                <li><b>Олег Смирнов</b> — литотерапия: курсы «Лечебные камни» I и II ступени.</li>
+                <li><b>Александр Гук</b> (СанСан) — литотерапия: применение минералов в быту.</li>
+                <li><b>Роман Атри</b> и <b>Владимир Бахмейстер</b> — энерготерапия и практики ясночувствования.</li>
+              </ul>
+
+              <!-- SCREENSHOT: masters -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>tonkiematerii.ru — мастера</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Пять мастеров с личными страницами и списком курсов — школа продаёт через авторов</span>
+              </div>
+
+              <h2 id="reviews">7. Отзывы учеников</h2>
+              <p>
+                Раздел отзывов построен как доверительный документ: полные истории
+                с именем автора, привязкой к конкретному курсу и кнопкой «Развернуть /
+                Свернуть» для длинных текстов. Это не короткие «пять звёзд», а живые
+                свидетельства о том, что изменилось после обучения.
+              </p>
+              <p>
+                Отзывы разнесены по курсам — ученик «Лечебных камней» видит истории
+                людей, закончивших именно их поток, что заметно повышает уверенность
+                в записи на следующий набор.
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>MODX · платформа онлайн-школы · каталог курсов и вебинаров с расписанием · личный кабинет и регистрация · мультивалютные цены (тенге / € / руб.) со скидками · страницы мастеров · отзывы с привязкой к курсу · библиотека статей и видео · социальные панели VK / Telegram / YouTube · ЧПУ · Schema.org (Course, Organization, Review, Person)</p>
+              </div>
+
+              <h2 id="media">8. Статьи, видео и соцсети</h2>
+              <p>
+                Образовательный контент собирает аудиторию задолго до покупки: раздел
+                «Статьи и видео» объединяет практические материалы («Переносим жару легко»,
+                «Ритуалы на осеннее равноденствие»), видеоуроки («Как активировать камни»,
+                «Секреты литотерапии») и информацию о методах. Все статьи подписаны
+                авторами-мастерами, что усиливает их личный бренд.
+              </p>
+              <p>
+                В футере — полный набор соцсетей: VK, Telegram, YouTube, Facebook
+                и Instagram. Аудитория ведётся из соцсетей на сайт через статьи и видео,
+                а с сайта на каналы — через панель подписки «Присоединяйтесь к нам
+                в соц. сетях».
+              </p>
+
+              <!-- SCREENSHOT: articles/video -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>tonkiematerii.ru — статьи и видео</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Библиотека материалов — статьи мастеров и видеопрактики для привлечения органического трафика</span>
+              </div>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Создаёте онлайн-школу или курс?</h3>
+                  <p>Соберём каталог курсов, воронку с лид-магнитом, личные страницы авторов и отзывы с привязкой к потокам.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="results">9. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="7">0</b><span>практических методов и терапий</span></div>
+                <div class="pj-result"><b data-count="5">0</b><span>мастеров с авторскими страницами</span></div>
+                <div class="pj-result"><b data-count="3">0</b><span>валюты цен — тенге, евро, рубли</span></div>
+                <div class="pj-result"><b data-count="200" data-suffix="+">0</b><span>слушателей на флагманском курсе</span></div>
+              </div>
+
+              <p>Что это дало проекту:</p>
+              <ul>
+                <li>оффер «подарок за регистрацию» превращает случайного посетителя в пользователя личного кабинета и удерживает его между потоками;</li>
+                <li>навигация по семи методам превращает большой каталог курсов в понятный выбор «по интересу»;</li>
+                <li>цены в трёх валютах со скидками убирают барьер для международной аудитории проекта;</li>
+                <li>страницы мастеров и отзывы, привязанные к курсам, продают через личный бренд и конкретные истории учеников;</li>
+                <li>статьи и видео собирают органический трафик, а соцсети работают как канал привлечения и удержания сообщества.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Онлайн-школа работает как полный цикл продажи знаний: регистрация с подарком, выбор метода, каталог курсов с мультивалютными ценами, авторы-мастера, отзывы и живой контент вокруг проекта.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/gofrastanok.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>Гофрастанок</b><small>Продажа и монтаж гофрооборудования</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/shaurmania.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>Шаурмания</b><small>Сайт доставки шаурмы с онлайн-заказом</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/topkraft.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>TOPCraft</b><small>Материалы для промышленных полов</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/gofrastanok.html">
+                  <span>← Назад</span>
+                  <b>Гофрастанок — продажа и монтаж гофрооборудования</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

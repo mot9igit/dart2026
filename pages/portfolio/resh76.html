@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="resh76.html" itemprop="item"><span itemprop="name">РЫБИНСКЭЛЕКТРОЩИТ — сайт производителя электрооборудования</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · B2B · Производство</span>
+              <h1 class="pj-hero__title" data-reveal>РЫБИНСКЭЛЕКТРОЩИТ — сайт<br><span>производителя электротехнического оборудования</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Собственное производство КТП, КРУ и НКУ до 35 кВ в Рыбинске. Каталог серийного
+                оборудования, карта проектов по всей России, расчёт по техническому заданию
+                и комплексный цикл от проектирования до пусконаладки.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">B2B</a>
+                <a href="/pages/portfolio/index.html">Производство</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">Тендеры</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>10 лет</b><span>успешной работы на рынке</span></div>
+                <div class="pj-fact__item"><b>750+</b><span>созданных объектов за всё время</span></div>
+                <div class="pj-fact__item"><b>5</b><span>серий оборудования в каталоге</span></div>
+                <div class="pj-fact__item"><b>140</b><span>профессиональных сотрудников</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#series" class="sv-nav__link">Серии</a>
+            <a href="#services" class="sv-nav__link">Услуги</a>
+            <a href="#stages" class="sv-nav__link">Этапы</a>
+            <a href="#projects" class="sv-nav__link">Проекты</a>
+            <a href="#map" class="sv-nav__link">Карта России</a>
+            <a href="#leads" class="sv-nav__link">Формы и КП</a>
+            <a href="#trust" class="sv-nav__link">Цифры и доверие</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>РЫБИНСКЭЛЕКТРОЩИТ | Рыбинск</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Электротехническое производство</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Каталог + расчёт КП + проекты</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>resh76.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — три линейки оборудования, цифры производства и выбор заказчиков</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                ООО «РЫБИНСКЭЛЕКТРОЩИТ» из Рыбинска — производитель электротехнического
+                оборудования собственного производства: комплектных трансформаторных подстанций,
+                распределительных устройств и низковольтных шкафов до 35 кВ. Предприятие работает
+                10 лет, за это время собрало более 750 объектов и портфель заказчиков уровня
+                «Северстали», «Оборонэнерго» и промышленных компаний Ярославской области.
+                Нужен был сайт, который показывает не просто «ассортимент завода», а полный
+                производственный цикл — от приёма технического задания до монтажа на объекте.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Продукт РЭЩ — инженерный: каждая подстанция проектируется и собирается под
+                конкретный объект. Покупатель — это инженер или закупщик предприятия, которому
+                нужно понять возможности завода и получить расчёт стоимости по своему
+                техническому заданию.
+              </p>
+              <ul>
+                <li><b>Показать изготовителя</b> — собственное производство, контроль качества на всех этапах, готовность к монтажу и пусконаладке.</li>
+                <li><b>Продавать серии, а не штуки</b> — каталог из пяти именованных серий оборудования: «МОНОЛИТ», «УНИВЕРСАЛ», «АТЛАНТ», «АЛЬТАИР», «АНТАРЕС».</li>
+                <li><b>Собирать заявки с ТЗ</b> — расчёт стоимости выполняется по техническому заданию, поэтому формы принимают файлы и карточки предприятия.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Инженерная специфика: цены не публикуются на сайте, потому что каждое исполнение считается отдельно. Главная задача форм — собрать достаточно вводных (ТЗ, карточку предприятия, контакты), чтобы руководитель проекта мог подготовить расчёт за 3–4 рабочих дня.</p>
+              </div>
+
+              <h2 id="catalog">2. Каталог из трёх направлений</h2>
+              <p>
+                Каталог построен по логике электротехнических решений, а не по брендам:
+                покупатель ищет класс оборудования по напряжению и назначению.
+              </p>
+              <ul>
+                <li><b>Комплектные трансформаторные подстанции (КТП)</b> — блочные БКТП до 35 кВ, от киосковых до модульных станций на 3150 кВА.</li>
+                <li><b>Комплектные распределительные устройства (КРУ)</b> — на 6–10 кВ, серии «АЛЬТАИР» и «АНТАРЕС», под станции ЕНЭС и промышленные подстанции.</li>
+                <li><b>Низковольтные комплектные устройства (НКУ)</b> — «АТЛАНТ» с вертикальной функциональной блокировкой, до 7500 А, секционирование категории 3b.</li>
+              </ul>
+
+              <!-- SCREENSHOT: catalog grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>resh76.ru/catalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--industries"><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — подстанции, распределительные и низковольтные устройства до 35 кВ</span>
+              </div>
+
+              <h2 id="series">3. Серии как продукты</h2>
+              <p>
+                Каждая серия — это завершённый продукт с собственной карточкой: область
+                применения, преимущества, галерея производства и две цели действия —
+                «узнать больше» и «рассчитать стоимость и получить КП». Это важное решение:
+                инженер сразу видит, подходит ли серия под его объект, и идёт не в «корзину»,
+                а в расчёт.
+              </p>
+              <ul>
+                <li><b>БКТП_Б/РЭЩ «МОНОЛИТ»</b> — бетонная оболочка, устойчивость к механическим повреждениям, малогабаритные блоки для стеснённой застройки.</li>
+                <li><b>БКТП_У/РЭЩ «УНИВЕРСАЛ»</b> — комплексное решение, сборно-разборные модульные конструкции, монтаж за 1 день, исполнение для крайнего севера.</li>
+                <li><b>НКУ/РЭЩ «АТЛАНТ» с ВФБ</b> — для непрерывных производств: одностороннее обслуживание, секционирование 3b, оцинкованная сталь.</li>
+                <li><b>КРУ/РЭЩ «АЛЬТАИР»</b> — повышенная сейсмоустойчивость, герметизированные токоведущие контакты без обслуживания, цифровой мониторинг.</li>
+                <li><b>КРУ/РЭЩ «АНТАРЕС»</b> — двухсторонний доступ к отсекам, антикоррозионное покрытие, порошковая окраска.</li>
+              </ul>
+              <p>
+                К каждой серии на сайте прикреплён каталог (PDF) и преимущества в формате
+                чек-листа — так закупщик может сверять требования своего тендера с возможностями
+                завода.
+              </p>
+
+              <!-- SCREENSHOT: series card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>resh76.ru/catalog/ktp/bktp-b-...</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка серии — область применения, преимущества и кнопка «Рассчитать стоимость и получить КП»</span>
+              </div>
+
+              <h2 id="services">4. Услуги вокруг производства</h2>
+              <p>
+                Производитель продаёт не только оборудование, но и сервис полного цикла.
+                В разделе «Услуги» — четыре направления, каждое со своей страницей.
+              </p>
+              <ul>
+                <li><b>Инжиниринговый центр</b> — проектирование, разработка технических решений и документации.</li>
+                <li><b>Электролаборатория</b> — испытания и измерения, заключительное тестирование перед отгрузкой.</li>
+                <li><b>Услуги металлообработки</b> — собственное станочное производство для заказчиков.</li>
+                <li><b>Лизинг оборудования</b> — финансовая схема, чтобы промышленный заказчик не изымал оборотку.</li>
+              </ul>
+
+              <h2 id="stages">5. Комплексное решение задач</h2>
+              <p>
+                Чтобы снять главный вопрос инженера — «а кто будет отвечать за результат
+                целиком?» — на сайте показан полный цикл из шести этапов: анализ и планирование
+                проекта, комплексное проектирование, технологичное производство, комплексное
+                тестирование, профессиональный монтаж и наладка, надёжное сопровождение
+                и обслуживание.
+              </p>
+              <p>
+                Так «завод» превращается в «подрядчика под ключ»: заказчик понимает, что
+                проектирование, изготовление, монтаж и пусконаладка замыкаются на одну команду,
+                а сервис остаётся на весь срок эксплуатации.
+              </p>
+
+              <!-- SCREENSHOT: stages -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>resh76.ru — Комплексное решение задач</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Шесть этапов — от анализа ТЗ до сервисного сопровождения</span>
+              </div>
+
+              <h2 id="projects">6. Проекты и портфолио</h2>
+              <p>
+                B2B-доверие строится на выполненных объектах, поэтому проектам отведён
+                отдельный раздел с карточками: заказчик, место реализации, год и состав работ.
+              </p>
+              <ul>
+                <li><b>Реконструкция водозабора ПАО «КМЗ»</b> — БКТП 6 кВ, Владимирская область, Ковров, 2023.</li>
+                <li><b>Реконструкция комплекса административных зданий</b> — АО «Оборонэнерго», Москва, Сосенское, 2023.</li>
+                <li><b>Встроенная ТП 10/0,4 кВ для ЦОД</b> — ООО «ДАТА-ЦЕНТР», Ярославль, 2024.</li>
+                <li><b>Техническое перевооружение производства ПАО «Северсталь»</b> — НКУ «АТЛАНТ», Череповец, 2023.</li>
+              </ul>
+
+              <h2 id="map">7. Карта выполненных проектов</h2>
+              <p>
+                Отдельный инструмент доверия — интерактивная карта России с регионами, куда
+                поставлялось оборудование: от Магаданской области до Крыма и новых регионов.
+                Подпись под картой честно предупреждает, что она находится на стадии заполнения
+                и точные данные уточняются у менеджера, — но даже в текущем виде она показывает
+                реальный географический охват производства.
+              </p>
+              <p>
+                Счётчик «выполненных проектов» на главной (860+) и подпись «Ваш проект может
+                стать первым в данном регионе» подталкивают к диалогу — это превращает
+                статистику в повод связаться.
+              </p>
+
+              <!-- SCREENSHOT: map -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>resh76.ru — Карта выполненных проектов</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Раздел «Выполненные проекты» — охват регионов России и карточки объектов</span>
+              </div>
+
+              <h2 id="leads">8. Формы: от расчёта до тендера</h2>
+              <p>
+                Ядро сайта — система заявок. Каждая форма решает свой сценарий закупки,
+                а не дублирует «оставьте контакты».
+              </p>
+              <ul>
+                <li><b>Запрос на расчёт</b> — вложение ТЗ и карточки предприятия, с заметкой о сроке расчёта 3–4 рабочих дня.</li>
+                <li><b>Отправить информацию о тендере</b> — загрузка условий тендера и ТЗ для участия в закупках.</li>
+                <li><b>Обратный звонок</b> — с полем «удобное время звонка» в московском времени.</li>
+                <li><b>Быстрая консультация</b> — из футера и шапки, в том числе на WhatsApp менеджера.</li>
+                <li><b>Партнёрство, резюме, вопросы</b> — под каждый раздел сайта своя форма с прикреплением файлов.</li>
+              </ul>
+              <p>
+                Все формы сопровождаются согласиями: пользовательское соглашение, политика
+                конфиденциальности, обработка персональных данных, cookie-уведомление —
+                обязательный комплект для производственного B2B-сайта.
+              </p>
+
+              <!-- SCREENSHOT: quote form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>resh76.ru — Запрос на расчёт</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма расчёта — прикрепление ТЗ и карточки предприятия, срок подготовки КП 3–4 рабочих дня</span>
+              </div>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Продаёте инженерный продукт с расчётом по ТЗ?</h3>
+                  <p>Соберём каталог серий, этапы полного цикла и формы со вложением технического задания.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="trust">9. Цифры и доверие</h2>
+              <p>
+                На главной — блок «О нас в цифрах», который сразу отвечает на вопросы
+                закупщика о масштабе: 10 лет работы, 140 сотрудников, более 750 созданных
+                объектов, 950 модификаций оборудования, 86 монтажных и 145 пуско-наладочных
+                работ, 45 млн рублей экономии заказчикам за счёт оптимизации. Отдельный
+                счётчик — 93% заказчиков работают с первого заказа (сильный аргумент
+                возвратности).
+              </p>
+              <p>
+                Доверие усиливают: ссылка на национальный проект «Производительность.рф»,
+                блок преимуществ (качество и инновации, экспертиза, оперативность, репутация),
+                телеграм-канал генерального директора «главные события от первого лица»
+                и приглашение записаться на экскурсию на производство.
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>MODX · PHP · MySQL · каталог серий оборудования · карточки серий с галереями и PDF-каталогами · формы с загрузкой файлов (ТЗ, карточка предприятия) · обратный звонок с выбором времени · карта регионов · cookie и политики ПДн · ЧПУ · Schema.org (Organization, Product, Offer) · Яндекс.Метрика</p>
+              </div>
+
+              <h2 id="results">10. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="750" data-suffix="+">0</b><span>созданных объектов</span></div>
+                <div class="pj-result"><b data-count="5">0</b><span>серий оборудования</span></div>
+                <div class="pj-result"><b data-count="86" data-suffix="+">0</b><span>монтажных работ на объектах</span></div>
+                <div class="pj-result"><b data-count="45">0</b><span>млн ₽ экономии заказчикам</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>каталог серий со «своей» карточкой перевёл разговор из «что вы производите» в «какая серия под наш объект»;</li>
+                <li>формы со вложением ТЗ дают руководителю проекта готовый пакет вводных для расчёта по цене и срокам;</li>
+                <li>шестиэтапный цикл закрыл вопрос «а кто подрядчик под ключ» — завод работает от анализа до сервиса;</li>
+                <li>портфолио и карта регионов подтверждают масштаб и регионы присутствия;</li>
+                <li>блок цифр и «экскурсия на производство» превращают сайт в витрину доверия и повод для контакта.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Сайт стал продающей витриной завода: серийный каталог, инженерные формы с ТЗ, портфолио объектов и полный цикл «от проекта до пусконаладки» собраны в один понятный маршрут для закупщика. Проект запущен и работает.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/intraco.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>Регистратор Интрако</b><small>Корпоративный сайт держателя реестра</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/medresurs.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>Медресурс</b><small>Сайт поставщика медоборудования</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/seversnabrm.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>СеверСнаб-РМ</b><small>Магазин запчастей Русской Механики</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/intraco.html">
+                  <span>← Назад</span>
+                  <b>Регистратор Интрако — корпоративный сайт держателя реестра</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

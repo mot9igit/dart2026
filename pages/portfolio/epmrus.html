@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="epmrus.html" itemprop="item"><span itemprop="name">ЭнергоПроектМонтаж — проектно-строительная компания</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Сайт услуг · B2B + розница</span>
+              <h1 class="pj-hero__title" data-reveal>ЭнергоПроектМонтаж — компания,<br><span>которая проектирует, строит и подключает сети</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Проектно-строительная компания из Рыбинска: проектирование жилья и соцобъектов,
+                газификация «под ключ», электроснабжение, электролаборатория и собственный
+                парк спецтехники с допусками СРО и НАКС.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Сайт услуг</a>
+                <a href="/pages/portfolio/index.html">B2B</a>
+                <a href="/pages/portfolio/index.html">Производство</a>
+                <a href="/pages/portfolio/index.html">Локальный бизнес</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>5</b><span>направлений услуг под ключ</span></div>
+                <div class="pj-fact__item"><b>10+ лет</b><span>опыт реализации газовых проектов</span></div>
+                <div class="pj-fact__item"><b>СРО, НАКС</b><span>допуски и работа с «Газпромом»</span></div>
+                <div class="pj-fact__item"><b>Свой парк</b><span>спецтехники без подрядчиков</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#services" class="sv-nav__link">Услуги</a>
+            <a href="#gaz" class="sv-nav__link">Газификация</a>
+            <a href="#lab" class="sv-nav__link">Электролаборатория</a>
+            <a href="#spec" class="sv-nav__link">Спецтехника</a>
+            <a href="#trust" class="sv-nav__link">Допуски</a>
+            <a href="#projects" class="sv-nav__link">Проекты</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>ООО «ЭПМ» | Рыбинск</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Проектирование и строительство инженерных сетей</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Сайт услуг + портфолио объектов</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>epm-rus.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — пять услуг с собственными лендингами, новости проектов и блог</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                ООО «ЭПМ» (ЭнергоПроектМонтаж) из Рыбинска работает по принципу
+                «проектируем, строим, подключаем сети»: собственными силами проектирует
+                дома и соцобъекты, газифицирует частные дома и коттеджные посёлки,
+                монтирует электроснабжение, проводит испытания электролабораторией
+                и сдаёт сети — вплоть до приёмки надзорными органами. Компания входит
+                в реестр квалифицированных подрядчиков ПАО «Газпром» и работает без
+                посредников: свой парк спецтехники и штатные специалисты с допусками
+                СРО и НАКС.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                У компании два покупателя: частник, которому нужно подключить газ или
+                электричество к дому, и заказчик-организация с коттеджным посёлком
+                или промышленным объектом. Оба приходят с одного запроса: «сделайте
+                под ключ и сдайте нам готовый объект». Значит, сайт должен продавать
+                не отдельные услуги, а полный цикл с гарантиями.
+              </p>
+              <ul>
+                <li><b>Пять услуг</b> у каждой — свой лендинг с этапами, калькуляцией и контактами отдела.</li>
+                <li><b>Доказательства допусков</b> — СРО, НАКС, реестр подрядчиков «Газпрома», парк спецтехники.</li>
+                <li><b>Два доверительных контура</b> — блок «Наши достижения» и портфолио реализованных проектов с названиями объектов.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Газификация и энергоснабжение регулируются государством: у заказчика страх «документы не пройдут». Поэтому каждый лендинг строится вокруг этапов и сдачи объекта надзорным органам — компания берёт этот риск на себя.</p>
+              </div>
+
+              <h2 id="services">2. Структура — пять направлений услуг</h2>
+              <p>
+                Навигация сайта собрана вокруг пяти направлений, каждое с отдельным
+                подменю и собственной страницей.
+              </p>
+              <ul>
+                <li><b>Проектирование</b> — жилые дома, социальные объекты, перепланировки квартир, медицинские учреждения.</li>
+                <li><b>Газификация</b> — полный цикл газификации в Ярославской области.</li>
+                <li><b>Электроснабжение</b> — проектирование и монтаж инженерных электросетей.</li>
+                <li><b>Электролаборатория</b> — испытания и измерения электроустановок.</li>
+                <li><b>Спецтехника</b> — аренда собственного парка для земляных и строительных работ.</li>
+              </ul>
+              <p>
+                Помимо услуг — разделы «Новостройки» (собственные проекты домов),
+                «ΛV | ARVIZA» (архитектурное бюро компании) и «THE BLOG» (новости
+                и публикации о ходе объектов).
+              </p>
+
+              <!-- SCREENSHOT: services grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>epm-rus.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--industries"><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Пять направлений на главной — каждое ведёт на собственный лендинг услуги</span>
+              </div>
+
+              <h2 id="gaz">3. Газификация «под ключ»</h2>
+              <p>
+                Лендинг газификации — самый насыщенный: он отвечает на все вопросы
+                заказчика до звонка. Вверху — три типа объектов (частные дома,
+                коттеджные посёлки и СНТ, коммерческие предприятия), ниже — пять
+                этапов работ и позиции компании.
+              </p>
+              <ul>
+                <li><b>Пять этапов:</b> первичная консультация → подготовка данных для технических условий → проектирование и согласование → строительно-монтажные работы → сдача объекта и ввод в эксплуатацию.</li>
+                <li><b>Допуски:</b> СРО на проектные и монтажные работы, аттестация сварочного производства НАКС.</li>
+                <li><b>Парк и люди:</b> спецтехника без подрядчиков, штатные инженеры-газовики, более 10 лет практики.</li>
+                <li><b>Оборудование:</b> гарантийная комплектация котлами Baxi, Buderus, Vaillant, Navien, Viessmann, Thermona.</li>
+              </ul>
+              <p>
+                Для посёлков добавлены «важные вопросы»: стоимость газификации частного
+                дома с вилкой цен по видам работ, цена газификации посёлка с фактором
+                >50% участников, варианты оформления газопровода в собственность —
+                компания снимает юридические сомнения прямо на странице.
+              </p>
+
+              <!-- SCREENSHOT: stages timeline -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>epm-rus.ru/gasifikacziya</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Пять этапов газификации — от консультации до приёмки надзорными органами</span>
+              </div>
+
+              <h2 id="lab">4. Электролаборатория и испытания</h2>
+              <p>
+                Отдельный лендинг электролаборатории объясняет, зачем нужны испытания
+                электроустановок и какие измерения проводятся: сопротивление изоляции,
+                заземление, автоматические выключатели и УЗО. Это услуга, которая
+                де-факто обязательна при сдаче объекта, но о ней мало кто знает, —
+                страница продаёт её как «финальную проверку, которая даёт право
+                эксплуатировать объект».
+              </p>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>MODX · PHP · MySQL · каталог услуг с отдельными лендингами · портфолио проектов по объектам и населённым пунктам · блог/новости · формы «Заказать звонок» и «Получить консультацию» · мессенджеры Viber / WhatsApp / Telegram · ЧПУ · Schema.org (Service, Organization, LocalBusiness)</p>
+              </div>
+
+              <h2 id="spec">5. Спецтехника</h2>
+              <p>
+                Собственный парк техники — аргумент и для заказчика, и для подрядчиков:
+                компания не ждёт чужих машин и не закладывает в смету наценку посредника.
+                Раздел «Спецтехника» показывает машины и назначение каждой, а на лендингах
+                услуг парк упоминается как гарантия автономии: «работаем без посредников,
+                отвечаем за сроки и качество».
+              </p>
+
+              <h2 id="trust">6. Допуски и гарантии</h2>
+              <p>
+                Для заказчика доказательства компетенции важнее любых обещаний. Сайт
+                собирает их в плотный блок: действующие свидетельства СРО на проектные
+                и строительно-монтажные работы, аттестация НАКС для сварочного
+                производства, статус квалифицированного подрядчика ПАО «Газпром»
+                и гарантийные условия — соблюдение сроков, фиксированная смета,
+                поэтапная оплата по факту приёмки и оперативное устранение дефектов
+                за счёт компании.
+              </p>
+
+              <!-- SCREENSHOT: certificates/docs -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>epm-rus.ru — допуски</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span></span><span></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Блок доверия — допуски СРО и НАКС, подрядчик «Газпрома», гарантии и условия оплаты</span>
+              </div>
+
+              <h2 id="projects">7. Проекты и портфолио</h2>
+              <p>
+                Каждый реализованный объект получает свою страницу с фото, задачами
+                и результатом: газификация утилизатора ТДУ-2000 на «Ярбройлер»,
+                базы «Дачный клуб Коприно», установка ГРПБ в Рыбинске, газификация
+                домов в Глазово и Ивняках. Портфолио с настоящими названиями объектов
+                и населёнными пунктами создаёт эффект «мы уже это делали людям рядом
+                с вами».
+              </p>
+              <p>
+                Отдельно живут новости: открытие Некоузского культурно-этнографического
+                центра, финиш строительства загородного дома в стиле прерий, клубный
+                дом на Гоголя на четыре квартиры и результаты конкурса визуализации
+                «The Lighthouse. D5» от бюро ARVIZA. Сайт показывает, что компания
+                не только строит, но и развивает собственные направления.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Делаете сайт услуг с этапами и портфолио?</h3>
+                  <p>Соберём лендинг под каждую услугу, выведем объекты и добавим блоки доверия с допусками и гарантиями.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="results">8. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="5">0</b><span>направлений услуг с лендингами</span></div>
+                <div class="pj-result"><b data-count="5">0</b><span>этапов газификации с гарантией сдачи</span></div>
+                <div class="pj-result"><b data-count="3">0</b><span> уровня допусков — СРО, НАКС, «Газпром»</span></div>
+                <div class="pj-result"><b data-count="10" data-suffix="+">0</b><span>лет газовой практики компании</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>каждая услуга продаётся своим лендингом — частник и организация попадают на нужную страницу с этапами и ценами;</li>
+                <li>портфолио с реальными объектами и городами заменяет «галерею картинок» доказательствами компетенции;</li>
+                <li>блоки допусков, НАКС и «Газпрома» закрывают главный страх заказчика — «документы не пройдут»;</li>
+                <li>статьи о складывании этапов («важные вопросы», вилки стоимости) переводят заинтересованного посетителя в заявку ещё до звонка;</li>
+                <li>формы в мессенджеры и «Заказать звонок» с персональными контактами отделов убирают барьер первого обращения.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Сайт стал единой витриной компании: пять услуг под ключ с этапами и ценами, доказательства допусков, портфолио объектов и живой блог о ходе строительства.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/buransnab.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>БуранСнаб</b><small>Запчасти и производство для снегоходов Буран</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/resh76.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>РЫБИНСКЭЛЕКТРОЩИТ</b><small>Сайт производителя электрооборудования</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/gofrastanok.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>Гофрастанок</b><small>Продажа и монтаж гофрооборудования</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/buransnab.html">
+                  <span>← Назад</span>
+                  <b>БуранСнаб — запчасти и производство для снегоходов Буран</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

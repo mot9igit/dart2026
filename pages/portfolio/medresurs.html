@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="medresurs.html" itemprop="item"><span itemprop="name">Медресурс — сайт поставщика медоборудования</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · B2B · Медицинское оборудование</span>
+              <h1 class="pj-hero__title" data-reveal>Медресурс — сайт<br><span>комплексных поставок для медицинских учреждений</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Пермский поставщик медицинской техники, мебели, прачечного и пищевого
+                оборудования. Каталог на 5 направлений с фильтрами по характеристикам,
+                формы для юрлиц и госзаказчиков, доставка по всей России.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">B2B</a>
+                <a href="/pages/portfolio/index.html">Каталог</a>
+                <a href="/pages/portfolio/index.html">Госзакупки</a>
+                <a href="/pages/portfolio/index.html">Медицина</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>10 000+</b><span>наименований оборудования</span></div>
+                <div class="pj-fact__item"><b>5</b><span>направлений каталога</span></div>
+                <div class="pj-fact__item"><b>15 лет</b><span>на рынке поставок</span></div>
+                <div class="pj-fact__item"><b>до 36 мес</b><span>гарантии на оборудование</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#catalog" class="sv-nav__link">Каталог</a>
+            <a href="#medical" class="sv-nav__link">Медтехника</a>
+            <a href="#filters" class="sv-nav__link">Фильтры</a>
+            <a href="#card" class="sv-nav__link">Карточка товара</a>
+            <a href="#forms" class="sv-nav__link">Формы B2B</a>
+            <a href="#delivery" class="sv-nav__link">Доставка и оплата</a>
+            <a href="#clients" class="sv-nav__link">Клиенты</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>Медресурс | Пермь</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Поставки медоборудования</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Каталог + заявки B2B и госзакупки</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен, работает</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>medresurs.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная — направления каталога, преимущества поставок и новости</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                ООО «Медресурс-Пермь» 15 лет поставляет медицинское оборудование, мебель,
+                прачечное и пищевое оборудование в больницы, поликлиники, школы и детские сады
+                Пермского края. Компания укомплектовывает учреждения под ключ — вплоть до
+                оснащения медкабинетов для лицензирования по приказам Минздрава. Покупатели здесь
+                не частные лица, а юрлица и госзаказчики, поэтому сайт должен не «продавать
+                в корзину», а показывать ассортимент и собирать запросы.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                У клиента — широкий ассортимент свыше 10 000 позиций в пяти направлениях,
+                часть из которых регулируется: медицинские изделия должны иметь регистрационные
+                удостоверения. Покупатель у такого поставщика решает оснащение целого кабинета,
+                прачечной или пищеблока, а не «один товар». Из этого выросли три задачи сайта.
+              </p>
+              <ul>
+                <li><b>Структурировать каталог</b> — разложить 10 000+ позиций по направлениям и категориям, чтобы покупатель быстро находил нужный класс техники.</li>
+                <li><b>Дать технические фильтры</b> — медицинская техника подбирается по характеристикам: производитель, исполнение, производительность, наличие регистрационного удостоверения.</li>
+                <li><b>Собирать заявки от юрлиц</b> — запрос цены, заказ оборудования и обратный звонок с полями организации, а не только имени и телефона.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Две аудитории с очень разными сценариями: коммерческие юрлица покупают по договору, а бюджетные учреждения работают через госзакупки и запрашивают коммерческие предложения для обоснования начальной максимальной цены. Сайт должен обслуживать оба сценария — с честным разделением условий оплаты и доставки.</p>
+              </div>
+
+              <h2 id="catalog">2. Структура каталога</h2>
+              <p>
+                Каталог разложен по пяти крупным направлениям, у каждого — своя сетка категорий.
+                Это отражает логику оснащения: клинику интересует медтехника и мебель, прачечную —
+                стиральные машины, пищеблок — тепловое и холодильное оборудование.
+              </p>
+              <ul>
+                <li><b>Медицинская техника</b> — облучатели и рециркуляторы, фармацевтические холодильники, отсасыватели, концентраторы кислорода, светильники, негатоскопы, операционные столы, медтехника «Елатьма».</li>
+                <li><b>Доступная среда (реабилитация)</b> — кресла-коляски, приспособления для ванной и туалета, матрасы противопролежневые, ходунки, подъёмники.</li>
+                <li><b>Мебель медицинская</b> — кровати функциональные и сопутствующие, столики манипуляционные и процедурные, кушетки, гинекологические кресла, тележки, шкафы, лабораторная и металлическая мебель.</li>
+                <li><b>Прачечное оборудование</b> — стиральные и сушильные машины, центрифуги, гладильное оборудование, машины химчистки, шкафы озонирующие, оснащение мини-прачечных, запчасти Вязьма.</li>
+                <li><b>Оборудование для пищеблока</b> — тепловое, механическое, холодильное и нейтральное оборудование.</li>
+              </ul>
+
+              <!-- SCREENSHOT: catalog grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>medresurs.ru/katalog</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--industries"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Каталог — пять направлений: медтехника, реабилитация, мебель, прачечное и пищеблок</span>
+              </div>
+
+              <h2 id="medical">3. Медицинская техника: категории оснащения</h2>
+              <p>
+                Медицинская техника — ядро ассортимента, её чаще всего ищут под конкретную
+                задачу оснащения. Поэтому внутри направления выделены не «отделы», а классы
+                продукции, которые покупатель называет в заявке: облучатели и рециркуляторы,
+                фармацевтические холодильники, отсасыватели, концентраторы кислорода,
+                светильники, негатоскопы, операционные столы.
+              </p>
+              <p>
+                Добавлены два «готовых решения»: спецкатегория техники <b>против COVID-19</b>
+                и раздела <b>«Стандарт оснащения медицинского кабинета в детском саду/школе»</b> —
+                подборка под конкретный приказ Минздрава, с которой начинается путь к лицензированию.
+              </p>
+
+              <h2 id="filters">4. Фильтры по характеристикам</h2>
+              <p>
+                Для медицинской техники одного «поиска по названию» мало — рециркуляторы
+                выбирают по производительности, исполнению и наличию регистрационного
+                удостоверения. В категориях настроены технические фильтры.
+              </p>
+              <ul>
+                <li><b>Производитель</b> — Армед, Медпро, Медстальконструкция, Парма, Ферропласт, Элид.</li>
+                <li><b>Исполнение</b> — настенный или передвижной корпус.</li>
+                <li><b>Производительность</b> — м³/час: до 50, 50–60, 75–100, свыше 100.</li>
+                <li><b>Регистрационное удостоверение</b> — есть или нет (критично для закупок).</li>
+                <li><b>Цена</b> — диапазон «от — до».</li>
+              </ul>
+
+              <!-- SCREENSHOT: catalog filters -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>medresurs.ru/katalog/.../reczirkulyatoryi</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Категория рециркуляторов — фильтры по производителю, исполнению, производительности и РУ</span>
+              </div>
+
+              <h2 id="card">5. Карточка товара</h2>
+              <p>
+                Карточка работает на технического покупателя: фото, название с серией модели,
+                характеристики и путь к заявке. Цена как таковая в открытом виде есть не у всех
+                позиций — для B2B-поставок ключевой элемент это кнопки «Запрос цены»
+                и «Оформить заказ», которые открывают формы с реквизитами организации.
+              </p>
+              <p>
+                Для позиций под госзакупки в карточке подаются данные, которые нужны для
+                обоснования: регистрационное удостоверение, производитель, область применения.
+                В перечне рециркуляторов, например, указана площадь обслуживания — от 20 м²
+                у компактной «ПАРМА» до 200 м² (480 м³/час) у модели 2Х30-2.
+              </p>
+
+              <!-- SCREENSHOT: product card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>medresurs.ru — карточка рециркулятора</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка товара — характеристики, регистрационное удостоверение и заявки «Запрос цены» / «Оформить заказ»</span>
+              </div>
+
+              <h2 id="forms">6. Формы под B2B-сценарии</h2>
+              <p>
+                Вместо розничной «корзины» — три формы, каждая под этап продажи юрлицу.
+                Все поля начинаются с названия организации: поставщику важнее реквизиты,
+                чем имя покупателя.
+              </p>
+              <ul>
+                <li><b>Заказать звонок</b> — с телефона на картинке или из шапки; компания, телефон, комментарий.</li>
+                <li><b>Запрос цены</b> — компания, телефон, e-mail, вопрос; базовый лид на расчёт КП.</li>
+                <li><b>Оформить заказ</b> — дополнительно поле «оборудование», которое заранее подтягивается из карточки товара.</li>
+              </ul>
+              <p>
+                Все формы завязаны на согласие с правилами обработки персональных данных —
+                обязательное условие при работе с госзаказчиками.
+              </p>
+
+              <!-- SCREENSHOT: form -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>medresurs.ru — Запрос цены</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма заявки — компания, телефон, e-mail и вопрос; оборудование подставляется из карточки</span>
+              </div>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Продаёте оборудование юрлицам и бюджетникам?</h3>
+                  <p>Настроим каталог с техническими фильтрами и заявки под коммерцию и госзакупки.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="delivery">7. Доставка и оплата</h2>
+              <p>
+                Условия поставки — ключевой аргумент для удалённого покупателя. Раздел
+                «Доставка и оплата» снимает возражения до звонка:
+              </p>
+              <ul>
+                <li><b>Доставка</b> — со склада в Перми своим транспортом или транспортной компанией по всему краю и в любой город России; ориентировочный расчёт по ссылкам на калькуляторы Деловых линий, ПЭК и Байкал Сервиса.</li>
+                <li><b>Оплата</b> — только с юрлицами по безналу; счёт выставляется по реквизитам организации на e-mail.</li>
+                <li><b>Гарантия</b> — срок гарантии производителя: обычно 12, у некоторых производителей 24–36 месяцев (у прачечного оборудования «Вязьма» — 36 месяцев).</li>
+                <li><b>Госзаказчикам</b> — отдельный блок о ценах на условиях предоплаты без доставки и пуско-наладки и контакты для запроса КП и ТЗ на обоснование начальной максимальной цены.</li>
+              </ul>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>MODX · PHP · MySQL · каталог с вложенными категориями · фильтры по характеристикам · формы заявок с полями организации · акции, новости и статьи · Яндекс.Метрика · Рамблер Топ-100 · cookies и политика ПДн · ЧПУ · Schema.org (MedicalOrganization, Product, Offer)</p>
+              </div>
+
+              <h2 id="clients">8. Клиенты и доверие</h2>
+              <p>
+                Для госзаказчика решающий фактор — портфель уже выполненных поставок.
+                На главной и в «О компании» выведены 20+ логотипов клиентов: Центр сердечно-сосудистой
+                хирургии, ФЦССХ, Новогор Прикамья, Газпром ПХГ, Лукойл-Пермнефтепродукт,
+                Уралкалий, СОГАЗ, ЕвроХим, Пермский пороховой завод, ВСМПО АВИСМА, Кировский
+                мясокомбинат, курорт «Ключи» и другие.
+              </p>
+              <p>
+                Доверие усиливают встроенные блоки: отдельный текст про работу напрямую
+                с производителями, наличие опытных специалистов в штате, обслуживание
+                и ремонт прачечного оборудования «Вязьма», инструктаж технического персонала,
+                сертифицированная продукция для прохождения лицензирования.
+              </p>
+
+              <!-- SCREENSHOT: clients partn -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>medresurs.ru/o-kompanii</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Блок клиентов — логотипы больниц, заводов и госструктур Пермского края</span>
+              </div>
+
+              <h2 id="seo">9. SEO и контент</h2>
+              <p>
+                Поисковые запросы здесь — это не «купить носки в Перми», а «прачечное оборудование
+                Вязьма купить», «рециркулятор для обеззараживания воздуха цена»,
+                «оснащение медкабинета детского сада». Под них собрана структура ЧПУ-адресов
+                категорий и карточек, а контент закрывается «полезными статьями», которые
+                отвечают на технические вопросы покупателей:
+              </p>
+              <ul>
+                <li>чем промышленная стиральная машина отличается от бытовой и на какие килограммы загрузки смотреть</li>
+                <li>что такое G-фактор и остаточная влажность при выборе стирально-отжимных машин</li>
+                <li>рекомендации по выбору прачечного оборудования под производительность прачечной</li>
+              </ul>
+              <p>
+                Лента новостей поддерживает сайт живым — анонсы новых позиций, скидки
+                на гладильные столы ЛГС-103.34 и обновления прайс-листов от производителей.
+              </p>
+
+              <h2 id="results">10. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="10000" data-suffix="+">0</b><span>наименований оборудования в каталоге</span></div>
+                <div class="pj-result"><b data-count="5">0</b><span>направлений каталога</span></div>
+                <div class="pj-result"><b data-count="15">0</b><span>лет на рынке поставок</span></div>
+                <div class="pj-result"><b data-count="36" data-suffix=" мес">0</b><span>максимальная гарантия на оборудование</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>каталог стал продающей витриной: покупатель сам находит класс техники, а формы забирают заявку с реквизитами;</li>
+                <li>технические фильтры сократили ложные заявки — подходящее оборудование отбирается по характеристикам ещё до звонка;</li>
+                <li>раздел для госзаказчиков честно разделил условия коммерции и бюджета и снял возражения про цены;</li>
+                <li>расчёт доставки и сроки гарантии оформили в доверительный блок — меньше вопросов на этапе КП;</li>
+                <li>статьи и новости удерживают технический трафик и работают на поиск по узким B2B-запросам.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Сайт стал рабочим инструментом поставщика: структурированные 10 000+ позиций, фильтры «как в спецификации», три типа заявок для юрлиц и отдельный путь для госзаказчиков. Проект запущен и работает.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/specsnab39.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>СПЕЦСНАБ</b><small>Сайт материалов и техники с заявками B2B</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/mst.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>MST.Tools</b><small>Маркетплейс электроинструмента</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/intraco.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>Регистратор Интрако</b><small>Корпоративный сайт держателя реестра</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/specsnab39.html">
+                  <span>← Назад</span>
+                  <b>СПЕЦСНАБ — сайт материалов и техники с заявками B2B</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="delivery-bottom">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

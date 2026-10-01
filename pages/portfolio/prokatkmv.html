@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="pj-hero">
+        <div class="pj-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/pages/portfolio/index.html" itemprop="item"><span itemprop="name">Портфолио</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="prokatkmv.html" itemprop="item"><span itemprop="name">Прокат КМВ — сервис аренды авто</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row pj-hero__row">
+            <div class="d-col-24 d-col-lg-14 pj-hero__content">
+              <span class="n-kicker" data-reveal>Кейс · Сайт автопроката</span>
+              <h1 class="pj-hero__title" data-reveal>Прокат КМВ — сервис<br><span>аренды авто и трансфера</span></h1>
+              <p class="pj-hero__sub" data-reveal>
+                Автопрокат из Минеральных Вод с 2010 года: большой автопарк, подбор машины по фильтрам за один
+                клик, тарифы по сроку аренды, подача и возврат в 17 городов КМВ, СКФО и Северного Кавказа —
+                плюс трансфер с водителем и авто для торжеств.
+              </p>
+
+              <div class="pj-hero__tags" data-reveal>
+                <a href="/pages/portfolio/index.html">Сайт-витрина</a>
+                <a href="/pages/portfolio/index.html">Онлайн-бронирование</a>
+                <a href="/pages/portfolio/index.html">Услуги</a>
+                <a href="/pages/portfolio/index.html">B2C</a>
+              </div>
+
+              <div class="pj-hero__actions" data-reveal>
+                <button class="dart-btn dart-btn-primary-alt dart-btn-lg" data-modal="dartModal">
+                  <span>Хочу похожий проект</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="#results" class="dart-btn dart-btn-secondary dart-btn-lg">Смотреть результаты</a>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 pj-hero__side" data-reveal>
+              <div class="pj-fact">
+                <div class="pj-fact__item"><b>17</b><span>городов подачи и возврата</span></div>
+                <div class="pj-fact__item"><b>40+</b><span>машин в автопарке</span></div>
+                <div class="pj-fact__item"><b>10+</b><span>автомобилей для трансфера</span></div>
+                <div class="pj-fact__item"><b>1 сутки</b><span>минимальный срок аренды</span></div>
+                <div class="pj-fact__item"><b>5.0</b><span>оценка и 1 200+ отзывов на Яндексе</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#task" class="sv-nav__link is-active">Задача</a>
+            <a href="#structure" class="sv-nav__link">Структура</a>
+            <a href="#park" class="sv-nav__link">Автопарк</a>
+            <a href="#filter" class="sv-nav__link">Фильтры</a>
+            <a href="#price" class="sv-nav__link">Цены</a>
+            <a href="#delivery" class="sv-nav__link">Подача авто</a>
+            <a href="#booking" class="sv-nav__link">Бронирование</a>
+            <a href="#service" class="sv-nav__link">Услуги</a>
+            <a href="#cta" class="sv-nav__link">Формы</a>
+            <a href="#content" class="sv-nav__link">Отзывы</a>
+            <a href="#design" class="sv-nav__link">Дизайн</a>
+            <a href="#seo" class="sv-nav__link">SEO</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить проект</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- OVERVIEW STRIP -->
+      <section class="pj-overview">
+        <div class="dart-container">
+          <div class="dart-row pj-overview__grid">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Клиент</span><b>Прокат КМВ | Минеральные Воды</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Ниша</span><b>Автопрокат, трансфер, авто для торжеств</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Задача</span><b>Онлайн-бронирование без звонка</b></div></div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6"><div class="pj-overview__cell"><span>Статус</span><b>Запущен с 2010, развивается</b></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <section class="po-main n-section">
+        <div class="dart-container">
+          <article class="po-article po-article--wide">
+
+              <!-- OVERVIEW FIGURE (mockup screenshot) -->
+              <div class="pj-screen pj-screen--hero" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--site">
+                      <div class="pj-mock--site__nav"></div>
+                      <div class="pj-mock--site__hero"></div>
+                      <div class="pj-mock--site__hero2"></div>
+                      <div class="pj-mock--site__cards"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Главная страница — виджет подбора, преимущества и автопарк с ценами</span>
+              </div>
+
+              <!-- LEAD -->
+              <p class="po-article__lead">
+                «Прокат КМВ» — автопрокат из Минеральных Вод, работающий с 2010 года: аренда автомобилей без
+                водителя, трансфер с водителем, авто для торжеств и экскурсии по Кавказу. Компания давно
+                заработала имя — 10 000 клиентов, оценка 5.0 и 1 200+ отзывов на Яндексе, — но сайт был
+                справочником: прайс в тексте, условия аренды на отдельной странице, а бронирование
+                начиналось только с телефонного звонка. Рассказываем, как превратили каталог машин
+                в работающую онлайн-витрину.
+              </p>
+
+              <h2 id="task">1. Задача и исходные данные</h2>
+              <p>
+                Автопрокат живёт на трёх вещах: цене, сроке и месте подачи. Старый сайт показывал
+                базовый прайс, но не давал ответить на главные вопросы до звонка менеджеру: «сколько будет
+                стоить три дня в мае», «привезёте ли машину в Кисловодск», «какой залог на Largus».
+                Холодный турист из Москвы или Владивостока, который планирует поездку на месяц вперёд,
+                просто закрывал вкладку и звонил — а вечером и в выходные телефон не брали.
+              </p>
+              <p>Сформулировали пять ключевых целей:</p>
+              <ul>
+                <li><b>Подбор машины за один клик</b> — фильтры по классу, коробке, местам и багажу без обращения к менеджеру.</li>
+                <li><b>Понятные цены</b> — тарифная сетка по сроку аренды, сезонные цены, доставка по городам и размер залога на карточке.</li>
+                <li><b>Подача и возврат по выбору</b> — автомобиль можно получить в одном городе и сдать в другом.</li>
+                <li><b>Онлайн-заявка и бронь</b> — квиз за пару минут и заказ в один клик с подтверждением менеджера.</li>
+                <li><b>Другие услуги на сайте</b> — трансфер с водителем, авто на торжество, экскурсии и акции в рамках одного сайта.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Ключевая сложность</b>
+                <p>Цена зависит не только от машины, но и от трёх вещей: срока аренды, сезона и адреса подачи. Одна и та же Toyota Corolla стоит иначе на сутки и на месяц, иначе в мае и в декабре, иначе в Минеральных Водах и во Владикавказе. Сайт должен считать это сам и показывать итог, а не прятать формулу до звонка.</p>
+              </div>
+
+              <h2 id="structure">2. Структура сайта</h2>
+              <p>
+                Сайт построен вокруг четырёх продуктовых линий, и каждая закрывает свою аудиторию:
+                турист, который хочет машину на неделю, заказчик на трансфер, пара на свадьбу
+                и путешественник, которому нужен внедорожник с водителем.
+              </p>
+              <ul>
+                <li><b>Аренда авто без водителя</b> — автопарк, акции, цены, договор, условия аренды, страховка, оплата и получение, города и запрет на выезд.</li>
+                <li><b>Трансфер</b> — аренда с водителем, услуги трансфера, адрес подачи автомобиля, воздушный трансфер из аэропорта.</li>
+                <li><b>Авто для торжеств</b> — отдельный парк автомобилей под свадьбу, юбилей и другие события плюс услуги проката на праздник.</li>
+                <li><b>Автотуры и экскурсии</b> — УАЗ Патриот и другие модели для поездок по живописным местам Кавказа.</li>
+                <li><b>Компания</b> — о компании, блог, отзывы, партнёры, FAQ, контакты и юридические документы.</li>
+              </ul>
+              <p>
+                Отдельно вынесли «города» — собственный раздел с посадочными страницами по каждому
+                городу подачи. Это и навигация для клиента, и основа для регионального SEO.
+              </p>
+
+              <h2 id="park">3. Автопарк и карточки автомобилей</h2>
+              <p>
+                Парк постоянно пополняется: от бюджетных седанов до кроссоверов и представительских
+                машин. Каждая карточка показывает класс, фотографии, характеристики — коробку передач,
+                количество мест, багажа, климат-контроль, полный привод, панорамную крышу — и,
+                главное, тарифную сетку: цена за 1 сутки, за 2–4, 5–9, 10–29 и от 30 суток.
+                Длинная аренда автоматически становится выгоднее, и это видно прямо в карточке.
+              </p>
+              <p>
+                Залог указан там же — от 10 000 ₽ для эконом-класса до 25 000 ₽ для бизнес-класса
+                и кроссоверов. Никаких скрытых платежей: посетитель до звонка понимает, во сколько обойдётся
+                поездка и когда ему вернут залог.
+              </p>
+
+              <!-- SCREENSHOT: autopark cards -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru/avtopark-arenda-avto</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--catalog">
+                      <div class="pj-mock--catalog__side"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--catalog__main">
+                        <div class="pj-mock--catalog__toolbar"></div>
+                        <div class="pj-mock--catalog__grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Автопарк — сетка машин с классом, характеристиками и ценами по срокам</span>
+              </div>
+
+              <!-- SCREENSHOT: car card -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru/avtopark-arenda-avto/haval-h3</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--product">
+                      <div class="pj-mock--product__img"></div>
+                      <div class="pj-mock--product__info">
+                        <div class="pj-mock--product__t"></div>
+                        <div class="pj-mock--product__l"></div>
+                        <div class="pj-mock--product__l l2"></div>
+                        <div class="pj-mock--product__l l3"></div>
+                        <div class="pj-mock--product__price"></div>
+                        <div class="pj-mock--product__btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Карточка автомобиля — тарифы по срокам, залог, характеристики и кнопка брони</span>
+              </div>
+
+              <h2 id="filter">4. Подбор по фильтрам</h2>
+              <p>
+                В прокате класс автомобиля выбирают не по марке, а по задаче: нужна большая багажная
+                машина для лыж, seven-местный Largus для компании или кроссовер с полным приводом
+                для горных маршрутов. Поэтому фильтры построены на параметрах, а не на брендах.
+              </p>
+              <ul>
+                <li><b>Класс автомобиля</b> — Эконом, Комфорт, Комфорт+, Бизнес и Семейный.</li>
+                <li><b>Коробка передач</b> — АКПП или МКПП.</li>
+                <li><b>Климат-контроль</b> — кондиционер или однозонный климат-контроль.</li>
+                <li><b>Мест и багаж</b> — от 2 до 5 мест и 2–5 единиц багажа.</li>
+                <li><b>Дополнительные опции</b> — ABS, полный привод, панорамная крыша, автобокс, крепления для лыж.</li>
+              </ul>
+              <p>
+                В связке с фильтрами работает виджет дат: сначала выбираются регион и город подачи,
+                затем город возврата, и только после этого показываются свободные машины. Человек
+                сразу бронирует под свою поездку, а не подбирает «что-нибудь на выходные».
+              </p>
+
+              <!-- SCREENSHOT: filters -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru — Подбор автомобиля</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--city">
+                      <div class="pj-mock--city__bar">
+                        <span class="loc"></span>
+                        <span class="name"></span>
+                        <span class="chev"></span>
+                      </div>
+                      <div class="pj-mock--city__list">
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st"></span></div>
+                        <div class="pj-mock--city__store"><span class="nm"></span><span class="km"></span><span class="st is-open"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Фильтры — класс, коробка, мест, багаж и статус доступности машины</span>
+              </div>
+
+              <div class="po-note po-note--code">
+                <b>Технологии</b>
+                <p>PHP · MySQL · автопарк и тарифные сетки · фильтрация по параметрам · расчёт цены по сроку и городу подачи · онлайн-заявка · ЧПУ · Schema.org (Car, Offer)</p>
+              </div>
+
+              <h2 id="price">5. Цены и тарифы</h2>
+              <p>
+                Прайс на сайте перестал быть «от» и стал расчётом. Каждая машина имеет пять суточных
+                тарифов, а поверх них применяются сезонные коэффициенты. В отдельном блоке опубликована
+                таблица стоимости подачи и возврата: 500–700 ₽ в самом Минеральных Водах и аэропорту,
+                1 000–1 400 ₽ по КМВ, 5 500 ₽ в Ставрополе и Нальчике, 12 000–15 000 ₽ для Владикавказа,
+                Ростова-на-Дону и Краснодара. Города, которых нет в таблице, считаются договорной ценой.
+              </p>
+              <p>
+                Ночью доставка стоит дороже — 2 000–5 500 ₽ в зависимости от города, и это тоже видно
+                в таблице, а не всплывает в конце переписки с менеджером. Отдельно объяснено,
+                что входит в аренду бесплатно: доставка документов по КМВ, ОСАГО, среднесуточный лимит
+                пробега и выезд за пределы края в пределах РФ.
+              </p>
+
+              <!-- SCREENSHOT: price table -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru/price</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--compare">
+                      <div class="pj-mock--compare__head"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                      <div class="pj-mock--compare__row"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Цены — тарифы по срокам, сезонные цены и таблица подачи по городам</span>
+              </div>
+
+              <h2 id="delivery">6. Подача и возврат в 17 городов</h2>
+              <p>
+                Главное преимущество проката КМВ — можно взять машину в одном городе и вернуть в другом.
+                Сайт показывает это буквально на первом экране: два независимых выпадающих списка
+                «подача» и «возврат», где сначала выбирается регион, затем город. Минеральные Воды
+                и аэропорт, Пятигорск, Железноводск, Ессентуки, Кисловодск, Георгиевск, Ставрополь,
+                Нальчик, Владикавказ, Ростов-на-Дону, Краснодар, Новопавловск, Невинномысск, Будённовск —
+                отдельная страница на каждый город с описанием, ценами и формой заявки.
+              </p>
+              <p>
+                Для гостей из других городов сделали отдельный акцент на безопасной доставке: машину
+                привозят лично по указанному адресу, а все автомобили проходят обработку антисептиками.
+                Для туристов, прилетающих в аэропорт Минеральных Вод, это снимает главный барьер
+                первого дня поездки.
+              </p>
+
+              <!-- SCREENSHOT: cities grid -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru/regions-prokat-avto</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--industries">
+                      <span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Города подачи — посадочные страницы по КМВ, СКФО и Северному Кавказу</span>
+              </div>
+
+              <h2 id="booking">7. Онлайн-бронирование</h2>
+              <p>
+                Подбор автомобиля и заявка связаны в один сценарий. Человек выбирает даты и города,
+                видит подходящие машины и нажимает «Рассчитать или забронировать» — открывается
+                форма заказа в один клик: имя, телефон, e-mail, дата и время подачи, дата и время возврата
+                и комментарий. Менеджеру приходит заявка с готовым расчётом, а не «хочу машину, перезвоните».
+              </p>
+              <p>
+                Форма честно предупреждает, что бронь считается окончательной только после подтверждения
+                менеджером, и просит приложить паспорт и водительское удостоверение. Заявка уходит
+                в CRM и дублируется в Telegram и MAX — за неё отвечают без напоминания о нерабочем времени.
+              </p>
+
+              <!-- SCREENSHOT: booking widget -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru — Заказать авто в один клик</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--form">
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__row">
+                        <div class="pj-mock--form__field"></div>
+                        <div class="pj-mock--form__field"></div>
+                      </div>
+                      <div class="pj-mock--form__field"></div>
+                      <div class="pj-mock--form__btn"></div>
+                      <div class="pj-mock--form__hint"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Форма брони — даты и города подачи, контакты и согласие на обработку данных</span>
+              </div>
+
+              <h2 id="service">8. Услуги: трансфер, торжества, экскурсии</h2>
+              <p>
+                Прокат — не единственный продукт, и сайт даёт это почувствовать. Трансфер с водителем
+                работает на отдельном парке представительских машин: Mercedes S-Class W223 и Maybach S560,
+                Jaguar F-Pace, Toyota Land Cruiser 200, Mercedes V-Class и V, Volkswagen Caravelle,
+                Hyundai H-1, Starex и Grand Starex. Подача — по адресу, включая воздушный трансфер
+                из аэропорта.
+              </p>
+              <p>
+                Отдельное направление — автомобили для торжеств со своим парком и услугами аренды
+                на праздник, плюс автотуры и экскурсии по живописным местам Кавказа на УАЗ Патриоте.
+                Всё это лежит на одном домене, в общей навигации и в общей воронке заявок,
+                поэтому клиент, взявший машину на неделю, видит и другие предложения компании.
+              </p>
+
+              <!-- SCREENSHOT: services -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru/transfer</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Трансфер и услуги — парк с водителем, подача по адресу и воздушный трансфер</span>
+              </div>
+
+              <h2 id="cta">9. Формы и заявки</h2>
+              <p>
+                Формы работают в двух форматах: быстрый «заказать в один клик» без дат — для тех,
+                кто только выбирает, и полная форма брони с датами, городом и временем подачи.
+                Обе отправляют заявку в CRM, обе доступны из шапки, из подвала и с любой страницы раздела,
+                а кнопки «Написать в Telegram» и «Написать в MAX» работают как запасной канал,
+                когда клиенту проще ответить в мессенджере.
+              </p>
+              <p>
+                На всех формах стоят согласия на обработку персональных данных и на получение рекламных
+                сообщений, а также напоминание об условиях аренды: стоимость, включённый пробег, залог
+                и невозврат платы за сервисное оформление при отказе. Это снимает конфликты
+                на этапе, когда человек передумал.
+              </p>
+
+              <div class="po-inline-cta">
+                <div>
+                  <h3>Нужен такой же автопрокат?</h3>
+                  <p>Соберём каталог машин с расчётом цены, онлайн-бронированием и CRM-интеграцией.</p>
+                </div>
+                <button class="dart-btn dart-btn-light" data-modal="dartModal">Обсудить проект →</button>
+              </div>
+
+              <h2 id="content">10. Отзывы, блог и партнёры</h2>
+              <p>
+                Для сервиса с репутацией главный аргумент — отзывы. Сайт собирает их с Яндекса
+                (оценка 5.0, больше 1 200 оценок) и показывает блок «Смотреть отзывы» на главной,
+                чтобы новый клиент проверил компанию до заявки. Рядом — блог с практическими материалами
+                о поездках и машинах, FAQ с типовыми вопросами и раздел партнёров,
+                среди которых, например, глэмпинг в Архызе.
+              </p>
+              <p>
+                Этот блок работает на доверие: у проката нет товара, который можно посмотреть вживую,
+                поэтому репутация и условия аренды — главный аргумент выбора.
+              </p>
+
+              <!-- SCREENSHOT: reviews/blog -->
+              <div class="pj-screen" data-reveal>
+                <div class="pj-browser">
+                  <div class="pj-browser__bar"><i></i><i></i><i></i><span>prokatkmv.ru/recall</span></div>
+                  <div class="pj-browser__body">
+                    <div class="pj-mock pj-mock--downloads">
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                      <div class="pj-mock--downloads__row"><span></span><span class="line"></span><span class="os"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="pj-screen__label">Отзывы — оценка 5.0 на Яндексе, блог, FAQ и партнёры</span>
+              </div>
+
+              <h2 id="design">11. Дизайн и адаптив</h2>
+              <p>
+                Стиль — «свобода в движении»: много воздуха, крупные фотографии автомобилей
+                в горах Кавказа, фотографии живописных городов КМВ и акцент на горных пейзажах.
+                На главной — слайдер, виджет подбора, шесть преимуществ (можно взять на сутки,
+                выдаём в день заказа, берёшь в одном городе и сдаёшь в другом, вместительные автобоксы,
+                крепления для лыж, сезонные шины на всех авто).
+              </p>
+              <p>
+                Мобильная версия сделана с приоритетом на сценарий «забронировать с телефона»:
+                фильтры превращаются в аккордеон, таблица цен по городам — в удобный список,
+                а кнопки заявки и звонка остаются на виду. Сайт открывают с телефона в аэропорту,
+                по дороге из офиса, — и он должен работать там, где машины ещё нет.
+              </p>
+
+              <!-- SCREENSHOT: mobile -->
+              <div class="pj-screen pj-screen--phones" data-reveal>
+                <div class="pj-mock pj-mock--phone">
+                  <div class="pj-mock--phone__head"></div>
+                  <div class="pj-mock--phone__banner"></div>
+                  <div class="pj-mock--phone__line"></div>
+                  <div class="pj-mock--phone__line l2"></div>
+                  <div class="pj-mock--phone__cards"><span></span><span></span></div>
+                </div>
+                <span class="pj-screen__label">Адаптив — подбор машины и заявка работают с телефона</span>
+              </div>
+
+              <h2 id="seo">12. SEO и запуск</h2>
+              <p>
+                Трафик на прокат сезонный и географический, поэтому SEO закладывали под два направления.
+                Первое — посадочные страницы по городам: «аренда авто в Минеральных Водах», «прокат в
+                Кисловодске», «автопрокат в Пятигорске», каждая со своим описанием, ценами и формой.
+                Второе — страницы по услугам и классам машин, которые берут трансфер, авто на свадьбу
+                и кроссоверы с полным приводом.
+              </p>
+              <p>
+                Технически: ЧПУ-адреса, микроразметка Schema.org (Car, Offer, LocalBusiness с телефоном
+                и адресом офиса), перелинковка из разделов услуг на города и с городов на парк,
+                счётчики Яндекс.Метрики и Top.Mail.Ru. Сезонные страницы и акции обновляются
+                без участия разработчиков — менеджер правит сроки и цены сам.
+              </p>
+
+              <h2 id="results">13. Результаты</h2>
+
+              <!-- RESULTS CARDS -->
+              <div class="pj-results" data-reveal>
+                <div class="pj-result"><b data-count="17">0</b><span>городов подачи и возврата</span></div>
+                <div class="pj-result"><b data-count="40" data-suffix="+">0</b><span>автомобилей в парке</span></div>
+                <div class="pj-result"><b data-count="10000" data-suffix="+">0</b><span>клиентов с 2010 года</span></div>
+                <div class="pj-result"><b data-count="1200" data-suffix="+">0</b><span>оценок на Яндексе, рейтинг 5.0</span></div>
+              </div>
+
+              <p>Что это дало бизнесу:</p>
+              <ul>
+                <li>цены, залог и стоимость доставки видны до звонка — менеджер отвечает по существу, а не диктует прайс;</li>
+                <li>подбор по фильтрам снял самый частый сценарий «а есть ли Rio и сколько будет стоить неделю»;</li>
+                <li>заявка с готовым расчётом приходит в CRM и мессенджеры, в том числе вечером и в выходные;</li>
+                <li>продажи сместились с телефонных звонков на онлайн-заявки, сезонный поток распределяется равномернее;</li>
+                <li>городские посадочные страницы дают органический трафик из соседних регионов и других городов;</li>
+                <li>трансфер, авто для торжеств и экскурсии продаются на том же сайте и в той же воронке.</li>
+              </ul>
+
+              <div class="po-note">
+                <b>Итог</b>
+                <p>Проект работает с 2010 года и постоянно обновляется: парк пополняется, города подачи расширяются, акции и тарифы редактируются из панели. Сайт перестал быть витриной и стал каналом бронирования — заявки приходят сами, без звонка.</p>
+              </div>
+
+              <!-- SIMILAR CASES -->
+              <div class="po-similar" data-reveal>
+                <span class="n-kicker">Ещё проекты</span>
+                <h2 class="po-similar__title">Похожие кейсы</h2>
+                <div class="dart-row">
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/akpp26.html">
+                      <span class="po-similar__img po-similar__img--1"></span>
+                      <div><b>АКПП26RUS</b><small>Магазин запчастей для АКПП</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/snegotehnika.html">
+                      <span class="po-similar__img po-similar__img--2"></span>
+                      <div><b>СнегоТехника</b><small>Интернет-магазин снегоходов</small></div>
+                    </a>
+                  </div>
+                  <div class="d-col-24 d-col-sm-12 d-col-lg-8">
+                    <a class="po-similar__card" href="/pages/portfolio/shaurmania.html">
+                      <span class="po-similar__img po-similar__img--3"></span>
+                      <div><b>Шаурмания</b><small>Сайт доставки шаурмы с онлайн-заказом</small></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREV / NEXT -->
+              <nav class="po-pager" aria-label="Навигация по проектам">
+                <a class="po-pager__btn po-pager__btn--prev" href="/pages/portfolio/akpp26.html">
+                  <span>← Назад</span>
+                  <b>АКПП26RUS — магазин запчастей для АКПП</b>
+                </a>
+                <a class="po-pager__btn po-pager__btn--next" href="/pages/services/development.html">
+                  <span>Далее →</span>
+                  <b>Заказать разработку сайта</b>
+                </a>
+              </nav>
+
+            </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Понравился кейс?</span>
+            <h2 class="n-cta__title">Сделаем похожий проект<br>для вашего бизнеса</h2>
+            <p class="n-cta__desc">Расскажите о задаче — предложим решение, посчитаем смету и покажем ещё примеры работ за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить смету →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим ваш проект</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, что нужно, — предложим решение и покажем похожие кейсы.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Расскажите о проекте: тип сайта, сроки, бюджет..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Получить смету</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>
