@@ -1,0 +1,125 @@
+@use 'sass:math';
+@use 'vars' as *;
+
+/* =========================================================
+   LEGAL / CONTENT BLOCK — .content-block.dart-legal
+   Нумерация пунктов задана в тексте (1.1., 1.2. ...),
+   поэтому маркеры списка отключены.
+   ========================================================= */
+.dart-legal {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 72px 56px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(19, 19, 19, 0.05);
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(19, 19, 19, 0.8);
+
+  @media (max-width: $desktop) {
+    padding: 56px 44px;
+  }
+
+  @media (max-width: $tablets) {
+    padding: 36px 24px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: $big-phones) {
+    padding: 28px 16px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--dart-dark);
+    margin: 0 0 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eee;
+    scroll-margin-top: 120px;
+
+    &:not(:first-child) {
+      margin-top: 48px;
+    }
+
+    @media (max-width: $tablets) {
+      font-size: 21px;
+      margin: 0 0 16px;
+      padding-bottom: 12px;
+
+      &:not(:first-child) {
+        margin-top: 36px;
+      }
+    }
+  }
+
+  p {
+    margin: 0 0 20px;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  strong,
+  b {
+    color: var(--dart-dark);
+    font-weight: 700;
+  }
+
+  ol,
+  ul {
+    margin: 0 0 20px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 12px;
+    line-height: inherit;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  li > ul {
+    margin: 12px 0 0;
+    padding-left: 20px;
+    list-style: disc;
+
+    li {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    word-break: break-word;
+    transition: color 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      color: var(--dart-red-hover);
+      opacity: 0.85;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--dart-red);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+  }
+}
