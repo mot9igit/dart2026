@@ -12,12 +12,6 @@ html{
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before{
-  box-sizing: inherit;
-}
-
 ul[class],
 ol[class] {
   padding: 0;

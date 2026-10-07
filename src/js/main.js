@@ -158,6 +158,7 @@ if ("IntersectionObserver" in window && revealEls.length) {
 
 /* ------- Animated counters ------- */
 const animateCount = (el) => {
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const target = parseFloat(el.dataset.count);
   const suffix = el.dataset.suffix || "";
   const duration = 1400;
@@ -182,7 +183,7 @@ if ("IntersectionObserver" in window && counters.length) {
         }
       });
     },
-    { threshold: 0.6 }
+    { threshold: 0.3 }
   );
   counters.forEach((el) => cio.observe(el));
 } else {
@@ -274,12 +275,12 @@ if (processSteps.length && "IntersectionObserver" in window) {
   });
 }
 
-/* ------- Portfolio Swiper ------- */
-const swiperEl = $("#dartPortfolio");
-if (swiperEl) {
-  const prev = $("#dartPortfolioPrev");
-  const next = $("#dartPortfolioNext");
-  const dots = $("#dartPortfolioDots");
+/* ------- Carousel (Swiper) ------- */
+function initCarousel(el, prevId, nextId, dotsId, opts = {}) {
+  const prev = $("#" + prevId);
+  const next = $("#" + nextId);
+  const dots = $("#" + dotsId);
+  if (!el || !prev || !next || !dots) return null;
 
   const buildDots = (count) => {
     dots.innerHTML = "";
@@ -294,18 +295,13 @@ if (swiperEl) {
     });
   };
 
-  const mySwiper = new Swiper(swiperEl, {
+  const mySwiper = new Swiper(el, {
     slidesPerView: 1,
     spaceBetween: 24,
     loop: true,
     speed: 700,
     autoplay: { delay: 4000, disableOnInteraction: false },
     navigation: { prevEl: prev, nextEl: next },
-    breakpoints: {
-      611: { slidesPerView: 2 },
-      991: { slidesPerView: 3 },
-      1440: { slidesPerView: 3.5 },
-    },
     on: {
       init: (sw) => buildDots(sw.slides.length),
       slideChange: (sw) => {
@@ -315,8 +311,38 @@ if (swiperEl) {
         });
       },
     },
+    ...opts,
   });
+  return mySwiper;
 }
+
+initCarousel(
+  $("#dartPortfolio"),
+  "dartPortfolioPrev",
+  "dartPortfolioNext",
+  "dartPortfolioDots",
+  {
+    breakpoints: {
+      611: { slidesPerView: 2 },
+      991: { slidesPerView: 3 },
+      1440: { slidesPerView: 3.5 },
+    },
+  }
+);
+
+initCarousel(
+  $("#dartReviews"),
+  "dartReviewsPrev",
+  "dartReviewsNext",
+  "dartReviewsDots",
+  {
+    breakpoints: {
+      611: { slidesPerView: 2 },
+      991: { slidesPerView: 3 },
+    },
+    autoplay: { delay: 5000, disableOnInteraction: false },
+  }
+);
 
 /* ------- Portfolio grid filtering ------- */
 const pfGrid = $("#pfGrid");
@@ -798,14 +824,19 @@ if (brForm) {
     brForm.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const panelValid = (panel) =>
-    $$("select[required], input[type='radio'][required]", panel).every((el) => {
-      if (el.type === "radio") {
-        return !!panel.querySelector(`input[name="${el.name}"]:checked`);
-      }
-      return !!el.value;
-    }) &&
-    panel.checkValidity();
+  const panelValid = (panel) => {
+    const required = $$("input[required], select[required], textarea[required]", panel);
+    const radioGroups = new Set(
+      required.filter((el) => el.type === "radio").map((el) => el.name)
+    );
+    const groupsOk = [...radioGroups].every(
+      (name) => !!panel.querySelector(`input[name="${name}"]:checked`)
+    );
+    const filledOk = required.every((el) =>
+      el.type === "radio" ? true : el.value && el.value.trim() !== ""
+    );
+    return groupsOk && filledOk;
+  };
 
   steps.forEach((s) => {
     s.addEventListener("click", () => {
@@ -831,4 +862,36 @@ if (brForm) {
       return;
     }
   });
+}
+
+/* ------- Yandex Map (contacts page) ------- */
+const mapContainer = $("#ctOfficeMap");
+if (mapContainer && !window.ymaps3) {
+  const mapKey = "63bc98cc-1379-4151-8346-38f9e2457439";
+  const mapCoord = [56.177055, 57.971342];
+
+  const mapScript = document.createElement("script");
+  mapScript.src = `https://api-maps.yandex.ru/v3/?apikey=${mapKey}&lang=ru_RU`;
+  mapScript.async = true;
+  mapScript.onload = () => {
+    ymaps3.ready.then(() => {
+      const { Map, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+
+      const map = new Map(mapContainer, {
+        location: { center: mapCoord, zoom: 16 },
+        mode: "raster",
+      });
+      map.addChild(new YMapDefaultSchemeLayer());
+      map.addChild(new YMapDefaultFeaturesLayer());
+
+      const pinEl = document.createElement("div");
+      pinEl.className = "ct-office__pin";
+      map.addChild(new YMapMarker({ coordinates: mapCoord, draggable: false }, pinEl));
+
+      const placeholder = $("#ctOfficeMapPlaceholder");
+      if (placeholder) placeholder.style.display = "none";
+      map.updateSize();
+    }).catch(() => {});
+  };
+  document.head.appendChild(mapScript);
 }

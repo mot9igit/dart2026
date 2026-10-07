@@ -1,0 +1,211 @@
+# MODX supports Friendly URLs via this .htaccess file. You must serve web
+# pages via Apache with mod_rewrite to use this functionality, and you must
+# change the file name from ht.access to .htaccess.
+#
+# Make sure RewriteBase points to the directory where you installed MODX.
+# E.g., "/modx" if your installation is in a "modx" subdirectory.
+#
+# You may choose to make your URLs non-case-sensitive by adding a NC directive
+# to your rule: RewriteRule ^(.*)$ index.php?q=$1 [L,QSA,NC]
+
+RewriteEngine On
+RewriteBase /
+
+# 301 redirects: old dart.agency blog article URLs -> new dart.agency blog URLs
+# Rewritten via mod_rewrite (RewriteRule), path-only, same host (new.dart.agency).
+# Generated from https://dart.agency/sitemap.xml -> https://new.dart.agency/sitemap.xml
+# Old slugs come from the legacy MODX Generation CMS and may contain ! , ( ) etc.
+
+RewriteRule ^blog/dizajn/10-prichin-zakazat-adaptivnuyu-verstku-sajta\.html$ /blog/dizajn/96-10-prichin-zakazat-adaptivnuyu-verstku-sajta.html [R=301,L]
+RewriteRule ^blog/dizajn/redizajn-ili-modifikacziya-sajta\.html$ /blog/dizajn/97-redizajn-ili-modifikacziya-sajta.html [R=301,L]
+RewriteRule ^blog/integraczii/otpravka-soobshheniya-v-telegram-v-modx-revo\.html$ /blog/integraczii/106-otpravka-soobshheniya-v-telegram-v-modx-revo.html [R=301,L]
+RewriteRule ^blog/integraczii/podpiska-polzovatelya-v-mailchimp-php-api-hook-dlya-formit-modx\.html$ /blog/integraczii/105-podpiska-polzovatelya-v-mailchimp-php-api-hook-dlya-formit-modx.html [R=301,L]
+RewriteRule ^blog/kejsyi/korporativnyij-portal\.html$ /blog/kejsyi/104-korporativnyij-portal.html [R=301,L]
+RewriteRule ^blog/komponentyi/239-darttelegram-otpravka-zakazov,-form-i-soobshhenij-v-telegram\.html$ /blog/komponentyi/82-darttelegram-otpravka-zakazov-form-i-soobshhenij-v-telegram.html [R=301,L]
+RewriteRule ^blog/komponentyi/dartlocation\.html$ /blog/komponentyi/81-dartlocation.html [R=301,L]
+RewriteRule ^blog/kopirajting/chto-pisat-v-bloge-na-sajte-11-idej-kontenta\.html$ /blog/kopirajting/98-chto-pisat-v-bloge-na-sajte-11-idej-kontenta.html [R=301,L]
+RewriteRule ^blog/marketing/biznes-idei-2019-s-minimalnyimi-vlozheniyami-v-malenkom-gorode\.html$ /blog/marketing/113-biznes-idei-2019-s-minimalnyimi-vlozheniyami-v-malenkom-gorode.html [R=301,L]
+RewriteRule ^blog/marketing/kak-nachat-vesti-svoj-blog\.html$ /blog/marketing/116-kak-nachat-vesti-svoj-blog-instrukcziya.html [R=301,L]
+RewriteRule ^blog/marketing/kak-organizovat-internet-magazin\.html$ /blog/marketing/109-kak-organizovat-internet-magazin.html [R=301,L]
+RewriteRule ^blog/marketing/kak-otkryit-internet-magazin-s-nulya-instrukcziya\.html$ /blog/marketing/108-kak-otkryit-internet-magazin-s-nulya-instrukcziya.html [R=301,L]
+RewriteRule ^blog/marketing/kak-povyisit-konversiyu-sajta-5-sposobov\.html$ /blog/marketing/114-kak-povyisit-konversiyu-sajta.html [R=301,L]
+RewriteRule ^blog/marketing/kak-rabotaet-chat-bot-sxema\.html$ /blog/marketing/118-kak-rabotaet-chat-bot-sxema.html [R=301,L]
+RewriteRule ^blog/marketing/kak-uvelichit-obem-prodazh\.html$ /blog/marketing/112-kak-uvelichit-obem-prodazh.html [R=301,L]
+RewriteRule ^blog/marketing/kak-uvelichit-prodazhi-v-internet-magazine\.html$ /blog/marketing/110-kak-uvelichit-prodazhi-v-internet-magazine.html [R=301,L]
+RewriteRule ^blog/marketing/kak-vyistavit-czeli-v-yandeks-metrike-–-za-5-shagov-bez-programmista-i-bez-java-script\.html$ /blog/marketing/115-kak-vyistavit-czeli-v-yandeks-metrike-za-5-shagov-bez-programmista-i-bez-java-script.html [R=301,L]
+RewriteRule ^blog/marketing/kak-zarabatyivat-na-bloge-3-prostyix-sposoba\.html$ /blog/marketing/117-kak-zarabatyivat-na-bloge-3-prostyix-sposoba.html [R=301,L]
+RewriteRule ^blog/marketing/marketing-kit-chto-eto-takoe-prostyimi-slovami\.html$ /blog/marketing/111-marketing-kit-chto-eto-takoe-prostyimi-slovami.html [R=301,L]
+RewriteRule ^blog/modx/19-komponentov-dlya-adminki-modx-revo-kotoryie-uprostyat-zhizn\.html$ /blog/modx/71-19-komponentov-dlya-adminki-modx-revo-kotoryie-uprostyat-zhizn.html [R=301,L]
+RewriteRule ^blog/modx/kak-dobavit-dopolnitelnoe-pole-k-zakazu-v-minishop2\.html$ /blog/modx/73-kak-dobavit-dopolnitelnoe-pole-k-zakazu-v-minishop2.html [R=301,L]
+RewriteRule ^blog/modx/kak-postavit-ikonku-na-shablon-modx-revo\.html$ /blog/modx/69-kak-postavit-ikonku-na-shablon-modx-revo.html [R=301,L]
+RewriteRule ^blog/modx/kak-vyivesti-kolichestvo-kommentariev-v-tickets\.html$ /blog/modx/70-kak-vyivesti-kolichestvo-kommentariev-v-tickets.html [R=301,L]
+RewriteRule ^blog/modx/modx-revo,-ispolzovanie-migx-v-proektax-na-primere-slajdera\.html$ /blog/modx/74-modx-revo-ispolzovanie-migx-v-proektax-na-primere-slajdera.html [R=301,L]
+RewriteRule ^blog/modx/modx-revo-contentblocks-dlya-bednyix-na-osnove-migx\.html$ /blog/modx/76-modx-revo-contentblocks-dlya-bednyix-na-osnove-migx.html [R=301,L]
+RewriteRule ^blog/modx/nastrojka-multiyazyichnosti-na-osnove-babel\.html$ /blog/modx/77-nastrojka-multiyazyichnosti-na-osnove-babel.html [R=301,L]
+RewriteRule ^blog/modx/otpravka-pisem-v-modx-revo-s-pomoshhyu-api\.html$ /blog/modx/72-otpravka-pisem-v-modx-revo-s-pomoshhyu-api.html [R=301,L]
+RewriteRule ^blog/modx/plagin-tovara-dlya-minishop2-modx-revo\.html$ /blog/modx/75-plagin-tovara-dlya-minishop2-modx-revo.html [R=301,L]
+RewriteRule ^blog/modx/registriruem-polzovatelya-posle-soversheniya-zakaza-minishop2\.html$ /blog/modx/79-registriruem-polzovatelya-posle-soversheniya-zakaza-minishop2.html [R=301,L]
+RewriteRule ^blog/modx/upravlenie-keshem-fajlov-stilej-i-skriptov\.html$ /blog/modx/78-upravlenie-keshem-fajlov-stilej-i-skriptov.html [R=301,L]
+RewriteRule ^blog/obuchenie/ajax-forma-podpiski-polzovatelya-s-pomoshhyu-sendex\.-chast-2\.html$ /blog/obuchenie/56-ajax-forma-podpiski-polzovatelya-s-pomoshhyu-sendex.-chast-2.html [R=301,L]
+RewriteRule ^blog/obuchenie/alternativnaya-konczovka\.-oformlyaem-zakaz-minishop2-cherez-api\.-chast-5\.html$ /blog/obuchenie/59-alternativnaya-konczovka.-oformlyaem-zakaz-minishop2-cherez-api.-chast-5.html [R=301,L]
+RewriteRule ^blog/obuchenie/avtorizacziya-na-sajte-s-pomoshhyu-hybridauth\.-chast-3\.html$ /blog/obuchenie/63-avtorizacziya-na-sajte-s-pomoshhyu-hybridauth.-chast-3.html [R=301,L]
+RewriteRule ^blog/obuchenie/blok-vyi-smotreli-v-modx-revo\.html$ /blog/obuchenie/30-blok-vyi-smotreli-v-modx-revo.html [R=301,L]
+RewriteRule ^blog/obuchenie/chast-2\.-razbor-strukturyi-i-generacziya-sxemyi-bd\.html$ /blog/obuchenie/66-chast-2.-razbor-strukturyi-i-generacziya-sxemyi-bd.html [R=301,L]
+RewriteRule ^blog/obuchenie/chast-3-pishem-proczessoryi-i-podgotavlivaem-paket-dlya-rabotyi\.html$ /blog/obuchenie/67-chast-3.-pishem-proczessoryi-i-podgotavlivaem-paket-dlya-rabotyi.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-1\.-bazovaya-nastrojka-sajta\.html$ /blog/obuchenie/36-fenomenalnyij-kurs-chast-1-bazovaya-nastrojka-sajta.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-10\.-realizuem-funkcziyu-kupit-v-1-klik\.html$ /blog/obuchenie/45-fenomenalnyij-kurs.-chast-10.-realizuem-funkcziyu-kupit-v-1-klik.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-11\.-glavnaya-stranicza-xityi-prodazh,-kategorii-kataloga,-slajder-i-preimushhestva\.html$ /blog/obuchenie/46-fenomenalnyij-kurs.-chast-11.-glavnaya-stranicza-xityi-prodazh-kategorii-kataloga-slajder-i-preimushhestva.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-12\.-novosti-na-fenom\.html$ /blog/obuchenie/47-fenomenalnyij-kurs.-chast-12.-novosti-na-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-13\.-formyi-obratnoj-svyazi-zakazat-zvonok-na-fenom\.html$ /blog/obuchenie/48-fenomenalnyij-kurs.-chast-13.-formyi-obratnoj-svyazi-zakazat-zvonok-na-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-14\.-poisk-po-sajtu-na-msearch2-na-fenom\.html$ /blog/obuchenie/49-fenomenalnyij-kurs.-chast-14.-poisk-po-sajtu-na-msearch2-na-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-15\.-kabinet-pokupatelya-na-fenom\.html$ /blog/obuchenie/50-fenomenalnyij-kurs.-chast-15.-kabinet-pokupatelya-na-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-16\.-seo-filtryi,-c-pomoshhyu-seofilter-na-fenom\.html$ /blog/obuchenie/51-fenomenalnyij-kurs.-chast-16.-seo-filtryi-c-pomoshhyu-seofilter-na-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-17\.-sozdaem-konfiguracziyu-sajta-s-pomoshhyu-clientconfig\.html$ /blog/obuchenie/52-fenomenalnyij-kurs.-chast-17.-sozdaem-konfiguracziyu-sajta-s-pomoshhyu-clientconfig.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-18\.-robots,-sitemap,-canonical\.html$ /blog/obuchenie/53-fenomenalnyij-kurs.-chast-18.-robots-sitemap-canonical.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-2\.-shablonyi-i-chanki\.html$ /blog/obuchenie/37-fenomenalnyij-kurs.-chast-2.-shablonyi-i-chanki.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-3\.-xlebnyie-kroshki-i-menyu-na-fenom\.html$ /blog/obuchenie/38-fenomenalnyij-kurs.-chast-3.-xlebnyie-kroshki-i-menyu-na-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-4\.-vyivodim-tovaryi-v-kategorii-s-pomoshhyu-msearch2\.html$ /blog/obuchenie/39-fenomenalnyij-kurs.-chast-4.-vyivodim-tovaryi-v-kategorii-s-pomoshhyu-msearch2.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-5\.-minikorzina-i-korzina-tovarov-s-pomoshhyu-fenom\.html$ /blog/obuchenie/40-fenomenalnyij-kurs.-chast-5.-minikorzina-i-korzina-tovarov-s-pomoshhyu-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-6\.-kartochka-tovara-s-pomoshhyu-fenom\.html$ /blog/obuchenie/41-fenomenalnyij-kurs.-chast-6.-kartochka-tovara-s-pomoshhyu-fenom.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-7\.-vyivodim-sgruppirovannyie-xarakteristiki-tovara-i-realizuem-otzyivyi-o-tovare\.html$ /blog/obuchenie/42-fenomenalnyij-kurs.-chast-7.-vyivodim-sgruppirovannyie-xarakteristiki-tovara-i-realizuem-otzyivyi-o-tovare.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-8\.-vyivodim-czveta-i-razmeryi-tovara,-dobavlyaem-ix-v-korzinu\.html$ /blog/obuchenie/43-fenomenalnyij-kurs.-chast-8.-vyivodim-czveta-i-razmeryi-tovara-dobavlyaem-ix-v-korzinu.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.-chast-9\.-sravnenie-tovara-s-sgruppirovannyimi-opcziyami\.html$ /blog/obuchenie/44-fenomenalnyij-kurs.-chast-9.-sravnenie-tovara-s-sgruppirovannyimi-opcziyami.html [R=301,L]
+RewriteRule ^blog/obuchenie/fenomenalnyij-kurs\.html$ /blog/obuchenie/35-fenomenalnyij-kurs.-vvodnaya-statya.html [R=301,L]
+RewriteRule ^blog/obuchenie/formyi-obratnoj-svyazi-na-ajaxform-formit\.-chast-4\.html$ /blog/obuchenie/58-formyi-obratnoj-svyazi-na-ajaxform-formit.-chast-4.html [R=301,L]
+RewriteRule ^blog/obuchenie/internet-magazin-na-modx-revolution\.html$ /blog/obuchenie/13-internet-magazin-na-modx-revolution.html [R=301,L]
+RewriteRule ^blog/obuchenie/izuchaem-css-za-chas!\.html$ /blog/obuchenie/34-izuchaem-css-za-chas.html [R=301,L]
+RewriteRule ^blog/obuchenie/kommentarii-v-modx-revo-s-pomoshhyu-tickets\.html$ /blog/obuchenie/21-kommentarii-v-modx-revo-s-pomoshhyu-tickets.html [R=301,L]
+RewriteRule ^blog/obuchenie/lending-na-modx-revo\.-vvodnaya-chast\.html$ /blog/obuchenie/54-lending-na-modx-revo.-vvodnaya-chast.html [R=301,L]
+RewriteRule ^blog/obuchenie/nastraivaem-kartochku-tovara-minishop2\.html$ /blog/obuchenie/23-nastraivaem-kartochku-tovara-minishop2.html [R=301,L]
+RewriteRule ^blog/obuchenie/nastrojka-chpu-na-modx-revo\.html$ /blog/obuchenie/16-nastrojka-chpu-na-modx-revo.html [R=301,L]
+RewriteRule ^blog/obuchenie/nastrojka-filtrov-s-pomoshhyu-msearch2\.html$ /blog/obuchenie/27-nastrojka-filtrov-s-pomoshhyu-msearch2.html [R=301,L]
+RewriteRule ^blog/obuchenie/oformlenie-zakaza-v-minishop2\.html$ /blog/obuchenie/28-oformlenie-zakaza-v-minishop2.html [R=301,L]
+RewriteRule ^blog/obuchenie/onlajn-servis-na-modx-revo\.-vvodnaya-chast\.html$ /blog/obuchenie/60-onlajn-servis-na-modx-revo.-vvodnaya-chast.html [R=301,L]
+RewriteRule ^blog/obuchenie/otzyivyi-o-tovare\.html$ /blog/obuchenie/29-otzyivyi-o-tovare-v-modx-revo.html [R=301,L]
+RewriteRule ^blog/obuchenie/pervonachalnaya-nastrojka-sajta-na-modx-revo\.-chast-2\.html$ /blog/obuchenie/62-pervonachalnaya-nastrojka-sajta-na-modx-revo.-chast-2.html [R=301,L]
+RewriteRule ^blog/obuchenie/pishem-komponent-dlya-modx-revo\.html$ /blog/obuchenie/65-pishem-komponent-dlya-modx-revo.-vvodnaya-statya.html [R=301,L]
+RewriteRule ^blog/obuchenie/pishem-komponent-dlya-modx-revo-chast-1\.html$ /blog/obuchenie/64-pishem-komponent-dlya-modx-revo.-chast-1.-vvedenie-i-nastrojka-rabochego-mesta.html [R=301,L]
+RewriteRule ^blog/obuchenie/poisk-po-blogu-s-pomoshhyu-simplesearch\.html$ /blog/obuchenie/20-poisk-po-blogu-s-pomoshhyu-simplesearch.html [R=301,L]
+RewriteRule ^blog/obuchenie/princzipyi-shablonizaczii\.-integriruem-shablonyi\.html$ /blog/obuchenie/17-princzipyi-shablonizaczii-integriruem-shablonyi.html [R=301,L]
+RewriteRule ^blog/obuchenie/rabota-s-migx-v-modx-revo\.-chast-3\.html$ /blog/obuchenie/57-rabota-s-migx-v-modx-revo.-chast-3.html [R=301,L]
+RewriteRule ^blog/obuchenie/razmeshhaem-verstku-na-servere-i-sozdaem-shablonyi\.-chast-1\.html$ /blog/obuchenie/55-razmeshhaem-verstku-na-servere-i-sozdaem-shablonyi.-chast-1.html [R=301,L]
+RewriteRule ^blog/obuchenie/realizacziya-tegov-v-modx-revo-taglister\.html$ /blog/obuchenie/24-realizacziya-tegov-v-modx-revo-taglister.html [R=301,L]
+RewriteRule ^blog/obuchenie/realizuem-korzinu-v-minishop2\.html$ /blog/obuchenie/25-realizuem-korzinu-v-minishop2.html [R=301,L]
+RewriteRule ^blog/obuchenie/sozdanie-kategorij-tovarov,-nastrojka-minishop2\.html$ /blog/obuchenie/22-sozdanie-kategorij-tovarov-nastrojka-minishop2.html [R=301,L]
+RewriteRule ^blog/obuchenie/sravnenie-tovarov-v-minishop2\.html$ /blog/obuchenie/31-sravnenie-tovarov-v-minishop2.html [R=301,L]
+RewriteRule ^blog/obuchenie/ustanovka-dopolnenij-na-modx-revo\.html$ /blog/obuchenie/15-ustanovka-dopolnenij-na-modx-revo.html [R=301,L]
+RewriteRule ^blog/obuchenie/ustanovka-modx-revo-na-server\.-chast-1\.html$ /blog/obuchenie/61-ustanovka-modx-revo-na-server.-chast-1.html [R=301,L]
+RewriteRule ^blog/obuchenie/ustanovka-modx-revo-na-xosting\.html$ /blog/obuchenie/14-ustanovka-modx-revo-na-xosting.html [R=301,L]
+RewriteRule ^blog/obuchenie/vyivodim-menyu-na-sajte\.html$ /blog/obuchenie/32-vyivodim-menyu-na-sajte-modx-revo.html [R=301,L]
+RewriteRule ^blog/obuchenie/vyivod-statej-\(resursov\)-v-modx-revo\.html$ /blog/obuchenie/18-vyivod-statej-resursov-v-modx-revo.html [R=301,L]
+RewriteRule ^blog/obuchenie/vyivod-tovarov-v-kategorii-minishop2\.html$ /blog/obuchenie/26-vyivod-tovarov-v-kategorii-minishop2.html [R=301,L]
+RewriteRule ^blog/obuchenie/znakomimsya-s-html-za-odin-chas\.html$ /blog/obuchenie/33-znakomimsya-s-html-za-odin-chas.html [R=301,L]
+RewriteRule ^blog/optimizacziya/optimizacziya-izobrazhenij-sajta-s-pomoshhyu-servisa-optipic\.html$ /blog/optimizacziya/100-optimizacziya-izobrazhenij-sajta-s-pomoshhyu-servisa-optipic.html [R=301,L]
+RewriteRule ^blog/optimizacziya/soczialnyie-meta-tegi\.html$ /blog/optimizacziya/99-soczialnyie-meta-tegi.html [R=301,L]
+RewriteRule ^blog/prodvizhenie-sajtov/10-sovetov-po-vnutrennej-optimizaczii-sajta\.html$ /blog/prodvizhenie-sajtov/103-10-sovetov-po-vnutrennej-optimizaczii-sajta.html [R=301,L]
+RewriteRule ^blog/prodvizhenie-sajtov/kak-podnyat-poseshhaemost-sajta\.html$ /blog/prodvizhenie-sajtov/101-kak-podnyat-poseshhaemost-sajta.html [R=301,L]
+RewriteRule ^blog/prodvizhenie-sajtov/zakazat-mikrorazmetku-na-sajte-zachem-ona-nuzhna\.html$ /blog/prodvizhenie-sajtov/102-zakazat-mikrorazmetku-na-sajte-zachem-ona-nuzhna.html [R=301,L]
+RewriteRule ^blog/proektyi/240-podxodyi-pri-razrabotke-startapa\.html$ /blog/proektyi/119-podxodyi-pri-razrabotke-startapa.html [R=301,L]
+RewriteRule ^blog/servera/kopirovanie-fajlov-s-odnogo-servera-na-drugoj-pri-pomoshhi-ssh\.html$ /blog/servera/107-kopirovanie-fajlov-s-odnogo-servera-na-drugoj-pri-pomoshhi-ssh.html [R=301,L]
+
+
+# 301 redirects: old dart.agency URLs that have no 1:1 equivalent on the new site.
+# Every target below was verified to return HTTP 200 on new.dart.agency.
+# Old paths that still resolve identically on the new site (blog categories,
+# /kursyi/, /kontaktyi.html, /portfolio/, /politika-konfidenczialnosti.html)
+# are intentionally NOT redirected here.
+
+# services: trailing-slash and renamed pages -> *.html
+RewriteRule ^uslugi/razrabotka-sajtov/?$ /uslugi/razrabotka-sajtov.html [R=301,L]
+RewriteRule ^uslugi/razrabotka-sajtov/dizajn-sajtov\.html$ /uslugi/razrabotka-sajtov.html [R=301,L]
+RewriteRule ^uslugi/texnicheskaya-podderzhka/?$ /uslugi/texnicheskaya-podderzhka.html [R=301,L]
+RewriteRule ^uslugi/texnicheskaya-podderzhka/texpodderzhka-sajtov-na-modx-revo-evo\.html$ /uslugi/texnicheskaya-podderzhka.html [R=301,L]
+RewriteRule ^uslugi/konsultacziya-v-skype\.html$ /uslugi/konsultacziya.html [R=301,L]
+RewriteRule ^uslugi/prodvizhenie-sajtov/?$ /uslugi/ [R=301,L]
+
+# company: /kompaniya/* -> /o-kompanii.html
+RewriteRule ^kompaniya/?$ /o-kompanii.html [R=301,L]
+RewriteRule ^kompaniya/o-nas\.html$ /o-kompanii.html [R=301,L]
+RewriteRule ^kompaniya/vakansii\.html$ /o-kompanii.html [R=301,L]
+RewriteRule ^kompaniya/vakansiya-veb-razrabotchika-modx\.html$ /o-kompanii.html [R=301,L]
+
+# client area: removed from the new site
+RewriteRule ^lichnyij-kabinet/?$ /kontaktyi.html [R=301,L]
+RewriteRule ^lichnyij-kabinet/(downloads|istoriya-zakazov|izbrannoe|profil)\.html$ /kontaktyi.html [R=301,L]
+
+# blog article that was not migrated
+RewriteRule ^blog/kejsyi/audit-sajta-agentstva-nedvizhimosti\.html$ /blog/kejsyi/ [R=301,L]
+
+# ready-made templates shop: section removed
+# component pages have exact equivalents in the components blog category
+RewriteRule ^templates/komponentyi-modx/dartlocation\.html$ /blog/komponentyi/81-dartlocation.html [R=301,L]
+RewriteRule ^templates/komponentyi-modx/?$ /blog/komponentyi/ [R=301,L]
+RewriteRule ^templates/(html|modx-revolution)/?$ /uslugi/razrabotka-sajtov.html [R=301,L]
+RewriteRule ^templates/(?!komponentyi-modx/).+\.html$ /uslugi/razrabotka-sajtov.html [R=301,L]
+RewriteRule ^templates/?$ /uslugi/razrabotka-sajtov.html [R=301,L]
+
+# portfolio cases that were not migrated (same client keeps its case page)
+RewriteRule ^portfolio/medresurs-perm\.html$ /portfolio/medresurs.html [R=301,L]
+RewriteRule ^portfolio/(aic|amkar|banditz|bighappy|bk|cruisegid|forum|gnss-oem7|mr|pstm|sajt-npo|sajt-parketgrand|sajt-registratora|sajt-rieltorskogo-agentstva|snegoxod\.ru|tele59)\.html$ /portfolio/ [R=301,L]
+
+# removed service/transactional pages
+RewriteRule ^poisk-po-sajtu\.html$ /blog/obuchenie/49-fenomenalnyij-kurs.-chast-14.-poisk-po-sajtu-na-msearch2-na-fenom.html [R=301,L]
+RewriteRule ^oformlenie-zakaza\.html$ /blog/obuchenie/28-oformlenie-zakaza-v-minishop2.html [R=301,L]
+RewriteRule ^sitemap\.html$ /blog/obuchenie/53-fenomenalnyij-kurs.-chast-18.-robots-sitemap-canonical.html [R=301,L]
+RewriteRule ^(onlajn-brif-na-razrabotku-sajta|demo|oplata-proshla-uspeshno|oshibka-pri-sovershenii-platezha)\.html$ /kontaktyi.html [R=301,L]
+RewriteRule ^faq\.html$ / [R=301,L]
+RewriteRule ^polzovatelskoe-soglashenie\.html$ /politika-konfidenczialnosti.html [R=301,L]
+
+
+# Prevent rewrite the .well-known directory used by LetsEncrypt by rules below of this rule
+RewriteRule "^\.well-known/" - [L]
+
+
+# Prevent dot directories (hidden directories like .git) to be exposed to the public
+# Except for the .well-known directory used by LetsEncrypt a.o
+RewriteRule "/\.|^\.(?!well-known/)" - [F]
+
+
+# Rewrite www.example.com -> example.com -- used with SEO Strict URLs plugin
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+#
+# or for the opposite example.com -> www.example.com use the following
+# DO NOT USE BOTH
+#
+#RewriteCond %{HTTP_HOST} !^$
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteCond %{HTTP_HOST} (.+)$
+#RewriteRule ^(.*)$ https://www.%1/$1 [R=301,L] .
+
+
+# Force rewrite to https for every host
+#RewriteCond %{HTTPS} !=on [OR]
+#RewriteCond %{SERVER_PORT} !^443
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# Redirect the manager to a specific domain - don't rename the ht.access file
+# in the manager folder to use this this rule
+#RewriteCond %{HTTP_HOST} !^example\.com$ [NC]
+#RewriteCond %{REQUEST_URI} ^/manager [NC]
+#RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+
+
+# The Friendly URLs part
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+
+# For servers that support output compression, you should pick up a bit of
+# speed by un-commenting the following lines.
+
+#php_flag zlib.output_compression On
+#php_value zlib.output_compression_level 5
+

@@ -4,17 +4,35 @@
   <div class="dart-modal" id="dartModal" data-modal-box>
     <div class="dart-modal__overlay" data-modal-close></div>
     <div class="dart-modal__content">
-      <button class="dart-modal__close" data-modal-close>&times;</button>
-      <h3 class="dart-modal__title" data-modal-title>Заказать звонок</h3>
+      <button class="dart-modal__close" data-modal-close="">×</button>
+      <h3 class="dart-modal__title" data-modal-title="" data-original-title="Заказать звонок">Заказать звонок</h3>
       <p class="dart-modal__desc">Оставьте контакты — мы перезвоним в течение 30 минут</p>
-      <form class="dart-modal__form" data-form>
-        <input type="text" name="name" placeholder="Как к вам обращаться?" required>
-        <input type="tel" name="phone" placeholder="Ваш телефон" required>
-        <textarea name="message" placeholder="Когда с вами связаться и по какому поводу?" rows="3"></textarea>
-        <button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Отправить</button>
-        <p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
-      </form>
-    </div>
+      <form method="post" class="dart-modal__form ajax_form">
+	<input type="hidden" name="page" value="Главная">
+    <input type="hidden" name="pageid" value="1">
+    <input type="hidden" name="formname" value="Заказ звонка">
+	<div class="message">
+		<div class="message__item message__item--success" data-message="success">
+			<span class="message__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+			<b class="message__title">Заявка отправлена</b>
+			<p class="message__text">Спасибо! Мы уже получили вашу заявку. Менеджер перезвонит в течение 30 минут в рабочее время.</p>
+		</div>
+		<div class="message__item message__item--error" data-message="error">
+			<span class="message__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5"/><path d="M12 16h.01"/></svg></span>
+			<b class="message__title">Не удалось отправить заявку</b>
+			<p class="message__text">Проверьте правильность заполнения полей и попробуйте ещё раз. Если ошибка повторяется — позвоните нам по телефону <a class="message__link" href="tel:+79991158355">+7 (999) 115-83-55</a>.</p>
+		</div>
+	</div>
+	<div class="fields">
+		<input type="text" name="name" placeholder="Как к вам обращаться?" required="">
+		<input type="tel" name="phone" placeholder="Ваш телефон" required="">
+		<textarea name="message" placeholder="Когда с вами связаться и по какому поводу?" rows="3" data-original-value=""></textarea>
+		<button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Отправить</button>
+		<p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
+	</div>
+
+	<input type="hidden" name="af_action" value="5720f8d874dff136fcd0c6f1a01314b9">
+<input type="text" name="org" value="" class="_org" style="visibility:hidden; height: 0; width: 0; padding: 0; border:none;"></form>    </div>
   </div>
 
   <!-- Заказать звонок -->
