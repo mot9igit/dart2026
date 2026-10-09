@@ -27,8 +27,11 @@
 		<input type="text" name="name" placeholder="Как к вам обращаться?" required="">
 		<input type="tel" name="phone" placeholder="Ваш телефон" required="">
 		<textarea name="message" placeholder="Когда с вами связаться и по какому поводу?" rows="3" data-original-value=""></textarea>
+		<label class="dart-modal__agree">
+			<input type="checkbox" name="agree" value="1" required>
+			<span>Я даю согласие на обработку персональных данных в соответствии с <a href="/politika-konfidenczialnosti.html" target="_blank" rel="noopener">политикой конфиденциальности</a></span>
+		</label>
 		<button type="submit" class="dart-btn dart-btn-primary dart-btn-rounded">Отправить</button>
-		<p class="dart-modal__hint">Нажимая кнопку, вы даёте согласие на обработку персональных данных</p>
 	</div>
 
 	<input type="hidden" name="af_action" value="5720f8d874dff136fcd0c6f1a01314b9">

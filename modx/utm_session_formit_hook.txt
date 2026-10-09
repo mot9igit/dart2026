@@ -1,0 +1,43 @@
+<?php
+/**
+ * FormIt hook: utmSession — MODX сниппет
+ * ---------------------------------------------------------------
+ * Подключается в списке хуков FormIt / AjaxForm ПЕРЕД хуком email:
+ *     &hooks=`utmSession,email,redirect`
+ *
+ * Читает UTM-данные из сессии (сохранённые плагином «UTM Capture») и
+ * добавляет их к полям формы. Благодаря этому метки доступны:
+ *   - в шаблоне письма как [[+utm_source]], [[+landing]] и т.д.;
+ *   - в хуке FormItSaveForm / кастомном хуке для записи в БД / CRM.
+ *
+ * Параметры:
+ *   sessionKey (string) — ключ сессии    — по умолчанию: dart_utm
+ *   prefix     (string) — префикс полей  — по умолчанию: '' (пусто)
+ *
+ * Пример в шаблоне письма (emailTpl):
+ *   Источник:        [[+utm_source]]
+ *   Канал:           [[+utm_medium]]
+ *   Кампания:        [[+utm_campaign]]
+ *   Контент:         [[+utm_content]]
+ *   Ключ:            [[+utm_term]]
+ *   Страница входа:  [[+landing]]
+ *   Реферер:         [[+referrer]]
+ *   Дата захвата:    [[+captured_at]]
+ */
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    return true;
+}
+
+$sessionKey = trim((string) $modx->getOption('sessionKey', $scriptProperties, 'dart_utm'));
+$prefix     = (string) $modx->getOption('prefix', $scriptProperties, '');
+
+if (empty($_SESSION[$sessionKey]) || !is_array($_SESSION[$sessionKey])) {
+    return true;
+}
+
+foreach ($_SESSION[$sessionKey] as $key => $value) {
+    $hook->setValue($prefix . $key, $value);
+}
+
+return true;

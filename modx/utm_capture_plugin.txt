@@ -1,0 +1,83 @@
+<?php
+/**
+ * UTM Capture — плагин MODX
+ * ---------------------------------------------------------------
+ * Событие:    OnWebPageInit
+ * Назначение: ловить UTM-метки и рекламные идентификаторы из URL при заходе
+ *             на сайт и сохранять их в сессии. Далее FormIt-хук `utmSession`
+ *             забирает их из сессии и прокидывает в отправляемую форму
+ *             (письмо / сохранение в БД / CRM / Telegram).
+ *
+ * Параметры (задаются в свойствах плагина на вкладке события):
+ *   sessionKey  (string) — ключ сессии            — по умолчанию: dart_utm
+ *   firstTouch  (bool)   — режим первого касания  — по умолчанию: 1
+ *                          (1 — не перезаписывать уже сохранённые метки,
+ *                           0 — обновлять значения, режим last-touch)
+ *   extraKeys   (string) — доп. GET-параметры через запятую
+ *                          (напр. "fbclid,roistat")
+ *
+ * Логика:
+ *   1. При первом заходе в сессию пишутся landing (URL входа) и referrer.
+ *   2. Если в URL есть UTM/рекламные параметры — они добавляются в сессию.
+ *   3. При firstTouch=1 уже сохранённые метки не перезаписываются.
+ */
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    return;
+}
+
+$sessionKey = trim((string) $modx->getOption('sessionKey', $scriptProperties, 'dart_utm'));
+$firstTouch = (bool) $modx->getOption('firstTouch', $scriptProperties, true);
+$extraKeys  = (string) $modx->getOption('extraKeys', $scriptProperties, '');
+
+$keys = array('utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'yclid');
+if ($extraKeys !== '') {
+    foreach (explode(',', $extraKeys) as $k) {
+        $k = trim($k);
+        if ($k !== '') {
+            $keys[] = $k;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------
+ * 1. Инициализация сессии: точка входа и referrer при первом заходе
+ * ---------------------------------------------------------------------- */
+if (empty($_SESSION[$sessionKey]) || !is_array($_SESSION[$sessionKey])) {
+    $_SESSION[$sessionKey] = array(
+        'landing'     => isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/',
+        'referrer'    => isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '',
+        'captured_at' => date('Y-m-d H:i:s'),
+    );
+}
+
+/* -------------------------------------------------------------------------
+ * 2. Сбор меток из GET
+ * ---------------------------------------------------------------------- */
+$incoming = array();
+foreach ($keys as $key) {
+    if (isset($_GET[$key]) && trim((string) $_GET[$key]) !== '') {
+        $incoming[$key] = trim((string) $_GET[$key]);
+    }
+}
+
+if (empty($incoming)) {
+    return;
+}
+
+/* -------------------------------------------------------------------------
+ * 3. Запись в сессию (first-touch / last-touch)
+ * ---------------------------------------------------------------------- */
+$hasUtm = false;
+foreach ($keys as $key) {
+    if (!empty($_SESSION[$sessionKey][$key])) {
+        $hasUtm = true;
+        break;
+    }
+}
+
+if (!$firstTouch || !$hasUtm) {
+    foreach ($incoming as $key => $value) {
+        $_SESSION[$sessionKey][$key] = $value;
+    }
+}

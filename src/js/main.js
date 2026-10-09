@@ -875,9 +875,10 @@ if (mapContainer && !window.ymaps3) {
   mapScript.async = true;
   mapScript.onload = () => {
     ymaps3.ready.then(() => {
-      const { Map, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+      const { Map, YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+      const MapCls = YMap || Map;
 
-      const map = new Map(mapContainer, {
+      const map = new MapCls(mapContainer, {
         location: { center: mapCoord, zoom: 16 },
         mode: "raster",
       });
