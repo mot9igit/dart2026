@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="api.html" itemprop="item"><span itemprop="name">API</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Разработка API<br><span>и внешние интеграции</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Создаём API для вашего сайта и подключаем внешние сервисы: оплату, доставку,
+                CRM, 1С, аналитику и мессенджеры. Проектируем надёжно — с документацией,
+                авторизацией и обработкой ошибок.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> REST и GraphQL для ваших сервисов</li>
+                <li><span>✓</span> Подключение к готовым API по документации</li>
+                <li><span>✓</span> Документация, тесты и поддержка</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Обсудить API</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="80" data-suffix="+">80+</b></span>
+                  <span class="sv-hero__stat-label">интеграций реализовано</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="99" data-suffix=",9%">99,9%</b></span>
+                  <span class="sv-hero__stat-label">стабильность обмена</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="3" data-suffix="–10 дн">3–10 дн</b></span>
+                  <span class="sv-hero__stat-label">типовые сроки</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Оценка задачи</h3>
+                <p class="sv-estimate__desc">Опишите API или сервис — оценим объём работ</p>
+
+                <label class="sv-estimate__label">Что нужно</label>
+                <select class="sv-estimate__select" name="type">
+                  <option>Разработать API</option>
+                  <option>Подключить внешний сервис</option>
+                  <option>Доработать существующую интеграцию</option>
+                  <option>Нужна консультация</option>
+                </select>
+                <input class="sv-estimate__input" type="text" name="service" placeholder="Какой сервис или система">
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить оценку →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что входит</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить API</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Разработка и интеграция API</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Цена зависит от количества методов, источников данных и логики.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Точечная задача</span>
+                <h3 class="sv-price__name">Интеграция</h3>
+                <div class="sv-price__amount"><b>от 10 000 ₽</b></div>
+                <p class="sv-price__time">Подключение одного сервиса к сайту</p>
+                <ul class="sv-price__list">
+                  <li>Анализ документации сервиса</li>
+                  <li>Авторизация и ключи</li>
+                  <li>Обмен данными в одну сторону</li>
+                  <li>Обработка ошибок</li>
+                  <li>Логи и уведомления</li>
+                  <li>Тестирование</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Чаще всего</span>
+                <h3 class="sv-price__name">API</h3>
+                <div class="sv-price__amount"><b>от 30 000 ₽</b></div>
+                <p class="sv-price__time">Разработка REST API под ваши задачи</p>
+                <ul class="sv-price__list">
+                  <li>Проектирование методов</li>
+                  <li>Авторизация (токены, OAuth)</li>
+                  <li>Валидация и обработка ошибок</li>
+                  <li>Документация (OpenAPI)</li>
+                  <li>Тесты и песочница</li>
+                  <li>Внедрение и поддержка</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Комплекс</span>
+                <h3 class="sv-price__name">Под ключ</h3>
+                <div class="sv-price__amount"><b>от 60 000 ₽</b></div>
+                <p class="sv-price__time">Несколько сервисов и сложная логика</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «API»</li>
+                  <li>Несколько источников данных</li>
+                  <li>Обмен в обе стороны</li>
+                  <li>Вебхуки и очереди</li>
+                  <li>Мониторинг и алерты</li>
+                  <li>Поддержка после запуска</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Точную стоимость определим после изучения документации сервиса и ваших требований.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Разработка API и подключение сервисов</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Работаем в обе стороны: создаём API для вас и подключаемся к чужим.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Разрабатываем API</h3>
+                <ul class="sv-scope__list">
+                  <li>REST и GraphQL методы</li>
+                  <li>Авторизация и права доступа</li>
+                  <li>Валидация и обработка ошибок</li>
+                  <li>Интеграция с базой данных</li>
+                  <li>Вебхуки и события</li>
+                  <li>Документация и примеры</li>
+                  <li>Тесты и песочница</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Подключаем сервисы</h3>
+                <ul class="sv-scope__list">
+                  <li>Платёжные системы и эквайринг</li>
+                  <li>Доставка и логистика</li>
+                  <li><a href="/uslugi/podderzhka/crm.html">CRM и воронки продаж</a></li>
+                  <li><a href="/uslugi/podderzhka/1c.html">1С и товарный учёт</a></li>
+                  <li>SMS, почта, мессенджеры</li>
+                  <li>Карты, аналитика, маркетплейсы</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как проходит разработка</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>От требований и прототипа — до документации и запуска.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Требования</h4>
+              <p>Разбираем задачу и документацию.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Проектирование</h4>
+              <p>Описываем методы и схему данных.</p>
+              <b class="sv-process__time">1–3 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Разработка</h4>
+              <p>Пишем код и подключаем сервисы.</p>
+              <b class="sv-process__time">3–10 дней</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Тесты</h4>
+              <p>Проверяем сценарии и ошибки.</p>
+              <b class="sv-process__time">1–3 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Запуск</h4>
+              <p>Передаём документацию и примеры.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Чем отличается разработка API от интеграции?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>При разработке мы создаём интерфейс, через который другие системы обращаются к вашему сайту. При интеграции — наоборот, ваш сайт подключается к готовому API другого сервиса.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что если у сервиса нет документации?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Разбираемся по запросам и, если возможно, через поддержку сервиса. Сложность и сроки оценим отдельно — такое бывает реже и требует больше времени.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как обеспечивается безопасность?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Используем токены и OAuth, ограничиваем доступы, валидируем данные и логируем ошибки. Секретные ключи хранятся в защищённом виде и не попадают в клиентский код.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что будет при изменении API на стороне сервиса?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Настроим обработку ошибок и уведомления, чтобы изменения были заметны сразу. При поддержке оперативно обновляем интеграцию под новые версии API.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно ли разработать API для мобильного приложения?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, проектируем API под мобильные клиенты и сторонние сервисы — с учётом авторизации, лимитов и версионирования.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Свяжем системы</span>
+            <h2 class="n-cta__title">Разработаем API<br>или подключим сервис</h2>
+            <p class="n-cta__desc">Опишите задачу и сервисы — предложим решение, сроки и смету.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Обсудить задачу →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим интеграцию</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о задаче — предложим решение и посчитаем стоимость.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="Какие системы нужно связать, есть ли документация..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Обсудить API</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

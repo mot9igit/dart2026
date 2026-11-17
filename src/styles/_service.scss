@@ -266,6 +266,12 @@
     background-position: right 16px center;
   }
 
+  textarea#{&}__input {
+    cursor: text;
+    resize: vertical;
+    min-height: 96px;
+  }
+
   &__hint {
     font-size: 12px;
     text-align: center;
@@ -643,7 +649,8 @@
   }
 }
 
-.sv-pricing__note {
+.sv-pricing__note,
+.sv-pricing__note p{
   margin-top: 32px;
   font-size: 14px;
   color: var(--dart-gray);

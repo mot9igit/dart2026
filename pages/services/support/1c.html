@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="1c.html" itemprop="item"><span itemprop="name">1С</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Интеграция с 1С<br><span>каталог, цены, заказы</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Настроим обмен сайта с 1С: товары, остатки и цены обновляются автоматически,
+                а заказы и оплаты попадают в учётную систему. Без ручных выгрузок и двойной работы.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Автоматический обмен по расписанию</li>
+                <li><span>✓</span> Товары, остатки, цены, заказы</li>
+                <li><span>✓</span> Поддержка после запуска</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Обсудить интеграцию</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="100" data-suffix="+">100+</b></span>
+                  <span class="sv-hero__stat-label">интеграций с 1С</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="15" data-suffix=" мин">15 мин</b></span>
+                  <span class="sv-hero__stat-label">интервал обмена</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="0" data-suffix=" ошибок">0 ошибок</b></span>
+                  <span class="sv-hero__stat-label">ручных выгрузок</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Оценка интеграции</h3>
+                <p class="sv-estimate__desc">Посмотрим конфигурацию 1С и задачу обмена</p>
+
+                <input class="sv-estimate__input" type="text" name="url" placeholder="Ссылка на сайт" required>
+                <label class="sv-estimate__label">Что нужно синхронизировать</label>
+                <select class="sv-estimate__select" name="type">
+                  <option>Товары, цены и остатки</option>
+                  <option>Заказы из сайта в 1С</option>
+                  <option>Полный обмен в обе стороны</option>
+                  <option>Нужна консультация</option>
+                </select>
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить оценку →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что синхронизируем</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить интеграцию</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Интеграция сайта с 1С</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Цена зависит от версии 1С, CMS сайта и объёма обмена.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Каталог</span>
+                <h3 class="sv-price__name">Синхронизация</h3>
+                <div class="sv-price__amount"><b>от 15 000 ₽</b></div>
+                <p class="sv-price__time">Товары, цены и остатки</p>
+                <ul class="sv-price__list">
+                  <li>Выгрузка каталога из 1С</li>
+                  <li>Обновление цен и остатков</li>
+                  <li>Категории и свойства товаров</li>
+                  <li>Обмен по расписанию</li>
+                  <li>Логи и отчёт об ошибках</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Чаще всего</span>
+                <h3 class="sv-price__name">Магазин</h3>
+                <div class="sv-price__amount"><b>от 30 000 ₽</b></div>
+                <p class="sv-price__time">Каталог + заказы в 1С</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Синхронизация»</li>
+                  <li>Заказы с сайта в 1С</li>
+                  <li>Статусы заказов на сайт</li>
+                  <li>Остатки с учётом резервов</li>
+                  <li>Интеграция с оплатой и доставкой</li>
+                  <li>Тестирование обмена</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Комплекс</span>
+                <h3 class="sv-price__name">Под ключ</h3>
+                <div class="sv-price__amount"><b>от 50 000 ₽</b></div>
+                <p class="sv-price__time">Сложные конфигурации и обмен</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Магазин»</li>
+                  <li>Индивидуальные правила обмена</li>
+                  <li>Несколько складов и цен</li>
+                  <li>Интеграция с CRM</li>
+                  <li>Документы и оплаты</li>
+                  <li>Поддержка 1 месяц</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Работаем с 1С:Управление торговлей, 1С:Бухгалтерия, 1С:УНФ и другими конфигурациями.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что синхронизируем</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Настраиваем обмен так, чтобы данные на сайте и в 1С совпадали.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Из 1С на сайт</h3>
+                <ul class="sv-scope__list">
+                  <li>Товары и категории</li>
+                  <li>Цены и скидки</li>
+                  <li>Остатки и склады</li>
+                  <li>Фото и описания</li>
+                  <li>Свойства и характеристики</li>
+                  <li>Статусы заказов</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> С сайта в 1С</h3>
+                <ul class="sv-scope__list">
+                  <li>Заказы и состав заказа</li>
+                  <li>Данные покупателя</li>
+                  <li>Способ доставки и оплаты</li>
+                  <li>Статусы и комментарии</li>
+                  <li>Интеграция с <a href="/uslugi/podderzhka/crm.html">CRM и воронкой продаж</a></li>
+                  <li>Уведомления об ошибках обмена</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как проходит интеграция</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Сначала тестовый обмен, затем запуск по расписанию.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Анализ</h4>
+              <p>Изучаем 1С, сайт и данные.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>План обмена</h4>
+              <p>Определяем поля, правила и расписание.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Настройка</h4>
+              <p>Настраиваем обмен в 1С и на сайте.</p>
+              <b class="sv-process__time">3–7 дней</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Тестовый обмен</h4>
+              <p>Проверяем данные и исправляем расхождения.</p>
+              <b class="sv-process__time">1–3 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Запуск</h4>
+              <p>Включаем обмен по расписанию и следим.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">С какой версией 1С работаете?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>С УТ, УНФ, Бухгалтерией и другими конфигурациями. Точный список возможностей зависит от версии и наличия обмена — уточним на анализе.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как часто обновляются данные?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>По расписанию — обычно каждые 15–60 минут. Можно настроить обмен по событиям (при изменении товара или заказа).</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что будет, если обмен упадёт?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Настроим логи и уведомления об ошибках, чтобы проблему можно было быстро найти. При поддержке следим за обменом и исправляем сбои.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно ли обмениваться только заказами?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, если каталог уже ведётся на сайте. Обмен заказами в 1С — отдельный сценарий, его тоже настраиваем.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Нужен ли доступ к 1С?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Для настройки нужен доступ к базе 1С или помощь вашего 1С-специалиста. Работаем совместно, чтобы ничего не сломать в учёте.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Без ручных выгрузок</span>
+            <h2 class="n-cta__title">Свяжем сайт с 1С<br>и автоматизируем обмен</h2>
+            <p class="n-cta__desc">Расскажите о конфигурации и данных — предложим схему интеграции и смету.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Обсудить интеграцию →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим 1С</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о конфигурации 1С и сайте — предложим решение.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="Конфигурация 1С, CMS сайта, объём товаров..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Обсудить интеграцию</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="obnovlenie-sajtov.html" itemprop="item"><span itemprop="name">Обновление сайтов</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Обновление сайтов<br><span>без риска «уронить»</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Обновляем CMS, движок, плагины и темы, закрываем уязвимости и следим за совместимостью.
+                Делаем резервную копию перед каждым обновлением и проверяем сайт после.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Бэкап перед каждым обновлением</li>
+                <li><span>✓</span> Проверка работоспособности после</li>
+                <li><span>✓</span> План обновлений на месяц вперёд</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Заказать обновление</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="100" data-suffix="%">100%</b></span>
+                  <span class="sv-hero__stat-label">обновлений с бэкапом</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="24" data-suffix=" ч">24 ч</b></span>
+                  <span class="sv-hero__stat-label">реакция при сбое</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="30" data-suffix="+">30+</b></span>
+                  <span class="sv-hero__stat-label">CMS и движков на поддержке</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Проверка сайта</h3>
+                <p class="sv-estimate__desc">Посмотрим версии CMS и плагинов, оценим риски</p>
+
+                <input class="sv-estimate__input" type="text" name="url" placeholder="Ссылка на сайт" required>
+                <label class="sv-estimate__label">CMS / движок</label>
+                <select class="sv-estimate__select" name="cms">
+                  <option>Не знаю</option>
+                  <option>WordPress</option>
+                  <option>Bitrix</option>
+                  <option>Joomla</option>
+                  <option>OpenCart</option>
+                  <option>Другая</option>
+                </select>
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить отчёт →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что обновляем</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Проверить сайт</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Обновление и поддержка</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Разовое обновление или регулярная поддержка по графику — на выбор.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Разово</span>
+                <h3 class="sv-price__name">Обновление</h3>
+                <div class="sv-price__amount"><b>от 3 000 ₽</b></div>
+                <p class="sv-price__time">CMS, плагины, тема — с бэкапом</p>
+                <ul class="sv-price__list">
+                  <li>Резервная копия сайта и БД</li>
+                  <li>Обновление ядра CMS</li>
+                  <li>Обновление плагинов и темы</li>
+                  <li>Проверка форм и страниц</li>
+                  <li>Отчёт о результате</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Выбирают чаще</span>
+                <h3 class="sv-price__name">По графику</h3>
+                <div class="sv-price__amount"><b>от 6 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Регулярные обновления и контроль</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Обновление»</li>
+                  <li>Бэкапы по расписанию</li>
+                  <li>Контроль версий и уязвимостей</li>
+                  <li>Восстановление при сбое</li>
+                  <li>Мониторинг доступности</li>
+                  <li>Приоритетная реакция</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Комплекс</span>
+                <h3 class="sv-price__name">Поддержка</h3>
+                <div class="sv-price__amount"><b>от 12 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Обновления + доработки + мониторинг</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «По графику»</li>
+                  <li>Пакет часов на доработки</li>
+                  <li>Правки контента</li>
+                  <li>Оптимизация скорости</li>
+                  <li>Ежемесячный отчёт</li>
+                  <li>Персональный менеджер</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Итоговая стоимость зависит от CMS, числа плагинов и состояния сайта — <a href="/kontaktyi.html">уточните по брифу</a>.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что входит в обновление</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Обновляем аккуратно — с проверкой каждой версии и откатом при проблемах.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Входит</h3>
+                <ul class="sv-scope__list">
+                  <li>Резервная копия файлов и базы данных</li>
+                  <li>Обновление ядра CMS до актуальной версии</li>
+                  <li>Обновление плагинов, модулей и компонентов</li>
+                  <li>Обновление темы и шаблонов</li>
+                  <li>Проверка основных страниц и форм</li>
+                  <li>Тестирование на мобильных устройствах</li>
+                  <li>Проверка скорости и ошибок в консоли</li>
+                  <li>Отчёт о выполненных работах</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Дополнительно</h3>
+                <ul class="sv-scope__list">
+                  <li>Настройка автоматических бэкапов</li>
+                  <li>Устранение уязвимостей и вредоносного кода</li>
+                  <li>Перенос на новый хостинг</li>
+                  <li>Обновление SSL-сертификата</li>
+                  <li>Обновление контента и цен</li>
+                  <li>Оптимизация скорости после обновления</li>
+                  <li><a href="/uslugi/podderzhka/monitoring-sajtov.html">Постоянный мониторинг сайта</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как проходит обновление</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Каждое обновление — с точкой отката.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Аудит версий</h4>
+              <p>Смотрим CMS, плагины и уязвимости.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Бэкап</h4>
+              <p>Создаём полную резервную копию.</p>
+              <b class="sv-process__time">30–60 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Обновление</h4>
+              <p>Обновляем на копии и проверяем.</p>
+              <b class="sv-process__time">1–3 часа</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Тестирование</h4>
+              <p>Проверяем формы, страницы, мобилку.</p>
+              <b class="sv-process__time">1–2 часа</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Отчёт</h4>
+              <p>Присылаем список обновлений и результат.</p>
+              <b class="sv-process__time">в день сдачи</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что будет, если обновление сломает сайт?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Перед обновлением делаем полный бэкап — при любой проблеме откатываем сайт к рабочей версии за несколько минут.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как часто нужно обновлять сайт?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Плагины и CMS — раз в 1–2 месяца, критичные security-обновления — сразу после выхода. При регулярной поддержке следим за этим по графику.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Обновление может ухудшить позиции в поиске?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Само обновление не влияет на SEO, если не меняется структура и контент. Если обновление затрагивает ссылки или шаблоны — настраиваем редиректы и проверяем индексацию.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Работаете с самописными сайтами?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, если есть доступ к коду и документация. Оценим состояние и предложим план обновления — либо поддержку текущей версии.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Проверим сайт</span>
+            <h2 class="n-cta__title">Проверим версии<br>и оценим риски</h2>
+            <p class="n-cta__desc">Посмотрим CMS, плагины и настройки безопасности — пришлём список того, что стоит обновить.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить отчёт →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим обновление</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите, какая у вас CMS — предложим план обновления.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="CMS, что беспокоит, что нужно обновить..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Заказать обновление</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="targeting.html" itemprop="item"><span itemprop="name">Таргетинг в социальных сетях</span></a><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Таргетинг<br><span>в социальных сетях</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Таргетированная реклама во ВКонтакте и Telegram: от подбора аудитории и
+                подготовки креативов до оптимизации кампаний по стоимости заявки и работе
+                с ретаргетингом.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Работаем с VK Реклама и Telegram Ads</li>
+                <li><span>✓</span> Тексты, картинки и видео для креативов делаем сами</li>
+                <li><span>✓</span> Отчёт по цене заявки и качеству лидов — каждую неделю</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Рассчитать стоимость</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="150" data-suffix="+">150+</b></span>
+                  <span class="sv-hero__stat-label">проектов запущено</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="7" data-suffix=" дней">7 дней</b></span>
+                  <span class="sv-hero__stat-label">до запуска кампаний</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="24" data-suffix=" ч">24 ч</b></span>
+                  <span class="sv-hero__stat-label">срок подготовки КП</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="98" data-suffix="%">98%</b></span>
+                  <span class="sv-hero__stat-label">довольных клиентов</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Расчёт таргетинга</h3>
+                <p class="sv-estimate__desc">Ответьте на 2 вопроса — пришлём прогноз по бюджету и площадкам</p>
+
+                <label class="sv-estimate__label">Площадка</label>
+                <select class="sv-estimate__select" name="type" required>
+                  <option value="" disabled selected>Выберите площадку</option>
+                  <option>VK Реклама</option>
+                  <option>Telegram Ads</option>
+                  <option>VK Реклама и Telegram Ads</option>
+                  <option>Не знаю — подскажите</option>
+                </select>
+
+                <label class="sv-estimate__label">Задача</label>
+                <select class="sv-estimate__select" name="terms">
+                  <option>Привести заявки на сайт</option>
+                  <option>Продажи через сообщество</option>
+                  <option>Подписки и вовлечение</option>
+                  <option>Ретаргетинг на посетителей сайта</option>
+                </select>
+
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить расчёт →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут. Без спама.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что входит</a>
+            <a href="#process" class="sv-nav__link">Этапы</a>
+            <a href="#results" class="sv-nav__link">Результаты</a>
+            <a href="#benefits" class="sv-nav__link">Преимущества</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Заказать звонок</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker" data-reveal>Стоимость</span>
+              <h2 class="n-section__title" data-reveal>Тарифы таргетированной рекламы</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Стоимость ведения фиксируется в договоре. Рекламный бюджет вы оплачиваете отдельно — напрямую в рекламный кабинет.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Быстрый старт</span>
+                <h3 class="sv-price__name">Старт</h3>
+                <div class="sv-price__amount"><b>15 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">VK Реклама, 1–2 кампании</p>
+                <ul class="sv-price__list">
+                  <li>Анализ продукта и целевой аудитории</li>
+                  <li>Подбор сегментов и интересов</li>
+                  <li>Настройка пикселя и целей</li>
+                  <li>2–3 креатива: тексты и дизайн</li>
+                  <li>Запуск и настройка ставок</li>
+                  <li>Еженедельная оптимизация</li>
+                  <li>Отчёт по цене заявки</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Чаще всего выбирают</span>
+                <h3 class="sv-price__name">Профессиональный</h3>
+                <div class="sv-price__amount"><b>25 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">VK Реклама + Telegram Ads</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Старт»</li>
+                  <li>Подключение Telegram Ads</li>
+                  <li>Ретаргетинг на посетителей сайта</li>
+                  <li>4–6 креативов и A/B-тесты</li>
+                  <li>Воронка: прогрев, заявка, дожим</li>
+                  <li>Работа с входящими в сообщество</li>
+                  <li>Оптимизация по цене заявки</li>
+                  <li>Еженедельный отчёт и созвон</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Для магазинов</span>
+                <h3 class="sv-price__name">Интернет-магазин</h3>
+                <div class="sv-price__amount"><b>35 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Каталог товаров и рассылки</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Профессиональный»</li>
+                  <li>Динамические товарные кампании</li>
+                  <li>Сегментация по товарам и регионам</li>
+                  <li>Look-alike по покупателям и заявкам</li>
+                  <li>Подключение рекламы к каталогу сайта</li>
+                  <li>Работа с отзывами и UGC-креативами</li>
+                  <li>Расширенная аналитика и отчёт по товарам</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Выбрать тариф</button>
+              </article>
+            </div>
+          </div>
+
+          <p class="sv-pricing__note" data-reveal>В стоимость не входит рекламный бюджет — его вы оплачиваете напрямую в VK Реклама или Telegram Ads. <a href="/kontaktyi.html">Заполните бриф</a>, и мы подготовим точное КП за 24 часа.</p>
+        </div>
+      </section>
+
+      <!-- ADD-ONS -->
+      <section class="n-section n-section--alt">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Дополнительно</span>
+              <h2 class="n-section__title">Разовые услуги и смежные направления</h2>
+            </div>
+          </div>
+          <div class="dart-row sv-addons">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-addon" data-reveal>
+                <h3 class="sv-addon__title">Оформление сообщества</h3>
+                <p class="sv-addon__text">Шапка, меню, закреп и контент-рубрики — чтобы с рекламы вели в оформленный, живой профиль.</p>
+                <div class="sv-addon__meta"><b>от 12 000 ₽</b><span>от 5 дней</span></div>
+                <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-addon" data-reveal>
+                <h3 class="sv-addon__title">Дизайн креативов</h3>
+                <p class="sv-addon__text">Баннеры и карточки под конкретный оффер: тестируем несколько заходов на одну задачу.</p>
+                <div class="sv-addon__meta"><b>от 4 000 ₽</b><span>от 3 дней</span></div>
+                <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-addon" data-reveal>
+                <h3 class="sv-addon__title">Съёмка и монтаж видео</h3>
+                <p class="sv-addon__text">Короткие ролики для VK и Telegram: сценарий, съёмка, монтаж и субтитры.</p>
+                <div class="sv-addon__meta"><b>от 15 000 ₽</b><span>от 10 дней</span></div>
+                <button class="sv-addon__link" data-modal="dartModal">Отправить заявку →</button>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-6">
+              <article class="sv-addon" data-reveal>
+                <h3 class="sv-addon__title">Контекстная реклама</h3>
+                <p class="sv-addon__text">Пересекаем аудитории: часть спроса закрываем поиском, часть — таргетингом в соцсетях.</p>
+                <div class="sv-addon__meta"><b>от 20 000 ₽/мес</b><span>запуск за 3–5 дней</span></div>
+                <a class="sv-addon__link" href="/uslugi/prodvizhenie-sajtov/kontekstnaya-reklama.html">Подробнее о контексте →</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что входит в таргетинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Таргетинг без оформленного сообщества и нормальных креативов сливает бюджет — закрываем оба вопроса.</p>
+          </div>
+
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Входит в тариф</h3>
+                <ul class="sv-scope__list">
+                  <li>Анализ продукта и целевой аудитории</li>
+                  <li>Подбор сегментов и интересов</li>
+                  <li>Настройка пикселя и целей</li>
+                  <li>Тексты и дизайн креативов</li>
+                  <li>Настройка кампаний и ставок</li>
+                  <li>Оптимизация по цене заявки</li>
+                  <li>Еженедельный отчёт и созвон</li>
+                  <li>Рекомендации по оформлению сообщества</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Опционально</h3>
+                <ul class="sv-scope__list">
+                  <li>Telegram Ads и посты в каналах</li>
+                  <li>Ретаргетинг и look-alike аудитории</li>
+                  <li>Динамические товарные кампании</li>
+                  <li>Съёмка, монтаж и субтитры видео</li>
+                  <li>Дизайн и вёрстка постов</li>
+                  <li>Модерация сообщества и работа с отзывами</li>
+                  <li>Интеграция заявок в CRM</li>
+                  <li>Связка с контекстной рекламой и SEO</li>
+                  <li><a href="/uslugi/texnicheskaya-podderzhka.html">Техническая поддержка сайта</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section n-section--alt" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Этапы</span>
+              <h2 class="n-section__title">Как запускаем таргетинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Первые заявки — в среднем через неделю после старта, дальше оптимизируем цену лида.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Анализ</h4>
+              <p>Продукт, оффер и портрет аудитории.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Сегменты</h4>
+              <p>Подбор площадок и настройка пикселя.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Креативы</h4>
+              <p>Тексты, дизайн и офферы под задачу.</p>
+              <b class="sv-process__time">2–4 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Запуск</h4>
+              <p>Согласование, показ и сбор данных.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Оптимизация</h4>
+              <p>Аудитории, ставки, масштабирование.</p>
+              <b class="sv-process__time">еженедельно</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section class="n-section" id="results">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Результаты</span>
+              <h2 class="n-section__title">Что получают клиенты</h2>
+            </div>
+            <a href="/portfolio/" class="dart-btn dart-btn-secondary dart-btn-sm" data-reveal>Все проекты →</a>
+          </div>
+          <div class="dart-row sv-portfolio">
+            <div class="d-col-24 d-col-lg-12">
+              <a class="n-work" href="/portfolio/shaurmania.html" data-reveal>
+                <div class="n-work__img n-work__img--2"><span>Шаурмания</span></div>
+                <div class="n-work__meta"><h4>Шаурмания</h4><p>Таргетинг по радиусу 5 км: заявки на доставку с ценой лида ниже, чем в Директе</p></div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <a class="n-work" href="/portfolio/medresurs.html" data-reveal>
+                <div class="n-work__img n-work__img--3"><span>Медресурс</span></div>
+                <div class="n-work__meta"><h4>Медресурс Пермь</h4><p>Ретаргетинг на посетителей каталога: возврат брошенных заявок</p></div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <a class="n-work" href="/portfolio/tonkiematerii.html" data-reveal>
+                <div class="n-work__img n-work__img--5"><span>Тонкие материалы</span></div>
+                <div class="n-work__meta"><h4>Тонкие материалы</h4><p>Кампании под оптовых клиентов из VK и Telegram</p></div>
+              </a>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <a class="n-work" href="/portfolio/" data-reveal>
+                <div class="n-work__img n-work__img--4"><span>GNSS OEM7</span></div>
+                <div class="n-work__meta"><h4>GNSS OEM7</h4><p>Лид-формы в VK для оптовых партнёров</p></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section class="n-section n-section--alt" id="benefits">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Преимущества</span>
+              <h2 class="n-section__title">Почему таргетинг с нами</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Смотрим на качество лидов, а не на дешёвые клики: это главная причина, по которой бюджет «сгорает».</p>
+          </div>
+          <div class="dart-row sv-benefits">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M6 26l6-8 4 4 6-12 4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Оптимизация по заявкам</h3>
+                <p class="sv-benefit__text">Отключаем сегменты с дешёвыми кликами и пустыми заявками, бюджет переносим туда, где есть результат.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Креативы под задачу</h3>
+                <p class="sv-benefit__text">Пишем тексты и рисуем креативы сами: тестируем офферы, а не меняем картинки «для галочки».</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M16 8v12l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Запуск за 3–7 дней</h3>
+                <p class="sv-benefit__text">Кабинеты, пиксели и креативы настраиваем в течение рабочей недели — дальше только оптимизация.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M12 22v6M20 22v6M6 22h20v-4H6v4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 22V11h16v11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Ваш бюджет — ваш кабинет</h3>
+                <p class="sv-benefit__text">Рекламный бюджет пополняете вы сами. Никаких процентов с оборота и «серых» схем оплаты.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M26 20c0 3.3-3.6 6-8 6s-8-2.7-8-6 3.6-6 8-6 4 .9 4 .9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Ретаргетинг и воронка</h3>
+                <p class="sv-benefit__text">Возвращаем тех, кто был на сайте, но не оставил заявку, и прогреваем аудиторию до обращения.</p>
+              </article>
+            </div>
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-benefit" data-reveal>
+                <span class="sv-benefit__icon">
+                  <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 8a8 8 0 1 0 16 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h3 class="sv-benefit__title">Отчёт по неделям</h3>
+                <p class="sv-benefit__text">Показываем стоимость заявки, объём лидов и что меняем в следующей неделе — коротко и по делу.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что лучше — VK или Telegram?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>VK даёт больше инструментов и сегментов, Telegram — дешёвый охват и лояльную аудиторию. На старте чаще всего делаем VK, а при нехватке бюджета или для B2B — подключаем Telegram Ads.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Нужно ли готовить креативы?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Нет, если нет дизайнера. Тексты и визуалы для рекламы делаем сами — включено в тариф. От вас нужны исходники: логотип, фото продукта, описание услуги.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Нужно ли своё сообщество?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Для VK Рекламы — да, нужна страница или сообщество: на них ведут клики. Оформим её или подскажем, что поправить, чтобы реклама не выглядела «пустой».</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Сколько нужно денег на рекламу?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Для теста обычно достаточно 15–30 тысяч в месяц на площадку. Точный расчёт даём в медиаплане: прогноз показов, кликов, заявок и цены лида при вашем бюджете.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что нужно от нас для старта?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Доступ к рекламному кабинету, логотип, фото и видео продукта, описание услуги и доступ к статистике сайта. Всё остальное — наша часть работы.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно ли совмещать таргетинг с SEO?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, это рабочая связка: таргетинг даёт заявки сразу, а SEO-продвижение постепенно перехватывает тот же спрос. Подробнее — в разделе <a href="/uslugi/prodvizhenie-sajtov/seo.html">SEO-продвижение</a>.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Готовы запустить?</span>
+            <h2 class="n-cta__title">Соберём кампании<br>и запустим таргетинг</h2>
+            <p class="n-cta__desc">Пришлём прогноз по цене заявки, план запуска и первые креативы за 24 часа.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Получить расчёт →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим таргетинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о продукте и задачах — предложим решение и посчитаем стоимость.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <textarea name="message" placeholder="Коротко о задаче: продукт, регионы, бюджет, есть ли сообщество..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Рассчитать стоимость</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

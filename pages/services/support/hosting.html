@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="hosting.html" itemprop="item"><span itemprop="name">Хостинг</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Хостинг<br><span>для вашего сайта</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Подберём и настроим хостинг под нагрузку и CMS: разместим сайт, подключим домен и SSL,
+                настроим почту и бэкапы. Дальше — только следим, чтобы всё работало быстро и стабильно.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Подбор под CMS и нагрузку</li>
+                <li><span>✓</span> Настройка «под ключ»: домен, SSL, почта</li>
+                <li><span>✓</span> Техподдержка без переплат</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Подобрать хостинг</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="99" data-suffix=",9%">99,9%</b></span>
+                  <span class="sv-hero__stat-label">uptime размещённых сайтов</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="24" data-suffix="/7">24/7</b></span>
+                  <span class="sv-hero__stat-label">поддержка</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="1" data-suffix=" день">1 день</b></span>
+                  <span class="sv-hero__stat-label">на запуск</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Подбор хостинга</h3>
+                <p class="sv-estimate__desc">Оценим нагрузку и подберём подходящий тариф</p>
+
+                <input class="sv-estimate__input" type="text" name="url" placeholder="Ссылка на сайт (необязательно)">
+                <label class="sv-estimate__label">CMS / движок</label>
+                <select class="sv-estimate__select" name="cms">
+                  <option>Не знаю</option>
+                  <option>WordPress</option>
+                  <option>Bitrix</option>
+                  <option>Joomla</option>
+                  <option>OpenCart</option>
+                  <option>Самописный</option>
+                </select>
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Подобрать хостинг →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что входит</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Подобрать хостинг</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Хостинг и размещение</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Можно подключить готовый хостинг или заказать настройку «под ключ».</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Размещение</span>
+                <h3 class="sv-price__name">Сайт</h3>
+                <div class="sv-price__amount"><b>от 500 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Визитки, лендинги, небольшие каталоги</p>
+                <ul class="sv-price__list">
+                  <li>Размещение на нашем хостинге</li>
+                  <li>Домен и SSL подключены</li>
+                  <li>Ежедневные бэкапы</li>
+                  <li>Мониторинг доступности</li>
+                  <li>Поддержка по хостингу</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Популярно</span>
+                <h3 class="sv-price__name">Настройка</h3>
+                <div class="sv-price__amount"><b>от 5 000 ₽</b></div>
+                <p class="sv-price__time">Подбор хостинга и настройка «под ключ»</p>
+                <ul class="sv-price__list">
+                  <li>Подбор хостинга под CMS и нагрузку</li>
+                  <li>Размещение и настройка сайта</li>
+                  <li>Домен, DNS, SSL-сертификат</li>
+                  <li>Почта на домене</li>
+                  <li>Бэкапы и мониторинг</li>
+                  <li>Проверка скорости и доступности</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Для магазинов</span>
+                <h3 class="sv-price__name">Нагрузка</h3>
+                <div class="sv-price__amount"><b>от 10 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">VPS и высокие нагрузки</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Настройка»</li>
+                  <li>VPS/VDS под магазин</li>
+                  <li>Настройка кэширования и CDN</li>
+                  <li>Резервные копии по расписанию</li>
+                  <li>Мониторинг ресурсов</li>
+                  <li>Приоритетная поддержка</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Стоимость зависит от CMS, трафика и требований к ресурсам — <a href="/kontaktyi.html">уточните по брифу</a>.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что входит в настройку хостинга</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Всё, что нужно для стабильного запуска — в одном пакете.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Входит</h3>
+                <ul class="sv-scope__list">
+                  <li>Подбор хостинга под задачу</li>
+                  <li>Размещение сайта и перенос</li>
+                  <li>Привязка домена и DNS</li>
+                  <li>Установка и настройка SSL</li>
+                  <li>Почта на домене</li>
+                  <li>Настройка бэкапов</li>
+                  <li>Мониторинг доступности</li>
+                  <li>Проверка скорости и прав доступа</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Дополнительно</h3>
+                <ul class="sv-scope__list">
+                  <li>VPS/VDS и выделенный сервер</li>
+                  <li>Настройка CDN и кэширования</li>
+                  <li>Перенос с другого хостинга</li>
+                  <li>Настройка почтовых рассылок</li>
+                  <li>Защита от DDoS и ботов</li>
+                  <li><a href="/uslugi/podderzhka/bezopasnost.html">Аудит безопасности сайта</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как мы запускаем хостинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Обычно весь процесс занимает один день.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Заявка</h4>
+              <p>Узнаём CMS, трафик и задачи.</p>
+              <b class="sv-process__time">5–10 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Подбор</h4>
+              <p>Предлагаем тариф и площадку.</p>
+              <b class="sv-process__time">1–2 часа</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Настройка</h4>
+              <p>Размещаем сайт, домен, SSL, почту.</p>
+              <b class="sv-process__time">2–4 часа</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Проверка</h4>
+              <p>Тестируем доступность, скорость, формы.</p>
+              <b class="sv-process__time">1 час</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Поддержка</h4>
+              <p>Следим за работой и бэкапами.</p>
+              <b class="sv-process__time">постоянно</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно ли оставить свой хостинг?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да. Настроим и проверим ваш хостинг, а при необходимости порекомендуем, что стоит изменить.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что будет с сайтом, если хостинг упадёт?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Мы мониторим доступность и оперативно реагируем: перезапускаем сервисы или восстанавливаем сайт из бэкапа.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Кому принадлежит домен?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Домен оформляем на вас — доступы передаём при завершении работ. Вы всегда остаётесь владельцем.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Хостинг оплачивается отдельно?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, стоимость размещения зависит от площадки и ресурсов. Мы подберём вариант с оптимальной ценой и покажем смету.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Хостинг без головной боли</span>
+            <h2 class="n-cta__title">Подберём хостинг<br>под ваш сайт</h2>
+            <p class="n-cta__desc">Расскажите о проекте — предложим вариант, посчитаем стоимость и настроим «под ключ».</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Подобрать хостинг →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим хостинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о сайте — подберём хостинг и настроим всё необходимое.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="CMS, трафик, текущий хостинг..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Подобрать хостинг</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

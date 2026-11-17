@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="nastrojka-serverov.html" itemprop="item"><span itemprop="name">Настройка серверов</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Настройка серверов<br><span>под вашу задачу</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Настроим VPS или выделенный сервер: веб-сервер, PHP, базы данных, SSL, почту и резервное копирование.
+                Подготовим окружение под нагрузку и защитим от типовых атак.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Опыт с Nginx, Apache, MySQL, PHP</li>
+                <li><span>✓</span> Настройка под конкретную CMS</li>
+                <li><span>✓</span> Защита и мониторинг после запуска</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Настроить сервер</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="100" data-suffix="+">100+</b></span>
+                  <span class="sv-hero__stat-label">настроенных серверов</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="99" data-suffix=",9%">99,9%</b></span>
+                  <span class="sv-hero__stat-label">доступность</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="2" data-suffix=" дня">2 дня</b></span>
+                  <span class="sv-hero__stat-label">на настройку</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Подбор конфигурации</h3>
+                <p class="sv-estimate__desc">Оценим нагрузку и предложим параметры сервера</p>
+
+                <label class="sv-estimate__label">Что нужно настроить</label>
+                <select class="sv-estimate__select" name="type">
+                  <option>VPS под сайт</option>
+                  <option>VPS под магазин</option>
+                  <option>Выделенный сервер</option>
+                  <option>Почтовый сервер</option>
+                  <option>Нужна консультация</option>
+                </select>
+                <input class="sv-estimate__input" type="text" name="url" placeholder="Ссылка на сайт (необязательно)">
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить конфигурацию →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что настраиваем</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Настроить сервер</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Настройка серверов</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Цена зависит от конфигурации и сложности инфраструктуры.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Базовый</span>
+                <h3 class="sv-price__name">VPS</h3>
+                <div class="sv-price__amount"><b>от 7 000 ₽</b></div>
+                <p class="sv-price__time">Сервер под один сайт</p>
+                <ul class="sv-price__list">
+                  <li>Установка ОС и веб-сервера</li>
+                  <li>PHP, MySQL, SSL</li>
+                  <li>Размещение сайта</li>
+                  <li>Базовая защита</li>
+                  <li>Бэкапы по расписанию</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Популярно</span>
+                <h3 class="sv-price__name">Под нагрузку</h3>
+                <div class="sv-price__amount"><b>от 15 000 ₽</b></div>
+                <p class="sv-price__time">Магазины и проекты с трафиком</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «VPS»</li>
+                  <li>Nginx + кэширование</li>
+                  <li>Оптимизация MySQL</li>
+                  <li>Настройка CDN</li>
+                  <li>Почта и DNS</li>
+                  <li>Мониторинг ресурсов</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Инфраструктура</span>
+                <h3 class="sv-price__name">Комплекс</h3>
+                <div class="sv-price__amount"><b>от 25 000 ₽</b></div>
+                <p class="sv-price__time">Несколько серверов и сервисов</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Под нагрузку»</li>
+                  <li>Разделение сервисов</li>
+                  <li>Балансировка нагрузки</li>
+                  <li>Репликация БД</li>
+                  <li>Защита от DDoS</li>
+                  <li>Сопровождение и отчёты</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Уточним задачу и предложим точную конфигурацию — <a href="/kontaktyi.html">оставьте заявку</a>.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что настраиваем</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Полное окружение — от ОС до защиты.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Входит</h3>
+                <ul class="sv-scope__list">
+                  <li>Установка и настройка ОС</li>
+                  <li>Веб-сервер: Nginx/Apache</li>
+                  <li>PHP нужной версии и модулей</li>
+                  <li>MySQL/PostgreSQL и оптимизация</li>
+                  <li>SSL-сертификаты и HTTPS</li>
+                  <li>DNS и почта на домене</li>
+                  <li>Cron и планировщики</li>
+                  <li>Бэкапы и базовый мониторинг</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Дополнительно</h3>
+                <ul class="sv-scope__list">
+                  <li>Настройка под Bitrix/WordPress</li>
+                  <li>CDN и кэширование</li>
+                  <li>Защита от DDoS и ботов</li>
+                  <li>Почтовый сервер</li>
+                  <li>Репликация и балансировка</li>
+                  <li><a href="/uslugi/podderzhka/rezervnye-kopii.html">Настройка резервных копий</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как настраиваем сервер</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Обычно настройка занимает 1–2 дня.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Заявка</h4>
+              <p>Узнаём задачу, CMS и нагрузку.</p>
+              <b class="sv-process__time">10 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Конфигурация</h4>
+              <p>Подбираем сервер и параметры.</p>
+              <b class="sv-process__time">1–2 часа</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Настройка</h4>
+              <p>Ставим окружение и сервисы.</p>
+              <b class="sv-process__time">4–8 часов</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Тесты</h4>
+              <p>Проверяем нагрузку и доступность.</p>
+              <b class="sv-process__time">2–4 часа</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Передача</h4>
+              <p>Отдаём доступы и инструкции.</p>
+              <b class="sv-process__time">1 час</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно настроить мой существующий сервер?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, работаем с вашими серверами у любого провайдера. Перед изменениями делаем бэкап конфигурации.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Кто отвечает за сервер после настройки?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>По желанию — мы: подключаем мониторинг и поддержку. Или передаём вам доступы и инструкции, чтобы вы управляли сами.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Нужен ли отдельный VPS?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Если сайт небольшой, хватит виртуального хостинга. Для магазинов и проектов с трафиком рекомендуем VPS — расскажем на консультации.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Сколько стоит сам сервер?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Аренда оплачивается провайдеру напрямую и зависит от ресурсов. Подберём оптимальный вариант под задачу и бюджет.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Сервер под задачу</span>
+            <h2 class="n-cta__title">Настроим сервер<br>под ваш проект</h2>
+            <p class="n-cta__desc">Расскажите о нагрузке и CMS — предложим конфигурацию и смету.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Подобрать конфигурацию →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим сервер</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о проекте — подберём конфигурацию и настроим.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="CMS, нагрузка, текущий сервер..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Настроить сервер</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

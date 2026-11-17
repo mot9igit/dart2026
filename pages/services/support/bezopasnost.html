@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="bezopasnost.html" itemprop="item"><span itemprop="name">Безопасность</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Безопасность сайта<br><span>защита от взлома</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Проверим сайт на уязвимости, настроим защиту и будем следить за подозрительной активностью.
+                Если сайт уже взломали — очистим, восстановим и закроем дыру, через которую попали.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Аудит уязвимостей и прав доступа</li>
+                <li><span>✓</span> Защита форм и админки</li>
+                <li><span>✓</span> Помощь после взлома</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Проверить безопасность</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="200" data-suffix="+">200+</b></span>
+                  <span class="sv-hero__stat-label">сайтов проверено</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="24" data-suffix=" ч">24 ч</b></span>
+                  <span class="sv-hero__stat-label">реакция при инциденте</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="1" data-suffix=" день">1 день</b></span>
+                  <span class="sv-hero__stat-label">на аудит</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Экспресс-проверка</h3>
+                <p class="sv-estimate__desc">Проверим базовые уязвимости и доступы</p>
+
+                <input class="sv-estimate__input" type="text" name="url" placeholder="Ссылка на сайт" required>
+                <label class="sv-estimate__label">Ситуация</label>
+                <select class="sv-estimate__select" name="type">
+                  <option>Хочу проверить сайт</option>
+                  <option>Подозреваю взлом</option>
+                  <option>Сайт заражён вирусом</option>
+                  <option>Нужна постоянная защита</option>
+                </select>
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить отчёт →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что проверяем</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Проверить сайт</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Защита сайта</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>От разового аудита до постоянного сопровождения.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Разово</span>
+                <h3 class="sv-price__name">Аудит</h3>
+                <div class="sv-price__amount"><b>от 5 000 ₽</b></div>
+                <p class="sv-price__time">Проверка сайта на уязвимости</p>
+                <ul class="sv-price__list">
+                  <li>Проверка доступов и прав</li>
+                  <li>Поиск вредоносного кода</li>
+                  <li>Проверка форм и админки</li>
+                  <li>Отчёт с приоритетами</li>
+                  <li>План устранения</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Популярно</span>
+                <h3 class="sv-price__name">Защита</h3>
+                <div class="sv-price__amount"><b>от 8 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Постоянная защита и мониторинг</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Аудит»</li>
+                  <li>Настройка защиты форм</li>
+                  <li>Защита админки и доступов</li>
+                  <li>Мониторинг файлов</li>
+                  <li>Антивирус и оповещения</li>
+                  <li>Помощь при инциденте</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Подключить</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">После взлома</span>
+                <h3 class="sv-price__name">Восстановление</h3>
+                <div class="sv-price__amount"><b>от 20 000 ₽</b></div>
+                <p class="sv-price__time">Лечение и защита от повторного взлома</p>
+                <ul class="sv-price__list">
+                  <li>Анализ причины взлома</li>
+                  <li>Удаление вредоносного кода</li>
+                  <li>Восстановление из чистой копии</li>
+                  <li>Закрытие уязвимостей</li>
+                  <li>Проверка индексации в поиске</li>
+                  <li>Защита на 1 месяц</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Стоимость зависит от CMS и сложности ситуации. Приоритетный выезд — по договорённости.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что проверяем и защищаем</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Комплексно: от доступов до кода сайта.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Проверяем</h3>
+                <ul class="sv-scope__list">
+                  <li>Уязвимости CMS и плагинов</li>
+                  <li>Права доступа и учётные записи</li>
+                  <li>Формы и защиту от спама</li>
+                  <li>Админку и авторизацию</li>
+                  <li>Файлы на вредоносный код</li>
+                  <li>SSL и настройки сервера</li>
+                  <li>Бэкапы и возможность восстановления</li>
+                  <li>Индексацию и подозрительные редиректы</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Настраиваем</h3>
+                <ul class="sv-scope__list">
+                  <li>Защиту форм и админки</li>
+                  <li>Ограничение доступа по IP</li>
+                  <li>Двухфакторную авторизацию</li>
+                  <li>Антивирус и мониторинг файлов</li>
+                  <li>Обновления безопасности</li>
+                  <li><a href="/uslugi/podderzhka/rezervnye-kopii.html">Резервные копии для восстановления</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как проходит защита</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Для сайтов после взлома работаем в срочном режиме.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Заявка</h4>
+              <p>Оцениваем ситуацию и риск.</p>
+              <b class="sv-process__time">30 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Аудит</h4>
+              <p>Проверяем сайт и доступы.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Защита</h4>
+              <p>Закрываем уязвимости и настраиваем защиту.</p>
+              <b class="sv-process__time">1–4 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Тест</h4>
+              <p>Проверяем, что защиты работают.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Мониторинг</h4>
+              <p>Следим за инцидентами и обновлениями.</p>
+              <b class="sv-process__time">постоянно</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как понять, что сайт взломали?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Признаки: блокировка в поиске, всплывающая реклама, редиректы на сторонние сайты, рост нагрузки, странные письма и файлы. При любом из них лучше сразу провести аудит.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Потеряются ли данные при лечении?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Стараемся сохранить всё, что можно. Если заражение глубокое — восстанавливаем из чистой копии и отдельно переносим актуальные данные.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Даёте ли гарантию, что не взломают снова?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Абсолютной гарантии не даёт никто. Мы закрываем известные уязвимости, настраиваем защиту и мониторинг — это снижает риск и позволяет быстро реагировать.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Нужно ли для этого менять хостинг?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Обычно нет. Но если сервер скомпрометирован или устарел, порекомендуем переезд — см. <a href="/uslugi/podderzhka/hosting.html">хостинг</a> и <a href="/uslugi/podderzhka/perenos-sajtov.html">перенос сайтов</a>.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что делать прямо сейчас, если сайт заражён?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Не удаляйте файлы наугад и сделайте бэкап текущего состояния для анализа. Затем свяжитесь с нами — поможем в срочном порядке.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Проверим бесплатно</span>
+            <h2 class="n-cta__title">Проверим сайт<br>на уязвимости</h2>
+            <p class="n-cta__desc">Экспресс-аудит покажет базовые риски и что стоит исправить в первую очередь.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Проверить сайт →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим безопасность</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Опишите ситуацию — предложим план защиты или восстановления.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="Что произошло, какие признаки взлома, CMS..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Проверить сайт</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="monitoring-sajtov.html" itemprop="item"><span itemprop="name">Мониторинг сайтов</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>Мониторинг сайтов<br><span>24/7 под контролем</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Следим за доступностью, скоростью, SSL, бэкапами и безопасностью сайта.
+                Оповещаем сразу при сбое и устраняем его до обращения клиентов.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Оповещения в течение минуты</li>
+                <li><span>✓</span> Ежедневные бэкапы</li>
+                <li><span>✓</span> Защита от простоев</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Подключить мониторинг</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="99" data-suffix=",9%">99,9%</b></span>
+                  <span class="sv-hero__stat-label">доступность сайтов</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="24" data-suffix="/7">24/7</b></span>
+                  <span class="sv-hero__stat-label">мониторинг</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="30" data-suffix=" мин">30 мин</b></span>
+                  <span class="sv-hero__stat-label">макс. время реакции</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Аудит доступности</h3>
+                <p class="sv-estimate__desc">Проверим uptime, SSL, скорость и уязвимости</p>
+
+                <input class="sv-estimate__input" type="text" name="url" placeholder="Ссылка на сайт" required>
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Проверить бесплатно →</span>
+                </button>
+                <p class="sv-estimate__hint">Отправим отчёт на почту или по телефону.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что проверяем</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Подключить</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Тарифы мониторинга</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Простые тарифы — без скрытых платежей.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Базовый</span>
+                <h3 class="sv-price__name">Контроль</h3>
+                <div class="sv-price__amount"><b>от 2 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Доступность и базовые оповещения</p>
+                <ul class="sv-price__list">
+                  <li>Проверка доступности сайта 24/7</li>
+                  <li>Оповещения по email/SMS/телеграм</li>
+                  <li>Мониторинг SSL-сертификата</li>
+                  <li>Проверка DNS и редиректов</li>
+                  <li>Отчёт раз в месяц</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Подключить</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Оптимальный</span>
+                <h3 class="sv-price__name">Защита</h3>
+                <div class="sv-price__amount"><b>от 5 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Доступность + бэкапы + безопасность</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Контроль»</li>
+                  <li>Ежедневные бэкапы (хранение 30 дней)</li>
+                  <li>Мониторинг файлов и целостности</li>
+                  <li>Проверка на вредоносный код</li>
+                  <li>Быстрое восстановление при сбое</li>
+                  <li>Уведомления в реальном времени</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Подключить</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Максимум</span>
+                <h3 class="sv-price__name">Проактивный</h3>
+                <div class="sv-price__amount"><b>от 9 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Полный комплекс с поддержкой</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Защита»</li>
+                  <li>Мониторинг производительности</li>
+                  <li>Контроль форм и корзины</li>
+                  <li>Обновления по графику</li>
+                  <li>Пакет часов на правки</li>
+                  <li>Персональный менеджер 24/7</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Подключить</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Цены зависят от размера сайта и объёма работ.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Что проверяем</span>
+              <h2 class="n-section__title">Полный контроль</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>От доступности до безопасности — ничего не пропустим.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Доступность и работа</h3>
+                <ul class="sv-scope__list">
+                  <li>HTTP/HTTPS доступность сайта</li>
+                  <li>Проверка всех страниц и форм</li>
+                  <li>Мониторинг корзины и личного кабинета</li>
+                  <li>Контроль редиректов и 404</li>
+                  <li>Проверка SSL и срока действия</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Безопасность и бэкапы</h3>
+                <ul class="sv-scope__list">
+                  <li>Ежедневные резервные копии</li>
+                  <li>Проверка целостности файлов</li>
+                  <li>Сканирование на вредоносный код</li>
+                  <li>Мониторинг прав доступа</li>
+                  <li>Быстрое восстановление при инциденте</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок подключения</span>
+              <h2 class="n-section__title">Как подключить мониторинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Подключение за 1–2 дня.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Заявка</h4>
+              <p>Оставляете ссылку и контакты.</p>
+              <b class="sv-process__time">5 минут</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Аудит</h4>
+              <p>Проверим сайт и подберём тариф.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Доступы</h4>
+              <p>Получаем доступы по безопасному списку.</p>
+              <b class="sv-process__time">по договорённости</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Настройка</h4>
+              <p>Настраиваем мониторинг и бэкапы.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Старт</h4>
+              <p>Включаем мониторинг и тестируем оповещения.</p>
+              <b class="sv-process__time">сразу</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Что делать при падении сайта?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Мы моментально получаем оповещение, определяем причину и устраняем или восстанавливаем из бэкапа — в зависимости от тарифа.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Как хранятся бэкапы?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Бэкапы хранятся на отдельном сервере. Количество копий и срок хранения зависят от тарифа.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно ли подключить уже работающий сайт?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, подключаем к любому хостингу. Никакого простоя при подключении — мониторинг настроится параллельно.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Будут ли уведомления ночью?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, круглосуточно. Оповещения приходят по выбранному каналу: Telegram, SMS, email — моментально.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Спокойствие бизнеса</span>
+            <h2 class="n-cta__title">Сайт под контролем<br>24/7</h2>
+            <p class="n-cta__desc">Бесплатный аудит доступности — покажем риски и способ их закрыть.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Бесплатный аудит →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим мониторинг</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о сайте — подберём подходящий тариф.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="Какой интересует тариф..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Бесплатный аудит</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>

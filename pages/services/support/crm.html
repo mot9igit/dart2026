@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{> meta}}
+</head>
+
+<body>
+  <div class="dart-progress"><span id="dartProgressBar"></span></div>
+
+  <div class="dart_wrapper">
+    {{> header}}
+
+    <main class="dart_main" id="top">
+
+      <!-- HERO -->
+      <section class="sv-hero">
+        <div class="sv-hero__gradient"></div>
+        <div class="dart-container">
+          <div class="sv-breadcrumbs">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/" itemprop="item"><span itemprop="name">Услуги</span></a><meta itemprop="position" content="2"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/uslugi/texnicheskaya-podderzhka.html" itemprop="item"><span itemprop="name">Поддержка сайтов</span></a><meta itemprop="position" content="3"></li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="crm.html" itemprop="item"><span itemprop="name">CRM</span></a><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+
+          <div class="dart-row dart-align-items-center sv-hero__grid">
+            <div class="d-col d-col-lg-14 sv-hero__content">
+              <span class="n-kicker" data-reveal>Услуга DART AGENCY</span>
+              <h1 class="sv-hero__title" data-reveal>CRM<br><span>внедрение и интеграция</span></h1>
+              <p class="sv-hero__sub" data-reveal>
+                Свяжем сайт с CRM, чтобы заявки не терялись: настроим приём лидов, воронки,
+                телефонию и мессенджеры. Покажем, откуда пришёл клиент и на каком этапе он находится.
+              </p>
+
+              <ul class="sv-hero__trust" data-reveal>
+                <li><span>✓</span> Заявки с сайта — сразу в CRM</li>
+                <li><span>✓</span> Сделки, воронки и автоматизация</li>
+                <li><span>✓</span> Обучение команды и инструкции</li>
+              </ul>
+
+              <div class="sv-hero__actions" data-reveal>
+                <a href="#pricing" class="dart-btn dart-btn-primary-alt dart-btn-lg">
+                  <span>Обсудить CRM</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="dart-btn dart-btn-secondary dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+              </div>
+
+              <div class="sv-hero__stats" data-reveal>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="50" data-suffix="+">50+</b></span>
+                  <span class="sv-hero__stat-label">внедрений CRM</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="0" data-suffix=" заявок">0 заявок</b></span>
+                  <span class="sv-hero__stat-label">теряется на сайте</span>
+                </div>
+                <div class="sv-hero__stat">
+                  <span class="sv-hero__stat-num"><b data-count="3" data-suffix="–5 дн">3–5 дн</b></span>
+                  <span class="sv-hero__stat-label">на интеграцию</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-col-24 d-col-lg-10 sv-hero__aside" data-reveal>
+              <form class="sv-estimate" data-form>
+                <span class="sv-estimate__badge">Бесплатно</span>
+                <h3 class="sv-estimate__title">Подбор CRM</h3>
+                <p class="sv-estimate__desc">Поможем выбрать систему под процессы и бюджет</p>
+
+                <label class="sv-estimate__label">Что нужно</label>
+                <select class="sv-estimate__select" name="type">
+                  <option>Интегрировать сайт с CRM</option>
+                  <option>Внедрить CRM с нуля</option>
+                  <option>Перенести из другой CRM</option>
+                  <option>Настроить воронку и автоматизацию</option>
+                  <option>Нужна консультация</option>
+                </select>
+                <input class="sv-estimate__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+                <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn--full">
+                  <span>Получить консультацию →</span>
+                </button>
+                <p class="sv-estimate__hint">Перезвоним в течение 30 минут.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY SUB-NAV -->
+      <nav class="sv-nav" id="svNav" aria-label="Навигация по странице">
+        <div class="dart-container">
+          <div class="sv-nav__inner">
+            <a href="#pricing" class="sv-nav__link is-active">Стоимость</a>
+            <a href="#scope" class="sv-nav__link">Что входит</a>
+            <a href="#process" class="sv-nav__link">Порядок работ</a>
+            <a href="#faq" class="sv-nav__link">Вопросы</a>
+            <button class="sv-nav__cta" data-modal="dartModal">Обсудить CRM</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PRICING -->
+      <section class="n-section" id="pricing">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Стоимость</span>
+              <h2 class="n-section__title">Внедрение и интеграция CRM</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Можно начать с интеграции сайта, а затем расширять автоматизацию.</p>
+          </div>
+
+          <div class="dart-row sv-pricing">
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Быстрый старт</span>
+                <h3 class="sv-price__name">Интеграция</h3>
+                <div class="sv-price__amount"><b>от 7 000 ₽</b></div>
+                <p class="sv-price__time">Заявки с сайта — в вашу CRM</p>
+                <ul class="sv-price__list">
+                  <li>Подключение форм сайта к CRM</li>
+                  <li>Передача полей и UTM-меток</li>
+                  <li>Уведомления о новых заявках</li>
+                  <li>Защита от спама</li>
+                  <li>Тестирование и проверка</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price sv-price--hit" data-reveal>
+                <span class="sv-price__tag sv-price__tag--hit">Популярно</span>
+                <h3 class="sv-price__name">Внедрение</h3>
+                <div class="sv-price__amount"><b>от 25 000 ₽</b></div>
+                <p class="sv-price__time">CRM с нуля под ваши процессы</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Интеграция»</li>
+                  <li>Настройка воронок и этапов</li>
+                  <li>Поля, права и роли</li>
+                  <li>Телефония и мессенджеры</li>
+                  <li>Автоматизация задач</li>
+                  <li>Обучение команды</li>
+                </ul>
+                <button class="dart-btn dart-btn-primary-alt dart-btn--full" data-modal="dartModal">Заказать</button>
+              </article>
+            </div>
+
+            <div class="d-col-24 d-col-sm-12 d-col-xxl-8">
+              <article class="sv-price" data-reveal>
+                <span class="sv-price__tag">Сопровождение</span>
+                <h3 class="sv-price__name">Поддержка</h3>
+                <div class="sv-price__amount"><b>от 10 000 ₽</b><span>/мес</span></div>
+                <p class="sv-price__time">Развитие и доработки CRM</p>
+                <ul class="sv-price__list">
+                  <li>Всё из тарифа «Внедрение»</li>
+                  <li>Доработки воронок и полей</li>
+                  <li>Новые интеграции</li>
+                  <li>Отчёты и аналитика</li>
+                  <li>Консультации команды</li>
+                  <li>Приоритетная поддержка</li>
+                </ul>
+                <button class="dart-btn dart-btn-secondary dart-btn--full" data-modal="dartModal">Подключить</button>
+              </article>
+            </div>
+          </div>
+          <p class="sv-pricing__note" data-reveal>Стоимость зависит от CRM, числа интеграций и сложности процессов.</p>
+        </div>
+      </section>
+
+      <!-- SCOPE -->
+      <section class="n-section n-section--alt" id="scope">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Состав работ</span>
+              <h2 class="n-section__title">Что входит в интеграцию</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Настраиваем так, чтобы менеджеры работали в одной системе.</p>
+          </div>
+          <div class="dart-row sv-scope">
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">✓</span> Входит</h3>
+                <ul class="sv-scope__list">
+                  <li>Подбор CRM под задачи</li>
+                  <li>Интеграция форм и заявок</li>
+                  <li>Передача UTM-меток и источников</li>
+                  <li>Настройка воронок и этапов</li>
+                  <li>Поля, задачи и напоминания</li>
+                  <li>Уведомления менеджерам</li>
+                  <li>Тестирование сценариев</li>
+                  <li>Инструкции и обучение</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-12">
+              <div class="sv-scope__col sv-scope__col--alt" data-reveal>
+                <h3 class="sv-scope__head"><span class="sv-scope__icon">+</span> Дополнительно</h3>
+                <ul class="sv-scope__list">
+                  <li>Телефония и запись звонков</li>
+                  <li>WhatsApp и Telegram в CRM</li>
+                  <li>Автоматизация и роботы</li>
+                  <li>Сквозная аналитика</li>
+                  <li>Интеграция с <a href="/uslugi/podderzhka/1c.html">1С и товарным учётом</a></li>
+                  <li>Обучение и регламенты для менеджеров</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="n-section" id="process">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Порядок работ</span>
+              <h2 class="n-section__title">Как проходит внедрение</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>От постановки задачи до обучения команды.</p>
+          </div>
+          <div class="n-process">
+            <div class="n-process__line" data-process-line></div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">01</span>
+              <h4>Анализ</h4>
+              <p>Разбираем процессы продаж и заявки.</p>
+              <b class="sv-process__time">1–2 дня</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">02</span>
+              <h4>Выбор CRM</h4>
+              <p>Подбираем систему и тариф.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">03</span>
+              <h4>Настройка</h4>
+              <p>Воронки, поля, интеграция с сайтом.</p>
+              <b class="sv-process__time">2–5 дней</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">04</span>
+              <h4>Тест</h4>
+              <p>Проверяем все сценарии и заявки.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+            <div class="n-process__step" data-step>
+              <span class="n-process__num">05</span>
+              <h4>Запуск</h4>
+              <p>Обучаем команду и передаём доступы.</p>
+              <b class="sv-process__time">1 день</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="n-section n-section--alt" id="faq">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">FAQ</span>
+              <h2 class="n-section__title">Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="sv-faq">
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Какую CRM выбрать?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Зависит от процессов и бюджета. Работаем с популярными системами — подберём вариант и покажем плюсы/минусы на консультации.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">У меня нет CRM совсем — что делать?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Подберём систему, зарегистрируем аккаунт, настроим воронку и поля, подключим сайт и обучим команду. Начать можно с базового тарифа «Внедрение».</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Заявки с сайта будут попадать автоматически?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, все формы сайта, включая квизы и калькуляторы, отправляют данные в CRM с источником и UTM-метками.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Можно перенести данные из старой CRM?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Да, переносим контакты, сделки и историю, если в системе есть экспорт. Объём и формат уточняем на этапе анализа.</p></div>
+            </div>
+            <div class="sv-faq__item" data-reveal>
+              <button class="sv-faq__q" aria-expanded="false">Нужна ли CRM с 1С?<span class="sv-faq__icon"></span></button>
+              <div class="sv-faq__a"><p>Если у вас магазин на 1С — настроим связку с сайтом и CRM отдельно: <a href="/uslugi/podderzhka/1c.html">интеграция с 1С</a>.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="n-cta">
+        <div class="n-cta__bubble n-cta__bubble--1"></div>
+        <div class="n-cta__bubble n-cta__bubble--2"></div>
+        <div class="n-cta__bubble n-cta__bubble--3"></div>
+        <div class="dart-container">
+          <div class="n-cta__inner" data-reveal>
+            <span class="n-cta__kicker">Заявки в одном месте</span>
+            <h2 class="n-cta__title">Настроим CRM<br>и не потеряем ни одной заявки</h2>
+            <p class="n-cta__desc">Расскажите о процессах продаж — подберём CRM и посчитаем стоимость внедрения.</p>
+            <div class="n-cta__actions">
+              <button class="dart-btn dart-btn-light dart-btn-lg" data-modal="dartModal">Обсудить CRM →</button>
+              <button class="dart-btn dart-btn-secondary-light dart-btn-lg" data-modal="dartModal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="n-section" id="contacts">
+        <div class="dart-container">
+          <div class="n-section__head">
+            <div>
+              <span class="n-kicker">Контакты</span>
+              <h2 class="n-section__title">Обсудим CRM</h2>
+            </div>
+            <p class="n-section__desc" data-reveal>Расскажите о задачах — предложим систему и план внедрения.</p>
+          </div>
+          <div class="dart-row n-contacts">
+            <div class="d-col-24 d-col-lg-11">
+              <div class="n-contacts__cards">
+                <a href="tel:+79991158355" class="n-contact">
+                  <span class="n-contact__icon">📞</span>
+                  <div><span class="n-contact__label">Телефон</span><b class="n-contact__value">+7 (999) 115-83-55</b></div>
+                </a>
+                <a href="mailto:info@dart.agency" class="n-contact">
+                  <span class="n-contact__icon">✉️</span>
+                  <div><span class="n-contact__label">Почта</span><b class="n-contact__value">info@dart.agency</b></div>
+                </a>
+                <div class="n-contact">
+                  <span class="n-contact__icon">📍</span>
+                  <div><span class="n-contact__label">Офис</span><b class="n-contact__value">Пермь, ш. Космонавтов 252, оф. 218</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-24 d-col-lg-13">
+              <form class="n-form" data-form>
+                <div class="dart-row n-form__row">
+                  <div class="d-col-24 d-col-md-12"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                  <div class="d-col-24 d-col-md-12"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                </div>
+                <input type="text" name="url" placeholder="Ссылка на сайт">
+                <textarea name="message" placeholder="Какая CRM, какие процессы, задачи..." rows="4"></textarea>
+                <div class="n-form__bottom">
+                  <button type="submit" class="dart-btn dart-btn-primary-alt dart-btn-lg"><span>Отправить →</span></button>
+                  <p class="n-form__hint">Нажимая кнопку, вы соглашаетесь с <a href="/politika-konfidenczialnosti.html">политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="sv-sticky-cta">
+      <a href="tel:+79991158355" class="sv-sticky-cta__phone">📞</a>
+      <button class="sv-sticky-cta__btn" data-modal="dartModal">Обсудить CRM</button>
+    </div>
+
+    {{> footer}}
+  </div>
+  {{> cookie}}
+  {{> modals}}
+  {{> scripts}}
+</body>
+
+</html>
